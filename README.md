@@ -18,7 +18,12 @@ announcements/
   2026-09-30_Rentree.docx  annonce texte (Word)
   2026-10-02_Affiche.jpg   annonce image (.png, .jpg, .webp)
 tools/                     conversion automatique des emplois du temps en .ics
+index.json                 liste des fichiers lue par l'application (générée, ne pas modifier)
 ```
+
+À chaque dépôt, l'action GitHub **« Publication »** génère les `.ics` puis met à jour
+`index.json` : l'application ne voit un nouveau fichier qu'après cette action (1 à 2 minutes,
+puis jusqu'à 5 minutes de cache de GitHub).
 
 ## Emplois du temps
 
@@ -27,10 +32,10 @@ tools/                     conversion automatique des emplois du temps en .ics
   semaine**, dans l'un de ces formats :
   - `..._15_21_Juin. 26...`, `... - 08-13_Juin. 26...`, `..._29_Juin_05_Jul. 26...`
   - `EDT_3GNM_22_06_28_06_2026.pdf` (JJ_MM_JJ_MM_AAAA)
-- À chaque dépôt, l'action GitHub **« Emplois du temps -> .ics »** crée le fichier `.ics` de la
+- À chaque dépôt, l'action GitHub **« Publication »** crée le fichier `.ics` de la
   semaine (cours, enseignants, salle, rappels 30 et 15 min avant) : c'est lui qui alimente
   l'affichage des cours et les alarmes de l'application. Le PDF reste consultable depuis l'app.
-- Pour relancer la conversion à la main : onglet *Actions* → *Emplois du temps -> .ics* → *Run workflow*.
+- Pour relancer la conversion à la main : onglet *Actions* → *Publication* → *Run workflow*.
 
 ## Logos
 

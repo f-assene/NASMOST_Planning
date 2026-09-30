@@ -1,26 +1,23 @@
-# Convertit les emplois du temps (.docx / .pdf) déposés dans les dossiers des départements
-# en fichiers .ics lus par l'application NASMOST Planning, puis les enregistre dans le dépôt.
-name: Emplois du temps -> .ics
+# Publication : à chaque dépôt, convertit les emplois du temps (.docx / .pdf) des dossiers de
+# départements en .ics, puis met à jour index.json (liste des fichiers lue par l'application).
+name: Publication (emplois du temps -> .ics, index)
 
 on:
   push:
     branches: [main]
-    paths:
-      - "**.docx"
-      - "**.pdf"
-      - "tools/**"
-      - ".github/workflows/timetables-to-ics.yml"
+    paths-ignore:
+      - "index.json"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: timetables-to-ics
+  group: publication
   cancel-in-progress: false
 
 jobs:
-  convert:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,17 +31,24 @@ jobs:
       - name: Installer les dépendances
         run: pip install -r tools/requirements.txt
 
-      - name: Générer les fichiers .ics
-        run: python tools/timetable_to_ics.py .
-
-      - name: Enregistrer les fichiers .ics
+      - name: Préparer git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Générer les fichiers .ics
+        run: |
+          python tools/timetable_to_ics.py .
           git add -A -- '*.ics'
-          if git diff --cached --quiet; then
-            echo "Aucun changement."
-          else
-            git commit -m "Mise à jour automatique des fichiers .ics"
-            git push
-          fi
+          git diff --cached --quiet || git commit -m "Mise à jour automatique des fichiers .ics"
+
+      - name: Mettre à jour index.json
+        run: |
+          python tools/build_index.py .
+          git add index.json
+          git diff --cached --quiet || git commit -m "Mise à jour automatique de index.json"
+
+      - name: Publier
+        run: |
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
