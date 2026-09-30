@@ -1,0 +1,131 @@
+{
+ "generated": "2026-09-30T21:18:03Z",
+ "tree": [
+  {
+   "path": "LICENSE",
+   "type": "blob",
+   "sha": "c1eb9f61c997e62f73b6db2bcc84392261d17933",
+   "size": 1065
+  },
+  {
+   "path": "NMSI/EDT_3GNM_22_06_28_06_2026.pdf",
+   "type": "blob",
+   "sha": "96190a124e550b3cdffeb48577f25744f1404ec2",
+   "size": 124250
+  },
+  {
+   "path": "NMSI/NMSI_N3_08_06_13_06_2026.ics",
+   "type": "blob",
+   "sha": "c1d2e6c70a4a45e718ea337e6263466e6b71ffe8",
+   "size": 6321
+  },
+  {
+   "path": "NMSI/NMSI_N3_15_06_21_06_2026.ics",
+   "type": "blob",
+   "sha": "95b7f61e424d266e6cc33ed92bf442528ed2b455",
+   "size": 7464
+  },
+  {
+   "path": "NMSI/NMSI_N3_22_06_28_06_2026.ics",
+   "type": "blob",
+   "sha": "215423fbf9d987ca7cc5f88903dbfa2d3b110623",
+   "size": 6064
+  },
+  {
+   "path": "NMSI/NMSI_N3_29_06_05_07_2026.ics",
+   "type": "blob",
+   "sha": "f57b6b972e67e0d1a70a9027792929f02446243a",
+   "size": 5357
+  },
+  {
+   "path": "NMSI/Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.docx",
+   "type": "blob",
+   "sha": "5f7ed0dec3482352c7d6ee4f7bd902397bc5c32d",
+   "size": 44029
+  },
+  {
+   "path": "NMSI/Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.pdf",
+   "type": "blob",
+   "sha": "3e30588d7bf526f0cf5b39cf855acdde713fcbe0",
+   "size": 124312
+  },
+  {
+   "path": "NMSI/Projet d'Emp. du Temps 3GNM_15_21_Juin. 26-6.docx",
+   "type": "blob",
+   "sha": "d175d2fd71fc601013c3285c3f69723b9fde2878",
+   "size": 44408
+  },
+  {
+   "path": "NMSI/Projet d'Emp. du Temps 3GNM_15_21_Juin. 26-6.pdf",
+   "type": "blob",
+   "sha": "08e302e92d24d48053820c39467d012fb14e27c5",
+   "size": 125082
+  },
+  {
+   "path": "NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.docx",
+   "type": "blob",
+   "sha": "9ea7b9e6e8d1b272c7bbcd26b093a506bbd2e4aa",
+   "size": 44601
+  },
+  {
+   "path": "NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.pdf",
+   "type": "blob",
+   "sha": "021844675102f8e2ff519d9f7aad8f1e7ccc74a7",
+   "size": 124313
+  },
+  {
+   "path": "NMSI/Projet d'Emp. du Temps 3GNM_29_Juin_05_Jul. 26-6.docx",
+   "type": "blob",
+   "sha": "1513b928110c13362db89df5eda9d7611bf61017",
+   "size": 43515
+  },
+  {
+   "path": "NMSI/Projet d'Emp. du Temps 3GNM_29_Juin_05_Jul. 26-6.pdf",
+   "type": "blob",
+   "sha": "2de0ab61e295633a27280113c66f578d430f85d7",
+   "size": 123676
+  },
+  {
+   "path": "README.md",
+   "type": "blob",
+   "sha": "cb16e917e36fd0b3a09baca0b73efc8b31dfbade",
+   "size": 3946
+  },
+  {
+   "path": "announcements/WhatsApp_test.jpeg",
+   "type": "blob",
+   "sha": "97569b2ec08c9922bdc31b7026198bee008fa1a4",
+   "size": 58854
+  },
+  {
+   "path": "announcements/WhatsApp_test.txt",
+   "type": "blob",
+   "sha": "225bfd66ca29bc13b77f66793ca131ce048a0bf6",
+   "size": 346
+  },
+  {
+   "path": "tools/build_index.py",
+   "type": "blob",
+   "sha": "14a599deacd4a6833a4bc8ee619d9382cf8100a6",
+   "size": 2032
+  },
+  {
+   "path": "tools/check_announcements.py",
+   "type": "blob",
+   "sha": "37ee6156bf32ec13f6f947ced8de4a7dc3c9afc3",
+   "size": 5156
+  },
+  {
+   "path": "tools/requirements.txt",
+   "type": "blob",
+   "sha": "b772f38f810c79258c1338a9432eabcbd1caba01",
+   "size": 38
+  },
+  {
+   "path": "tools/timetable_to_ics.py",
+   "type": "blob",
+   "sha": "7bd66ab26c34e7563f279b66f91bffde6cef6e3f",
+   "size": 12468
+  }
+ ]
+}
