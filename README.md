@@ -28,10 +28,16 @@ puis jusqu'à 5 minutes de cache de GitHub).
 ## Emplois du temps
 
 - Déposer le **.docx** (de préférence) et/ou le **.pdf** dans le dossier du département.
-- Le nom du fichier doit contenir **la classe** (ex. `3GNM` → niveau N3) et **les dates de la
-  semaine**, dans l'un de ces formats :
-  - `..._15_21_Juin. 26...`, `... - 08-13_Juin. 26...`, `..._29_Juin_05_Jul. 26...`
-  - `EDT_3GNM_22_06_28_06_2026.pdf` (JJ_MM_JJ_MM_AAAA)
+- La classe et la semaine sont lues dans **l'en-tête du document** :
+  `NIVEAU : SGMP 1`, `NIVEAU: STMO I`, `TROISIEME ANNEE ... (GMM)`, `3e ANNÉE GNM` et
+  `Semaine du 02 Mars au 08 Mars 2026`. À défaut, dans le nom du fichier
+  (`..._15_21_Juin. 26...`, `EDT_3GNM_22_06_28_06_2026.pdf`, `EDT SGMP 1 - 02-08 MARS 2026.pdf`).
+- Un PDF qui regroupe **plusieurs classes (une par page)** est accepté : chaque classe est rangée
+  dans le dossier de son département.
+- ⚠️ Les **PDF scannés** (photos, CamScanner) ne peuvent pas être lus : déposer le .docx, ou un
+  PDF enregistré directement depuis Word (*Fichier > Enregistrer sous > PDF*).
+- Copier les fichiers depuis Windows vers WSL crée des fichiers `...:Zone.Identifier` : ils sont
+  ignorés (fichier `.gitignore`), inutile de les supprimer à la main.
 - À chaque dépôt, l'action GitHub **« Publication »** crée le fichier `.ics` de la
   semaine (cours, enseignants, salle, rappels 30 et 15 min avant) : c'est lui qui alimente
   l'affichage des cours et les alarmes de l'application. Le PDF reste consultable depuis l'app.

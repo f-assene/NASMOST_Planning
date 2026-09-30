@@ -25,13 +25,26 @@ def main(root: Path) -> int:
         cwd=root, check=True, capture_output=True,
     ).stdout.decode("utf-8")
 
+    # Semaine réelle de chaque emploi du temps source (lue dans son en-tête par timetable_to_ics.py) :
+    # l'application s'en sert pour proposer le PDF même si son nom ne contient pas les dates.
+    weeks = {}
+    manifest = root / "timetables.json"
+    if manifest.exists():
+        for item in json.loads(manifest.read_text(encoding="utf-8")):
+            weeks.setdefault(item["source"], {"week": [item["start"], item["end"]], "departments": set()})
+            weeks[item["source"]]["departments"].add(item["department"])
+
     tree = []
     for entry in filter(None, listing.split("\0")):
         meta, path = entry.split("\t", 1)
         _mode, kind, sha, size = meta.split()
-        if kind != "blob" or path == INDEX or path.startswith(".github/"):
+        if kind != "blob" or path == INDEX or path.startswith(".github/") or ":" in path:
             continue
-        tree.append({"path": path, "type": "blob", "sha": sha, "size": int(size)})
+        item = {"path": path, "type": "blob", "sha": sha, "size": int(size)}
+        if path in weeks:
+            item["week"] = weeks[path]["week"]
+            item["departments"] = sorted(weeks[path]["departments"])
+        tree.append(item)
 
     index = {
         "generated": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
