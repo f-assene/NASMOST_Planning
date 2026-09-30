@@ -1,0 +1,192 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.docx
+BEGIN:VEVENT
+UID:nmsi-n3-20260608t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260608T073000
+DTEND;TZID=Africa/Douala:20260608T120000
+CATEGORIES:NMSI-N3
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260609t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260609T073000
+DTEND;TZID=Africa/Douala:20260609T120000
+CATEGORIES:NMSI-N3
+SUMMARY:Navigation Maritime (radar\, GPS) et Sécurité en Mer
+DESCRIPTION:Cours de Navigation Maritime (radar\, GPS) et Sécurité en Mer
+  (NSI-3212)\navec Cdt. DZO Evariste\nCM:20\, TD:15\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 30 
+ min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 15 
+ min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260610t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260610T073000
+DTEND;TZID=Africa/Douala:20260610T120000
+CATEGORIES:NMSI-N3
+SUMMARY:Navigation Maritime (radar\, GPS) et Sécurité en Mer
+DESCRIPTION:Cours de Navigation Maritime (radar\, GPS) et Sécurité en Mer
+  (NSI-3212)\navec Cdt. DZO Evariste\nCM:20\, TD:15\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 30 
+ min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 15 
+ min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260611t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260611T073000
+DTEND;TZID=Africa/Douala:20260611T120000
+CATEGORIES:NMSI-N3
+SUMMARY:Navigation Maritime (radar\, GPS) et Sécurité en Mer
+DESCRIPTION:Cours de Navigation Maritime (radar\, GPS) et Sécurité en Mer
+  (NSI-3212)\navec Cdt. DZO Evariste\nCM:20\, TD:15\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 30 
+ min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 15 
+ min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260612t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260612T073000
+DTEND;TZID=Africa/Douala:20260612T120000
+CATEGORIES:NMSI-N3
+SUMMARY:Navigation Maritime (radar\, GPS) et Sécurité en Mer
+DESCRIPTION:Cours de Navigation Maritime (radar\, GPS) et Sécurité en Mer
+  (NSI-3212)\navec Cdt. DZO Evariste\nCM:20\, TD:15\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 30 
+ min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 15 
+ min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260608t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260608T123000
+DTEND;TZID=Africa/Douala:20260608T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Navigation Maritime (radar\, GPS) et Sécurité en Mer
+DESCRIPTION:Cours de Navigation Maritime (radar\, GPS) et Sécurité en Mer
+  (NSI-3212)\navec Cdt. DZO Evariste\nCM:20\, TD:15\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 15 
+ min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260609t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260609T123000
+DTEND;TZID=Africa/Douala:20260609T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Navigation Maritime (radar\, GPS) et Sécurité en Mer
+DESCRIPTION:Cours de Navigation Maritime (radar\, GPS) et Sécurité en Mer
+  (NSI-3212)\navec Cdt. DZO Evariste\nCM:20\, TD:15\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 15 
+ min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260610t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260610T123000
+DTEND;TZID=Africa/Douala:20260610T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Navigation Maritime (radar\, GPS) et Sécurité en Mer
+DESCRIPTION:Cours de Navigation Maritime (radar\, GPS) et Sécurité en Mer
+  (NSI-3212)\navec Cdt. DZO Evariste\nCM:20\, TD:15\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 15 
+ min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260611t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260611T123000
+DTEND;TZID=Africa/Douala:20260611T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Navigation Maritime (radar\, GPS) et Sécurité en Mer
+DESCRIPTION:Cours de Navigation Maritime (radar\, GPS) et Sécurité en Mer
+  (NSI-3212)\navec Cdt. DZO Evariste\nCM:20\, TD:15\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 15 
+ min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260612t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260612T123000
+DTEND;TZID=Africa/Douala:20260612T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Navigation Maritime (radar\, GPS) et Sécurité en Mer
+DESCRIPTION:Cours de Navigation Maritime (radar\, GPS) et Sécurité en Mer
+  (NSI-3212)\navec Cdt. DZO Evariste\nCM:20\, TD:15\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Navigation Maritime (radar\, GPS) et Sécurité en Mer dans 15 
+ min
+END:VALARM
+END:VEVENT
+END:VCALENDAR

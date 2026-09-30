@@ -1,0 +1,239 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:Projet d'Emp. du Temps 3GNM_15_21_Juin. 26-6.docx
+BEGIN:VEVENT
+UID:nmsi-n3-20260615t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260615T073000
+DTEND;TZID=Africa/Douala:20260615T120000
+CATEGORIES:NMSI-N3
+SUMMARY:Fiabilité des Systèmes et Gestion de la Maintenance
+DESCRIPTION:Cours de Fiabilité des Systèmes et Gestion de la Maintenance 
+ (NSI-3221)\navec Dr. KAMTA\nCM:15\, TD:10\, TP:05\, TPE:00
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 30 m
+ in
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260616t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260616T073000
+DTEND;TZID=Africa/Douala:20260616T120000
+CATEGORIES:NMSI-N3
+SUMMARY:Business Communication
+DESCRIPTION:Cours de Business Communication (GMP-3211)\navec Dr. CHE Kingsl
+ ey\nCM:20\, TD:00\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Amphi 200
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Business Communication dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Business Communication dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260617t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260617T073000
+DTEND;TZID=Africa/Douala:20260617T120000
+CATEGORIES:NMSI-N3
+SUMMARY:Fiabilité des Systèmes et Gestion de la Maintenance
+DESCRIPTION:Cours de Fiabilité des Systèmes et Gestion de la Maintenance 
+ (NSI-3221)\navec Dr. KAMTA\nCM:15\, TD:10\, TP:05\, TPE:00
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 30 m
+ in
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260618t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260618T073000
+DTEND;TZID=Africa/Douala:20260618T120000
+CATEGORIES:NMSI-N3
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260619t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260619T073000
+DTEND;TZID=Africa/Douala:20260619T120000
+CATEGORIES:NMSI-N3
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260620t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260620T073000
+DTEND;TZID=Africa/Douala:20260620T120000
+CATEGORIES:NMSI-N3
+SUMMARY:Fiabilité des Systèmes et Gestion de la Maintenance
+DESCRIPTION:Cours de Fiabilité des Systèmes et Gestion de la Maintenance 
+ (NSI-3221)\navec Dr. KAMTA\nCM:15\, TD:10\, TP:05\, TPE:00
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 30 m
+ in
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260621t0730@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260621T073000
+DTEND;TZID=Africa/Douala:20260621T120000
+CATEGORIES:NMSI-N3
+SUMMARY:Fiabilité des Systèmes et Gestion de la Maintenance
+DESCRIPTION:Cours de Fiabilité des Systèmes et Gestion de la Maintenance 
+ (NSI-3221)\navec Dr. KAMTA\nCM:15\, TD:10\, TP:05\, TPE:00
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 30 m
+ in
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260615t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260615T123000
+DTEND;TZID=Africa/Douala:20260615T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Fiabilité des Systèmes et Gestion de la Maintenance
+DESCRIPTION:Cours de Fiabilité des Systèmes et Gestion de la Maintenance 
+ (NSI-3221)\navec Dr. KAMTA\nCM:15\, TD:10\, TP:05\, TPE:00
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260616t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260616T123000
+DTEND;TZID=Africa/Douala:20260616T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Business Communication
+DESCRIPTION:Cours de Business Communication (GMP-3211)\navec Dr. CHE Kingsl
+ ey\nCM:20\, TD:00\, TP:00\, TPE:10
+LOCATION:Campus Ebouyè\, Amphi 200
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Business Communication dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260617t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260617T123000
+DTEND;TZID=Africa/Douala:20260617T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Fiabilité des Systèmes et Gestion de la Maintenance
+DESCRIPTION:Cours de Fiabilité des Systèmes et Gestion de la Maintenance 
+ (NSI-3221)\navec Dr. KAMTA\nCM:15\, TD:10\, TP:05\, TPE:00
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260618t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260618T123000
+DTEND;TZID=Africa/Douala:20260618T170000
+CATEGORIES:NMSI-N3
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260619t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260619T123000
+DTEND;TZID=Africa/Douala:20260619T170000
+CATEGORIES:NMSI-N3
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260620t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260620T123000
+DTEND;TZID=Africa/Douala:20260620T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Fiabilité des Systèmes et Gestion de la Maintenance
+DESCRIPTION:Cours de Fiabilité des Systèmes et Gestion de la Maintenance 
+ (NSI-3221)\navec Dr. KAMTA\nCM:15\, TD:10\, TP:05\, TPE:00
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n3-20260621t1230@nasmost-planning
+DTSTAMP:20260930T023015Z
+DTSTART;TZID=Africa/Douala:20260621T123000
+DTEND;TZID=Africa/Douala:20260621T170000
+CATEGORIES:NMSI-N3
+SUMMARY:Fiabilité des Systèmes et Gestion de la Maintenance
+DESCRIPTION:Cours de Fiabilité des Systèmes et Gestion de la Maintenance 
+ (NSI-3221)\navec Dr. KAMTA\nCM:15\, TD:10\, TP:05\, TPE:00
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fiabilité des Systèmes et Gestion de la Maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+END:VCALENDAR
