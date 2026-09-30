@@ -271,7 +271,8 @@ def main(root: Path) -> int:
                     raise ValueError("tableau de l'emploi du temps introuvable")
                 monday = start - dt.timedelta(days=start.weekday())
                 ics = build_ics(dept, level, path, rows, text, monday)
-                previous = target.read_text(encoding="utf-8") if target.exists() else ""
+                # newline="" : garder les fins de ligne telles quelles pour comparer à l'identique.
+                previous = open(target, encoding="utf-8", newline="").read() if target.exists() else ""
                 if strip_stamps(previous) != strip_stamps(ics):
                     target.write_text(ics, encoding="utf-8", newline="")
                     written += 1
@@ -291,7 +292,7 @@ def main(root: Path) -> int:
 
 def strip_stamps(ics: str) -> str:
     """Contenu sans les DTSTAMP, pour ne réécrire un fichier que si les cours ont changé."""
-    return re.sub(r"DTSTAMP:\d{8}T\d{6}Z", "", ics)
+    return re.sub(r"DTSTAMP:\d{8}T\d{6}Z", "", ics).replace("\r\n", "\n")
 
 
 if __name__ == "__main__":
