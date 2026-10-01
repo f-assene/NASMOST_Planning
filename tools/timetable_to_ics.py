@@ -13,8 +13,15 @@ dossier de son département :
 Quand une même classe et une même semaine existent plusieurs fois, la source retenue est, dans
 l'ordre : le .docx, un PDF propre à la classe, puis la page d'un PDF groupé.
 
-Écrit aussi timetables.json (source de chaque semaine, utilisé pour index.json).
-Code de sortie 1 si un fichier n'a pas pu être lu (les autres sont tout de même convertis).
+Version signée : un PDF scanné après signature, nommé comme l'original avec le préfixe
+"scan_" (ou "Scan_", "SCAN_"), n'est pas converti ; il reprend la semaine et les départements de
+l'original et c'est lui que l'application propose au téléchargement.
+    NMSI/EDT SGMP 1 - 02-08 MARS 2026.pdf        -> sert à construire l'emploi du temps
+    NMSI/scan_EDT SGMP 1 - 02-08 MARS 2026.pdf   -> version signée téléchargeable
+
+Une erreur sur un fichier (ou une page) n'arrête jamais le traitement : les autres fichiers sont
+convertis et publiés, et les problèmes sont consignés dans RAPPORT_CONVERSION.md (et dans le
+résumé de l'action GitHub). Écrit aussi timetables.json (semaine de chaque document, pour index.json).
 
 Usage : python tools/timetable_to_ics.py [racine_du_depot]
 """
@@ -29,6 +36,8 @@ from pathlib import Path
 IGNORED_DIRS = {"logos", "announcements", "annonces", "tools", ".github", ".git"}
 GENERATED_MARK = "X-NASMOST-GENERATED:timetable_to_ics"
 MANIFEST = "timetables.json"
+REPORT = "RAPPORT_CONVERSION.md"
+SCAN_PREFIX = re.compile(r"^scan[_\- ]+", re.I)
 TIMEZONE = "Africa/Douala"
 DEFAULT_LOCATION = "Campus Ebouyè"
 
@@ -60,7 +69,7 @@ TEACHER = re.compile(r"^(/|Dr\b|Dr\.|Pr\b|Pr\.|Prof|Col\b|Col\.|Cdt|Cpt|Capt|Lt|
 ROOM = re.compile(r"^\(?\s*(?:salle\s*:\s*)?((?:salle|hall|amphi|labo|laboratoire|atelier|campus|site|bâtiment|batiment)\b.*?)\)?$", re.I)
 FREE = ("ETUDE", "FERIE", "CONGE", "VACANCES", "BIBLIOTHEQUE")
 
-problems = {"errors": 0}
+problems = {"errors": 0, "messages": []}
 
 
 def plain(text) -> str:
@@ -71,7 +80,9 @@ def plain(text) -> str:
 
 def report(level: str, path: Path, root: Path, message: str) -> None:
     """Message dans le journal + annotation sur le fichier dans GitHub."""
-    print(f"::{level} file={path.relative_to(root).as_posix()}::{message}")
+    rel = path.relative_to(root).as_posix()
+    print(f"::{level} file={rel}::{message}")
+    problems["messages"].append((level, rel, message))
     if level == "error":
         problems["errors"] += 1
 
@@ -235,8 +246,13 @@ def pdf_timetables(path: Path):
             if not page.chars:
                 yield number, "", None, False  # page scannée (image)
                 continue
-            text = page.extract_text(x_tolerance=1) or ""
-            yield number, text, pdf_slots(page), True
+            try:
+                text = page.extract_text(x_tolerance=1) or ""
+                slots = pdf_slots(page)
+            except Exception as error:  # page abîmée : les autres pages sont tout de même lues
+                yield number, "", error, True
+                continue
+            yield number, text, slots, True
 
 
 def pdf_slots(page):
@@ -420,10 +436,15 @@ def strip_stamps(ics: str) -> str:
 
 def main(root: Path) -> int:
     candidates = {}  # (dept, niveau, début, fin) -> meilleure source
+    documents = {}   # chemin du document -> [(dept, niveau, début, fin)] lus dans ce document
+    scans = []       # versions scannées et signées (préfixe scan_)
     for folder in sorted(p for p in root.iterdir() if p.is_dir() and p.name.lower() not in IGNORED_DIRS):
         for path in sorted(folder.iterdir()):
             ext = path.suffix.lower()
             if ext not in (".docx", ".pdf") or path.name.startswith("~$") or ":" in path.name:
+                continue
+            if SCAN_PREFIX.match(path.name):
+                scans.append(path)
                 continue
             try:
                 pages = list(docx_timetables(path) if ext == ".docx" else pdf_timetables(path))
@@ -432,12 +453,16 @@ def main(root: Path) -> int:
                 continue
 
             if pages and not any(readable for _, _, _, readable in pages):
-                report("error", path, root, "PDF scanné (images) : le texte ne peut pas être lu. Déposer le .docx, "
-                                            "ou un PDF enregistré directement depuis Word (Fichier > Enregistrer sous > PDF).")
+                report("error", path, root, "PDF scanné (images) : le texte ne peut pas être lu. Déposer l'original "
+                                            "(.docx, ou PDF enregistré depuis Word) et nommer la version scannée "
+                                            "« scan_ » + même nom.")
                 continue
             bundle = len(pages) > 1
             for number, text, slots, readable in pages:
                 where = f"page {number} : " if bundle else ""
+                if isinstance(slots, Exception):
+                    report("error", path, root, f"{where}page illisible : {slots}")
+                    continue
                 if not readable:
                     report("error", path, root, f"{where}page scannée (image), ignorée")
                     continue
@@ -473,6 +498,7 @@ def main(root: Path) -> int:
                                                   f"le fichier .ics est rangé dans {dept}/")
                 priority = 3 if ext == ".docx" else (1 if bundle else 2)
                 key = (dept, f"N{level}", week[0], week[1])
+                documents.setdefault(path.relative_to(root).as_posix(), []).append(key)
                 source = {"path": path.relative_to(root).as_posix(), "page": number, "priority": priority,
                           "text": text, "slots": slots}
                 best = candidates.get(key)
@@ -489,15 +515,45 @@ def main(root: Path) -> int:
         wanted.add(target.resolve())
         monday = start - dt.timedelta(days=start.weekday())
         label = source["path"] + (f" (page {source['page']})" if source["priority"] == 1 else "")
-        ics = build_ics(dept, level, label, source["slots"], source["text"], monday)
-        previous = open(target, encoding="utf-8", newline="").read() if target.exists() else ""
-        if strip_stamps(previous) != strip_stamps(ics):
-            target.write_text(ics, encoding="utf-8", newline="")
-            written += 1
-            print(f"  écrit : {target.relative_to(root).as_posix()}  (source : {label})")
-        manifest.append({"ics": target.relative_to(root).as_posix(), "source": source["path"],
-                         "page": source["page"], "department": dept, "level": level,
-                         "start": start.isoformat(), "end": end.isoformat()})
+        try:
+            ics = build_ics(dept, level, label, source["slots"], source["text"], monday)
+            previous = open(target, encoding="utf-8", newline="").read() if target.exists() else ""
+            if strip_stamps(previous) != strip_stamps(ics):
+                target.write_text(ics, encoding="utf-8", newline="")
+                written += 1
+                print(f"  écrit : {target.relative_to(root).as_posix()}  (source : {label})")
+        except Exception as error:
+            wanted.discard(target.resolve())
+            report("error", root / source["path"], root, f"{dept} {level} : fichier .ics non écrit ({error})")
+
+    # Semaine et départements de chaque document (y compris ceux non retenus) pour index.json.
+    def entries(path, keys, scan):
+        return [{"source": path, "scan": scan, "department": d, "level": l,
+                 "start": a.isoformat(), "end": b.isoformat(),
+                 "ics": f"{d}/{d}_{l}_{a:%d_%m}_{b:%d_%m_%Y}.ics"} for d, l, a, b in keys]
+
+    for path, keys in sorted(documents.items()):
+        manifest += entries(path, keys, False)
+
+    # Versions signées : elles reprennent la semaine de l'original de même nom.
+    for scan in scans:
+        original_name = SCAN_PREFIX.sub("", scan.name)
+        stem = Path(original_name).stem.lower()
+        original = next((p for p in sorted(documents)
+                         if Path(p).parent == Path(scan.relative_to(root).as_posix()).parent
+                         and Path(p).stem.lower() == stem), None)
+        if original:
+            manifest += entries(scan.relative_to(root).as_posix(), documents[original], True)
+            continue
+        week = week_from_name(original_name)
+        dept, level = class_from_name(original_name)
+        dept = dept or department_code(scan.parent.name)
+        if week and dept and level:
+            manifest += entries(scan.relative_to(root).as_posix(), [(dept, f"N{level}", week[0], week[1])], True)
+            report("warning", scan, root, f"original « {original_name} » introuvable : semaine lue dans le nom du fichier")
+        else:
+            report("warning", scan, root, f"original « {original_name} » introuvable dans le dossier : version signée "
+                                          "non proposée dans l'application (déposer l'original avec le même nom)")
 
     # Supprime les .ics générés qui ne correspondent plus à aucun emploi du temps.
     for old in root.glob("*/*.ics"):
@@ -506,8 +562,27 @@ def main(root: Path) -> int:
             print(f"  supprimé : {old.relative_to(root).as_posix()}")
 
     (root / MANIFEST).write_text(json.dumps(manifest, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"{len(candidates)} emploi(s) du temps, {written} fichier(s) .ics mis à jour, {problems['errors']} erreur(s).")
-    return 1 if problems["errors"] else 0
+    summary = (f"{len(candidates)} emploi(s) du temps publié(s), {len(scans)} version(s) signée(s), "
+               f"{problems['errors']} erreur(s).")
+    write_report(root, summary)
+    print(summary)
+    return 0  # les erreurs sont consignées, elles n'empêchent pas la publication des autres fichiers
+
+
+def write_report(root: Path, summary: str) -> None:
+    """RAPPORT_CONVERSION.md : erreurs et avertissements de la dernière conversion."""
+    lines = ["# Rapport de conversion des emplois du temps", "",
+             "Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; "
+             "tous les autres le sont.", "", f"**{summary}**", ""]
+    for level, title in (("error", "Erreurs (fichier non publié)"), ("warning", "Avertissements")):
+        items = [(f, m) for l, f, m in problems["messages"] if l == level]
+        lines += [f"## {title}", ""]
+        lines += [f"- `{f}` : {m}" for f, m in items] or ["Aucun."]
+        lines.append("")
+    content = "\n".join(lines)
+    target = root / REPORT
+    if not target.exists() or target.read_text(encoding="utf-8") != content:
+        target.write_text(content, encoding="utf-8")
 
 
 if __name__ == "__main__":

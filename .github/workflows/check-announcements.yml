@@ -1,5 +1,5 @@
 # Vérifie les annonces (titre, départements, date d'expiration) à chaque dépôt dans
-# announcements/. En cas d'erreur, l'action échoue (croix rouge) et indique le fichier à corriger.
+# announcements/. Les problèmes sont signalés sur le fichier concerné, sans bloquer les autres annonces.
 name: Vérification des annonces
 
 on:

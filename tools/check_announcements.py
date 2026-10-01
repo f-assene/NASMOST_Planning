@@ -105,7 +105,9 @@ def main(root: Path) -> int:
                     check_description(f, departments, root)
 
     print(f"{checked} annonce(s) vérifiée(s), {errors} erreur(s).")
-    return 1 if errors else 0
+    # Les problèmes sont signalés (annotations) sans faire échouer l'action : les annonces
+    # correctes restent publiées et visibles dans l'application.
+    return 0
 
 
 if __name__ == "__main__":

@@ -27,15 +27,29 @@ puis jusqu'à 5 minutes de cache de GitHub).
 
 ## Emplois du temps
 
-- Déposer le **.docx** (de préférence) et/ou le **.pdf** dans le dossier du département.
+- Dans le dossier du département, déposer **l'original** (.pdf enregistré depuis Word, ou .docx)
+  et, après signature, **la version scannée** portant le même nom précédé de `scan_` :
+
+  ```
+  SGMP/EDT_SGMP_1_05_10_10_10_2026.pdf        original : sert à construire l'emploi du temps
+  SGMP/scan_EDT_SGMP_1_05_10_10_10_2026.pdf   version signée : téléchargeable dans l'application
+  ```
+
+- **Nom conseillé** : `EDT_<DÉPARTEMENT>_<NIVEAU>_<JJ>_<MM>_<JJ>_<MM>_<AAAA>.pdf`
+  (jour et mois du lundi, jour et mois du dernier jour, année du lundi), par exemple
+  `EDT_NMSI_3_05_10_10_10_2026.pdf`. Un PDF regroupant plusieurs classes : `EDT_ENSTMO_05_10_10_10_2026.pdf`.
+  Sans espaces ni accents, il est lu sans ambiguïté par l'application et par la conversion.
+- Le préfixe des versions signées peut s'écrire `scan_`, `Scan_` ou `SCAN_`.
 - La classe et la semaine sont lues dans **l'en-tête du document** :
   `NIVEAU : SGMP 1`, `NIVEAU: STMO I`, `TROISIEME ANNEE ... (GMM)`, `3e ANNÉE GNM` et
   `Semaine du 02 Mars au 08 Mars 2026`. À défaut, dans le nom du fichier
   (`..._15_21_Juin. 26...`, `EDT_3GNM_22_06_28_06_2026.pdf`, `EDT SGMP 1 - 02-08 MARS 2026.pdf`).
 - Un PDF qui regroupe **plusieurs classes (une par page)** est accepté : chaque classe est rangée
   dans le dossier de son département.
-- ⚠️ Les **PDF scannés** (photos, CamScanner) ne peuvent pas être lus : déposer le .docx, ou un
-  PDF enregistré directement depuis Word (*Fichier > Enregistrer sous > PDF*).
+- ⚠️ Un **PDF scanné** (photo, CamScanner) ne peut pas servir d'original : son texte n'est pas
+  lisible. Il doit être nommé `scan_...` à côté de l'original.
+- Une erreur sur un fichier n'arrête pas la publication : les autres sont publiés, et les
+  problèmes sont listés dans **`RAPPORT_CONVERSION.md`** (et dans le résumé de l'action).
 - Copier les fichiers depuis Windows vers WSL crée des fichiers `...:Zone.Identifier` : ils sont
   ignorés (fichier `.gitignore`), inutile de les supprimer à la main.
 - À chaque dépôt, l'action GitHub **« Publication »** crée le fichier `.ics` de la

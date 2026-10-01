@@ -1,6 +1,7 @@
 # Publication : à chaque dépôt, convertit les emplois du temps (.docx / .pdf) en .ics, puis met à
-# jour index.json (liste des fichiers lue par l'application). Un fichier illisible (PDF scanné...)
-# est signalé par une croix rouge, mais n'empêche pas la publication des autres.
+# jour index.json (liste des fichiers lue par l'application).
+# Une erreur sur un fichier n'arrête jamais la publication : les fichiers corrects sont publiés,
+# les problèmes sont notés dans RAPPORT_CONVERSION.md et dans le résumé de cette action.
 name: Publication (emplois du temps -> .ics, index)
 
 on:
@@ -39,13 +40,14 @@ jobs:
 
       - name: Générer les fichiers .ics
         run: |
-          python tools/timetable_to_ics.py . || touch "$RUNNER_TEMP/conversion-errors"
-          git add -A -- '*.ics' timetables.json
+          # Même en cas d'incident imprévu, la suite (index, publication) est exécutée.
+          python tools/timetable_to_ics.py . || echo "::error::La conversion s'est arrêtée de façon inattendue : voir le journal."
+          git add -A -- '*.ics' timetables.json RAPPORT_CONVERSION.md
           git diff --cached --quiet || git commit -m "Mise à jour automatique des fichiers .ics"
 
       - name: Mettre à jour index.json
         run: |
-          python tools/build_index.py .
+          python tools/build_index.py . || echo "::error::index.json n'a pas pu être mis à jour : voir le journal."
           git add index.json
           git diff --cached --quiet || git commit -m "Mise à jour automatique de index.json"
 
@@ -54,9 +56,7 @@ jobs:
           git pull --rebase --autostash origin main
           git push origin HEAD:main
 
-      - name: Signaler les fichiers non convertis
+      - name: Résumé
+        if: always()
         run: |
-          if [ -f "$RUNNER_TEMP/conversion-errors" ]; then
-            echo "::error::Certains emplois du temps n'ont pas pu être convertis : voir les messages ci-dessus (étape « Générer les fichiers .ics »). Les autres ont été publiés."
-            exit 1
-          fi
+          if [ -f RAPPORT_CONVERSION.md ]; then cat RAPPORT_CONVERSION.md >> "$GITHUB_STEP_SUMMARY"; fi

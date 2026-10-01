@@ -31,8 +31,9 @@ def main(root: Path) -> int:
     manifest = root / "timetables.json"
     if manifest.exists():
         for item in json.loads(manifest.read_text(encoding="utf-8")):
-            weeks.setdefault(item["source"], {"week": [item["start"], item["end"]], "departments": set()})
-            weeks[item["source"]]["departments"].add(item["department"])
+            info = weeks.setdefault(item["source"], {"week": [item["start"], item["end"]], "departments": set(),
+                                                     "signed": bool(item.get("scan"))})
+            info["departments"].add(item["department"])
 
     tree = []
     for entry in filter(None, listing.split("\0")):
@@ -44,6 +45,8 @@ def main(root: Path) -> int:
         if path in weeks:
             item["week"] = weeks[path]["week"]
             item["departments"] = sorted(weeks[path]["departments"])
+            if weeks[path]["signed"]:
+                item["signed"] = True  # version scannée après signature : proposée en priorité
         tree.append(item)
 
     index = {
