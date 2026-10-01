@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-30T23:45:24Z",
+ "generated": "2026-10-01T11:12:47Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -41,7 +41,14 @@
    "path": "NMSI/EDT_3GNM_22_06_28_06_2026.pdf",
    "type": "blob",
    "sha": "96190a124e550b3cdffeb48577f25744f1404ec2",
-   "size": 124250
+   "size": 124250,
+   "week": [
+    "2026-06-22",
+    "2026-06-28"
+   ],
+   "departments": [
+    "NMSI"
+   ]
   },
   {
    "path": "NMSI/NMSI_N3_08_06_13_06_2026.ics",
@@ -84,7 +91,14 @@
    "path": "NMSI/Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.pdf",
    "type": "blob",
    "sha": "3e30588d7bf526f0cf5b39cf855acdde713fcbe0",
-   "size": 124312
+   "size": 124312,
+   "week": [
+    "2026-06-08",
+    "2026-06-13"
+   ],
+   "departments": [
+    "NMSI"
+   ]
   },
   {
    "path": "NMSI/Projet d'Emp. du Temps 3GNM_15_21_Juin. 26-6.docx",
@@ -103,7 +117,14 @@
    "path": "NMSI/Projet d'Emp. du Temps 3GNM_15_21_Juin. 26-6.pdf",
    "type": "blob",
    "sha": "08e302e92d24d48053820c39467d012fb14e27c5",
-   "size": 125082
+   "size": 125082,
+   "week": [
+    "2026-06-15",
+    "2026-06-21"
+   ],
+   "departments": [
+    "NMSI"
+   ]
   },
   {
    "path": "NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.docx",
@@ -122,7 +143,14 @@
    "path": "NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.pdf",
    "type": "blob",
    "sha": "021844675102f8e2ff519d9f7aad8f1e7ccc74a7",
-   "size": 124313
+   "size": 124313,
+   "week": [
+    "2026-06-22",
+    "2026-06-28"
+   ],
+   "departments": [
+    "NMSI"
+   ]
   },
   {
    "path": "NMSI/Projet d'Emp. du Temps 3GNM_29_Juin_05_Jul. 26-6.docx",
@@ -141,13 +169,26 @@
    "path": "NMSI/Projet d'Emp. du Temps 3GNM_29_Juin_05_Jul. 26-6.pdf",
    "type": "blob",
    "sha": "2de0ab61e295633a27280113c66f578d430f85d7",
-   "size": 123676
+   "size": 123676,
+   "week": [
+    "2026-06-29",
+    "2026-07-05"
+   ],
+   "departments": [
+    "NMSI"
+   ]
+  },
+  {
+   "path": "RAPPORT_CONVERSION.md",
+   "type": "blob",
+   "sha": "4a43989557d310ba800325ea002637d0394ef84e",
+   "size": 2488
   },
   {
    "path": "README.md",
    "type": "blob",
-   "sha": "2aff9bdd4612b196e14f865333a5bc9be605e3e8",
-   "size": 4493
+   "sha": "07c1f1e7bbeea2bf043dffcfb59cd2dee0048c62",
+   "size": 5426
   },
   {
    "path": "SGMP/EDT SGMP 1 -02-08 MARS 2026.pdf",
@@ -235,7 +276,17 @@
    "path": "STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf",
    "type": "blob",
    "sha": "75840ad4aa293fb3fbf4c073a6d2ae19ad172f61",
-   "size": 1058627
+   "size": 1058627,
+   "week": [
+    "2026-02-02",
+    "2026-02-08"
+   ],
+   "departments": [
+    "GMM",
+    "GOHM",
+    "SGMP",
+    "STMO"
+   ]
   },
   {
    "path": "STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf",
@@ -312,20 +363,20 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "a543bb779aea7297114c65cd4d6596d953a9028c",
-   "size": 2995
+   "sha": "c8328aaea294101eae60e849b76abed85b50d504",
+   "size": 5030
   },
   {
    "path": "tools/build_index.py",
    "type": "blob",
-   "sha": "26e82609853d0ee943a9f0c584b5b717fe628d65",
-   "size": 2741
+   "sha": "d9ceb0efa8118e3e9f76480fdead30eea91899b5",
+   "size": 2956
   },
   {
    "path": "tools/check_announcements.py",
    "type": "blob",
-   "sha": "37ee6156bf32ec13f6f947ced8de4a7dc3c9afc3",
-   "size": 5156
+   "sha": "069c4524c66a37ea864aeea1a1b38021160ae84b",
+   "size": 5299
   },
   {
    "path": "tools/requirements.txt",
@@ -336,8 +387,8 @@
   {
    "path": "tools/timetable_to_ics.py",
    "type": "blob",
-   "sha": "2af348b7ac1d9c5f2cb7a3818635d66c31b52d14",
-   "size": 23447
+   "sha": "bb0a4a5ee461f9ddeca667d68e12a40715e9f378",
+   "size": 27672
   }
  ]
 }
