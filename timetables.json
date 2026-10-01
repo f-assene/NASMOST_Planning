@@ -1,128 +1,209 @@
 [
  {
-  "ics": "GMM/GMM_N3_02_02_08_02_2026.ics",
-  "source": "STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf",
-  "page": 1,
-  "department": "GMM",
-  "level": "N3",
-  "start": "2026-02-02",
-  "end": "2026-02-08"
- },
- {
-  "ics": "GOHM/GOHM_N3_02_02_08_02_2026.ics",
-  "source": "STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf",
-  "page": 4,
-  "department": "GOHM",
-  "level": "N3",
-  "start": "2026-02-02",
-  "end": "2026-02-08"
- },
- {
-  "ics": "NMSI/NMSI_N3_08_06_13_06_2026.ics",
-  "source": "NMSI/Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.docx",
-  "page": 1,
-  "department": "NMSI",
-  "level": "N3",
-  "start": "2026-06-08",
-  "end": "2026-06-13"
- },
- {
-  "ics": "NMSI/NMSI_N3_15_06_21_06_2026.ics",
-  "source": "NMSI/Projet d'Emp. du Temps 3GNM_15_21_Juin. 26-6.docx",
-  "page": 1,
-  "department": "NMSI",
-  "level": "N3",
-  "start": "2026-06-15",
-  "end": "2026-06-21"
- },
- {
-  "ics": "NMSI/NMSI_N3_22_06_28_06_2026.ics",
-  "source": "NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.docx",
-  "page": 1,
+  "source": "NMSI/EDT_3GNM_22_06_28_06_2026.pdf",
+  "scan": false,
   "department": "NMSI",
   "level": "N3",
   "start": "2026-06-22",
-  "end": "2026-06-28"
+  "end": "2026-06-28",
+  "ics": "NMSI/NMSI_N3_22_06_28_06_2026.ics"
  },
  {
-  "ics": "NMSI/NMSI_N3_29_06_05_07_2026.ics",
+  "source": "NMSI/Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.docx",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N3",
+  "start": "2026-06-08",
+  "end": "2026-06-13",
+  "ics": "NMSI/NMSI_N3_08_06_13_06_2026.ics"
+ },
+ {
+  "source": "NMSI/Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.pdf",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N3",
+  "start": "2026-06-08",
+  "end": "2026-06-13",
+  "ics": "NMSI/NMSI_N3_08_06_13_06_2026.ics"
+ },
+ {
+  "source": "NMSI/Projet d'Emp. du Temps 3GNM_15_21_Juin. 26-6.docx",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N3",
+  "start": "2026-06-15",
+  "end": "2026-06-21",
+  "ics": "NMSI/NMSI_N3_15_06_21_06_2026.ics"
+ },
+ {
+  "source": "NMSI/Projet d'Emp. du Temps 3GNM_15_21_Juin. 26-6.pdf",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N3",
+  "start": "2026-06-15",
+  "end": "2026-06-21",
+  "ics": "NMSI/NMSI_N3_15_06_21_06_2026.ics"
+ },
+ {
+  "source": "NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.docx",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N3",
+  "start": "2026-06-22",
+  "end": "2026-06-28",
+  "ics": "NMSI/NMSI_N3_22_06_28_06_2026.ics"
+ },
+ {
+  "source": "NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.pdf",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N3",
+  "start": "2026-06-22",
+  "end": "2026-06-28",
+  "ics": "NMSI/NMSI_N3_22_06_28_06_2026.ics"
+ },
+ {
   "source": "NMSI/Projet d'Emp. du Temps 3GNM_29_Juin_05_Jul. 26-6.docx",
-  "page": 1,
+  "scan": false,
   "department": "NMSI",
   "level": "N3",
   "start": "2026-06-29",
-  "end": "2026-07-05"
+  "end": "2026-07-05",
+  "ics": "NMSI/NMSI_N3_29_06_05_07_2026.ics"
  },
  {
-  "ics": "SGMP/SGMP_N1_02_02_08_02_2026.ics",
-  "source": "STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf",
-  "page": 3,
-  "department": "SGMP",
-  "level": "N1",
-  "start": "2026-02-02",
-  "end": "2026-02-08"
+  "source": "NMSI/Projet d'Emp. du Temps 3GNM_29_Juin_05_Jul. 26-6.pdf",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N3",
+  "start": "2026-06-29",
+  "end": "2026-07-05",
+  "ics": "NMSI/NMSI_N3_29_06_05_07_2026.ics"
  },
  {
-  "ics": "SGMP/SGMP_N1_02_03_08_03_2026.ics",
   "source": "SGMP/EDT SGMP 1 -02-08 MARS 2026.pdf",
-  "page": 1,
+  "scan": false,
   "department": "SGMP",
   "level": "N1",
   "start": "2026-03-02",
-  "end": "2026-03-08"
+  "end": "2026-03-08",
+  "ics": "SGMP/SGMP_N1_02_03_08_03_2026.ics"
  },
  {
-  "ics": "SGMP/SGMP_N1_09_03_15_03_2026.ics",
-  "source": "SGMP/EDT-SGMP 1-09-15 MARS 2026.pdf",
-  "page": 1,
-  "department": "SGMP",
-  "level": "N1",
-  "start": "2026-03-09",
-  "end": "2026-03-15"
- },
- {
-  "ics": "SGMP/SGMP_N2_02_03_08_03_2026.ics",
   "source": "SGMP/EDT SGMP 2 - 02-08 MARS 2026.pdf",
-  "page": 1,
+  "scan": false,
   "department": "SGMP",
   "level": "N2",
   "start": "2026-03-02",
-  "end": "2026-03-08"
+  "end": "2026-03-08",
+  "ics": "SGMP/SGMP_N2_02_03_08_03_2026.ics"
  },
  {
-  "ics": "SGMP/SGMP_N2_09_03_15_03_2026.ics",
+  "source": "SGMP/EDT-SGMP 1-09-15 MARS 2026.pdf",
+  "scan": false,
+  "department": "SGMP",
+  "level": "N1",
+  "start": "2026-03-09",
+  "end": "2026-03-15",
+  "ics": "SGMP/SGMP_N1_09_03_15_03_2026.ics"
+ },
+ {
   "source": "SGMP/EDT-SGMP 2-09-15 MARS 2026.pdf",
-  "page": 1,
+  "scan": false,
   "department": "SGMP",
   "level": "N2",
   "start": "2026-03-09",
-  "end": "2026-03-15"
+  "end": "2026-03-15",
+  "ics": "SGMP/SGMP_N2_09_03_15_03_2026.ics"
  },
  {
-  "ics": "STMO/STMO_N1_02_02_08_02_2026.ics",
-  "source": "STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf",
-  "page": 2,
+  "source": "STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf",
+  "scan": false,
+  "department": "GMM",
+  "level": "N3",
+  "start": "2026-02-02",
+  "end": "2026-02-08",
+  "ics": "GMM/GMM_N3_02_02_08_02_2026.ics"
+ },
+ {
+  "source": "STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf",
+  "scan": false,
   "department": "STMO",
   "level": "N1",
   "start": "2026-02-02",
-  "end": "2026-02-08"
+  "end": "2026-02-08",
+  "ics": "STMO/STMO_N1_02_02_08_02_2026.ics"
  },
  {
-  "ics": "STMO/STMO_N1_02_03_07_03_2026.ics",
+  "source": "STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf",
+  "scan": false,
+  "department": "SGMP",
+  "level": "N1",
+  "start": "2026-02-02",
+  "end": "2026-02-08",
+  "ics": "SGMP/SGMP_N1_02_02_08_02_2026.ics"
+ },
+ {
+  "source": "STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf",
+  "scan": false,
+  "department": "GOHM",
+  "level": "N3",
+  "start": "2026-02-02",
+  "end": "2026-02-08",
+  "ics": "GOHM/GOHM_N3_02_02_08_02_2026.ics"
+ },
+ {
+  "source": "STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf",
+  "scan": false,
+  "department": "GMM",
+  "level": "N3",
+  "start": "2026-02-02",
+  "end": "2026-02-08",
+  "ics": "GMM/GMM_N3_02_02_08_02_2026.ics"
+ },
+ {
+  "source": "STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf",
+  "scan": false,
+  "department": "STMO",
+  "level": "N1",
+  "start": "2026-02-02",
+  "end": "2026-02-08",
+  "ics": "STMO/STMO_N1_02_02_08_02_2026.ics"
+ },
+ {
+  "source": "STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf",
+  "scan": false,
+  "department": "SGMP",
+  "level": "N1",
+  "start": "2026-02-02",
+  "end": "2026-02-08",
+  "ics": "SGMP/SGMP_N1_02_02_08_02_2026.ics"
+ },
+ {
+  "source": "STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf",
+  "scan": false,
+  "department": "GOHM",
+  "level": "N3",
+  "start": "2026-02-02",
+  "end": "2026-02-08",
+  "ics": "GOHM/GOHM_N3_02_02_08_02_2026.ics"
+ },
+ {
   "source": "STMO/EDT _STMO 1 du 02-07  Mars   2026.pdf",
-  "page": 1,
+  "scan": false,
   "department": "STMO",
   "level": "N1",
   "start": "2026-03-02",
-  "end": "2026-03-07"
+  "end": "2026-03-07",
+  "ics": "STMO/STMO_N1_02_03_07_03_2026.ics"
  },
  {
-  "ics": "STMO/STMO_N2_02_03_07_03_2026.ics",
   "source": "STMO/EDT _STMO 2 du 02-07  Fevrier  2026.pdf",
-  "page": 1,
+  "scan": false,
   "department": "STMO",
   "level": "N2",
   "start": "2026-03-02",
-  "end": "2026-03-07"
+  "end": "2026-03-07",
+  "ics": "STMO/STMO_N2_02_03_07_03_2026.ics"
  }
 ]
