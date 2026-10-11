@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T22:34:30Z",
+ "generated": "2026-10-11T23:00:08Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -453,8 +453,8 @@
   {
    "path": "docs/GUIDE_UTILISATEUR.pdf",
    "type": "blob",
-   "sha": "f8c461284204cbff2ae132a1debc3c2bc448a8c5",
-   "size": 942726
+   "sha": "84e139bff0c519a103f5e11d909a8e5ab1e49fa8",
+   "size": 1545445
   },
   {
    "path": "docs/images/menu.png",
@@ -471,8 +471,8 @@
   {
    "path": "docs/images/ouverture.png",
    "type": "blob",
-   "sha": "936a6cced11c4d2c917fbf0039641488d148a869",
-   "size": 200601
+   "sha": "1ee852fa120b8b93abf68564c1c3e561150b0a84",
+   "size": 581860
   },
   {
    "path": "docs/images/parcours.png",
