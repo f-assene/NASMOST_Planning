@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T21:53:38Z",
+ "generated": "2026-10-11T22:34:30Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -235,8 +235,8 @@
   {
    "path": "README.md",
    "type": "blob",
-   "sha": "6d3b9ec1663d575448ef307045c44477f206bb3b",
-   "size": 8553
+   "sha": "45e524a66a55bdd6165575d7fb77d1af4765c7be",
+   "size": 8722
   },
   {
    "path": "SGMP/EDT SGMP 1 -02-08 MARS 2026.pdf",
@@ -443,6 +443,48 @@
    "type": "blob",
    "sha": "3f735b3a7e187a466e1aabc96cda4f9b5a7ce7de",
    "size": 810
+  },
+  {
+   "path": "docs/GUIDE_UTILISATEUR.md",
+   "type": "blob",
+   "sha": "76bd7b27455f6e4c7b9201914ca02b89f276da93",
+   "size": 13197
+  },
+  {
+   "path": "docs/GUIDE_UTILISATEUR.pdf",
+   "type": "blob",
+   "sha": "f8c461284204cbff2ae132a1debc3c2bc448a8c5",
+   "size": 942726
+  },
+  {
+   "path": "docs/images/menu.png",
+   "type": "blob",
+   "sha": "897573e89eef9230b2a28f7177939f2f4987a637",
+   "size": 156669
+  },
+  {
+   "path": "docs/images/opportunites.png",
+   "type": "blob",
+   "sha": "bb81455a469124f5cb457cc314ea3605caefad5d",
+   "size": 53830
+  },
+  {
+   "path": "docs/images/ouverture.png",
+   "type": "blob",
+   "sha": "936a6cced11c4d2c917fbf0039641488d148a869",
+   "size": 200601
+  },
+  {
+   "path": "docs/images/parcours.png",
+   "type": "blob",
+   "sha": "0a4842f40c0c899c451a0b27d9ea8cd13c53fafb",
+   "size": 122957
+  },
+  {
+   "path": "docs/images/planning.png",
+   "type": "blob",
+   "sha": "fd631ab97b3e980bde7e34e5e0327d4425701712",
+   "size": 163899
   },
   {
    "path": "logos/ANCR.jpeg",
@@ -699,8 +741,8 @@
   {
    "path": "tools/check_announcements.py",
    "type": "blob",
-   "sha": "4ed528cbdc5079a2cccd57c27af43566b262fb58",
-   "size": 6380
+   "sha": "18a998b4708135f3c12b0bb0333f01e50547fd4c",
+   "size": 6388
   },
   {
    "path": "tools/requirements.txt",
@@ -711,8 +753,8 @@
   {
    "path": "tools/timetable_to_ics.py",
    "type": "blob",
-   "sha": "942f17c4109ae26bc219a6baeac1a5c70608aa54",
-   "size": 30016
+   "sha": "32b79a415e5c8f4858c7f75c4f39a6d03a9b323d",
+   "size": 30024
   }
  ]
 }
