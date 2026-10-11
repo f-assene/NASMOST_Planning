@@ -69,6 +69,15 @@ TEACHER = re.compile(r"^(/|Dr\b|Dr\.|Pr\b|Pr\.|Prof|Col\b|Col\.|Cdt|Cpt|Capt|Lt|
 ROOM = re.compile(r"^\(?\s*(?:salle\s*:\s*)?((?:salle|hall|amphi|labo|laboratoire|atelier|campus|site|bâtiment|batiment)\b.*?)\)?$", re.I)
 FREE = ("ETUDE", "FERIE", "CONGE", "VACANCES", "BIBLIOTHEQUE")
 
+# Ligne sous le tableau : "Nombre d'EC prévus: 10+stage  achevés: 06  programmés: 02  restants: 02+stage"
+# (les PDF perdent parfois les espaces : "Nombred'ECprévus:10+stageNombred'ECachevés:06").
+EC_FIELDS = (
+    ("prevus", r"prevus?|tota(?:l|ux)"),
+    ("acheves", r"acheves?|effectues?|realises?|termines?"),
+    ("programmes", r"programmes?"),
+    ("restants", r"restants?"),
+)
+
 problems = {"errors": 0, "messages": []}
 
 
@@ -353,6 +362,21 @@ def parse_cell(text: str):
     }
 
 
+def ec_progress(text: str):
+    """Avancement des EC lu sous le tableau : "prevus=10;acheves=6;programmes=2;restants=2;plus=stage", ou None."""
+    flat = plain(text)
+    values, extra = {}, ""
+    for key, words in EC_FIELDS:
+        found = re.search(r"\bec\s*(?:" + words + r")\s*:?\s*(\d+)(?:\s*\+\s*([a-z]+?)(?=[^a-z]|nombre|$))?", flat)
+        if found:
+            values[key] = int(found.group(1))
+            extra = extra or (found.group(2) or "")
+    if "prevus" not in values or "acheves" not in values or values["prevus"] <= 0:
+        return None
+    parts = [f"{key}={values[key]}" for key, _ in EC_FIELDS if key in values]
+    return ";".join(parts + ([f"plus={extra}"] if extra else []))
+
+
 def escape(value: str) -> str:
     return value.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
 
@@ -380,6 +404,9 @@ def build_ics(dept: str, level: str, source: str, slots, text: str, monday: dt.d
         GENERATED_MARK,
         f"X-NASMOST-SOURCE:{source}",
     ]
+    progress = ec_progress(text)
+    if progress:
+        lines.append(f"X-NASMOST-EC:classe={dept}-{level};{progress}")
     for (h1, m1), (h2, m2), by_day in slots:
         for day, cell in sorted(by_day.items()):
             content = plain(cell).upper().strip()
