@@ -21,7 +21,8 @@ supports/
   NMSI/NSI-3231/Chapitre 1.pdf   supports de cours, ouverts depuis le cours dans l'emploi du temps
 accueil/                   pages d'accueil des nouveaux étudiants
 assistance/                questions fréquentes, contacts, renseignements
-opportunites/              stages, emplois, bourses, formations, appels à candidatures
+opportunites/              stages, emplois, bourses, formations : un sous-dossier par libellé
+  Local/  LinkedIn/  Autres_sources/
 campus/                    associations, événements, conférences
 tools/                     conversion automatique des emplois du temps en .ics
 index.json                 liste des fichiers lue par l'application (générée, ne pas modifier)
@@ -124,8 +125,17 @@ lignes `Départements:` et `Expire:`), affichés dans le menu ⋮ de l'applicati
 |---|---|---|
 | `accueil/` | Accueil des nouveaux étudiants | par nom de fichier (`01_`, `02_`, ...) |
 | `assistance/` | Assistance et renseignements | par nom de fichier (`01_`, `02_`, ...) |
-| `opportunites/` | Opportunités | par date `AAAA-MM-JJ_`, les plus récentes en haut |
+| `opportunites/<libellé>/` | Opportunités → libellé | par date `AAAA-MM-JJ_`, les plus récentes en haut |
 | `campus/` | Campus et communauté | par date `AAAA-MM-JJ_`, les plus récents en haut |
 
 Seules les annonces déclenchent une notification. Chaque dossier contient un `README.md`
 d'explication, qui n'est pas affiché dans l'application.
+
+### Opportunités : libellés, logos, archives
+
+Chaque **sous-dossier** de `opportunites/` est un libellé affiché avec son logo (`logo.png` dans
+le sous-dossier, sinon son initiale) ; l'étudiant appuie sur un libellé pour voir ses offres.
+`flux.txt` (adresses de flux RSS, une par ligne) ajoute automatiquement les dernières offres
+d'un site. Passé la date `Expire:`, une offre va dans le libellé **Archives**. LinkedIn n'ayant
+pas de flux public, ses offres sont recopiées à la main avec le lien de la publication.
+Détails : `opportunites/README.md`.

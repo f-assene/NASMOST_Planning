@@ -27,6 +27,10 @@ ATTACHMENTS = {".png", ".jpg", ".jpeg", ".webp", ".pdf", ".docx", ".xlsx"}
 # Départements connus de l'application (Departments.kt) ; les dossiers du dépôt s'y ajoutent.
 APP_DEPARTMENTS = {"STMO", "SGMP", "GCO", "PEM", "GEM", "GMM", "GMP", "NMSI", "GOHM", "ANCR", "SSIP"}
 ALL = {"TOUS", "TOUT", "ALL"}
+# Espaces rangés par libellés : un sous-dossier par libellé (opportunites/LinkedIn/...), avec ses
+# fichiers de réglage logo.<image> et flux.txt.
+LABELLED_DIRS = ("opportunites",)
+LABEL_SETTINGS = {"flux.txt", "feed.txt", "feeds.txt"}
 NOT_DEPARTMENTS = {"LOGOS", "ANNOUNCEMENTS", "ANNONCES", "TOOLS", ".GITHUB", ".GIT",
                    "SUPPORTS", "ACCUEIL", "ASSISTANCE", "OPPORTUNITES", "CAMPUS"}
 
@@ -85,13 +89,22 @@ def main(root: Path) -> int:
         if not folder.is_dir():
             continue
         groups = defaultdict(list)
-        for path in sorted(folder.iterdir()):
+        entries = sorted(folder.iterdir())
+        if name in LABELLED_DIRS:
+            entries += [p for sub in entries if sub.is_dir() for p in sorted(sub.iterdir())]
+        for path in entries:
+            labelled = name in LABELLED_DIRS and path.parent != folder
             if path.is_dir():
-                report("warning", path, f"sous-dossier ignoré : déposer les fichiers directement dans {name}/", root)
+                if name in LABELLED_DIRS and not labelled:
+                    continue  # un libellé : son contenu est vérifié ci-dessus
+                report("warning", path, f"sous-dossier ignoré : déposer les fichiers directement dans "
+                                        f"{path.parent.relative_to(root).as_posix()}/", root)
                 continue
+            if labelled and (path.name.lower() in LABEL_SETTINGS or path.stem.lower() == "logo"):
+                continue  # réglages du libellé
             ext = path.suffix.lower()
             if ext == DESCRIPTION or ext in ATTACHMENTS:
-                groups[path.with_suffix("").name].append(path)
+                groups[path.with_suffix("").relative_to(folder).as_posix()].append(path)
             elif path.name.lower() not in ("readme.md", ".gitkeep"):
                 report("warning", path, f"format {ext or 'sans extension'} non pris en charge : fichier ignoré par "
                                         "l'application (formats : image, .pdf, .docx, .xlsx, description .txt)", root)
