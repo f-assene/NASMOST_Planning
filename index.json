@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T11:05:48Z",
+ "generated": "2026-10-11T17:36:34Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -187,8 +187,8 @@
   {
    "path": "README.md",
    "type": "blob",
-   "sha": "962f1d975a747b67319e3f38e7b9af8d478b8fed",
-   "size": 7585
+   "sha": "f3e8433d4138ea03ddb17d229ec38a5ac7ebf68c",
+   "size": 8216
   },
   {
    "path": "SGMP/EDT SGMP 1 -02-08 MARS 2026.pdf",
@@ -511,10 +511,28 @@
    "size": 1578
   },
   {
+   "path": "opportunites/Autres_sources/README.md",
+   "type": "blob",
+   "sha": "c7562d16afac939ef9dac003660679a9ea1ba5a9",
+   "size": 986
+  },
+  {
+   "path": "opportunites/LinkedIn/README.md",
+   "type": "blob",
+   "sha": "0fb1ee21c38b814915e7f6e76be44f58102b3576",
+   "size": 1000
+  },
+  {
+   "path": "opportunites/Local/README.md",
+   "type": "blob",
+   "sha": "fd5f6ce870ce3b89f383e3ac0494b2f2a4694f5c",
+   "size": 966
+  },
+  {
    "path": "opportunites/README.md",
    "type": "blob",
-   "sha": "98e0d14647ab262ef6fcb72f904a524395ed1878",
-   "size": 856
+   "sha": "55ff7492117fa0ddce8f5d9164c3ed1ef4175317",
+   "size": 1432
   },
   {
    "path": "supports/README.md",
@@ -537,8 +555,8 @@
   {
    "path": "tools/check_announcements.py",
    "type": "blob",
-   "sha": "fa46c4b2825b8c2042ffcd1646f64ad671e9c87a",
-   "size": 5522
+   "sha": "4ed528cbdc5079a2cccd57c27af43566b262fb58",
+   "size": 6380
   },
   {
    "path": "tools/requirements.txt",
