@@ -20,13 +20,15 @@ import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
-ANNOUNCEMENT_DIRS = ("announcements", "annonces")
+# Les espaces accueil/, assistance/, opportunites/ et campus/ suivent les règles des annonces.
+ANNOUNCEMENT_DIRS = ("announcements", "annonces", "accueil", "assistance", "opportunites", "campus")
 DESCRIPTION = ".txt"
 ATTACHMENTS = {".png", ".jpg", ".jpeg", ".webp", ".pdf", ".docx", ".xlsx"}
 # Départements connus de l'application (Departments.kt) ; les dossiers du dépôt s'y ajoutent.
 APP_DEPARTMENTS = {"STMO", "SGMP", "GCO", "PEM", "GEM", "GMM", "GMP", "NMSI", "GOHM", "ANCR", "SSIP"}
 ALL = {"TOUS", "TOUT", "ALL"}
-NOT_DEPARTMENTS = {"LOGOS", "ANNOUNCEMENTS", "ANNONCES", "TOOLS", ".GITHUB", ".GIT"}
+NOT_DEPARTMENTS = {"LOGOS", "ANNOUNCEMENTS", "ANNONCES", "TOOLS", ".GITHUB", ".GIT",
+                   "SUPPORTS", "ACCUEIL", "ASSISTANCE", "OPPORTUNITES", "CAMPUS"}
 
 errors = 0
 
@@ -85,7 +87,7 @@ def main(root: Path) -> int:
         groups = defaultdict(list)
         for path in sorted(folder.iterdir()):
             if path.is_dir():
-                report("warning", path, "sous-dossier ignoré : déposer les fichiers directement dans announcements/", root)
+                report("warning", path, f"sous-dossier ignoré : déposer les fichiers directement dans {name}/", root)
                 continue
             ext = path.suffix.lower()
             if ext == DESCRIPTION or ext in ATTACHMENTS:

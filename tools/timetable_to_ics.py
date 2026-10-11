@@ -33,7 +33,8 @@ import sys
 import unicodedata
 from pathlib import Path
 
-IGNORED_DIRS = {"logos", "announcements", "annonces", "tools", ".github", ".git"}
+IGNORED_DIRS = {"logos", "announcements", "annonces", "tools", ".github", ".git",
+                "supports", "accueil", "assistance", "opportunites", "campus"}
 GENERATED_MARK = "X-NASMOST-GENERATED:timetable_to_ics"
 MANIFEST = "timetables.json"
 REPORT = "RAPPORT_CONVERSION.md"
@@ -44,6 +45,10 @@ DEFAULT_LOCATION = "Campus Ebouyè"
 # Départements de l'application (Departments.kt) et variantes rencontrées dans les documents.
 DEPARTMENTS = {"STMO", "SGMP", "GCO", "PEM", "GEM", "GMM", "GMP", "NMSI", "GOHM", "ANCR", "SSIP"}
 ALIASES = {"SGPM": "SGMP", "GNM": "NMSI", "STM": "STMO"}
+# Filières à l'intérieur d'un département : la classe s'écrit alors "GSE-N3" (CATEGORIES:GMP-GSE-N3,
+# fichier GMP/GMP_GSE-N3_<dates>.ics).
+TRACKS = {"GSE": "GMP", "GOP": "GMP", "GLP": "GMP"}
+TRACK_WORD = re.compile(r"(?<![A-Z])(" + "|".join(TRACKS) + r")(?![A-Z])")
 
 DAYS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
 MONTHS = {
@@ -160,7 +165,19 @@ def week_from_header(text: str):
 def department_code(word: str):
     word = word.upper()
     word = ALIASES.get(word, word)
+    word = TRACKS.get(word, word)  # une filière désigne aussi son département
     return word if word in DEPARTMENTS else None
+
+
+def track_code(text: str, name: str):
+    """Filière (GSE, GOP, GLP) citée dans l'en-tête du document, sinon dans le nom du fichier."""
+    header = "\n".join(l for l in text.splitlines()
+                       if re.search(r"niveau|annee|filiere|option|specialite|parcours", plain(l)))
+    for source in (header, name):
+        found = TRACK_WORD.search(plain(source).upper())
+        if found:
+            return found.group(1)
+    return None
 
 
 def level_number(token: str):
@@ -498,6 +515,11 @@ def main(root: Path) -> int:
                 folder_dept = department_code(folder.name)
                 dept = dept or name_dept or folder_dept
                 level = level or name_level
+                track = track_code(text, path.name)
+                if track and dept in (None, TRACKS[track]):
+                    dept = TRACKS[track]
+                else:
+                    track = None
                 week = week_from_header(text)
                 name_week = week_from_name(path.name)
                 if week and name_week and week != name_week and not bundle:
@@ -524,7 +546,7 @@ def main(root: Path) -> int:
                     report("warning", path, root, f"{where}emploi du temps de {dept} N{level} : "
                                                   f"le fichier .ics est rangé dans {dept}/")
                 priority = 3 if ext == ".docx" else (1 if bundle else 2)
-                key = (dept, f"N{level}", week[0], week[1])
+                key = (dept, f"{track}-N{level}" if track else f"N{level}", week[0], week[1])
                 documents.setdefault(path.relative_to(root).as_posix(), []).append(key)
                 source = {"path": path.relative_to(root).as_posix(), "page": number, "priority": priority,
                           "text": text, "slots": slots}

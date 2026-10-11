@@ -7,11 +7,19 @@ on:
     branches: [main]
     paths:
       - "announcements/**"
+      - "accueil/**"
+      - "assistance/**"
+      - "opportunites/**"
+      - "campus/**"
       - "tools/check_announcements.py"
       - ".github/workflows/check-announcements.yml"
   pull_request:
     paths:
       - "announcements/**"
+      - "accueil/**"
+      - "assistance/**"
+      - "opportunites/**"
+      - "campus/**"
   workflow_dispatch:
 
 permissions:

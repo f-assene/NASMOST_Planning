@@ -17,6 +17,12 @@ logos/
 announcements/
   2026-09-30_Rentree.docx  annonce texte (Word)
   2026-10-02_Affiche.jpg   annonce image (.png, .jpg, .webp)
+supports/
+  NMSI/NSI-3231/Chapitre 1.pdf   supports de cours, ouverts depuis le cours dans l'emploi du temps
+accueil/                   pages d'accueil des nouveaux étudiants
+assistance/                questions fréquentes, contacts, renseignements
+opportunites/              stages, emplois, bourses, formations, appels à candidatures
+campus/                    associations, événements, conférences
 tools/                     conversion automatique des emplois du temps en .ics
 index.json                 liste des fichiers lue par l'application (générée, ne pas modifier)
 ```
@@ -44,6 +50,12 @@ puis jusqu'à 5 minutes de cache de GitHub).
   `NIVEAU : SGMP 1`, `NIVEAU: STMO I`, `TROISIEME ANNEE ... (GMM)`, `3e ANNÉE GNM` et
   `Semaine du 02 Mars au 08 Mars 2026`. À défaut, dans le nom du fichier
   (`..._15_21_Juin. 26...`, `EDT_3GNM_22_06_28_06_2026.pdf`, `EDT SGMP 1 - 02-08 MARS 2026.pdf`).
+- **Avancement des EC** : la ligne placée sous le tableau, `Nombre d'EC prévus: 10+stage
+  Nombre d'EC achevés: 06  Nombre d'EC programmés: 02  Nombre d'EC restants: 02+stage`, devient
+  une barre de progression dans l'application. Sans cette ligne, la barre n'est pas affichée.
+- **Filières de GMP** (GSE, GOP, GLP) : écrire la filière dans l'en-tête (`NIVEAU : GSE 3`) ou
+  dans le nom (`EDT_GSE_3_05_10_10_10_2026.pdf`) et déposer le fichier dans `GMP/`. Un emploi du
+  temps `GMP 3` sans filière est montré aux trois filières.
 - Un PDF qui regroupe **plusieurs classes (une par page)** est accepté : chaque classe est rangée
   dans le dossier de son département.
 - ⚠️ Un **PDF scanné** (photo, CamScanner) ne peut pas servir d'original : son texte n'est pas
@@ -95,3 +107,25 @@ Expire: 2026-09-21
   la description ensuite ne les notifie pas à nouveau. Supprimer les fichiers retire l'annonce.
 - L'action **« Vérification des annonces »** contrôle chaque dépôt : une croix rouge sur GitHub
   indique le fichier à corriger (titre manquant, date illisible, département inconnu).
+
+## Supports de cours
+
+`supports/<DÉPARTEMENT>/<cours>/<fichier>`, où `<cours>` est le code de l'EC (`NSI-3231`) ou
+l'intitulé du cours tel qu'il figure dans l'emploi du temps (casse, accents et espaces ignorés).
+Le cours affiche alors « n supports de cours » dans l'application ; un appui en donne la liste.
+⚠️ Le dépôt est public : ne rien y déposer qui ne doive pas être lisible par tous.
+
+## Accueil, assistance, opportunités, campus
+
+Quatre dossiers qui suivent **exactement les règles des annonces** (fichier + `.txt` de même nom,
+lignes `Départements:` et `Expire:`), affichés dans le menu ⋮ de l'application :
+
+| Dossier | Dans l'application | Classement |
+|---|---|---|
+| `accueil/` | Accueil des nouveaux étudiants | par nom de fichier (`01_`, `02_`, ...) |
+| `assistance/` | Assistance et renseignements | par nom de fichier (`01_`, `02_`, ...) |
+| `opportunites/` | Opportunités | par date `AAAA-MM-JJ_`, les plus récentes en haut |
+| `campus/` | Campus et communauté | par date `AAAA-MM-JJ_`, les plus récents en haut |
+
+Seules les annonces déclenchent une notification. Chaque dossier contient un `README.md`
+d'explication, qui n'est pas affiché dans l'application.
