@@ -32,7 +32,7 @@ ALL = {"TOUS", "TOUT", "ALL"}
 LABELLED_DIRS = ("opportunites",)
 LABEL_SETTINGS = {"flux.txt", "feed.txt", "feeds.txt"}
 NOT_DEPARTMENTS = {"LOGOS", "ANNOUNCEMENTS", "ANNONCES", "TOOLS", ".GITHUB", ".GIT",
-                   "SUPPORTS", "ACCUEIL", "ASSISTANCE", "OPPORTUNITES", "CAMPUS"}
+                   "SUPPORTS", "ACCUEIL", "ASSISTANCE", "OPPORTUNITES", "CAMPUS", "DOCS"}
 
 errors = 0
 

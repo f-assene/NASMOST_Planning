@@ -34,7 +34,7 @@ import unicodedata
 from pathlib import Path
 
 IGNORED_DIRS = {"logos", "announcements", "annonces", "tools", ".github", ".git",
-                "supports", "accueil", "assistance", "opportunites", "campus"}
+                "supports", "accueil", "assistance", "opportunites", "campus", "docs"}
 GENERATED_MARK = "X-NASMOST-GENERATED:timetable_to_ics"
 MANIFEST = "timetables.json"
 REPORT = "RAPPORT_CONVERSION.md"

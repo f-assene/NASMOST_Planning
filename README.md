@@ -5,6 +5,9 @@ NASMOST, University of Ebolowa online repo for the Planning Application.
 L'application Android **NASMOST Planning** lit ce dépôt public : il suffit d'y déposer des
 fichiers pour mettre à jour les emplois du temps, les logos et les annonces des étudiants.
 
+📘 **Guide d'utilisation** (application et dépôt de fichiers) : [docs/GUIDE_UTILISATEUR.md](docs/GUIDE_UTILISATEUR.md)
+· [version PDF](docs/GUIDE_UTILISATEUR.pdf)
+
 ## Organisation
 
 ```
