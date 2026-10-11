@@ -1,7 +1,9 @@
 # LinkedIn
 
-Offres repérées sur LinkedIn. LinkedIn ne fournit pas de flux public : chaque offre est recopiée
-ici (titre, quelques lignes, **lien de la publication LinkedIn**), l'étudiant ouvre ensuite le lien.
+Offres repérées sur LinkedIn, **récupérées automatiquement** : LinkedIn ne fournit pas de flux
+public, l'application lit donc dans `flux.txt` des recherches Google Actualités limitées aux
+publications LinkedIn publiques (`site:linkedin.com`) sur les filières de l'ENSTMO. Une offre
+précise peut aussi être ajoutée à la main (titre, quelques lignes, lien de la publication).
 
 Une offre = un ou deux fichiers de même nom dans ce dossier :
 

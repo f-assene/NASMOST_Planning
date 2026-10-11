@@ -135,7 +135,8 @@ d'explication, qui n'est pas affiché dans l'application.
 
 Chaque **sous-dossier** de `opportunites/` est un libellé affiché avec son logo (`logo.png` dans
 le sous-dossier, sinon son initiale) ; l'étudiant appuie sur un libellé pour voir ses offres.
-`flux.txt` (adresses de flux RSS, une par ligne) ajoute automatiquement les dernières offres
-d'un site. Passé la date `Expire:`, une offre va dans le libellé **Archives**. LinkedIn n'ayant
-pas de flux public, ses offres sont recopiées à la main avec le lien de la publication.
+`flux.txt` (adresses de flux RSS et mots-clés de tri) récupère automatiquement les dernières
+offres touchant aux filières de l'ENSTMO : publications LinkedIn publiques et recherches Google
+Actualités en français et en anglais. Passé la date `Expire:`, une offre déposée à la main va
+dans le libellé **Archives**.
 Détails : `opportunites/README.md`.

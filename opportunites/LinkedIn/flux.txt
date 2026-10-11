@@ -1,0 +1,12 @@
+# Publications LinkedIn publiques repérées par Google Actualités (LinkedIn n'a pas de flux public).
+# Une adresse de flux RSS par ligne. Une offre n'est gardée que si son titre contient au moins
+# un mot de « Mots-clés » ET un mot de « Offres », et aucun mot de « Exclure »
+# (casse et accents ignorés). Supprimer une de ces lignes retire le filtre correspondant.
+
+Mots-clés: maritime, marine, marin, naval, navire, shipping, seafarer, port, ocean, océan, hydrograph, météo, meteorolog, pêche, fisher, aquacult, maricult, logisti, supply chain, offshore, coastal, côtier, littoral, énergie, energy, navigation, blue economy, économie bleue, sûreté, security, safety
+Offres: stage, bourse, formation, recrut, candidature, certification, concours, emploi, internship, scholarship, fellowship, training, application, vacancy, job, programme, program, opportunit, hiring, apply
+Exclure: Charente, Seine-Maritime, Alpes-Maritimes, brocante, football, concert, en Bourse, Bourse de Paris, concours de pêche, concours Lépine, Wall Street, stock, military, militaire
+
+https://news.google.com/rss/search?q=site%3Alinkedin.com+%28maritime+OR+port+OR+shipping+OR+logistics+OR+%22supply+chain%22%29+%28Cameroon+OR+Africa+OR+African+OR+%22Gulf+of+Guinea%22%29+%28internship+OR+scholarship+OR+training+OR+stage+OR+bourse+OR+hiring%29+when%3A30d&hl=en&gl=NG&ceid=NG:en
+https://news.google.com/rss/search?q=site%3Alinkedin.com+%28ocean+OR+oceanography+OR+hydrography+OR+coastal+OR+fisheries+OR+aquaculture%29+%28Cameroon+OR+Africa+OR+African+OR+%22Gulf+of+Guinea%22%29+%28internship+OR+scholarship+OR+training+OR+stage+OR+bourse+OR+hiring%29+when%3A30d&hl=en&gl=NG&ceid=NG:en
+https://news.google.com/rss/search?q=site%3Alinkedin.com+%28%22naval+architecture%22+OR+shipbuilding+OR+%22marine+engineering%22+OR+offshore+OR+seafarer+OR+%22maritime+security%22%29+%28Cameroon+OR+Africa+OR+African+OR+%22Gulf+of+Guinea%22%29+%28internship+OR+scholarship+OR+training+OR+stage+OR+bourse+OR+hiring%29+when%3A30d&hl=en&gl=NG&ceid=NG:en

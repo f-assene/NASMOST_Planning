@@ -2,6 +2,8 @@
 
 Bourses, appels à candidatures, formations en ligne et offres d'autres sites (organismes,
 ministères, entreprises, universités). Le nom du dossier s'affiche « Autres sources ».
+Elles sont **récupérées automatiquement** à partir des flux listés dans `flux.txt` (recherches
+Google Actualités en français et en anglais sur les filières de l'ENSTMO, sites d'opportunités).
 
 Une offre = un ou deux fichiers de même nom dans ce dossier :
 
