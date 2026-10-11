@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T10:24:34Z",
+ "generated": "2026-10-11T10:41:44Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -53,26 +53,26 @@
   {
    "path": "NMSI/NMSI_N3_08_06_13_06_2026.ics",
    "type": "blob",
-   "sha": "9ce644e2fe37435111e1f3e1c53c3fcda1b62e80",
-   "size": 6326
+   "sha": "13b9cfe502d47ad13f536c52223d67b3f7d699ff",
+   "size": 6413
   },
   {
    "path": "NMSI/NMSI_N3_15_06_21_06_2026.ics",
    "type": "blob",
-   "sha": "17a04e894be70996ce46a22b411713c81e411e89",
-   "size": 7469
+   "sha": "1db890d2fe6665feaf538eda328c12e64e1d3f11",
+   "size": 7556
   },
   {
    "path": "NMSI/NMSI_N3_22_06_28_06_2026.ics",
    "type": "blob",
-   "sha": "3ec376d63cc82827e4475dab2ce243a852070cb0",
-   "size": 6069
+   "sha": "fe995680b1ae1d5297c9172f2b0b5e36b0759747",
+   "size": 6156
   },
   {
    "path": "NMSI/NMSI_N3_29_06_05_07_2026.ics",
    "type": "blob",
-   "sha": "4ab7331db6d232a5dbe28e528ea18fd573aab192",
-   "size": 5362
+   "sha": "664c8112d6c859f6b7db8bd8eed00dbdc6684f17",
+   "size": 5449
   },
   {
    "path": "NMSI/Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.docx",
@@ -499,6 +499,12 @@
    "size": 5030
   },
   {
+   "path": "tools/__pycache__/timetable_to_ics.cpython-312.pyc",
+   "type": "blob",
+   "sha": "a417b1bfd59855e17f1c4dddd0fd3bb3d8ee28e2",
+   "size": 42891
+  },
+  {
    "path": "tools/build_index.py",
    "type": "blob",
    "sha": "d9ceb0efa8118e3e9f76480fdead30eea91899b5",
@@ -519,8 +525,8 @@
   {
    "path": "tools/timetable_to_ics.py",
    "type": "blob",
-   "sha": "bb0a4a5ee461f9ddeca667d68e12a40715e9f378",
-   "size": 27672
+   "sha": "f318006eaa1326892b5b0bf68728ec5c416ed02b",
+   "size": 28890
   }
  ]
 }
