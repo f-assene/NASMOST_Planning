@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T17:56:00Z",
+ "generated": "2026-10-11T21:47:45Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -379,10 +379,10 @@
    "size": 810
   },
   {
-   "path": "logos/ANCR.png",
+   "path": "logos/ACRN.jpeg",
    "type": "blob",
-   "sha": "600a85131f0e6596281197dd3b894ede9736f4c4",
-   "size": 30965
+   "sha": "7b478c55580f8df7241b754fb5169efa2841d626",
+   "size": 25809
   },
   {
    "path": "logos/GCO.png",
@@ -415,16 +415,16 @@
    "size": 36865
   },
   {
-   "path": "logos/NMSI.png",
+   "path": "logos/NMSI.jpeg",
    "type": "blob",
-   "sha": "58e6bb0808a37806133179b96c25a39af386aa94",
-   "size": 42984
+   "sha": "911eb90737974292361dd0c5aa2cf5d3245104da",
+   "size": 293759
   },
   {
-   "path": "logos/PEM.png",
+   "path": "logos/PEM.jpeg",
    "type": "blob",
-   "sha": "23b11fa472d09395c20345101cfc78cb06bba45e",
-   "size": 30272
+   "sha": "e2227619858ed99f53176642ae9aa82c3495aa84",
+   "size": 117443
   },
   {
    "path": "logos/SGMP.png",
