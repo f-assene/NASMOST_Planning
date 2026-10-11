@@ -6,6 +6,5 @@
 </defs>
 <circle cx="256" cy="256" r="240" fill="#B58A2E"/>
 <g clip-path="url(#disc)" fill="#fff"><polygon points="140,112 232,140 232,158 140,186" opacity=".5"/><polygon points="372,112 280,140 280,158 372,186" opacity=".5"/><polygon points="230,132 256,98 282,132"/><rect x="238" y="132" width="36" height="38"/><rect x="224" y="168" width="64" height="14" rx="4"/><polygon points="236,182 276,182 294,360 218,360"/><polygon points="231.5,228 280.5,228 284,262 228,262" fill="#B58A2E"/><rect x="249" y="140" width="14" height="22" fill="#B58A2E"/><path d="M-34 368 q29 -46 58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><path d="M-34 428 q29 -46 58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/></g>
-<text x="556" y="322" font-family="Bahnschrift, 'DIN Alternate', 'Segoe UI', Arial, sans-serif" font-size="230" font-weight="700" letter-spacing="6" fill="#0B3954">GCO</text>
-<path d="M566 392 q25 -40 50 0 t50 0 t50 0" fill="none" stroke="#B58A2E" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="556" y="337" font-family="Bahnschrift, 'DIN Alternate', 'Segoe UI', Arial, sans-serif" font-size="230" font-weight="700" letter-spacing="6" fill="#0B3954">GCO</text>
 </svg>

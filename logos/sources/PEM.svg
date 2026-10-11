@@ -6,6 +6,5 @@
 </defs>
 <circle cx="256" cy="256" r="240" fill="#1E8F7A"/>
 <g clip-path="url(#disc)" fill="#fff"><path d="M104 244Q214 132 344 244Q214 356 104 244Z"/><polygon points="326,244 412,176 392,244 412,312"/><circle cx="170" cy="228" r="13" fill="#1E8F7A"/><path d="M222 196Q246 244 222 292" fill="none" stroke="#1E8F7A" stroke-width="10" stroke-linecap="round"/><path d="M-34 392 q29 -46 58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/></g>
-<text x="556" y="322" font-family="Bahnschrift, 'DIN Alternate', 'Segoe UI', Arial, sans-serif" font-size="230" font-weight="700" letter-spacing="6" fill="#0B3954">PEM</text>
-<path d="M566 392 q25 -40 50 0 t50 0 t50 0" fill="none" stroke="#1E8F7A" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="556" y="337" font-family="Bahnschrift, 'DIN Alternate', 'Segoe UI', Arial, sans-serif" font-size="230" font-weight="700" letter-spacing="6" fill="#0B3954">PEM</text>
 </svg>

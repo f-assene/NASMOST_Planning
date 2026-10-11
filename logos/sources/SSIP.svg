@@ -6,6 +6,5 @@
 </defs>
 <circle cx="256" cy="256" r="240" fill="#B03A3A"/>
 <g clip-path="url(#disc)" fill="#fff"><path d="M256 88L388 136V262Q388 366 256 424Q124 366 124 262V136Z"/><path d="M196 260L240 304L320 208" fill="none" stroke="#B03A3A" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/></g>
-<text x="556" y="322" font-family="Bahnschrift, 'DIN Alternate', 'Segoe UI', Arial, sans-serif" font-size="230" font-weight="700" letter-spacing="6" fill="#0B3954">SSIP</text>
-<path d="M566 392 q25 -40 50 0 t50 0 t50 0" fill="none" stroke="#B03A3A" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="556" y="337" font-family="Bahnschrift, 'DIN Alternate', 'Segoe UI', Arial, sans-serif" font-size="230" font-weight="700" letter-spacing="6" fill="#0B3954">SSIP</text>
 </svg>
