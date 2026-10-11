@@ -28,6 +28,10 @@ tools/                     conversion automatique des emplois du temps en .ics
 index.json                 liste des fichiers lue par l'application (générée, ne pas modifier)
 ```
 
+Les onze départements ont chacun leur dossier (STMO, SGMP, GCO, PEM, GEM, GMM, GMP, NMSI, GOHM,
+ANCR, SSIP), ici et dans `supports/`. **Chaque dossier contient un `README.md`** qui rappelle quoi
+y déposer et comment nommer les fichiers ; ces README ne sont pas affichés dans l'application.
+
 À chaque dépôt, l'action GitHub **« Publication »** génère les `.ics` puis met à jour
 `index.json` : l'application ne voit un nouveau fichier qu'après cette action (1 à 2 minutes,
 puis jusqu'à 5 minutes de cache de GitHub).
