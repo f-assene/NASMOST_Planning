@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T17:36:34Z",
+ "generated": "2026-10-11T17:56:00Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -187,8 +187,8 @@
   {
    "path": "README.md",
    "type": "blob",
-   "sha": "f3e8433d4138ea03ddb17d229ec38a5ac7ebf68c",
-   "size": 8216
+   "sha": "ead45630a52c926392519542ca6897fc24c7f245",
+   "size": 8259
   },
   {
    "path": "SGMP/EDT SGMP 1 -02-08 MARS 2026.pdf",
@@ -513,14 +513,26 @@
   {
    "path": "opportunites/Autres_sources/README.md",
    "type": "blob",
-   "sha": "c7562d16afac939ef9dac003660679a9ea1ba5a9",
-   "size": 986
+   "sha": "0d31bdfef554374cbfbb736a803e0e2f41a3019d",
+   "size": 1187
+  },
+  {
+   "path": "opportunites/Autres_sources/flux.txt",
+   "type": "blob",
+   "sha": "4649710cdc2cb51c84e0b4a43f86506b7b54eb05",
+   "size": 4332
   },
   {
    "path": "opportunites/LinkedIn/README.md",
    "type": "blob",
-   "sha": "0fb1ee21c38b814915e7f6e76be44f58102b3576",
-   "size": 1000
+   "sha": "e802fc6a120b79f9b6b7bbe334b76c90e0de501a",
+   "size": 1184
+  },
+  {
+   "path": "opportunites/LinkedIn/flux.txt",
+   "type": "blob",
+   "sha": "8f58b5c5b3ac61c9e70884358af6ad06cd0434f2",
+   "size": 2034
   },
   {
    "path": "opportunites/Local/README.md",
@@ -531,8 +543,8 @@
   {
    "path": "opportunites/README.md",
    "type": "blob",
-   "sha": "55ff7492117fa0ddce8f5d9164c3ed1ef4175317",
-   "size": 1432
+   "sha": "3d4b76587f29f7255436d18cdb65631c22b65afc",
+   "size": 1970
   },
   {
    "path": "supports/README.md",
