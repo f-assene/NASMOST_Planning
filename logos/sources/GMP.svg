@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1045 512" width="1045" height="512">
+<title>GMP</title>
+<defs>
+<clipPath id="disc"><circle cx="256" cy="256" r="240"/></clipPath>
+<clipPath id="top"><rect x="0" y="0" width="512" height="262"/></clipPath>
+</defs>
+<circle cx="256" cy="256" r="240" fill="#1289AD"/>
+<g clip-path="url(#disc)" fill="#fff"><rect x="204" y="122" width="104" height="60" rx="5"/><rect x="222" y="134" width="7" height="36" fill="#1289AD"/><rect x="242" y="134" width="7" height="36" fill="#1289AD"/><rect x="262" y="134" width="7" height="36" fill="#1289AD"/><rect x="282" y="134" width="7" height="36" fill="#1289AD"/><rect x="146" y="190" width="104" height="60" rx="5"/><rect x="164" y="202" width="7" height="36" fill="#1289AD"/><rect x="184" y="202" width="7" height="36" fill="#1289AD"/><rect x="204" y="202" width="7" height="36" fill="#1289AD"/><rect x="224" y="202" width="7" height="36" fill="#1289AD"/><rect x="262" y="190" width="104" height="60" rx="5"/><rect x="280" y="202" width="7" height="36" fill="#1289AD"/><rect x="300" y="202" width="7" height="36" fill="#1289AD"/><rect x="320" y="202" width="7" height="36" fill="#1289AD"/><rect x="340" y="202" width="7" height="36" fill="#1289AD"/><polygon points="104,266 408,266 372,340 142,340"/><path d="M-34 390 q29 -46 58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><path d="M-34 448 q29 -46 58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="556" y="322" font-family="Bahnschrift, 'DIN Alternate', 'Segoe UI', Arial, sans-serif" font-size="230" font-weight="700" letter-spacing="6" fill="#0B3954">GMP</text>
+<path d="M566 392 q25 -40 50 0 t50 0 t50 0" fill="none" stroke="#1289AD" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

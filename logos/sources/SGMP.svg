@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1188 512" width="1188" height="512">
+<title>SGMP</title>
+<defs>
+<clipPath id="disc"><circle cx="256" cy="256" r="240"/></clipPath>
+<clipPath id="top"><rect x="0" y="0" width="512" height="262"/></clipPath>
+</defs>
+<circle cx="256" cy="256" r="240" fill="#0B3954"/>
+<g clip-path="url(#disc)" fill="#fff"><circle cx="256" cy="128" r="28" fill="none" stroke="#fff" stroke-width="20"/><path d="M256 158V388M192 208H320" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/><path d="M142 292Q150 384 256 390Q362 384 370 292" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/><polygon points="104,312 140,236 182,300"/><polygon points="408,312 372,236 330,300"/></g>
+<text x="556" y="322" font-family="Bahnschrift, 'DIN Alternate', 'Segoe UI', Arial, sans-serif" font-size="230" font-weight="700" letter-spacing="6" fill="#0B3954">SGMP</text>
+<path d="M566 392 q25 -40 50 0 t50 0 t50 0" fill="none" stroke="#0B3954" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1161 512" width="1161" height="512">
+<title>STMO</title>
+<defs>
+<clipPath id="disc"><circle cx="256" cy="256" r="240"/></clipPath>
+<clipPath id="top"><rect x="0" y="0" width="512" height="262"/></clipPath>
+</defs>
+<circle cx="256" cy="256" r="240" fill="#146C94"/>
+<g clip-path="url(#disc)" fill="#fff"><g clip-path="url(#top)"><polygon points="232.7,166.8 238.6,135.2 273.4,135.2 279.3,166.8 293.1,171.3 316.5,149.2 344.6,169.6 330.8,198.7 339.3,210.4 371.2,206.3 382.0,239.3 353.7,254.8 353.7,269.2 382.0,284.7 371.2,317.7 339.3,313.6 330.8,325.3 344.6,354.4 316.5,374.8 293.1,352.7 279.3,357.2 273.4,388.8 238.6,388.8 232.7,357.2 218.9,352.7 195.5,374.8 167.4,354.4 181.2,325.3 172.7,313.6 140.8,317.7 130.0,284.7 158.3,269.2 158.3,254.8 130.0,239.3 140.8,206.3 172.7,210.4 181.2,198.7 167.4,169.6 195.5,149.2 218.9,171.3"/><circle cx="256" cy="262" r="98"/><circle cx="256" cy="262" r="46" fill="#146C94"/></g><rect x="118" y="252" width="276" height="20" rx="10"/><path d="M-34 330 q29 -46 58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><path d="M-34 392 q29 -46 58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0 t58 0" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="556" y="322" font-family="Bahnschrift, 'DIN Alternate', 'Segoe UI', Arial, sans-serif" font-size="230" font-weight="700" letter-spacing="6" fill="#0B3954">STMO</text>
+<path d="M566 392 q25 -40 50 0 t50 0 t50 0" fill="none" stroke="#146C94" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
