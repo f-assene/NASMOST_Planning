@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-11T10:41:44Z",
+ "generated": "2026-10-11T11:05:48Z",
  "tree": [
   {
    "path": ".gitignore",
    "type": "blob",
-   "sha": "afba3c9c6136131d5324e0862bb9a99da7fd2ff5",
-   "size": 92
+   "sha": "d781094fa6fe336617d1557205fb861b5ceac3c4",
+   "size": 105
   },
   {
    "path": "GCO/EDT 06-03-2026 10.30.pdf",
@@ -187,8 +187,8 @@
   {
    "path": "README.md",
    "type": "blob",
-   "sha": "07c1f1e7bbeea2bf043dffcfb59cd2dee0048c62",
-   "size": 5426
+   "sha": "962f1d975a747b67319e3f38e7b9af8d478b8fed",
+   "size": 7585
   },
   {
    "path": "SGMP/EDT SGMP 1 -02-08 MARS 2026.pdf",
@@ -349,6 +349,12 @@
    "size": 3463
   },
   {
+   "path": "accueil/README.md",
+   "type": "blob",
+   "sha": "3fcda490c0f6de9e6ff7ca3d56f2c85490c191ba",
+   "size": 837
+  },
+  {
    "path": "announcements/WhatsApp_test.jpeg",
    "type": "blob",
    "sha": "97569b2ec08c9922bdc31b7026198bee008fa1a4",
@@ -359,6 +365,18 @@
    "type": "blob",
    "sha": "225bfd66ca29bc13b77f66793ca131ce048a0bf6",
    "size": 346
+  },
+  {
+   "path": "assistance/README.md",
+   "type": "blob",
+   "sha": "be78b585461c74f44e39826b14646f6222f3c345",
+   "size": 813
+  },
+  {
+   "path": "campus/README.md",
+   "type": "blob",
+   "sha": "3f735b3a7e187a466e1aabc96cda4f9b5a7ce7de",
+   "size": 810
   },
   {
    "path": "logos/ANCR.png",
@@ -493,16 +511,22 @@
    "size": 1578
   },
   {
+   "path": "opportunites/README.md",
+   "type": "blob",
+   "sha": "98e0d14647ab262ef6fcb72f904a524395ed1878",
+   "size": 856
+  },
+  {
+   "path": "supports/README.md",
+   "type": "blob",
+   "sha": "69bbe3f84c780722111a83980760840509e9dabf",
+   "size": 714
+  },
+  {
    "path": "timetables.json",
    "type": "blob",
    "sha": "c8328aaea294101eae60e849b76abed85b50d504",
    "size": 5030
-  },
-  {
-   "path": "tools/__pycache__/timetable_to_ics.cpython-312.pyc",
-   "type": "blob",
-   "sha": "a417b1bfd59855e17f1c4dddd0fd3bb3d8ee28e2",
-   "size": 42891
   },
   {
    "path": "tools/build_index.py",
@@ -513,8 +537,8 @@
   {
    "path": "tools/check_announcements.py",
    "type": "blob",
-   "sha": "069c4524c66a37ea864aeea1a1b38021160ae84b",
-   "size": 5299
+   "sha": "fa46c4b2825b8c2042ffcd1646f64ad671e9c87a",
+   "size": 5522
   },
   {
    "path": "tools/requirements.txt",
@@ -525,8 +549,8 @@
   {
    "path": "tools/timetable_to_ics.py",
    "type": "blob",
-   "sha": "f318006eaa1326892b5b0bf68728ec5c416ed02b",
-   "size": 28890
+   "sha": "942f17c4109ae26bc219a6baeac1a5c70608aa54",
+   "size": 30016
   }
  ]
 }
