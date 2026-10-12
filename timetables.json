@@ -9,6 +9,15 @@
   "ics": "NMSI/NMSI_N3_22_06_28_06_2026.ics"
  },
  {
+  "source": "NMSI/EDT_NMSI_3_19_10_24_10_2026.pdf",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N3",
+  "start": "2026-10-19",
+  "end": "2026-10-24",
+  "ics": "NMSI/NMSI_N3_19_10_24_10_2026.ics"
+ },
+ {
   "source": "NMSI/Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.docx",
   "scan": false,
   "department": "NMSI",
@@ -205,5 +214,14 @@
   "start": "2026-03-02",
   "end": "2026-03-07",
   "ics": "STMO/STMO_N2_02_03_07_03_2026.ics"
+ },
+ {
+  "source": "NMSI/scan_EDT_NMSI_3_19_10_24_10_2026.pdf",
+  "scan": true,
+  "department": "NMSI",
+  "level": "N3",
+  "start": "2026-10-19",
+  "end": "2026-10-24",
+  "ics": "NMSI/NMSI_N3_19_10_24_10_2026.ics"
  }
 ]
