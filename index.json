@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T16:59:13Z",
+ "generated": "2026-10-12T21:55:31Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -452,6 +452,18 @@
    "type": "blob",
    "sha": "3fcda490c0f6de9e6ff7ca3d56f2c85490c191ba",
    "size": 837
+  },
+  {
+   "path": "announcements/Nouvelles_moladites_inscription_etudiants_Univ-Ebolowa.pdf",
+   "type": "blob",
+   "sha": "f2610945d36ae18138da2388f2cf041858bd7679",
+   "size": 14678003
+  },
+  {
+   "path": "announcements/Nouvelles_moladites_inscription_etudiants_Univ-Ebolowa.txt",
+   "type": "blob",
+   "sha": "79400c561200c411936c6d2243cbf64f89f9afc5",
+   "size": 105
   },
   {
    "path": "announcements/WhatsApp_test.jpeg",
