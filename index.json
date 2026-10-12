@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T16:58:37Z",
+ "generated": "2026-10-12T16:59:13Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -572,6 +572,12 @@
    "type": "blob",
    "sha": "d4d512947334b6c94ba79d5431eb12d91881b0b7",
    "size": 37509
+  },
+  {
+   "path": "logos/SSIP.jpeg",
+   "type": "blob",
+   "sha": "c1d6be4678a46f780f3dca159de32eca860ad4c9",
+   "size": 361576
   },
   {
    "path": "logos/STMO.png",
