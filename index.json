@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T16:44:45Z",
+ "generated": "2026-10-12T16:49:34Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -240,20 +240,6 @@
    "size": 2029
   },
   {
-   "path": "NMSI/scan_EDT_NMSI_3_19_10_24_10_2026.pdf",
-   "type": "blob",
-   "sha": "983ca9cd3b33bf1f1a3134e6d639cb328f9e153e",
-   "size": 802754,
-   "week": [
-    "2026-10-19",
-    "2026-10-24"
-   ],
-   "departments": [
-    "NMSI"
-   ],
-   "signed": true
-  },
-  {
    "path": "PEM/README.md",
    "type": "blob",
    "sha": "e1f2e872c63df7aa5b8e19126d12d1faac552a5c",
@@ -262,7 +248,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "cc68dacff7c92a8ba153b1bdf960934fd3caaa0e",
+   "sha": "3f80517ffa3bd0465b8fbfb91bad41795fc571d7",
    "size": 2488
   },
   {
@@ -762,8 +748,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "b4c7d49886f8ccf8b9e960e665cf6d50dce1c09c",
-   "size": 5454
+   "sha": "297869d462ea9b76d8f9acbce25579c3c5a4a8a1",
+   "size": 5240
   },
   {
    "path": "tools/build_index.py",
