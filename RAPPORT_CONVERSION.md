@@ -2,7 +2,7 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**17 emploi(s) du temps publié(s), 3 version(s) signée(s), 2 erreur(s).**
+**17 emploi(s) du temps publié(s), 4 version(s) signée(s), 2 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
@@ -24,3 +24,4 @@ Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pa
 - `STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf` : page 4 : emploi du temps de GOHM N3 : le fichier .ics est rangé dans GOHM/
 - `STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf` : GOHM N3 du 02/02/2026 existe aussi dans STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf : ce fichier-ci est utilisé
 - `STMO/EDT _STMO 2 du 02-07  Fevrier  2026.pdf` : les dates du nom (02/02 au 07/02/2026) diffèrent de l'en-tête (02/03 au 07/03/2026) : l'en-tête est utilisé
+- `GEM/scan_EDT_GEM_4_19_10_24_10_2026.pdf` : original « EDT_GEM_4_19_10_24_10_2026.pdf » introuvable : semaine lue dans le nom du fichier
