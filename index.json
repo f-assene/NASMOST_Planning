@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T22:13:46Z",
+ "generated": "2026-10-14T09:27:01Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -254,15 +254,48 @@
    "signed": true
   },
   {
+   "path": "PEM/EDT_PEM_4_19_10_25_10_2026.pdf",
+   "type": "blob",
+   "sha": "57c5476ad6b1c465fcab0d0a56bf0204a9485b89",
+   "size": 435000,
+   "week": [
+    "2026-10-19",
+    "2026-10-25"
+   ],
+   "departments": [
+    "PEM"
+   ]
+  },
+  {
+   "path": "PEM/PEM_N4_19_10_25_10_2026.ics",
+   "type": "blob",
+   "sha": "5e862e961841d96b591bf2df4460b3e7d2ae684c",
+   "size": 8365
+  },
+  {
    "path": "PEM/README.md",
    "type": "blob",
    "sha": "e1f2e872c63df7aa5b8e19126d12d1faac552a5c",
    "size": 1990
   },
   {
+   "path": "PEM/scan_EDT_PEM_4_19_10_25_10_2026.pdf",
+   "type": "blob",
+   "sha": "9348ded101444b2d1deaaf1c94198833ad9981ce",
+   "size": 393846,
+   "week": [
+    "2026-10-19",
+    "2026-10-25"
+   ],
+   "departments": [
+    "PEM"
+   ],
+   "signed": true
+  },
+  {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "cc68dacff7c92a8ba153b1bdf960934fd3caaa0e",
+   "sha": "8477174fd6304310e5edce3eb8a04a7e7071dd96",
    "size": 2488
   },
   {
@@ -464,12 +497,6 @@
    "type": "blob",
    "sha": "79400c561200c411936c6d2243cbf64f89f9afc5",
    "size": 105
-  },
-  {
-   "path": "announcements/WhatsApp_test.txt",
-   "type": "blob",
-   "sha": "225bfd66ca29bc13b77f66793ca131ce048a0bf6",
-   "size": 346
   },
   {
    "path": "assistance/README.md",
@@ -768,8 +795,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "de5bddf7dd558904cf4ee7bd100787f85be077a2",
-   "size": 5454
+   "sha": "78a0040470e7ead3b7386cda5aa042e29322cad8",
+   "size": 5868
   },
   {
    "path": "tools/build_index.py",
