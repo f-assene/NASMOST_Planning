@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T09:48:16Z",
+ "generated": "2026-10-14T10:58:08Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -63,6 +63,20 @@
    "type": "blob",
    "sha": "18a1d00deac931b98a159918fa6e6ebf96dbe7d1",
    "size": 1996
+  },
+  {
+   "path": "GEM/scan_EDT_GEM_4_19_10_24_10_2026.pdf",
+   "type": "blob",
+   "sha": "983ca9cd3b33bf1f1a3134e6d639cb328f9e153e",
+   "size": 802754,
+   "week": [
+    "2026-10-19",
+    "2026-10-24"
+   ],
+   "departments": [
+    "GEM"
+   ],
+   "signed": true
   },
   {
    "path": "GMM/EDT.pdf",
@@ -328,8 +342,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "c0dda93842ec73dfdccdfe188a8307bfc37e8f76",
-   "size": 2488
+   "sha": "5640b334ef915ad2cb483c7e062af3b53fe3dfa4",
+   "size": 2629
   },
   {
    "path": "README.md",
@@ -828,8 +842,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "2c8ac28c7d3778a7842b05ff4ca2d56c4742e7c8",
-   "size": 6282
+   "sha": "312bbe327efedba91a368246654dfa8ec9850ed2",
+   "size": 6491
   },
   {
    "path": "tools/build_index.py",
