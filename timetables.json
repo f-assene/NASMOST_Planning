@@ -367,5 +367,14 @@
   "start": "2026-10-19",
   "end": "2026-10-25",
   "ics": "SSIP/SSIP_N4_19_10_25_10_2026.ics"
+ },
+ {
+  "source": "STMO/scan_EDT_STMO_2_19_10_25_10_2026.pdf",
+  "scan": true,
+  "department": "STMO",
+  "level": "N2",
+  "start": "2026-10-19",
+  "end": "2026-10-25",
+  "ics": "STMO/STMO_N2_19_10_25_10_2026.ics"
  }
 ]
