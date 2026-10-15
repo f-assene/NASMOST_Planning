@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T17:23:44Z",
+ "generated": "2026-10-15T17:30:34Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -493,8 +493,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "c292f51512f48cb4d04bb20ecbf15410a2df8a16",
-   "size": 2488
+   "sha": "3a9014fb74b2ca5e7d648454eb42135bfcd1014d",
+   "size": 2633
   },
   {
    "path": "README.md",
@@ -710,6 +710,20 @@
    "type": "blob",
    "sha": "baba27b3f066583d601dfe4dfc72d39624cb3c7b",
    "size": 3463
+  },
+  {
+   "path": "STMO/scan_EDT_STMO_2_19_10_25_10_2026.pdf",
+   "type": "blob",
+   "sha": "501088ad5ec2795e2ccc3bc5d97a13200f34e100",
+   "size": 553806,
+   "week": [
+    "2026-10-19",
+    "2026-10-25"
+   ],
+   "departments": [
+    "STMO"
+   ],
+   "signed": true
   },
   {
    "path": "accueil/README.md",
@@ -1026,8 +1040,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "dfc4466b424fcaed31eea7e8104f95eaebd588c2",
-   "size": 8825
+   "sha": "59ca38b2f88fbfb31ea2cd0996eea61dd4198332",
+   "size": 9039
   },
   {
    "path": "tools/build_index.py",
