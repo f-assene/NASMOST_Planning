@@ -2,7 +2,7 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**20 emploi(s) du temps publié(s), 7 version(s) signée(s), 2 erreur(s).**
+**21 emploi(s) du temps publié(s), 8 version(s) signée(s), 2 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
