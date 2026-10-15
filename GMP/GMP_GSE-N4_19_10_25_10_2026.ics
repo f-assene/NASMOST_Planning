@@ -1,0 +1,271 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:GMP/EDT_GSE_4_19_10_25_10_2026.pdf
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261019t0730@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261019T073000
+DTEND;TZID=Africa/Douala:20261019T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Toxicology
+DESCRIPTION:Cours de Marine and Port Environmental Toxicology\navec Ing. EL
+ IE MBI
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Toxicology dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Toxicology dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261020t0730@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261020T073000
+DTEND;TZID=Africa/Douala:20261020T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Toxicology
+DESCRIPTION:Cours de Marine and Port Environmental Toxicology\navec Ing. EL
+ IE MBI
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Toxicology dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Toxicology dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261021t0730@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261021T073000
+DTEND;TZID=Africa/Douala:20261021T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Toxicology
+DESCRIPTION:Cours de Marine and Port Environmental Toxicology\navec Ing. EL
+ IE MBI
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Toxicology dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Toxicology dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261022t0730@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261022T073000
+DTEND;TZID=Africa/Douala:20261022T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Risk Monitoring and Protection
+DESCRIPTION:Cours de Marine and Port Environmental Risk Monitoring and Prot
+ ection\navec Ing. ELIE MBI/Dr ZO’OBO
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261023t0730@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261023T073000
+DTEND;TZID=Africa/Douala:20261023T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Risk Monitoring and Protection
+DESCRIPTION:Cours de Marine and Port Environmental Risk Monitoring and Prot
+ ection\navec Ing. ELIE MBI/Dr ZO’OBO
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261024t0730@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261024T073000
+DTEND;TZID=Africa/Douala:20261024T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine Resources and bleu Economics
+DESCRIPTION:Cours de Marine Resources and bleu Economics\navec Ing. ELIE MB
+ I
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine Resources and bleu Economics dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine Resources and bleu Economics dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261025t0730@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261025T073000
+DTEND;TZID=Africa/Douala:20261025T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine Resources and bleu Economics
+DESCRIPTION:Cours de Marine Resources and bleu Economics\navec Ing. ELIE MB
+ I
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine Resources and bleu Economics dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine Resources and bleu Economics dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261019t1300@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261019T130000
+DTEND;TZID=Africa/Douala:20261019T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Toxicology
+DESCRIPTION:Cours de Marine and Port Environmental Toxicology\navec Ing. EL
+ IE MBI
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Toxicology dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261020t1300@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261020T130000
+DTEND;TZID=Africa/Douala:20261020T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Toxicology
+DESCRIPTION:Cours de Marine and Port Environmental Toxicology\navec Ing. EL
+ IE MBI
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Toxicology dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261021t1300@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261021T130000
+DTEND;TZID=Africa/Douala:20261021T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Toxicology
+DESCRIPTION:Cours de Marine and Port Environmental Toxicology\navec Ing. EL
+ IE MBI
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Toxicology dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261022t1300@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261022T130000
+DTEND;TZID=Africa/Douala:20261022T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Risk Monitoring and Protection
+DESCRIPTION:Cours de Marine and Port Environmental Risk Monitoring and Prot
+ ection\navec Ing. ELIE MBI/Dr ZO’OBO
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261023t1300@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261023T130000
+DTEND;TZID=Africa/Douala:20261023T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Risk Monitoring and Protection
+DESCRIPTION:Cours de Marine and Port Environmental Risk Monitoring and Prot
+ ection\navec Ing. ELIE MBI/Dr ZO’OBO
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261024t1300@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261024T130000
+DTEND;TZID=Africa/Douala:20261024T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine Resources and bleu Economics
+DESCRIPTION:Cours de Marine Resources and bleu Economics\navec Ing. ELIE MB
+ I
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine Resources and bleu Economics dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261025t1300@nasmost-planning
+DTSTAMP:20261015T085010Z
+DTSTART;TZID=Africa/Douala:20261025T130000
+DTEND;TZID=Africa/Douala:20261025T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine Resources and bleu Economics
+DESCRIPTION:Cours de Marine Resources and bleu Economics\navec Ing. ELIE MB
+ I
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine Resources and bleu Economics dans 15 min
+END:VALARM
+END:VEVENT
+END:VCALENDAR
