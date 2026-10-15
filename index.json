@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T08:50:11Z",
+ "generated": "2026-10-15T08:52:22Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -85,16 +85,49 @@
    "size": 3585801
   },
   {
+   "path": "GMM/EDT_GMM_4_19_10_25_10_2026.pdf",
+   "type": "blob",
+   "sha": "7811ae29143b0dde9047a6eb3901832de5e6a8fb",
+   "size": 220029,
+   "week": [
+    "2026-10-19",
+    "2026-10-25"
+   ],
+   "departments": [
+    "GMM"
+   ]
+  },
+  {
    "path": "GMM/GMM_N3_02_02_08_02_2026.ics",
    "type": "blob",
    "sha": "cd8f4c7f07714f24cfb4a12b1c9018e5a80ad58b",
    "size": 7134
   },
   {
+   "path": "GMM/GMM_N4_19_10_25_10_2026.ics",
+   "type": "blob",
+   "sha": "37b4564425f7aade853dcc75c0ec0ea4bfc2d83b",
+   "size": 6817
+  },
+  {
    "path": "GMM/README.md",
    "type": "blob",
    "sha": "6b3d4b3a769ab9a1e82efe76fbf66bfc81b73d40",
    "size": 1993
+  },
+  {
+   "path": "GMM/scan_EDT_GMM_4_19_10_25_10_2026.pdf",
+   "type": "blob",
+   "sha": "141c800128e7e1a2ca103a13db6234ec75e438fe",
+   "size": 525190,
+   "week": [
+    "2026-10-19",
+    "2026-10-25"
+   ],
+   "departments": [
+    "GMM"
+   ],
+   "signed": true
   },
   {
    "path": "GMP/EDT_GLP_4_19_10_25_10_2026.pdf",
@@ -441,7 +474,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "f93dc811764a42327f159e96ab89e44da1afe208",
+   "sha": "e052ae55a19d9e466f216371e58c8bb87b13e108",
    "size": 2629
   },
   {
@@ -941,8 +974,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "5496086e586f6f47652052b90241fb514bc38db3",
-   "size": 7781
+   "sha": "517656bec2d8a0875f0b4b58506ac8baefc172c2",
+   "size": 8195
   },
   {
    "path": "tools/build_index.py",
