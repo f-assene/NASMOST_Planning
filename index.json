@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T13:43:16Z",
+ "generated": "2026-10-18T13:56:13Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -256,14 +256,27 @@
   {
    "path": "GOHM/EDT_GHOM_4_19_10_25_10_2026.docx",
    "type": "blob",
-   "sha": "aea917824d8f2d6f9e733b161713bbd957e82be4",
-   "size": 43286
+   "sha": "89cb6e4d6cdc8f7dc3dbabbbfec8b83ac82fada4",
+   "size": 39299,
+   "week": [
+    "2026-10-19",
+    "2026-10-24"
+   ],
+   "departments": [
+    "GOHM"
+   ]
   },
   {
    "path": "GOHM/GOHM_N3_02_02_08_02_2026.ics",
    "type": "blob",
    "sha": "a943de6f8eb2ac8d324e16d3463202e9afcf3dfb",
    "size": 7443
+  },
+  {
+   "path": "GOHM/GOHM_N4_19_10_24_10_2026.ics",
+   "type": "blob",
+   "sha": "ab01b858c2df91dec6d2de2f6e73359366cca23e",
+   "size": 9112
   },
   {
    "path": "GOHM/README.md",
@@ -275,7 +288,15 @@
    "path": "GOHM/SCAN_EDT_GHOM_4_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "05824133797a4aaac50874f6c1ab56a492486822",
-   "size": 1133013
+   "size": 1133013,
+   "week": [
+    "2026-10-19",
+    "2026-10-24"
+   ],
+   "departments": [
+    "GOHM"
+   ],
+   "signed": true
   },
   {
    "path": "LICENSE",
@@ -505,8 +526,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "a2a3be59ab3a38d628151766d691b5d29fabfdc6",
-   "size": 3122
+   "sha": "9d1c6a93733bbc10ebbebfda0d3cfe7cce8e5bfd",
+   "size": 2801
   },
   {
    "path": "README.md",
@@ -1090,8 +1111,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "848e10ee2b0a205d7368da5bd138c48bc8cb3702",
-   "size": 9460
+   "sha": "79fcb853fd15c4390a2710ba39d49854b162a07f",
+   "size": 9885
   },
   {
    "path": "tools/build_index.py",
