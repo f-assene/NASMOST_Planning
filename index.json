@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T13:56:13Z",
+ "generated": "2026-10-18T14:51:08Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -74,8 +74,8 @@
   {
    "path": "GEM/GEM_N4_19_10_25_10_2026.ics",
    "type": "blob",
-   "sha": "36c33822337a16558bfd3732a435d1f5a7b402d5",
-   "size": 15543
+   "sha": "2fa80318bb7b0c11a05bc81af2240e19d0a3850e",
+   "size": 13758
   },
   {
    "path": "GEM/README.md",
@@ -664,8 +664,8 @@
   {
    "path": "SSIP/SSIP_N4_19_10_25_10_2026.ics",
    "type": "blob",
-   "sha": "992b3fad124fe8d7632f233b6eca58e6479f80b0",
-   "size": 8972
+   "sha": "754ce0ded2940b76c819a70b25a68c72981816e6",
+   "size": 7237
   },
   {
    "path": "SSIP/scan_EDT_SSIP_4_19_10_25_10_2026.pdf",
@@ -1135,8 +1135,8 @@
   {
    "path": "tools/timetable_to_ics.py",
    "type": "blob",
-   "sha": "32b79a415e5c8f4858c7f75c4f39a6d03a9b323d",
-   "size": 30024
+   "sha": "2c966e6428c5da26f232b98b35fa6b2e15bdac24",
+   "size": 30577
   }
  ]
 }
