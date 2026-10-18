@@ -1,6 +1,6 @@
 # NASMOST Planning — Guide d'utilisation
 
-Application Android des étudiants de l'ENSTMO (Université d'Ebolowa, Kribi) — version 1.0.
+Application Android des étudiants de l'ENSTMO (Université d'Ebolowa, Kribi) — version 1.1.
 
 Ce guide a deux parties : **utiliser l'application** (pour tous) et **publier des contenus dans le
 dépôt GitHub** (pour les personnes chargées de la mise à jour : emplois du temps, annonces,
@@ -53,7 +53,8 @@ nouveau fichier : les réglages sont conservés.
 | Élément | À quoi il sert |
 |---|---|
 | Onglets (STMO, SGMP, GCO…) | Choisir le département. |
-| Pastilles N1, N2… | Choisir le niveau. Pour GMP, choisir d'abord la filière : GSE, GOP ou GLP. |
+| Logo et nom du département | En tête de l'onglet, le logo puis la signification du sigle. |
+| Pastilles N1, N2… | Choisir le niveau (la pastille choisie prend la couleur de la barre du haut). Pour GMP, choisir d'abord la filière : GSE, GOP ou GLP. |
 | `‹` semaine `›` | Passer d'une semaine publiée à l'autre, y compris les semaines passées. |
 | Bouton **PDF** | Ouvrir l'emploi du temps officiel ; la version signée est proposée en premier. |
 | Barre de progression | Avancement des EC de la classe, avec sa légende : achevés, programmés, restants. |
@@ -63,13 +64,14 @@ nouveau fichier : les réglages sont conservés.
 L'application se met aussi à jour seule : à l'ouverture, puis toutes les trois heures environ.
 Une fois chargé, l'emploi du temps reste consultable **sans connexion**.
 
-**Alarmes.** Une alarme sonne 30 et 15 minutes avant les cours du matin, 15 minutes avant ceux
-de l'après-midi, même téléphone verrouillé.
+**Alarmes.** Une alarme sonne 30 et 15 minutes avant les séances de cours du matin, 15 minutes
+avant celles de l'après-midi, même téléphone verrouillé.
 
 ### 3.2 Les icônes de la barre du haut
 
 - **Mégaphone — Annonces** : communiqués de l'école (texte, image, PDF, Word, Excel). Une
-  notification sonore signale chaque nouvelle annonce. L'icône de filtre permet de choisir son
+  notification sonore signale chaque nouvelle annonce qui concerne son département (celui de
+  *Mon parcours* ; sans profil, toutes) ; toutes les annonces restent visibles dans la liste. L'icône de filtre permet de choisir son
   département pour ne voir que ce qui le concerne.
 - **Journal — Actualités** : actualités maritimes, portuaires et océanographiques, en français et
   en anglais, d'abord le golfe de Guinée, puis l'Afrique, puis le monde.
@@ -96,7 +98,7 @@ de l'après-midi, même téléphone verrouillé.
 | **Campus et communauté** | Associations, événements, conférences. |
 | **Langue (FR / EN)** | Français ou anglais. Les contenus publiés par l'école restent dans leur langue d'origine. |
 | **Couleur de la barre** | Bleu marine, noir, magenta, rose, vert océan, bordeaux ou violet. |
-| **Infos** | Objectif de l'application, concepteur, contributeurs, source des données, licence, version. |
+| **Infos** | Objectif de l'application, historique des versions, concepteur, contributeurs, source des données, licence, version. |
 
 ---
 
@@ -195,7 +197,8 @@ Expire: 2026-10-21
 - `Départements:` (facultatif) : `TOUS`, ou les codes concernés séparés par des virgules.
 - `Expire:` (facultatif) : date `AAAA-MM-JJ` après laquelle l'annonce disparaît.
 - Commencer le nom par la date `AAAA-MM-JJ_` : les plus récentes s'affichent en haut.
-- Chaque nouvelle annonce déclenche **une** notification sur les téléphones.
+- Chaque nouvelle annonce déclenche **une** notification chez les étudiants des départements
+  visés (tous, sans ligne `Départements:`) ; elle reste visible par tous dans l'application.
 
 ### 4.7 Supports de cours
 
