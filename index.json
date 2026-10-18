@@ -1,11 +1,30 @@
 {
- "generated": "2026-10-18T15:47:24Z",
+ "generated": "2026-10-18T16:25:27Z",
  "tree": [
   {
    "path": ".gitignore",
    "type": "blob",
    "sha": "d781094fa6fe336617d1557205fb861b5ceac3c4",
    "size": 105
+  },
+  {
+   "path": "ANCR/ANCR_N4_19_10_24_10_2026.ics",
+   "type": "blob",
+   "sha": "b2d6fd690a8ac0e8213f7b4a5573baf3593ca1a1",
+   "size": 7864
+  },
+  {
+   "path": "ANCR/EDT_ANCR_4_19_10_24_10_2026.pdf",
+   "type": "blob",
+   "sha": "0b6ce843b65798a6d94666c32845306fdc503da7",
+   "size": 123339,
+   "week": [
+    "2026-10-19",
+    "2026-10-24"
+   ],
+   "departments": [
+    "ANCR"
+   ]
   },
   {
    "path": "ANCR/README.md",
@@ -526,7 +545,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "9d1c6a93733bbc10ebbebfda0d3cfe7cce8e5bfd",
+   "sha": "de37614e3184b42be584472b040285b42c54f459",
    "size": 2801
   },
   {
@@ -1111,8 +1130,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "79fcb853fd15c4390a2710ba39d49854b162a07f",
-   "size": 9885
+   "sha": "c92eb31536426ad0415d622cf455724c66ef7133",
+   "size": 10095
   },
   {
    "path": "tools/build_index.py",
