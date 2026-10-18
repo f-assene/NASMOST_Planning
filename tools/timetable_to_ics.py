@@ -411,6 +411,14 @@ def fold(line: str) -> str:
     return "\r\n ".join(out)
 
 
+def is_pause_row(by_day) -> bool:
+    """Ligne « PAUSE » du tableau : écrite dans une case, ou une lettre par jour (P, A, U, S, E)."""
+    cells = [plain(cell).upper().replace(" ", "").strip() for _, cell in sorted(by_day.items())]
+    cells = [c for c in cells if c]
+    joined = "".join(cells)
+    return bool(cells) and joined.startswith("PAUSE") and (len(cells) == 1 or all(len(c) <= 2 for c in cells))
+
+
 def build_ics(dept: str, level: str, source: str, slots, text: str, monday: dt.date) -> str:
     stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     room_default = default_room(text)
@@ -425,9 +433,11 @@ def build_ics(dept: str, level: str, source: str, slots, text: str, monday: dt.d
     if progress:
         lines.append(f"X-NASMOST-EC:classe={dept}-{level};{progress}")
     for (h1, m1), (h2, m2), by_day in slots:
+        if is_pause_row(by_day):
+            continue  # la pause est déjà montrée par l'application entre deux séances
         for day, cell in sorted(by_day.items()):
             content = plain(cell).upper().strip()
-            if not content or content == "PAUSE":
+            if not content or content.replace(" ", "") == "PAUSE":
                 continue
             date = monday + dt.timedelta(days=day)
             start = dt.datetime.combine(date, dt.time(int(h1), int(m1)))
