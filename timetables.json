@@ -297,6 +297,15 @@
   "ics": "STMO/STMO_N2_02_03_07_03_2026.ics"
  },
  {
+  "source": "STMO/EDT_STMO_2_19_10_25_10_2026.docx",
+  "scan": false,
+  "department": "STMO",
+  "level": "N2",
+  "start": "2026-10-19",
+  "end": "2026-10-24",
+  "ics": "STMO/STMO_N2_19_10_24_10_2026.ics"
+ },
+ {
   "source": "GCO/scan_EDT_GCO_4_19_10_25_10_2026.pdf",
   "scan": true,
   "department": "GCO",
@@ -383,7 +392,7 @@
   "department": "STMO",
   "level": "N2",
   "start": "2026-10-19",
-  "end": "2026-10-25",
-  "ics": "STMO/STMO_N2_19_10_25_10_2026.ics"
+  "end": "2026-10-24",
+  "ics": "STMO/STMO_N2_19_10_24_10_2026.ics"
  }
 ]

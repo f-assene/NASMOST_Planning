@@ -2,12 +2,13 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**24 emploi(s) du temps publié(s), 10 version(s) signée(s), 2 erreur(s).**
+**25 emploi(s) du temps publié(s), 11 version(s) signée(s), 3 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
 - `GCO/EDT 06-03-2026 10.30.pdf` : PDF scanné (images) : le texte ne peut pas être lu. Déposer l'original (.docx, ou PDF enregistré depuis Word) et nommer la version scannée « scan_ » + même nom.
 - `GMM/EDT.pdf` : PDF scanné (images) : le texte ne peut pas être lu. Déposer l'original (.docx, ou PDF enregistré depuis Word) et nommer la version scannée « scan_ » + même nom.
+- `GOHM/EDT_GHOM_4_19_10_25_10_2026.pdf` : niveau introuvable (ex. « NIVEAU : SGMP 1 » dans l'en-tête)
 
 ## Avertissements
 
@@ -24,4 +25,5 @@ Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pa
 - `STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf` : page 4 : emploi du temps de GOHM N3 : le fichier .ics est rangé dans GOHM/
 - `STMO/EDT ENSTMO du 02  _08 FEV_061111.pdf` : GOHM N3 du 02/02/2026 existe aussi dans STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf : ce fichier-ci est utilisé
 - `STMO/EDT _STMO 2 du 02-07  Fevrier  2026.pdf` : les dates du nom (02/02 au 07/02/2026) diffèrent de l'en-tête (02/03 au 07/03/2026) : l'en-tête est utilisé
-- `STMO/scan_EDT_STMO_2_19_10_25_10_2026.pdf` : original « EDT_STMO_2_19_10_25_10_2026.pdf » introuvable : semaine lue dans le nom du fichier
+- `STMO/EDT_STMO_2_19_10_25_10_2026.docx` : les dates du nom (19/10 au 25/10/2026) diffèrent de l'en-tête (19/10 au 24/10/2026) : l'en-tête est utilisé
+- `GOHM/SCAN_EDT_GHOM_4_19_10_25_10_2026.pdf` : original « EDT_GHOM_4_19_10_25_10_2026.pdf » introuvable dans le dossier : version signée non proposée dans l'application (déposer l'original avec le même nom)
