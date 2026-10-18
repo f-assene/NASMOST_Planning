@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T17:32:44Z",
+ "generated": "2026-10-18T13:05:27Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -254,6 +254,12 @@
    "signed": true
   },
   {
+   "path": "GOHM/EDT_GHOM_4_19_10_25_10_2026.pdf",
+   "type": "blob",
+   "sha": "92568d42998c2e4634b000db0da6c865abb4e59b",
+   "size": 190952
+  },
+  {
    "path": "GOHM/GOHM_N3_02_02_08_02_2026.ics",
    "type": "blob",
    "sha": "a943de6f8eb2ac8d324e16d3463202e9afcf3dfb",
@@ -264,6 +270,12 @@
    "type": "blob",
    "sha": "8ee98a4087f84b1e73f2bac7293599d7fb90bbee",
    "size": 2027
+  },
+  {
+   "path": "GOHM/SCAN_EDT_GHOM_4_19_10_25_10_2026.pdf",
+   "type": "blob",
+   "sha": "05824133797a4aaac50874f6c1ab56a492486822",
+   "size": 1133013
   },
   {
    "path": "LICENSE",
@@ -493,8 +505,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "70ddbac2a074b7dc648d73c6bed95d68ef094f27",
-   "size": 2633
+   "sha": "11ec9b5415e23ca80a10c44e22bdd347de3d472d",
+   "size": 2965
   },
   {
    "path": "README.md",
@@ -707,6 +719,19 @@
    ]
   },
   {
+   "path": "STMO/EDT_STMO_2_19_10_25_10_2026.docx",
+   "type": "blob",
+   "sha": "c61ea78160312a5e00282e62717c58bce967231b",
+   "size": 44848,
+   "week": [
+    "2026-10-19",
+    "2026-10-24"
+   ],
+   "departments": [
+    "STMO"
+   ]
+  },
+  {
    "path": "STMO/README.md",
    "type": "blob",
    "sha": "59662370256ef7ad60947cb5ec23afc6bc146aea",
@@ -731,13 +756,19 @@
    "size": 3463
   },
   {
+   "path": "STMO/STMO_N2_19_10_24_10_2026.ics",
+   "type": "blob",
+   "sha": "ddf426a20ce480934a3186054a37bf4a5761dc1e",
+   "size": 7565
+  },
+  {
    "path": "STMO/scan_EDT_STMO_2_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "501088ad5ec2795e2ccc3bc5d97a13200f34e100",
    "size": 553806,
    "week": [
     "2026-10-19",
-    "2026-10-25"
+    "2026-10-24"
    ],
    "departments": [
     "STMO"
@@ -1059,8 +1090,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "a59682aabf23dd490d57b602011622e14f99769f",
-   "size": 9249
+   "sha": "848e10ee2b0a205d7368da5bd138c48bc8cb3702",
+   "size": 9460
   },
   {
    "path": "tools/build_index.py",
