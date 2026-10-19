@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T16:25:27Z",
+ "generated": "2026-10-19T06:26:26Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -848,14 +848,14 @@
   {
    "path": "docs/GUIDE_UTILISATEUR.md",
    "type": "blob",
-   "sha": "860d13f5e23eead50fee434b86acda04d682772e",
-   "size": 13635
+   "sha": "072bf83eb2822bfa085696da858d3c6079b08166",
+   "size": 14151
   },
   {
    "path": "docs/GUIDE_UTILISATEUR.pdf",
    "type": "blob",
-   "sha": "43ad8a6a8691bd67e5095f079063c06785973112",
-   "size": 1547972
+   "sha": "9302797ae55904e849666161d16cfb64660a0f03",
+   "size": 1550154
   },
   {
    "path": "docs/images/menu.png",
