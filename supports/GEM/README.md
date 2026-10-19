@@ -1,4 +1,4 @@
-# Supports de cours — GEM (Génie Énergétique Marine)
+# Supports de cours — GEM (Génie Énergétique de Marine)
 
 Un dossier par cours, nommé d'après le **code de l'EC** ou l'**intitulé du cours** tel qu'il figure
 dans l'emploi du temps (casse, accents, espaces et ponctuation ignorés) :

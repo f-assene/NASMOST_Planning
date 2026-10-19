@@ -1,4 +1,4 @@
-# GMM — Génie Mécanique Marine
+# GMM — Génie Mécanique de Marine
 
 Emplois du temps du département **GMM**, niveaux N3, N4, N5. Ils s'affichent dans
 l'onglet **GMM** de l'application NASMOST Planning.

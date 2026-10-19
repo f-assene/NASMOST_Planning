@@ -1,4 +1,4 @@
-# GEM — Génie Énergétique Marine
+# GEM — Génie Énergétique de Marine
 
 Emplois du temps du département **GEM**, niveaux N3, N4, N5. Ils s'affichent dans
 l'onglet **GEM** de l'application NASMOST Planning.
