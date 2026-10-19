@@ -1,0 +1,97 @@
+# Version web de NASMOST Planning (dossier web/), publiée par GitHub Pages :
+#   https://f-assene.github.io/NASMOST_Planning/
+# Mise en ligne le 20 octobre 2026 à 12:00, heure de Kribi (11:00 UTC). Avant cette heure, le site
+# est seulement construit et vérifié, jamais publié. À la mise en ligne, une annonce est ajoutée
+# dans announcements/ (une seule fois) pour prévenir les utilisateurs de l'application.
+# Ensuite, les actualités et les offres des flux sont rafraîchies toutes les 3 heures.
+name: Version web (GitHub Pages)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "tools/build_web_feeds.py"
+      - "tools/annonce_version_web.txt"
+      - "opportunites/**"
+      - ".github/workflows/web.yml"
+  schedule:
+    - cron: "17 */3 * * *"   # flux d'actualités et d'offres
+    - cron: "1 11 20 10 *"   # mise en ligne (11:01 UTC = 12:01 à Kribi) ; essais suivants si GitHub tarde
+    - cron: "20 11 20 10 *"
+    - cron: "45 11 20 10 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  LAUNCH: "2026-10-20T11:00:00Z"
+  ANNOUNCEMENT: announcements/2026-10-20_NASMOST_Planning_sur_le_web.txt
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      live: ${{ steps.gate.outputs.live }}
+    steps:
+      - name: Heure de mise en ligne atteinte ?
+        id: gate
+        run: |
+          if [ "$(date -u +%s)" -ge "$(date -u -d "$LAUNCH" +%s)" ]; then
+            echo "live=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "live=false" >> "$GITHUB_OUTPUT"
+            echo "Mise en ligne prévue le 20 octobre 2026 à 12:00 (heure de Kribi) : le site est construit et vérifié, pas publié." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Annonce de la version web (une seule fois, à la mise en ligne)
+        if: steps.gate.outputs.live == 'true'
+        run: |
+          if [ ! -f "$ANNOUNCEMENT" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            cp tools/annonce_version_web.txt "$ANNOUNCEMENT"
+            git add "$ANNOUNCEMENT"
+            git commit -m "Annonce : NASMOST Planning sur le web"
+            # index.json : la liste lue par l'application (l'action « Publication » ne se relance pas
+            # pour un envoi fait par une action).
+            python tools/build_index.py .
+            git add index.json
+            git diff --cached --quiet || git commit -m "Mise à jour automatique de index.json"
+            git pull --rebase --autostash origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Flux d'actualités et d'offres
+        run: python tools/build_web_feeds.py . web/feeds || echo "::warning::Les flux n'ont pas pu être préparés : le site est publié sans eux."
+
+      - uses: actions/configure-pages@v5
+        if: steps.gate.outputs.live == 'true'
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.live == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

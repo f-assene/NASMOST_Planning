@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NASMOST Planning</title>
+  <meta name="description" content="Emplois du temps, annonces et opportunités des étudiants de l'ENSTMO (Université d'Ebolowa, Kribi).">
+  <meta name="theme-color" content="#0B3954">
+  <link rel="icon" href="icon-512.png">
+  <link rel="apple-touch-icon" href="icon-512.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Écran d'accueil (quelques instants à l'ouverture), comme dans l'application mobile -->
+  <div id="welcome" class="welcome" hidden>
+    <img class="welcome-poster" src="welcome.webp" alt="">
+    <div class="welcome-card"><img src="icon-512.png" alt=""></div>
+    <div class="welcome-title"><strong>NASMOST Planning</strong> <span id="welcomeVersion"></span></div>
+  </div>
+
+  <header id="topbar" class="topbar">
+    <div class="topbar-row">
+      <button id="backButton" class="icon-button" hidden aria-label="Retour">
+        <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+      </button>
+      <h1 id="title" class="title">NASMOST Planning</h1>
+      <div id="actions" class="actions"></div>
+    </div>
+    <div id="weekbar" class="weekbar" hidden></div>
+    <nav id="tabs" class="tabs" hidden></nav>
+  </header>
+
+  <main id="main" class="main"></main>
+
+  <div id="menu" class="menu" hidden></div>
+  <dialog id="dialog" class="dialog"></dialog>
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -8,6 +8,8 @@ fichiers pour mettre à jour les emplois du temps, les logos et les annonces des
 📘 **Guide d'utilisation** (application et dépôt de fichiers) : [docs/GUIDE_UTILISATEUR.md](docs/GUIDE_UTILISATEUR.md)
 · [version PDF](docs/GUIDE_UTILISATEUR.pdf)
 
+🌐 **Version web** (à partir du 20 octobre 2026, 12:00) : https://f-assene.github.io/NASMOST_Planning/ — dossier `web/`, publiée par l'action « Version web (GitHub Pages) », qui ajoute aussi l'annonce de lancement.
+
 ## Organisation
 
 ```
