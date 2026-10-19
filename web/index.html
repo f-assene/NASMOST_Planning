@@ -6,8 +6,13 @@
   <title>NASMOST Planning</title>
   <meta name="description" content="Emplois du temps, annonces et opportunités des étudiants de l'ENSTMO (Université d'Ebolowa, Kribi).">
   <meta name="theme-color" content="#0B3954">
-  <link rel="icon" href="icon-512.png">
-  <link rel="apple-touch-icon" href="icon-512.png">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- iPhone : ouverture en plein écran depuis l'écran d'accueil, comme une application -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="NASMOST">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -36,6 +41,8 @@
   <div id="menu" class="menu" hidden></div>
   <dialog id="dialog" class="dialog"></dialog>
   <div id="toast" class="toast" hidden></div>
+  <!-- Invitation à installer le site comme une application (mobile, une fois) -->
+  <div id="installBanner" class="install-banner" hidden></div>
 
   <script src="app.js"></script>
 </body>

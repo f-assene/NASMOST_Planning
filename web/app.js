@@ -60,6 +60,12 @@ const TEXTS = {
     syncing: "Synchronisation en cours…", synced: "Programme mis à jour", syncError: "Impossible de joindre le dépôt : vérifie ta connexion",
     menuParcours: "Mon parcours", menuWelcome: "Accueil des nouveaux étudiants", menuHelp: "Assistance", menuOpportunities: "Opportunités",
     menuCampus: "Campus et communauté", menuLanguage: "Langue (FR / EN)", menuColor: "Couleur de la barre", menuAbout: "Infos", menuApk: "Application Android",
+    menuInstall: "Installer l'application", installTitle: "Installer NASMOST Planning",
+    installBanner: "Ajoutez NASMOST Planning à votre écran d'accueil : il s'ouvrira comme une application, même hors connexion.",
+    installNow: "Installer", installLater: "Plus tard", ok: "OK",
+    installIos: "Sur iPhone ou iPad, dans Safari :\n\n1. Touchez le bouton Partager (le carré avec une flèche vers le haut), en bas de l'écran.\n2. Choisissez « Sur l'écran d'accueil ».\n3. Touchez « Ajouter ».\n\nL'icône NASMOST apparaît sur l'écran d'accueil et s'ouvre en plein écran.",
+    installOther: "Dans le menu du navigateur (⋮ ou ⋯), choisissez « Installer l'application » ou « Ajouter à l'écran d'accueil ».\n\nSur Android, l'application complète, avec les alarmes, reste disponible dans le menu : « Application Android ».",
+    installed: "Application installée sur l'écran d'accueil",
     spaceHelp: "Assistance et renseignements", spaceEmpty: "Rien de publié ici pour le moment.", announcementsEmpty: "Aucune annonce pour le moment.",
     myDepartment: "Mon département", all: "Tous", forDepts: (d) => `Pour : ${d}`, open: { pdf: "Ouvrir le PDF", xlsx: "Ouvrir le fichier Excel", docx: "Ouvrir le document Word", link: "Voir l'offre" },
     general: "Général", archives: "Archives", offers: (n) => n === 0 ? "Aucune offre pour le moment" : `${n} offre${n > 1 ? "s" : ""}`,
@@ -109,6 +115,12 @@ const TEXTS = {
     syncing: "Synchronising…", synced: "Timetable updated", syncError: "Unable to reach the repository: please check your connection",
     menuParcours: "My academic path", menuWelcome: "New student orientation", menuHelp: "Help", menuOpportunities: "Opportunities",
     menuCampus: "Campus and community", menuLanguage: "Language (FR / EN)", menuColor: "Bar colour", menuAbout: "About", menuApk: "Android application",
+    menuInstall: "Install the app", installTitle: "Install NASMOST Planning",
+    installBanner: "Add NASMOST Planning to your home screen: it will open like an app, even offline.",
+    installNow: "Install", installLater: "Later", ok: "OK",
+    installIos: "On iPhone or iPad, in Safari:\n\n1. Tap the Share button (the square with an upward arrow) at the bottom of the screen.\n2. Choose “Add to Home Screen”.\n3. Tap “Add”.\n\nThe NASMOST icon appears on the home screen and opens full screen.",
+    installOther: "In the browser menu (⋮ or ⋯), choose “Install app” or “Add to Home screen”.\n\nOn Android, the full application, with alarms, remains available from the menu: “Android application”.",
+    installed: "App installed on the home screen",
     spaceHelp: "Help and information", spaceEmpty: "Nothing has been published here yet.", announcementsEmpty: "There are no announcements at present.",
     myDepartment: "My department", all: "All", forDepts: (d) => `For: ${d}`, open: { pdf: "Open the PDF", xlsx: "Open the Excel file", docx: "Open the Word document", link: "View the opportunity" },
     general: "General", archives: "Archives", offers: (n) => n === 0 ? "No opportunities at present" : `${n} opportunit${n > 1 ? "ies" : "y"}`,
@@ -355,6 +367,7 @@ function toggleMenu() {
     ["#/parcours", t.menuParcours, ""], ["#/accueil", t.menuWelcome, dot("accueil")], ["#/assistance", t.menuHelp, dot("assistance")],
     ["#/opportunites", t.menuOpportunities, dot("opportunites")], ["#/campus", t.menuCampus, dot("campus")],
     ["lang", t.menuLanguage, ""], ["color", t.menuColor, ""], ["#/infos", t.menuAbout, aboutUnseen() ? "dot" : ""], ["apk", t.menuApk, ""],
+    ...(isInstalled() ? [] : [["install", t.menuInstall, ""]]),
   ].map(([target, label, cls]) => `<button class="${cls}" data-target="${target}">${esc(label)}</button>`).join("");
   menu.hidden = false;
   menu.querySelectorAll("button").forEach((b) => b.onclick = () => {
@@ -362,11 +375,42 @@ function toggleMenu() {
     if (target === "lang") choose(T().languageTitle, ["Français (FR)", "English (EN)"], lang === "fr" ? 0 : 1, (i) => { lang = i ? "en" : "fr"; store.set("lang", lang); document.documentElement.lang = lang; render(); });
     else if (target === "color") choose(T().colorTitle, T().colors, store.get("barColor", 0), (i) => { store.set("barColor", i); applyBarColor(); render(); });
     else if (target === "apk") location.href = APK_URL;
+    else if (target === "install") installApp();
     else go(target);
   });
   setTimeout(() => document.addEventListener("click", function close(ev) { if (!menu.contains(ev.target)) { menu.hidden = true; document.removeEventListener("click", close); } }), 0);
 }
 window.go = (hash) => { location.hash = hash; };
+
+// ------------------------------------------------------------------ installation sur l'écran d'accueil
+let installPrompt = null; // proposé par Chrome / Edge sur Android et ordinateur
+window.addEventListener("beforeinstallprompt", (event) => { event.preventDefault(); installPrompt = event; showInstallBanner(); });
+window.addEventListener("appinstalled", () => { installPrompt = null; $("installBanner").hidden = true; toast(T().installed); });
+const isInstalled = () => window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const isIos = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+const isMobile = () => isIos() || /android/i.test(navigator.userAgent);
+async function installApp() {
+  const t = T();
+  if (installPrompt) {
+    installPrompt.prompt();
+    await installPrompt.userChoice.catch(() => null);
+    installPrompt = null; $("installBanner").hidden = true;
+    return;
+  }
+  openDialog(`<h3>${esc(t.installTitle)}</h3><div class="text" style="white-space:pre-line">${esc(isIos() ? t.installIos : t.installOther)}</div>` +
+    `<div class="buttons"><button onclick="this.closest('dialog').close()">${esc(t.ok)}</button></div>`);
+}
+/** Une seule invitation, sur téléphone, tant que le site n'est pas installé. */
+function showInstallBanner() {
+  if (isInstalled() || !isMobile() || store.get("installBannerShown", false) || (!installPrompt && !isIos())) return;
+  const t = T(), banner = $("installBanner");
+  banner.innerHTML = `<img src="icon-192.png" alt=""><div class="grow">${esc(t.installBanner)}</div>` +
+    `<div class="banner-buttons"><button id="bannerLater">${esc(t.installLater)}</button><button id="bannerInstall" class="primary">${esc(t.installNow)}</button></div>`;
+  banner.hidden = false;
+  store.set("installBannerShown", true);
+  $("bannerLater").onclick = () => (banner.hidden = true);
+  $("bannerInstall").onclick = () => { banner.hidden = true; installApp(); };
+}
 
 // ------------------------------------------------------------------ nouveautés non consultées (pastilles rouges)
 const SPACES = { annonces: "announcements", accueil: "accueil", assistance: "assistance", opportunites: "opportunites", campus: "campus" };
@@ -806,6 +850,8 @@ window.addEventListener("hashchange", () => { window.scrollTo(0, 0); render(); }
 
 async function start() {
   applyBarColor();
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => { /* site utilisable sans */ });
+  setTimeout(showInstallBanner, 4000); // après l'écran d'accueil
   if (GOATCOUNTER_CODE && location.hostname.endsWith("github.io")) {
     const s = document.createElement("script");
     s.async = true; s.src = "https://gc.zgo.at/count.js";

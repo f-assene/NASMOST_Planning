@@ -174,3 +174,14 @@ a { color: var(--blue); }
 .stats-table td.num { text-align: right; padding-left: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .stats-table td.muted { color: var(--text-2); }
 .stats-tip { position: fixed; z-index: 40; background: #fff; color: var(--text); border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,.25); padding: 8px 10px; font-size: 13px; pointer-events: none; max-width: 240px; }
+
+/* ---- invitation à installer l'application ---- */
+.install-banner { position: fixed; left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); z-index: 30; max-width: 560px; margin: 0 auto;
+  background: #fff; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.25); padding: 12px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: 14px; }
+.install-banner img { width: 40px; height: 40px; border-radius: 10px; }
+.install-banner .grow { flex: 1; min-width: 180px; }
+.banner-buttons { display: flex; gap: 6px; margin-left: auto; }
+.banner-buttons button { border: 0; background: transparent; color: var(--blue); font-weight: 600; padding: 8px 10px; border-radius: 6px; text-transform: uppercase; font-size: 13px; letter-spacing: .04em; }
+.banner-buttons button.primary { background: var(--blue); color: #fff; }
+/* Installée sur iPhone : la barre du haut passe sous la barre d'état (black-translucent). */
+@media (display-mode: standalone) { .topbar { padding-top: env(safe-area-inset-top); } }

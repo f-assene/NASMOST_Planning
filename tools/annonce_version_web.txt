@@ -4,6 +4,8 @@ https://f-assene.github.io/NASMOST_Planning/
 
 Les alarmes avant les séances de cours restent dans l'application Android ; depuis le site, chaque semaine peut aussi être ajoutée à votre agenda.
 
+Astuce : ajoutez-le à votre écran d'accueil (menu ⋮ du site → « Installer l'application » ; sur iPhone : Partager → « Sur l'écran d'accueil ») : il s'ouvre alors comme une application, même hors connexion.
+
 NASMOST Planning is now also available on the web: https://f-assene.github.io/NASMOST_Planning/
 
 Départements: TOUS
