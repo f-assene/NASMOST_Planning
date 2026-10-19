@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T09:18:05Z",
+ "generated": "2026-10-19T09:28:45Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1142,8 +1142,8 @@
   {
    "path": "tools/annonce_version_web.txt",
    "type": "blob",
-   "sha": "c2ac569dd5ce70af5ebda90d3340e2790339e39a",
-   "size": 559
+   "sha": "96b19c39798c4b651eb83060a6da3c39d38f7509",
+   "size": 780
   },
   {
    "path": "tools/build_index.py",
@@ -1190,32 +1190,56 @@
   {
    "path": "web/app.js",
    "type": "blob",
-   "sha": "fb828a23f6c6cfe6478878d8993310644c871da2",
-   "size": 69648
+   "sha": "3c29beb9985e6b84b8ee712b8f9cb1cb29f4f8dd",
+   "size": 73663
+  },
+  {
+   "path": "web/apple-touch-icon.png",
+   "type": "blob",
+   "sha": "b319ce885996efe8afe4d3c1fb2f480c1c88faed",
+   "size": 28197
+  },
+  {
+   "path": "web/icon-192.png",
+   "type": "blob",
+   "sha": "ea45cfcdcd6bbe61484e0f2b1ce61137278aac14",
+   "size": 35957
   },
   {
    "path": "web/icon-512.png",
    "type": "blob",
-   "sha": "b4238f89969b02199b3a62d5a4ecc2ef19a7bdf5",
-   "size": 208558
+   "sha": "55209893f260500f824ea0f5fa062d0b97afd6c3",
+   "size": 181137
+  },
+  {
+   "path": "web/icon-maskable-512.png",
+   "type": "blob",
+   "sha": "4ee66614b099e3b669c929dc44b27bb1d0725151",
+   "size": 112241
   },
   {
    "path": "web/index.html",
    "type": "blob",
-   "sha": "d902716cd7b6eae0a83d4cd01e74444438c3a583",
-   "size": 1687
+   "sha": "df4311a51687294d4f287d3d320e749d88a2dd38",
+   "size": 2192
   },
   {
    "path": "web/manifest.webmanifest",
    "type": "blob",
-   "sha": "ab2972b78b90af5907c8484831a72c3048684516",
-   "size": 432
+   "sha": "8d3511af1b5323f99a64e99f33c85a73bfb832a2",
+   "size": 711
   },
   {
    "path": "web/style.css",
    "type": "blob",
-   "sha": "8d3f1699f254e7de4bf614301f7e538aad4b6dfb",
-   "size": 14696
+   "sha": "54873cf28fc8a4e5f49704063c84e179f6f44f1e",
+   "size": 15738
+  },
+  {
+   "path": "web/sw.js",
+   "type": "blob",
+   "sha": "3272811b9d087d384bc9ef5f7ea642a81c44cf3c",
+   "size": 2337
   },
   {
    "path": "web/welcome.webp",
