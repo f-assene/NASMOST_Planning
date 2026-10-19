@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T09:09:41Z",
+ "generated": "2026-10-19T09:18:05Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -551,8 +551,8 @@
   {
    "path": "README.md",
    "type": "blob",
-   "sha": "d308c285f7850105208c9b7a932f17485fb5d116",
-   "size": 8946
+   "sha": "acfea03f5c39ed57806231963b8d79e1e5ec91d7",
+   "size": 10356
   },
   {
    "path": "SGMP/EDT SGMP 1 -02-08 MARS 2026.pdf",
@@ -860,8 +860,8 @@
   {
    "path": "docs/POLITIQUE_DE_CONFIDENTIALITE.md",
    "type": "blob",
-   "sha": "274d1764b21e7716193b91c54ef47d3aab861de6",
-   "size": 3033
+   "sha": "757986ed1f74b771d909c8c3de7ea51ac3be55ee",
+   "size": 3990
   },
   {
    "path": "docs/images/menu.png",
@@ -1158,6 +1158,12 @@
    "size": 6061
   },
   {
+   "path": "tools/build_web_stats.py",
+   "type": "blob",
+   "sha": "f2f748d4e1ede6384e519f65a97769a42dc43b1c",
+   "size": 3021
+  },
+  {
    "path": "tools/check_announcements.py",
    "type": "blob",
    "sha": "580f5f8b4f8ebf21d2d479721b3ccc327ea3fab6",
@@ -1176,10 +1182,16 @@
    "size": 30584
   },
   {
+   "path": "web/admin.js",
+   "type": "blob",
+   "sha": "579472f9521ff7fdb13b30bf7f9232752e7c9666",
+   "size": 11940
+  },
+  {
    "path": "web/app.js",
    "type": "blob",
-   "sha": "680fa27dfd412ca080c66c6f940961af0e1d707a",
-   "size": 67825
+   "sha": "fb828a23f6c6cfe6478878d8993310644c871da2",
+   "size": 69648
   },
   {
    "path": "web/icon-512.png",
@@ -1202,8 +1214,8 @@
   {
    "path": "web/style.css",
    "type": "blob",
-   "sha": "d8b8bdab5e557af6723ada7ba8fa258efabdc979",
-   "size": 12755
+   "sha": "8d3f1699f254e7de4bf614301f7e538aad4b6dfb",
+   "size": 14696
   },
   {
    "path": "web/welcome.webp",
