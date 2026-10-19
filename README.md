@@ -149,3 +149,21 @@ offres touchant aux filières de l'ENSTMO : publications LinkedIn publiques et r
 Actualités en français et en anglais. Passé la date `Expire:`, une offre déposée à la main va
 dans le libellé **Archives**.
 Détails : `opportunites/README.md`.
+
+## Version web et statistiques (administration)
+
+- Le site https://f-assene.github.io/NASMOST_Planning/ (dossier `web/`) lit les mêmes fichiers que
+  l'application. L'action « Version web (GitHub Pages) » le publie à chaque modification de `web/`
+  et toutes les 3 heures (actualités et offres des flux). Mise en ligne : 20 octobre 2026, 12:00.
+- **Page d'administration** : https://f-assene.github.io/NASMOST_Planning/#/admin (lien discret en
+  bas de *Infos*) — visites par pays sur une carte du monde, visites par jour, pages, navigateurs,
+  systèmes, tailles d'écran. Elle n'est pas protégée par un mot de passe : un site statique ne le
+  permet pas ; elle ne montre que des totaux.
+- Les visites sont comptées par **GoatCounter** (gratuit, sans cookies ni données personnelles).
+  À faire une fois par l'administrateur :
+  1. Créer le compte sur https://www.goatcounter.com/signup avec le code **`nasmost-planning`**
+     (adresse `https://nasmost-planning.goatcounter.com`). Si ce code est pris, en choisir un autre
+     et le remplacer dans `web/app.js` (`GOATCOUNTER_CODE`) et `.github/workflows/web.yml`.
+  2. Dans GoatCounter : *Settings → API → New token*, cocher la lecture des statistiques.
+  3. Dans ce dépôt GitHub : *Settings → Secrets and variables → Actions → New repository secret*,
+     nom **`GOATCOUNTER_TOKEN`**, valeur = la clé. Elle n'est jamais publiée.

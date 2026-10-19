@@ -25,6 +25,12 @@ Fernand ASSENE pour les étudiants de l'ENSTMO (Université d'Ebolowa, Kribi).
   alarmes), affichage plein écran et service de premier plan (faire sonner l'alarme, même
   téléphone verrouillé).
 
+**Version web** (https://f-assene.github.io/NASMOST_Planning/) : mêmes contenus, mêmes principes.
+Vos réglages et « Mon parcours » restent dans votre navigateur. Pour connaître sa fréquentation,
+le site compte les visites avec **GoatCounter**, sans cookies et sans données personnelles : page
+consultée, site d'origine, navigateur, système, taille d'écran et pays (déduit de l'adresse IP, qui
+n'est pas conservée). Seuls des totaux sont publiés, dans la page d'administration du site.
+
 Contact : fernandassene@hotmail.com
 
 ## English
@@ -47,5 +53,11 @@ Fernand ASSENE for students of NASMOST (University of Ebolowa, Kribi).
 - **Permissions**: Internet (download content), notifications (announcements, updates), alarms and
   reminders (ring before class sessions), device start-up (reschedule alarms), full-screen display
   and foreground service (sound the alarm, even when the phone is locked).
+
+**Web version** (https://f-assene.github.io/NASMOST_Planning/): same content, same principles. Your
+settings and “My academic path” stay in your browser. To measure its audience, the site counts
+visits with **GoatCounter**, without cookies or personal data: page viewed, referring site, browser,
+operating system, screen size and country (derived from the IP address, which is not stored). Only
+totals are published, on the site's administration page.
 
 Contact: fernandassene@hotmail.com

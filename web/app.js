@@ -12,6 +12,9 @@ const REPO = "f-assene/NASMOST_Planning";
 const BRANCH = "main";
 const VERSION = "1.3";
 const APK_URL = `https://github.com/${REPO}/releases/latest/download/NASMOSTPlanning.apk`;
+// Statistiques de fréquentation (GoatCounter : sans cookies ni données personnelles), comptées
+// uniquement sur le site publié. Le tableau de bord est la page #/admin.
+const GOATCOUNTER_CODE = "nasmost-planning";
 const raw = (path) => `https://raw.githubusercontent.com/${REPO}/${BRANCH}/` + path.split("/").map(encodeURIComponent).join("/");
 
 // ------------------------------------------------------------------ départements
@@ -80,7 +83,7 @@ const TEXTS = {
     sourceCourses: "• Les programmes de cours de l'ENSTMO affichés dans l'application proviennent des responsables pédagogiques de chaque filière concernée.",
     sourceAnnouncements: "• Les communiqués et annonces sont récupérés et diffusés après avoir été rendus publics par l'Administration de l'ENSTMO.",
     licence: "Licence", licenceText: "Logiciel libre sous licence MIT.\n© 2026 Fernand ASSENE — ENSTMO, Université d'Ebolowa.", licenceLink: "Texte de la licence MIT",
-    version: "Version", versionText: `Version web ${VERSION}`, apk: "Télécharger l'application Android",
+    version: "Version", versionText: `Version web ${VERSION}`, apk: "Télécharger l'application Android", admin: "Administration · statistiques",
     roles: ["Contributeur et coordinateur du développement de SEA-FORWARD", "Formateur en Python et en modélisation aux écoles d'été GGOSSS (Gulf of Guinea Ocean Sciences Summer School)", "Formateur du cours 3 du MOOC « Fundamentals of Ocean Forecasting » (FutureLearn)"],
     changelog: [
       "Version web — 20 octobre 2026\n• NASMOST Planning dans le navigateur : emplois du temps, annonces, actualités, opportunités, espaces étudiants et Mon parcours",
@@ -129,7 +132,7 @@ const TEXTS = {
     sourceCourses: "• The NASMOST course timetables displayed in the application are provided by the academic coordinators of each programme concerned.",
     sourceAnnouncements: "• Notices and announcements are collected and circulated once they have been made public by the NASMOST Administration.",
     licence: "Licence", licenceText: "Free software released under the MIT Licence.\n© 2026 Fernand ASSENE — NASMOST, University of Ebolowa.", licenceLink: "Text of the MIT Licence",
-    version: "Version", versionText: `Web version ${VERSION}`, apk: "Download the Android application",
+    version: "Version", versionText: `Web version ${VERSION}`, apk: "Download the Android application", admin: "Administration · statistics",
     roles: ["Contributor to and coordinator of the development of SEA-FORWARD", "Instructor in Python and numerical modelling at the GGOSSS summer schools (Gulf of Guinea Ocean Sciences Summer School)", "Instructor for Course 3 of the MOOC “Fundamentals of Ocean Forecasting” (FutureLearn)"],
     changelog: [
       "Web version — 20 October 2026\n• NASMOST Planning in the browser: timetables, announcements, news, opportunities, student spaces and My academic path",
@@ -162,6 +165,7 @@ const T = () => TEXTS[lang];
 const deptName = (d) => (lang === "en" ? d.en : d.fr);
 const plain = (s) => String(s || "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+window.nasmostEscape = esc;
 const linkify = (s) => esc(s).replace(/(https?:\/\/[^\s<]+[^\s<.,;:!?)])/g, '<a href="$1" target="_blank" rel="noopener">$1</a>')
   .replace(/([\w.+-]+@[\w-]+\.[\w.-]+\w)/g, '<a href="mailto:$1">$1</a>');
 
@@ -757,14 +761,33 @@ function renderAbout() {
       `<div class="text">${esc(t.contribute)}<a href="mailto:fernandassene@hotmail.com">${esc(t.byEmail)}</a>.</div>`) +
     section(t.sources, `<div class="text">${esc(t.sourceCourses)}</div><div class="text">${esc(t.sourceAnnouncements)}</div>`) +
     section(t.licence, `<div class="text">${esc(t.licenceText)}</div><div class="links"><a href="https://opensource.org/license/mit" target="_blank" rel="noopener"><span>${esc(t.licenceLink)}</span><span>↗</span></a></div>` +
-      `<h2 style="margin-top:16px">${esc(t.version)}</h2><div class="text">${esc(t.versionText)}</div><div style="margin-top:10px"><a class="outline-button" href="${APK_URL}">${esc(t.apk)}</a></div>`);
+      `<h2 style="margin-top:16px">${esc(t.version)}</h2><div class="text">${esc(t.versionText)}</div><div style="margin-top:10px"><a class="outline-button" href="${APK_URL}">${esc(t.apk)}</a></div>`) +
+    `<p class="center small"><a href="#/admin">${esc(t.admin)}</a></p>`;
 }
 
 // ------------------------------------------------------------------ navigation
+async function renderAdminPage(periodKey) {
+  setTopbar({ title: lang === "en" ? "Statistics" : "Statistiques", subtitle: lang === "en" ? "Administration" : "Administration", back: true });
+  try {
+    await new Promise((resolve, reject) => {
+      if (window.renderAdmin) return resolve();
+      const s = document.createElement("script"); s.src = "admin.js"; s.onload = resolve; s.onerror = reject; document.head.appendChild(s);
+    });
+    await window.renderAdmin($("main"), lang, periodKey || "last30");
+  } catch { $("main").innerHTML = `<div class="empty">${esc(T().syncError)}</div>`; }
+}
+
+/** Une visite par écran consulté (sauf l'administration), sur le site publié seulement. */
+function countVisit(page) {
+  if (page === "admin" || !window.goatcounter || !window.goatcounter.count) return;
+  window.goatcounter.count({ path: "/" + page, title: document.title });
+}
+
 async function render() {
   $("menu").hidden = true;
   document.documentElement.lang = lang;
   const [, page = "", a, b] = decodeURIComponent(location.hash.replace(/^#/, "")).split("/");
+  countVisit(page);
   const t = T();
   if (page === "" ) return renderPlanning();
   if (page === "annonces") return renderSpace("announcements", t.announcements);
@@ -776,12 +799,21 @@ async function render() {
   if (page === "actualites") return renderNews(a || null, b || null);
   if (page === "parcours") return a === "cours" ? renderMyCourses() : LIST_KEYS.includes(a) ? renderList(a) : renderParcours();
   if (page === "infos") return renderAbout();
+  if (page === "admin") return renderAdminPage(a);
   go("#/");
 }
 window.addEventListener("hashchange", () => { window.scrollTo(0, 0); render(); });
 
 async function start() {
   applyBarColor();
+  if (GOATCOUNTER_CODE && location.hostname.endsWith("github.io")) {
+    const s = document.createElement("script");
+    s.async = true; s.src = "https://gc.zgo.at/count.js";
+    s.dataset.goatcounter = `https://${GOATCOUNTER_CODE}.goatcounter.com/count`;
+    s.dataset.goatcounterSettings = JSON.stringify({ no_onload: true });
+    s.onload = () => countVisit(decodeURIComponent(location.hash.replace(/^#\/?/, "")).split("/")[0]);
+    document.head.appendChild(s);
+  }
   document.documentElement.lang = lang;
   if (!sessionStorage.getItem("welcomed")) {
     sessionStorage.setItem("welcomed", "1");

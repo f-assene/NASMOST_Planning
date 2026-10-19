@@ -79,6 +79,13 @@ jobs:
         run: |
           python tools/build_web_feeds.py . web/feeds || echo "::warning::Les flux n'ont pas pu être préparés ; le site est publié sans eux."
 
+      - name: Statistiques de fréquentation (page d'administration)
+        env:
+          GOATCOUNTER_CODE: nasmost-planning
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+        run: |
+          python tools/build_web_stats.py web/feeds || echo "::warning::Statistiques indisponibles ; la page d'administration l'indique."
+
       - uses: actions/configure-pages@v5
         if: steps.gate.outputs.live == 'true'
 
