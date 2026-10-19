@@ -1,6 +1,6 @@
 # NASMOST Planning — Guide d'utilisation
 
-Application Android des étudiants de l'ENSTMO (Université d'Ebolowa, Kribi) — version 1.1.
+Application Android des étudiants de l'ENSTMO (Université d'Ebolowa, Kribi) — version 1.2.
 
 Ce guide a deux parties : **utiliser l'application** (pour tous) et **publier des contenus dans le
 dépôt GitHub** (pour les personnes chargées de la mise à jour : emplois du temps, annonces,
@@ -65,7 +65,10 @@ L'application se met aussi à jour seule : à l'ouverture, puis toutes les trois
 Une fois chargé, l'emploi du temps reste consultable **sans connexion**.
 
 **Alarmes.** Une alarme sonne 30 et 15 minutes avant les séances de cours du matin, 15 minutes
-avant celles de l'après-midi, même téléphone verrouillé.
+avant celles de l'après-midi, même téléphone verrouillé. Une fois sa classe renseignée dans
+*Mon parcours* (département, filière, niveau), l'étudiant ne reçoit que les alarmes de **ses**
+séances de cours. C'est facultatif : sans ces informations, les alarmes de toutes les classes
+sonnent. L'application le propose une fois, au premier lancement.
 
 ### 3.2 Les icônes de la barre du haut
 
@@ -77,6 +80,10 @@ avant celles de l'après-midi, même téléphone verrouillé.
   en anglais, d'abord le golfe de Guinée, puis l'Afrique, puis le monde.
 
 ### 3.3 Le menu ⋮
+
+Une **pastille rouge** sur ⋮ et à côté d'une section signale des nouveautés pas encore
+consultées (nouvelles offres, nouvelles pages, nouvelle version dans *Infos*) ; elle disparaît
+une fois la section ouverte.
 
 <table>
 <tr>
