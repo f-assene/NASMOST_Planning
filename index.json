@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-19T07:34:17Z",
+ "generated": "2026-10-19T09:09:41Z",
  "tree": [
   {
    "path": ".gitignore",
    "type": "blob",
-   "sha": "d781094fa6fe336617d1557205fb861b5ceac3c4",
-   "size": 105
+   "sha": "1da88b08a48dec67e77fa33bfc140e8abb84a298",
+   "size": 116
   },
   {
    "path": "ANCR/ANCR_N4_19_10_24_10_2026.ics",
@@ -551,8 +551,8 @@
   {
    "path": "README.md",
    "type": "blob",
-   "sha": "45e524a66a55bdd6165575d7fb77d1af4765c7be",
-   "size": 8722
+   "sha": "d308c285f7850105208c9b7a932f17485fb5d116",
+   "size": 8946
   },
   {
    "path": "SGMP/EDT SGMP 1 -02-08 MARS 2026.pdf",
@@ -1140,16 +1140,28 @@
    "size": 10095
   },
   {
+   "path": "tools/annonce_version_web.txt",
+   "type": "blob",
+   "sha": "c2ac569dd5ce70af5ebda90d3340e2790339e39a",
+   "size": 559
+  },
+  {
    "path": "tools/build_index.py",
    "type": "blob",
    "sha": "d9ceb0efa8118e3e9f76480fdead30eea91899b5",
    "size": 2956
   },
   {
+   "path": "tools/build_web_feeds.py",
+   "type": "blob",
+   "sha": "7bae6cd949d9468b210697dea9f560aea21009d1",
+   "size": 6061
+  },
+  {
    "path": "tools/check_announcements.py",
    "type": "blob",
-   "sha": "18a998b4708135f3c12b0bb0333f01e50547fd4c",
-   "size": 6388
+   "sha": "580f5f8b4f8ebf21d2d479721b3ccc327ea3fab6",
+   "size": 6395
   },
   {
    "path": "tools/requirements.txt",
@@ -1160,8 +1172,44 @@
   {
    "path": "tools/timetable_to_ics.py",
    "type": "blob",
-   "sha": "2c966e6428c5da26f232b98b35fa6b2e15bdac24",
-   "size": 30577
+   "sha": "104561faf928855c595ff8ad2d269bea32987a62",
+   "size": 30584
+  },
+  {
+   "path": "web/app.js",
+   "type": "blob",
+   "sha": "680fa27dfd412ca080c66c6f940961af0e1d707a",
+   "size": 67825
+  },
+  {
+   "path": "web/icon-512.png",
+   "type": "blob",
+   "sha": "b4238f89969b02199b3a62d5a4ecc2ef19a7bdf5",
+   "size": 208558
+  },
+  {
+   "path": "web/index.html",
+   "type": "blob",
+   "sha": "d902716cd7b6eae0a83d4cd01e74444438c3a583",
+   "size": 1687
+  },
+  {
+   "path": "web/manifest.webmanifest",
+   "type": "blob",
+   "sha": "ab2972b78b90af5907c8484831a72c3048684516",
+   "size": 432
+  },
+  {
+   "path": "web/style.css",
+   "type": "blob",
+   "sha": "d8b8bdab5e557af6723ada7ba8fa258efabdc979",
+   "size": 12755
+  },
+  {
+   "path": "web/welcome.webp",
+   "type": "blob",
+   "sha": "fa75ec4d60c17c07a9faf9d4621bfd031306c53d",
+   "size": 349104
   }
  ]
 }
