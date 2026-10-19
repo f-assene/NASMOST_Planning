@@ -6,7 +6,7 @@
  *  - les bibliothèques de la carte (cdn.jsdelivr.net) : cache d'abord.
  * Changer VERSION à chaque modification de l'interface pour que les téléphones la rechargent.
  */
-const VERSION = "nasmost-web-1.3.1";
+const VERSION = "nasmost-web-1.3.3";
 const SHELL = [
   "./", "index.html", "style.css", "app.js", "admin.js", "manifest.webmanifest",
   "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "welcome.webp",
