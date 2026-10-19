@@ -76,7 +76,8 @@ jobs:
           fi
 
       - name: Flux d'actualités et d'offres
-        run: python tools/build_web_feeds.py . web/feeds || echo "::warning::Les flux n'ont pas pu être préparés : le site est publié sans eux."
+        run: |
+          python tools/build_web_feeds.py . web/feeds || echo "::warning::Les flux n'ont pas pu être préparés ; le site est publié sans eux."
 
       - uses: actions/configure-pages@v5
         if: steps.gate.outputs.live == 'true'
