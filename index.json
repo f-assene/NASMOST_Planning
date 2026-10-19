@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T09:51:21Z",
+ "generated": "2026-10-19T09:54:28Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1142,8 +1142,8 @@
   {
    "path": "tools/annonce_version_web.txt",
    "type": "blob",
-   "sha": "96b19c39798c4b651eb83060a6da3c39d38f7509",
-   "size": 780
+   "sha": "1ea12807bfb67292152a9cb58dd10761cc653846",
+   "size": 786
   },
   {
    "path": "tools/build_index.py",
@@ -1190,8 +1190,8 @@
   {
    "path": "web/app.js",
    "type": "blob",
-   "sha": "3c29beb9985e6b84b8ee712b8f9cb1cb29f4f8dd",
-   "size": 73663
+   "sha": "5d1d31a5447177315e158f6541e799e3ebe9ca1e",
+   "size": 73815
   },
   {
    "path": "web/apple-touch-icon.png",
@@ -1238,7 +1238,7 @@
   {
    "path": "web/sw.js",
    "type": "blob",
-   "sha": "3272811b9d087d384bc9ef5f7ea642a81c44cf3c",
+   "sha": "29b0d7d598e020760107385475ad7235bf4e5da5",
    "size": 2337
   },
   {
