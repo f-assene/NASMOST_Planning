@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T09:54:28Z",
+ "generated": "2026-10-20T11:33:00Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -820,6 +820,12 @@
    "type": "blob",
    "sha": "3fcda490c0f6de9e6ff7ca3d56f2c85490c191ba",
    "size": 837
+  },
+  {
+   "path": "announcements/2026-10-20_NASMOST_Planning_sur_le_web.txt",
+   "type": "blob",
+   "sha": "1ea12807bfb67292152a9cb58dd10761cc653846",
+   "size": 786
   },
   {
    "path": "announcements/Nouvelles_moladites_inscription_etudiants_Univ-Ebolowa.pdf",
