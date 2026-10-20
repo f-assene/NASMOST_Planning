@@ -1,0 +1,12 @@
+NASMOST Planning est maintenant aussi sur le web
+Retrouvez les emplois du temps, les annonces, les actualités, les opportunités et « Mon parcours » depuis n'importe quel navigateur, sur ordinateur comme sur téléphone :
+https://f-assene.github.io/NASMOST_Planning/
+
+Les alarmes avant les séances de cours restent dans l'application Android ; depuis le site, chaque semaine peut aussi être ajoutée à votre agenda.
+
+Astuce : ajoutez-le à votre écran d'accueil (menu ⋮ du site → « Ajouter à l'écran d'accueil » ; sur iPhone : Partager → « Sur l'écran d'accueil ») : il s'ouvre alors comme une application, même hors connexion.
+
+NASMOST Planning is now also available on the web: https://f-assene.github.io/NASMOST_Planning/
+
+Départements: TOUS
+Expire: 2026-11-30
