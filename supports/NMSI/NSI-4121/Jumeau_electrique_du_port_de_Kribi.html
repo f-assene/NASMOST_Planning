@@ -1,0 +1,803 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Jumeau électrique du port de Kribi</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Plan d'exploitation portuaire : synoptique HT au centre, atelier de dépannage à droite,
+   courbe de charge du jour et sources dessous. Béton clair, bleu du golfe de Guinée. */
+:root {
+  --bg: #EEF1F0;
+  --surface: #FFFFFF;
+  --surface-2: #F6F8F7;
+  --ink: #15232B;
+  --mute: #5B6970;
+  --line: #D2DADB;
+  --sea: #0F4C6E;
+  --sea-soft: #D9E7EE;
+  --live: #0E7C66;
+  --amber: #B86E00;
+  --fault: #C62828;
+  --dead: #A9B4B8;
+  --f-disp: "Archivo", "Arial Narrow", Arial, sans-serif;
+  --f-body: "Source Sans 3", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0E161A; --surface: #152127; --surface-2: #1A2930; --ink: #E2EAED; --mute: #93A4AB; --line: #2A3B42;
+  --sea: #62B4DC; --sea-soft: #16313F; --live: #3CC29E; --amber: #F0A830; --fault: #FF6B6B; --dead: #4A5A61; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0E161A; --surface: #152127; --surface-2: #1A2930; --ink: #E2EAED; --mute: #93A4AB; --line: #2A3B42;
+  --sea: #62B4DC; --sea-soft: #16313F; --live: #3CC29E; --amber: #F0A830; --fault: #FF6B6B; --dead: #4A5A61; color-scheme: dark; }
+* { box-sizing: border-box; }
+html, body { background: var(--bg); color: var(--ink); }
+body { font-family: var(--f-body); font-size: 15px; line-height: 1.45; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 16px 40px; }
+.wrap { max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+h1, h2, h3 { font-family: var(--f-disp); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+.eyebrow { font-family: var(--f-disp); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--mute); }
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+button, select, input { font: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--sea); outline-offset: 2px; }
+
+header.top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px 24px; align-items: end; }
+@media (max-width: 860px) { header.top { grid-template-columns: minmax(0, 1fr); } }
+header.top h1 { font-size: clamp(26px, 3.4vw, 40px); font-weight: 800; line-height: 1.02; }
+header.top h1 span { color: var(--sea); }
+.facts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.fact { font-size: 13px; padding: 3px 9px; border-radius: 4px; background: var(--surface); border: 1px solid var(--line); }
+.fact b { font-family: var(--f-mono); font-weight: 500; }
+.tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: flex-end; }
+.tool { display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; font-size: 13.5px; }
+.tool label { color: var(--mute); }
+.tool input[type=range] { width: 120px; accent-color: var(--sea); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--surface); }
+.seg button { border: 0; background: transparent; padding: 7px 11px; color: var(--mute); font-family: var(--f-mono); font-size: 13px; }
+.seg button[aria-pressed="true"] { background: var(--sea); color: var(--surface); }
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.kpi { background: var(--surface); padding: 10px 14px; display: grid; gap: 2px; }
+.kpi .v { font-family: var(--f-mono); font-size: 23px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.kpi .v small { font-size: 13px; color: var(--mute); margin-left: 3px; }
+.kpi .s { font-size: 12.5px; color: var(--mute); }
+.kpi.warn .v { color: var(--amber); } .kpi.crit .v { color: var(--fault); } .kpi.good .v { color: var(--live); }
+
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 16px; align-items: start; }
+@media (max-width: 1150px) { .main { grid-template-columns: minmax(0, 1fr); } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+.card > header { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; padding: 11px 16px; border-bottom: 1px solid var(--line); }
+.card > header h2 { font-size: 18px; font-weight: 700; }
+
+/* synoptique */
+.scroll { overflow-x: auto; }
+#mimic { display: block; width: 100%; min-width: 900px; height: auto; }
+#mimic text { font-family: var(--f-body); fill: var(--ink); }
+#mimic .nm { font-family: var(--f-disp); font-weight: 700; font-size: 14px; }
+#mimic .sm { font-size: 12px; fill: var(--mute); }
+#mimic .mv { font-family: var(--f-mono); font-size: 12px; fill: var(--ink); }
+.w { fill: none; stroke: var(--dead); stroke-width: 3; }
+.w.live { stroke: var(--live); }
+.w.fault { stroke: var(--fault); }
+.w.amber { stroke: var(--amber); }
+.bus { stroke-width: 7; stroke-linecap: round; }
+.sw { fill: var(--surface); stroke: var(--mute); stroke-width: 2; cursor: pointer; }
+.sw.closed { fill: var(--ink); stroke: var(--ink); }
+.sw.closed.live { fill: var(--live); stroke: var(--live); }
+.sw.trip { stroke: var(--fault); stroke-width: 3; }
+.sw:hover { stroke: var(--sea); stroke-width: 3; }
+.box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+.box.live { stroke: var(--live); }
+.box.dead { stroke: var(--dead); stroke-dasharray: 5 4; }
+.box.backup { stroke: var(--amber); }
+.box.alarm { stroke: var(--fault); stroke-width: 2.5; }
+.ipd { fill: var(--surface-2); stroke: var(--line); }
+.ipd.on { fill: var(--fault); stroke: var(--fault); }
+.sea { fill: var(--sea-soft); }
+.hull { fill: var(--sea); opacity: .85; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; padding: 10px 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--mute); }
+.legend i { display: inline-block; width: 22px; border-top: 4px solid; vertical-align: middle; margin-right: 6px; }
+.note { padding: 10px 16px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--mute); }
+.note b { color: var(--ink); }
+
+/* atelier */
+.sc-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 12px 16px 0; }
+.sc-list button { text-align: left; border: 1px solid var(--line); background: var(--surface-2); border-radius: 6px; padding: 6px 8px; font-size: 12.5px; line-height: 1.25; color: var(--ink); min-height: 48px; }
+.sc-list button b { display: block; font-family: var(--f-mono); font-size: 12px; color: var(--sea); }
+.sc-list button[aria-pressed="true"] { border-color: var(--sea); box-shadow: inset 0 0 0 1px var(--sea); }
+.sc-list button.done b::after { content: " ✓"; color: var(--live); }
+.atelier { padding: 14px 16px 16px; display: grid; gap: 14px; }
+.ticket { border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; background: var(--surface-2); }
+.ticket .eyebrow { color: var(--fault); }
+.ticket p { margin: 4px 0 0; }
+.stage h3 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--mute); margin-bottom: 6px; display: flex; justify-content: space-between; }
+.meas { display: grid; gap: 6px; }
+.meas button { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: center; text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 7px 10px; color: var(--ink); font-size: 13.5px; }
+.meas button:hover:not(:disabled) { border-color: var(--sea); }
+.meas button .r { font-family: var(--f-mono); font-size: 12.5px; color: var(--mute); }
+.meas button.shown { cursor: default; background: var(--surface-2); }
+.meas button.shown .r { color: var(--ink); }
+.meas .res { grid-column: 1 / -1; font-size: 13px; color: var(--ink); border-top: 1px dashed var(--line); padding-top: 5px; }
+.choices { display: grid; gap: 6px; }
+.choices button { text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 8px 10px; color: var(--ink); font-size: 13.5px; }
+.choices button.ok { border-color: var(--live); background: color-mix(in srgb, var(--live) 10%, var(--surface)); }
+.choices button.ko { border-color: var(--fault); background: color-mix(in srgb, var(--fault) 8%, var(--surface)); }
+.fb { font-size: 13px; padding: 8px 10px; border-radius: 6px; border-left: 0; background: var(--surface-2); }
+.acts { display: flex; flex-wrap: wrap; gap: 6px; }
+.acts button { border: 1px solid var(--sea); color: var(--sea); background: var(--surface); border-radius: 6px; padding: 7px 11px; font-size: 13.5px; }
+.acts button:disabled { opacity: .45; cursor: not-allowed; }
+.acts button.done { border-color: var(--live); color: var(--live); }
+.score { display: flex; justify-content: space-between; gap: 10px; align-items: center; font-size: 13.5px; border-top: 1px solid var(--line); padding-top: 10px; }
+.score .big { font-family: var(--f-mono); font-size: 22px; }
+.win { color: var(--live); font-family: var(--f-disp); font-weight: 700; }
+
+/* journal & courbe */
+.log { list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; }
+.log li { display: grid; grid-template-columns: 50px minmax(0, 1fr); gap: 8px; padding: 6px 16px; border-bottom: 1px solid var(--line); font-size: 13.5px; }
+.log .tm { font-family: var(--f-mono); color: var(--mute); font-size: 12px; padding-top: 2px; }
+.log .a { color: var(--fault); } .log .o { color: var(--live); } .log .i { color: var(--ink); } .log .w2 { color: var(--amber); }
+#curve { display: block; width: 100%; height: auto; }
+#curve text { font-family: var(--f-mono); font-size: 11px; fill: var(--mute); }
+.two { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 16px; }
+@media (max-width: 1000px) { .two { grid-template-columns: minmax(0, 1fr); } }
+.src { padding: 12px 16px; font-size: 13.5px; display: grid; gap: 6px; }
+.src a { color: var(--sea); }
+.src p { margin: 0; color: var(--mute); }
+footer { font-size: 12.5px; color: var(--mute); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--line); padding-top: 12px; }
+@media (max-width: 520px) { .sc-list { grid-template-columns: repeat(2, 1fr); } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Port Autonome de Kribi · modèle pédagogique · cours « Systèmes électriques marins »</p>
+      <h1>Jumeau électrique du <span>port de Kribi</span></h1>
+      <div class="facts" aria-label="Données publiques">
+        <span class="fact">Ligne <b>225 kV</b> double circuit, <b>42 km</b></span>
+        <span class="fact">Poste <b>225/30 kV</b>, <b>3 × 60 MVA</b></span>
+        <span class="fact">Centrale KPDC <b>216 MW</b></span>
+        <span class="fact">Quai phase 2 <b>715 m</b>, tirant d'eau <b>16 m</b></span>
+        <span class="fact">Réseau national <b>50 Hz</b></span>
+      </div>
+    </div>
+    <div class="tools">
+      <div class="tool"><label for="ind">Zone industrielle</label><input id="ind" type="range" min="0" max="100" step="5" value="60"><span class="mono" id="indv">60 MW</span></div>
+      <div class="seg" role="group" aria-label="Vitesse de simulation">
+        <button data-sp="1" aria-pressed="false">×1</button>
+        <button data-sp="10" aria-pressed="true">×10</button>
+        <button data-sp="30" aria-pressed="false">×30</button>
+      </div>
+      <span class="eyebrow">1 s = <span id="spv">10</span> min simulées</span>
+    </div>
+  </header>
+
+  <section class="kpis" aria-label="Indicateurs du poste 30 kV">
+    <div class="kpi" id="k-h"><span class="eyebrow">Heure au port</span><span class="v">06:00</span><span class="s">jour 1</span></div>
+    <div class="kpi" id="k-p"><span class="eyebrow">Puissance appelée</span><span class="v">0<small>MW</small></span><span class="s">port + zone industrielle</span></div>
+    <div class="kpi" id="k-c"><span class="eyebrow">cos φ au 30 kV</span><span class="v">0,95</span><span class="s">objectif ≥ 0,93</span></div>
+    <div class="kpi" id="k-t"><span class="eyebrow">Transformateurs</span><span class="v">0<small>%</small></span><span class="s">charge moyenne</span></div>
+    <div class="kpi" id="k-n"><span class="eyebrow">Postes alimentés</span><span class="v">6/6</span><span class="s">boucle 30 kV</span></div>
+    <div class="kpi" id="k-f"><span class="eyebrow">Fréquence</span><span class="v">50,0<small>Hz</small></span><span class="s">quai navires : 60 Hz</span></div>
+  </section>
+
+  <div class="main">
+    <div style="display:grid;gap:16px;min-width:0">
+      <section class="card" aria-label="Synoptique électrique du port">
+        <header><h2>Synoptique 225 kV · 30 kV</h2><span class="eyebrow" id="state">Exploitation normale</span></header>
+        <div class="scroll"><svg id="mimic" viewBox="0 0 1100 600" role="img" aria-label="Schéma unifilaire interactif du réseau électrique du port de Kribi"></svg></div>
+        <div class="legend">
+          <span><i style="border-color:var(--live)"></i>Sous tension</span>
+          <span><i style="border-color:var(--amber)"></i>Secours local</span>
+          <span><i style="border-color:var(--fault)"></i>Défaut</span>
+          <span><i style="border-color:var(--dead)"></i>Hors tension</span>
+          <span>■ fermé · □ ouvert · IPD rouge = défaut vu</span>
+        </div>
+        <p class="note"><b>Cliquez</b> sur un interrupteur ou un disjoncteur de la boucle pour le manœuvrer. La boucle est exploitée ouverte entre P3 et P4.</p>
+      </section>
+      <div class="two">
+        <section class="card" aria-label="Courbe de charge">
+          <header><h2>Courbe de charge des 24 dernières heures</h2><span class="eyebrow">MW</span></header>
+          <svg id="curve" viewBox="0 0 640 230" role="img" aria-label="Puissance appelée par le port et la zone industrielle"></svg>
+        </section>
+        <section class="card" aria-label="Journal d'exploitation">
+          <header><h2>Journal d'exploitation</h2><span class="eyebrow">récent en haut</span></header>
+          <ul class="log" id="log"></ul>
+        </section>
+      </div>
+    </div>
+
+    <section class="card" aria-label="Atelier de dépannage">
+      <header><h2>Atelier de dépannage</h2><span class="eyebrow">fiches F1 à F9 du manuel</span></header>
+      <div class="sc-list" id="sc-list" role="group" aria-label="Pannes à simuler"></div>
+      <div class="atelier" id="atelier"></div>
+    </section>
+  </div>
+
+  <section class="card" aria-label="Données et hypothèses">
+    <header><h2>Données publiques et hypothèses du modèle</h2></header>
+    <div class="src">
+      <p>Les chiffres en en-tête viennent de sources publiques, consultées le 18 octobre 2026. Le reste du réseau (boucle 30 kV, postes P1 à P6, puissances des consommateurs, branchement à quai des navires, réglages) est une hypothèse d'école.</p>
+      <span>· <a href="https://pak.cm/?p=11567" target="_blank" rel="noopener">Port Autonome de Kribi : ligne 225 kV et poste 225/30 kV</a></span>
+      <span>· <a href="https://www.businessincameroon.com/energy/0608-14900-kribi-gas-plant-to-supply-100-mw-to-industrial-zone-by-end-of-2026" target="_blank" rel="noopener">Business in Cameroon : centrale KPDC et 100 MW pour la zone industrielle</a></span>
+      <span>· <a href="https://maritimafrica.com/en/kribi-containers-terminal-kct-is-investing-more-than-us114-million-about-70-billion-cfa-francs-for-the-acquisition-of-new-equipment/" target="_blank" rel="noopener">Maritimafrica : quai de 715 m, 7 portiques de quai, 25 portiques de parc</a></span>
+    </div>
+  </section>
+
+  <footer>
+    <span>Support du cours « Systèmes électriques marins » · Dr EKOBO Brice · Ing. Gaëtan NGOMBE</span>
+    <span>Modèle pédagogique : ne reflète pas l'exploitation réelle du port.</span>
+  </footer>
+</div>
+
+<script>
+/*MODEL-START*/
+const POSTES = [
+  { id: "P1", nm: "P1 Quai", sub: "7 portiques STS" },
+  { id: "P2", nm: "P2 Parc", sub: "25 e-RTG" },
+  { id: "P3", nm: "P3 Frigo", sub: "600 prises, IT" },
+  { id: "P4", nm: "P4 Polyvalent", sub: "vrac, divers" },
+  { id: "P5", nm: "P5 Capitainerie", sub: "VTS, bâtiments" },
+  { id: "P6", nm: "P6 Éclairage", sub: "mâts, quai navires" },
+];
+// segments de boucle : DA-P1, P1-P2, P2-P3, P3-P4 (ouverture), P4-P5, P5-P6, P6-DB
+const SEGS = ["A1", "12", "23", "34", "45", "56", "6B"];
+
+function newState() {
+  return {
+    t: 6 * 60, // minutes depuis minuit, jour 1
+    ind: 60,
+    c225: [true, true],
+    tr: [{ on: true, fans: true, th: 50, share: 1 }, { on: true, fans: true, th: 50, share: 1 }, { on: true, fans: true, th: 50, share: 1 }],
+    DA: true, DB: true, DAtrip: false, DBtrip: false,
+    seg: { A1: true, "12": true, "23": true, "34": false, "45": true, "56": true, "6B": true },
+    segFault: null, ipd: {},
+    capSteps: [true, true, true, true], capFuse: [true, true, true, true],
+    sts3: "ok", // ok | defaut | consigne
+    cpi: 2000, isoFault: false, // kΩ
+    rowR2: false,
+    ops: { converter: true, connected: false, refused: false },
+    p5brk: true, gen5: { run: false, fail: false, chargerOK: true, tries: 0, startT: 0 }, ups: 100,
+    gen3: { run: false, st: 0 },
+    log: [], seq: 0, hist: [],
+    flags: {},
+  };
+}
+function logE(S, k, m) { S.log.unshift({ t: S.t, k, m, n: ++S.seq }); if (S.log.length > 80) S.log.pop(); }
+function hh(t) { const m = Math.floor(t) % 1440; return String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0"); }
+
+// ----- profils de charge (MW) -----
+function ships(t) { const h = (t / 60) % 24; return { A: h >= 2 && h < 14, B: h >= 10 && h < 23 }; }
+function profile(S) {
+  const h = (S.t / 60) % 24, sh = ships(S.t);
+  const nCranes = (sh.A ? 3 : 0) + (sh.B ? 3 : 0) - (S.sts3 !== "ok" && (sh.A || sh.B) ? 1 : 0);
+  const wob = 0.85 + 0.15 * Math.sin(S.t / 7) * Math.sin(S.t / 3.1);
+  const night = h < 6.5 || h >= 18.5;
+  const P = {
+    P1: 0.15 + Math.max(0, nCranes) * 0.62 * wob,
+    P2: 0.25 + (sh.A || sh.B ? 1.9 : 0.5) * (0.9 + 0.1 * Math.sin(S.t / 5)),
+    P3: 2.3 * (1 + 0.15 * Math.max(0, Math.sin((h - 7) / 24 * 2 * Math.PI))),
+    P4: h >= 7 && h < 19 ? 1.2 : 0.35,
+    P5: 0.42 + (h >= 8 && h < 18 ? 0.18 : 0),
+    P6: (night ? 0.95 : 0.1) + (S.ops.connected ? 2.5 : 0),
+  };
+  const PF = { P1: 0.84, P2: 0.9, P3: 0.86, P4: 0.85, P5: 0.9, P6: S.ops.connected ? 0.94 : 0.95 };
+  return { P, PF, nCranes: Math.max(0, nCranes), sh };
+}
+
+// ----- topologie de la boucle -----
+function ring(S) {
+  // nœuds : A (barre A via DA), P1..P6, B (barre B via DB)
+  const nodes = ["A", "P1", "P2", "P3", "P4", "P5", "P6", "B"];
+  const live = {};
+  const srcA = S.DA && !S.DAtrip, srcB = S.DB && !S.DBtrip;
+  const busOK = S.tr.some(t => t.on) && (S.c225[0] || S.c225[1]);
+  const feed = {};
+  const walk = (startIdx, dir, tag) => {
+    for (let i = startIdx; i >= 0 && i < nodes.length; i += dir) {
+      const segIdx = dir > 0 ? i : i - 1; // segment entre nodes[i] et nodes[i+dir]
+      if (i !== startIdx) { live[nodes[i]] = true; (feed[nodes[i]] ||= []).push(tag); }
+      const s = dir > 0 ? SEGS[i] : SEGS[i - 1];
+      if (s === undefined || !S.seg[s]) break;
+    }
+  };
+  if (busOK && srcA) walk(0, 1, "A");
+  if (busOK && srcB) walk(7, -1, "B");
+  return { live, feed };
+}
+function segEnergized(S, s, R) {
+  const i = SEGS.indexOf(s); const nodes = ["A", "P1", "P2", "P3", "P4", "P5", "P6", "B"];
+  const a = nodes[i], b = nodes[i + 1];
+  const la = a === "A" ? (S.DA && !S.DAtrip) : R.live[a], lb = b === "B" ? (S.DB && !S.DBtrip) : R.live[b];
+  return S.seg[s] && (la || lb);
+}
+function checkFault(S) {
+  if (!S.segFault) return;
+  const R = ring(S);
+  if (!segEnergized(S, S.segFault, R)) return;
+  // quel départ alimente le défaut ?
+  const i = SEGS.indexOf(S.segFault); const nodes = ["A", "P1", "P2", "P3", "P4", "P5", "P6", "B"];
+  const a = nodes[i], b = nodes[i + 1];
+  const fromA = a === "A" ? true : (R.feed[a] || []).includes("A") || (R.feed[b] || []).includes("A");
+  const fromB = b === "B" ? true : (R.feed[b] || []).includes("B") || (R.feed[a] || []).includes("B");
+  S.ipd = {};
+  if (fromA && S.DA && !S.DAtrip) { S.DAtrip = true; for (let k = 1; k <= i; k++) S.ipd[nodes[k]] = true; logE(S, "a", "Déclenchement départ A : maximum de courant phase-terre"); }
+  if (fromB && S.DB && !S.DBtrip) { S.DBtrip = true; for (let k = i + 1; k <= 6; k++) S.ipd[nodes[k]] = true; logE(S, "a", "Déclenchement départ B : maximum de courant phase-terre"); }
+}
+
+function compute(S) {
+  const pr = profile(S), R = ring(S);
+  const out = { R, pr, postes: {} };
+  let P = 0, Q = 0, Pport = 0;
+  POSTES.forEach(p => {
+    let live = !!R.live[p.id], backup = false, pw = pr.P[p.id];
+    if (p.id === "P3" && !live && S.gen3.run && S.gen3.st >= 10) backup = true;
+    if (p.id === "P5" && live && !S.p5brk) { live = false; }
+    if (p.id === "P5" && !live && S.gen5.run) backup = true;
+    out.postes[p.id] = { live, backup, P: live ? pw : backup ? (p.id === "P3" ? 1.4 : 0.42) : 0 };
+    if (live) { P += pw; Q += pw * Math.tan(Math.acos(pr.PF[p.id])); Pport += pw; }
+  });
+  const ind = S.ind; P += ind; Q += ind * Math.tan(Math.acos(0.88));
+  // batterie de condensateurs : 4 gradins de 8 Mvar, régulateur visant cos φ 0,95
+  const qTarget = P * Math.tan(Math.acos(0.95));
+  let need = Math.max(0, Q - qTarget), steps = 0;
+  S.capSteps = S.capSteps.map((_, k) => { const want = need > 3; if (want) { need -= 8; steps++; } return want; });
+  const qc = S.capSteps.reduce((a, on, k) => a + (on && S.capFuse[k] ? 8 : 0), 0);
+  const Qn = Q - qc;
+  const Sva = Math.sqrt(P * P + Qn * Qn);
+  out.P = P; out.Pport = Pport; out.Q = Qn; out.S = Sva; out.cos = Sva > 0 ? P / Sva : 1; out.qc = qc;
+  const trOn = S.tr.filter(t => t.on);
+  const wsum = trOn.reduce((a, t) => a + t.share, 0);
+  out.trLoad = S.tr.map(t => t.on ? (Sva * t.share / wsum) / 60 : 0);
+  out.I30 = Sva * 1e6 / (Math.sqrt(3) * 30000);
+  out.c225Load = (S.c225[0] && S.c225[1]) ? Sva / 2 : Sva;
+  return out;
+}
+
+function step(S, dtMin) {
+  S.t += dtMin;
+  checkFault(S);
+  const C = compute(S);
+  // transformateurs
+  S.tr.forEach((t, k) => {
+    if (!t.on) { t.th += (30 - t.th) * Math.min(1, dtMin / 60); return; }
+    const L = C.trLoad[k];
+    const thss = 35 + 60 * L * L * (t.fans ? 1 : 5);
+    t.th += (thss - t.th) * Math.min(1, dtMin / 40);
+    if (t.th > 90 && !t.alarmed) { t.alarmed = true; logE(S, "w2", `Alarme température huile TR${k + 1} : ${t.th.toFixed(0)} °C`); }
+    if (t.th < 85) t.alarmed = false;
+    if (t.th >= 105) { t.on = false; t.alarmed = false; logE(S, "a", `Déclenchement TR${k + 1} par thermostat à 105 °C ; charge reprise par les autres transformateurs`); }
+  });
+  // groupe de secours P3 (frigorifique)
+  const p3 = C.R.live.P3;
+  if (!p3) { if (!S.gen3.run) { S.gen3.run = true; S.gen3.st = 0; logE(S, "w2", "P3 hors tension : démarrage du groupe de secours du parc frigorifique"); } S.gen3.st += dtMin * 6; }
+  else if (S.gen3.run) { S.gen3.run = false; logE(S, "o", "P3 réalimenté par la boucle : groupe de secours frigorifique arrêté"); }
+  // poste P5 et groupe capitainerie
+  const p5grid = C.R.live.P5 && S.p5brk;
+  if (!p5grid) {
+    if (!S.gen5.run) {
+      if (!S.gen5.fail) { S.gen5.run = true; logE(S, "w2", "P5 hors tension : groupe de secours de la capitainerie en charge"); }
+      else if (S.gen5.tries < 3) { S.gen5.tries = 3; logE(S, "a", "Groupe de secours P5 : 3 tentatives, échec démarrage. VTS sur onduleur"); }
+      S.ups = Math.max(0, S.ups - dtMin * (100 / 25));
+      if (S.ups === 0 && !S.flags.vtsLost) { S.flags.vtsLost = true; logE(S, "a", "Onduleur épuisé : VTS et aides à la navigation hors service"); }
+    }
+  } else { if (S.gen5.run) { S.gen5.run = false; logE(S, "o", "P5 réalimenté : groupe de secours capitainerie arrêté"); } S.ups = Math.min(100, S.ups + dtMin * 2); }
+  // historique
+  const last = S.hist[S.hist.length - 1];
+  if (!last || S.t - last.t >= 10) { S.hist.push({ t: S.t, port: C.Pport, tot: C.P }); while (S.hist.length && S.t - S.hist[0].t > 1440) S.hist.shift(); }
+  return C;
+}
+/*MODEL-END*/
+
+/* ---------- scénarios (fiches F1–F9) ---------- */
+const SC = [
+  { id: "F1", t: "Circuit 225 kV déclenché",
+    ticket: "Alarme « déclenchement circuit 2 » au poste 225/30 kV. Le port reste alimenté, aucune coupure n'est signalée.",
+    setup: s => { s.c225[1] = false; logE(s, "a", "Déclenchement circuit 2 de la ligne 225 kV"); },
+    meas: [
+      ["Relais de distance du circuit 2", "zone 1, phase-terre", "Défaut vu en zone 1, sur la ligne elle-même, pas dans le poste."],
+      ["Charge du circuit 1", s => `${fr(compute(s).S, 0)} MVA`, "Le circuit 1 porte seul tout le transit, dans sa capacité."],
+      ["Tension 30 kV", "30,1 kV", "Normale : le poste n'est pas touché."],
+      ["Température TR1 à TR3", "≈ 50 °C", "Normale : les transformateurs ne sont pas en cause."],
+    ],
+    choices: [["Défaut sur la ligne, éliminé par la protection (sécurité N-1)", true, "Juste. Le relais de distance localise le défaut en zone 1 : sur la ligne."], ["Panne d'un transformateur 225/30 kV", false, "Non : les trois transformateurs sont en service et à température normale."], ["Surcharge du port", false, "Non : un seul circuit suffit à porter la charge actuelle."]],
+    acts: [["Informer le dispatching et demander l'avis de réenclenchement", s => { s.flags.f1asked = true; logE(s, "i", "Dispatching informé : inspection de la ligne demandée"); }],
+           ["Réenclencher le circuit 2 après accord du dispatching", s => { if (!s.flags.f1asked) { logE(s, "a", "Réenclenchement refusé : jamais sans l'accord du gestionnaire du réseau de transport"); return false; } s.c225[1] = true; logE(s, "o", "Circuit 2 réenclenché, redondance rétablie"); }]],
+    solved: s => s.c225[0] && s.c225[1] },
+  { id: "F2", t: "Défaut sur la boucle 30 kV",
+    ticket: "Le départ A a déclenché. Les postes P1 (quai), P2 (parc) et P3 (frigorifique) sont hors tension ; le groupe de secours du parc frigorifique démarre.",
+    setup: s => { s.segFault = "23"; checkFault(s); },
+    meas: [
+      ["Relais du départ A", "max I phase-terre", "Défaut à la terre en aval du départ A."],
+      ["Indicateurs de passage de défaut P1, P2, P3", "P1 ● P2 ● P3 ○", "Le courant de défaut est passé par P1 et P2, pas par P3 : le défaut est entre P2 et P3."],
+      ["Isolement tronçon P2–P3 (consigné)", "0,05 MΩ", "Câble en défaut d'isolement, à remplacer."],
+      ["Isolement tronçon P1–P2 (consigné)", "> 2 000 MΩ", "Tronçon sain."],
+    ],
+    choices: [["Défaut de câble entre P2 et P3", true, "Juste. Les IPD bornent le défaut entre le dernier allumé (P2) et le premier éteint (P3)."], ["Défaut dans le transformateur de P1", false, "Non : les IPD de P2 sont allumés, le défaut est plus loin."], ["Disjoncteur du départ A défectueux", false, "Non : il a déclenché sur un vrai courant de défaut à la terre."]],
+    acts: [["Réparer le câble P2–P3 (tronçon isolé et consigné)", s => { if (s.seg["23"]) { logE(s, "a", "Réparation refusée : le tronçon P2–P3 n'est pas isolé"); return false; } s.segFault = null; s.ipd = {}; logE(s, "o", "Câble P2–P3 réparé, isolement correct"); }],
+           ["Revenir au schéma normal (P2–P3 fermé, P3–P4 ouvert)", s => { if (s.segFault) { logE(s, "a", "Impossible : le câble P2–P3 est encore en défaut"); return false; } s.seg["23"] = true; s.seg["34"] = false; s.DA = true; s.DAtrip = false; logE(s, "o", "Schéma normal rétabli : boucle ouverte entre P3 et P4"); }]],
+    hint: "Manœuvrez la boucle sur le synoptique : ouvrez P2–P3, refermez le départ A, fermez P3–P4.",
+    solved: s => { const R = ring(s); return ["P1", "P2", "P3", "P4", "P5", "P6"].every(p => R.live[p]) && !s.segFault && !s.seg["34"]; } },
+  { id: "F3", t: "Surchauffe du TR2",
+    ticket: "Alarme « température huile TR2 » à 95 °C (alarme 90 °C, déclenchement 105 °C). La température monte encore.",
+    setup: s => { s.ind = 85; s.tr[1].fans = false; s.tr[1].th = 95; s.tr[1].alarmed = true; logE(s, "w2", "Alarme température huile TR2 : 95 °C"); },
+    meas: [
+      ["Charge de TR1, TR2, TR3", s => compute(s).trLoad.map(l => Math.round(l * 100) + " %").join(" · "), "Charges égales : ce n'est pas une surcharge de TR2."],
+      ["Ventilateurs de TR2", "arrêtés", "Le disjoncteur des auxiliaires de ventilation est ouvert."],
+      ["Niveau d'huile TR2", "normal", "Pas de fuite."],
+      ["Température TR1 et TR3", s => `${Math.round(s.tr[0].th)} °C · ${Math.round(s.tr[2].th)} °C`, "Normale sur les deux autres."],
+    ],
+    choices: [["Ventilation forcée de TR2 hors service", true, "Juste. À charge égale, seul TR2 chauffe : son refroidissement est en cause."], ["Surcharge de TR2", false, "Non : TR2 porte la même charge que TR1 et TR3."], ["Fuite d'huile de TR2", false, "Non : le niveau d'huile est normal."]],
+    acts: [["Reporter une partie de la charge de TR2 sur TR1 et TR3", s => { s.tr[1].share = 0.4; logE(s, "i", "Charge de TR2 réduite, reportée sur TR1 et TR3"); }],
+           ["Rechercher la cause puis réarmer les auxiliaires de ventilation", s => { s.tr[1].fans = true; logE(s, "o", "Ventilateurs TR2 remis en service (contacteur de ventilateur remplacé)"); }]],
+    solved: s => s.tr[1].on && s.tr[1].fans && s.tr[1].th < 80 },
+  { id: "F4", t: "Portique STS 3 en défaut",
+    ticket: "Le portique STS 3 se met en défaut « surtension bus continu » chaque fois qu'un conteneur descend. La montée fonctionne.",
+    setup: s => { s.sts3 = "defaut"; logE(s, "a", "STS 3 : défaut variateur de levage, surtension bus continu"); },
+    meas: [
+      ["Tension bus continu en descente", "> 800 V", "Nominale vers 650 V : l'énergie de freinage n'est pas évacuée."],
+      ["Résistance de freinage (consignée)", "circuit ouvert", "Attendu : 4 Ω. La résistance est coupée."],
+      ["Tension d'alimentation du portique", "6,6 kV", "Normale."],
+      ["Rampe de décélération du variateur", "conforme", "Réglage d'origine inchangé."],
+    ],
+    choices: [["Résistance de freinage coupée", true, "Juste. En descente, le moteur devient générateur ; sans résistance, la tension du bus continu monte."], ["Tension réseau trop haute", false, "Non : 6,6 kV mesurés, normale."], ["Rampe de décélération trop courte", false, "Non : réglage conforme et la panne est apparue sans modification."]],
+    acts: [["Consigner STS 3 (énergie électrique et charge suspendue)", s => { s.sts3 = "consigne"; logE(s, "i", "STS 3 consigné, charge posée, freins serrés"); }],
+           ["Remplacer la résistance et contrôler le hacheur", s => { if (s.sts3 !== "consigne") { logE(s, "a", "Intervention refusée : STS 3 n'est pas consigné"); return false; } s.sts3 = "ok"; logE(s, "o", "STS 3 réparé, essais à vide puis en charge réussis"); }]],
+    solved: s => s.sts3 === "ok" },
+  { id: "F5", t: "Isolement parc frigorifique",
+    ticket: "Le contrôleur d'isolement du réseau 400 V (neutre isolé) du parc frigorifique est en alarme : 12 kΩ pour un seuil de 100 kΩ. Aucun conteneur n'est coupé.",
+    setup: s => { s.isoFault = true; s.cpi = 12; logE(s, "w2", "P3 : alarme contrôleur d'isolement, 12 kΩ"); },
+    meas: [
+      ["Ouvrir la rangée R1", "12 kΩ", "Pas de changement : R1 est saine."],
+      ["Ouvrir la rangée R2", "12 kΩ", "Pas de changement : R2 est saine."],
+      ["Ouvrir la rangée R3", "12 kΩ", "Pas de changement : R3 est saine."],
+      ["Ouvrir la rangée R4", "> 1 MΩ", "L'isolement remonte : le défaut est dans R4."],
+      ["Dans R4, ouvrir prise par prise", "prise R4-17", "Défaut sur la prise R4-17 ; trace d'eau dans le boîtier."],
+    ],
+    choices: [["Humidité dans une prise de la rangée R4", true, "Juste. L'isolement remonte en ouvrant R4, puis la prise R4-17."], ["Défaut d'un câble de la rangée R1", false, "Non : ouvrir R1 n'a rien changé."], ["Défaut du transformateur de P3", false, "Non : le défaut disparaît en ouvrant une seule rangée."]],
+    acts: [["Débrancher le conteneur et consigner la prise R4-17", s => { s.flags.f5c = true; s.cpi = 2000; logE(s, "i", "Prise R4-17 consignée ; isolement du réseau : > 1 MΩ"); }],
+           ["Sécher ou remplacer la prise, mesurer, remettre en service", s => { if (!s.flags.f5c) { logE(s, "a", "Consignez d'abord la prise"); return false; } s.isoFault = false; s.cpi = 2000; logE(s, "o", "Prise R4-17 remplacée, isolement correct, conteneur rebranché"); }]],
+    solved: s => !s.isoFault },
+  { id: "F6", t: "Reefers en sous-tension",
+    ticket: "En fin de rangée R2, plusieurs conteneurs frigorifiques signalent une tension basse et certains groupes s'arrêtent. Le début de rangée fonctionne.",
+    setup: s => { s.rowR2 = true; logE(s, "w2", "P3 : alarmes sous-tension en fin de rangée R2"); },
+    meas: [
+      ["Tension au départ de la rangée R2", "400 V", "Normale au départ."],
+      ["Tension en fin de rangée R2", "352 V", "Chute de 12 % le long de la rangée."],
+      ["Caméra thermique, coffret de rangée R2", "borne à 95 °C", "Les autres bornes sont vers 40 °C : connexion desserrée."],
+      ["Courant de la rangée R2", "dans les limites", "Le câble n'est pas surchargé."],
+    ],
+    choices: [["Connexion desserrée dans le coffret de R2", true, "Juste. La résistance de contact crée la chute de tension et l'échauffement."], ["Surcharge générale du parc", false, "Non : courant dans les limites et une seule rangée touchée."], ["Défaut d'isolement", false, "Non : le contrôleur d'isolement est normal."]],
+    acts: [["Consigner la rangée R2 et refaire la connexion", s => { s.rowR2 = false; logE(s, "o", "Connexion refaite au couple de serrage ; 396 V en fin de rangée"); }],
+           ["Contrôler par thermographie en charge", s => { if (s.rowR2) { logE(s, "a", "La connexion n'a pas encore été refaite"); return false; } s.flags.f6t = true; logE(s, "o", "Thermographie : toutes les bornes vers 40 °C"); }]],
+    solved: s => !s.rowR2 && s.flags.f6t },
+  { id: "F7", t: "Branchement à quai refusé",
+    ticket: "Un porte-conteneurs à quai est raccordé au poste de branchement à quai, mais il refuse de fermer son disjoncteur d'alimentation terre.",
+    setup: s => { s.ops.converter = false; s.ops.refused = true; s.ops.connected = false; logE(s, "a", "Branchement à quai : fermeture refusée par le navire"); },
+    meas: [
+      ["Fréquence en sortie du poste à quai", "50 Hz", "Le navire attend 60 Hz."],
+      ["État du convertisseur de fréquence", "by-pass", "Le convertisseur est contourné : la sortie reçoit le réseau 50 Hz."],
+      ["Ordre des phases", "correct", "L1-L2-L3."],
+      ["Tension de sortie", "6,6 kV", "Correcte."],
+      ["Boucle pilote et liaison équipotentielle", "établies", "Interverrouillages satisfaits."],
+    ],
+    choices: [["Convertisseur contourné : le navire reçoit 50 Hz", true, "Juste. Le réseau camerounais est en 50 Hz ; le navire, en 60 Hz, refuse."], ["Ordre des phases inversé", false, "Non : l'indicateur montre le bon ordre."], ["Liaison équipotentielle absente", false, "Non : boucle pilote et liaison sont établies."]],
+    acts: [["Remettre le convertisseur en service et vérifier 60 Hz", s => { s.ops.converter = true; logE(s, "o", "Convertisseur en service : 6,6 kV – 60 Hz en sortie"); }],
+           ["Autoriser le navire à fermer", s => { if (!s.ops.converter) { logE(s, "a", "Toujours 50 Hz : le navire refuse encore"); return false; } s.ops.connected = true; s.ops.refused = false; logE(s, "o", "Navire alimenté par la terre : 2,5 MW à 60 Hz, ses groupes s'arrêtent"); }]],
+    solved: s => s.ops.connected },
+  { id: "F8", t: "cos φ dégradé",
+    ticket: "Le cos φ mesuré au jeu de barres 30 kV est tombé vers 0,88 pour un objectif de 0,93. Le courant appelé augmente à puissance égale.",
+    setup: s => { s.ind = 80; s.capFuse = [false, false, true, true]; logE(s, "w2", "cos φ 30 kV sous l'objectif"); },
+    meas: [
+      ["Gradins de condensateurs efficaces", s => `${s.capSteps.filter((on, k) => on && s.capFuse[k]).length} sur ${s.capSteps.filter(Boolean).length} demandés`, "Les gradins enclenchés par le régulateur ne fournissent pas de puissance réactive."],
+      ["Fusibles des gradins 1 et 2", "fondus", "Les deux premiers gradins, ceux que le régulateur enclenche d'abord, sont hors service."],
+      ["Taux d'harmoniques de tension", "4,1 %", "Modéré : à surveiller (risque de résonance)."],
+      ["Mode du régulateur varmétrique", "automatique", "Réglage correct."],
+    ],
+    choices: [["Deux gradins hors service, fusibles fondus", true, "Juste. La compensation manque : le réseau fournit le réactif à la place des condensateurs."], ["Régulateur varmétrique en manuel", false, "Non : il est en automatique."], ["Hausse brutale de la charge réactive", false, "Non : la charge est stable, c'est la compensation qui manque."]],
+    acts: [["Consigner la batterie et attendre la décharge", s => { s.flags.f8c = true; logE(s, "i", "Batterie de condensateurs consignée, décharge attendue, absence de tension vérifiée"); }],
+           ["Vérifier les condensateurs et remplacer les fusibles", s => { if (!s.flags.f8c) { logE(s, "a", "Danger : batterie non consignée et peut-être encore chargée"); return false; } s.capFuse = [true, true, true, true]; logE(s, "o", "Fusibles remplacés, capacités conformes, batterie remise en service"); }]],
+    solved: s => s.capFuse.every(Boolean) },
+  { id: "F9", t: "Secours capitainerie",
+    ticket: "Coupure du poste P5. Le VTS passe sur onduleur ; le groupe de secours fait trois tentatives de démarrage puis affiche « échec démarrage ».",
+    setup: s => { s.p5brk = false; s.gen5.fail = true; s.gen5.chargerOK = false; s.ups = 100; logE(s, "a", "P5 : déclenchement du disjoncteur général basse tension"); },
+    meas: [
+      ["Tension batterie de démarrage au lancement", "19 V", "24 V nominal : batterie déchargée."],
+      ["Chargeur de batterie du groupe", "disjoncteur ouvert", "Le chargeur est hors service depuis plusieurs jours."],
+      ["Niveau de carburant", "60 %", "Suffisant."],
+      ["Sélecteur du groupe", "automatique", "Position correcte."],
+      ["Autonomie restante de l'onduleur", s => `${Math.round(s.ups)} %`, "Elle baisse : il faut agir vite."],
+    ],
+    choices: [["Batterie de démarrage déchargée, chargeur hors service", true, "Juste. Sans charge d'entretien, la batterie n'a plus assez d'énergie pour lancer le moteur."], ["Panne de carburant", false, "Non : 60 % de carburant."], ["Groupe laissé en mode manuel", false, "Non : sélecteur en automatique."]],
+    acts: [["Démarrer avec une batterie d'appoint", s => { s.gen5.fail = false; s.gen5.run = true; logE(s, "o", "Groupe P5 démarré sur batterie d'appoint, VTS réalimenté"); }],
+           ["Réparer le chargeur et réarmer le disjoncteur de P5", s => { if (!s.gen5.run && s.gen5.fail) { logE(s, "a", "Priorité : rétablir d'abord l'alimentation du VTS"); return false; } s.gen5.chargerOK = true; s.p5brk = true; logE(s, "o", "Chargeur réparé, P5 réalimenté par la boucle"); }]],
+    solved: s => s.p5brk && s.gen5.chargerOK },
+];
+
+/* ---------- état de l'interface ---------- */
+let S = newState(), speed = 10, cur = null, W = null, doneSet = new Set();
+try { JSON.parse(localStorage.getItem("kribi-done") || "[]").forEach(x => doneSet.add(x)); } catch (e) {}
+const $ = id => document.getElementById(id);
+const fr = (x, d) => x.toFixed(d).replace(".", ",");
+const NS = "http://www.w3.org/2000/svg";
+function el(tag, at, par, txt) { const e = document.createElementNS(NS, tag); for (const k in at) e.setAttribute(k, at[k]); if (txt !== undefined) e.textContent = txt; par && par.appendChild(e); return e; }
+
+/* ---------- synoptique ---------- */
+const svg = $("mimic"), M = {};
+const PX = { P1: 95, P2: 275, P3: 455, P4: 645, P5: 825, P6: 1005 }, PY = 330, PW = 150, PH = 84;
+function buildMimic() {
+  svg.innerHTML = "";
+  // mer et quai
+  el("rect", { x: 0, y: 512, width: 1100, height: 88, class: "sea" }, svg);
+  el("line", { x1: 0, y1: 512, x2: 1100, y2: 512, stroke: "var(--ink)", "stroke-width": 2 }, svg);
+  el("text", { x: 16, y: 590, class: "sm" }, svg, "Golfe de Guinée · quai à conteneurs, tirant d'eau 16 m");
+  M.shipA = el("path", { d: "M70 530 h330 l-20 26 h-290 z", class: "hull" }, svg);
+  M.shipB = el("path", { d: "M440 530 h330 l-20 26 h-290 z", class: "hull" }, svg);
+  M.shipC = el("path", { d: "M830 530 h240 l-18 26 h-204 z", class: "hull" }, svg);
+  M.shipCt = el("text", { x: 950, y: 548, "text-anchor": "middle", class: "sm", style: "fill:var(--surface)" }, svg, "navire au branchement à quai");
+  // sources
+  el("rect", { x: 330, y: 14, width: 200, height: 46, rx: 6, class: "box live" }, svg);
+  el("text", { x: 430, y: 34, "text-anchor": "middle", class: "nm" }, svg, "Centrale KPDC");
+  el("text", { x: 430, y: 51, "text-anchor": "middle", class: "sm" }, svg, "216 MW · gaz");
+  el("rect", { x: 570, y: 14, width: 230, height: 46, rx: 6, class: "box live" }, svg);
+  el("text", { x: 685, y: 34, "text-anchor": "middle", class: "nm" }, svg, "Réseau Interconnecté Sud");
+  el("text", { x: 685, y: 51, "text-anchor": "middle", class: "sm" }, svg, "50 Hz");
+  el("line", { x1: 530, y1: 37, x2: 570, y2: 37, class: "w live" }, svg);
+  M.c1 = el("line", { x1: 410, y1: 60, x2: 410, y2: 104, class: "w live" }, svg);
+  M.c2 = el("line", { x1: 450, y1: 60, x2: 450, y2: 104, class: "w live" }, svg);
+  M.c1t = el("text", { x: 404, y: 86, "text-anchor": "end", class: "sm" }, svg, "circuit 1");
+  M.c2t = el("text", { x: 456, y: 86, class: "sm" }, svg, "circuit 2 · 225 kV · 42 km");
+  el("line", { x1: 300, y1: 104, x2: 760, y2: 104, class: "w live bus", style: "stroke-width:5" }, svg);
+  el("text", { x: 296, y: 108, "text-anchor": "end", class: "sm" }, svg, "225 kV");
+  // transformateurs
+  M.tr = [0, 1, 2].map(k => {
+    const x = 340 + k * 190, g = {};
+    g.l1 = el("line", { x1: x, y1: 104, x2: x, y2: 122, class: "w live" }, svg);
+    g.c1 = el("circle", { cx: x, cy: 136, r: 14, fill: "none", class: "w live", style: "stroke-width:2.5" }, svg);
+    g.c2 = el("circle", { cx: x, cy: 154, r: 14, fill: "none", class: "w live", style: "stroke-width:2.5" }, svg);
+    el("text", { x: x + 24, y: 140, class: "nm" }, svg, "TR" + (k + 1));
+    g.t = el("text", { x: x + 24, y: 157, class: "mv" }, svg, "60 MVA");
+    g.l2 = el("line", { x1: x, y1: 168, x2: x, y2: 196, class: "w live" }, svg);
+    return g;
+  });
+  // barres 30 kV
+  M.busA = el("line", { x1: 60, y1: 200, x2: 530, y2: 200, class: "w live bus" }, svg);
+  M.busB = el("line", { x1: 560, y1: 200, x2: 1070, y2: 200, class: "w live bus" }, svg);
+  el("rect", { x: 537, y: 193, width: 16, height: 14, class: "sw closed" }, svg);
+  el("text", { x: 64, y: 190, class: "sm" }, svg, "30 kV · demi-barre A");
+  el("text", { x: 1066, y: 190, "text-anchor": "end", class: "sm" }, svg, "demi-barre B");
+  // batterie de condensateurs
+  el("line", { x1: 210, y1: 200, x2: 210, y2: 226, class: "w live" }, svg);
+  M.cap = [0, 1, 2, 3].map(k => el("rect", { x: 178 + k * 17, y: 228, width: 13, height: 16, rx: 2, class: "sw" }, svg));
+  el("text", { x: 252, y: 241, class: "sm" }, svg, "condensateurs 4 × 8 Mvar");
+  // zone industrielle
+  el("line", { x1: 720, y1: 200, x2: 720, y2: 236, class: "w live" }, svg);
+  M.indBox = el("rect", { x: 650, y: 236, width: 140, height: 40, rx: 6, class: "box live" }, svg);
+  el("text", { x: 720, y: 254, "text-anchor": "middle", class: "nm", style: "font-size:13px" }, svg, "Zone industrielle");
+  M.indT = el("text", { x: 720, y: 270, "text-anchor": "middle", class: "mv" }, svg, "60 MW");
+  // départs et boucle
+  M.DA = el("rect", { x: 87, y: 220, width: 16, height: 16, class: "sw", tabindex: 0, role: "button", "aria-label": "Disjoncteur départ A" }, svg);
+  M.DAl1 = el("line", { x1: 95, y1: 200, x2: 95, y2: 220, class: "w" }, svg);
+  M.DAl2 = el("line", { x1: 95, y1: 236, x2: 95, y2: PY, class: "w" }, svg);
+  el("text", { x: 108, y: 232, class: "sm" }, svg, "départ A");
+  M.DB = el("rect", { x: 997, y: 220, width: 16, height: 16, class: "sw", tabindex: 0, role: "button", "aria-label": "Disjoncteur départ B" }, svg);
+  M.DBl1 = el("line", { x1: 1005, y1: 200, x2: 1005, y2: 220, class: "w" }, svg);
+  M.DBl2 = el("line", { x1: 1005, y1: 236, x2: 1005, y2: PY, class: "w" }, svg);
+  el("text", { x: 992, y: 232, "text-anchor": "end", class: "sm" }, svg, "départ B");
+  // segments internes (ligne au-dessus des postes, y = 300)
+  const segXY = { "12": [PX.P1, PX.P2], "23": [PX.P2, PX.P3], "34": [PX.P3, PX.P4], "45": [PX.P4, PX.P5], "56": [PX.P5, PX.P6] };
+  M.seg = {};
+  for (const s in segXY) {
+    const [x1, x2] = segXY[s], xm = (x1 + x2) / 2, y = 300;
+    const g = {};
+    g.a = el("path", { d: `M${x1 + 20} ${PY} V${y} H${xm - 9}`, class: "w" }, svg);
+    g.b = el("path", { d: `M${xm + 9} ${y} H${x2 - 20} V${PY}`, class: "w" }, svg);
+    g.sw = el("rect", { x: xm - 9, y: y - 8, width: 18, height: 16, class: "sw", tabindex: 0, role: "button", "aria-label": `Interrupteur de boucle ${s[0]}–${s[1]}` }, svg);
+    g.lab = el("text", { x: xm, y: y - 14, "text-anchor": "middle", class: "sm" }, svg, s === "34" ? "point d'ouverture" : `P${s[0]}–P${s[1]}`);
+    M.seg[s] = g;
+  }
+  // postes
+  M.p = {};
+  POSTES.forEach(p => {
+    const x = PX[p.id] - PW / 2, g = {};
+    g.box = el("rect", { x, y: PY, width: PW, height: PH, rx: 8, class: "box" }, svg);
+    el("text", { x: x + 10, y: PY + 21, class: "nm" }, svg, p.nm);
+    el("text", { x: x + 10, y: PY + 38, class: "sm" }, svg, p.sub);
+    g.v = el("text", { x: x + 10, y: PY + 58, class: "mv" }, svg, "0,00 MW");
+    g.ipd = el("circle", { cx: x + PW - 14, cy: PY + 54, r: 6, class: "ipd" }, svg);
+    el("text", { x: x + PW - 24, y: PY + 58, "text-anchor": "end", class: "sm", style: "font-size:10.5px" }, svg, "IPD");
+    g.extra = el("text", { x: x + 10, y: PY + 75, class: "mv", style: "font-size:11px" }, svg, "");
+    M.p[p.id] = g;
+  });
+  // consommateurs sous les postes
+  const below = (x, t1, t2) => { el("line", { x1: x, y1: PY + PH, x2: x, y2: PY + PH + 22, class: "w live", "data-feed": "1" }, svg); el("text", { x, y: PY + PH + 38, "text-anchor": "middle", class: "sm" }, svg, t1); if (t2) el("text", { x, y: PY + PH + 53, "text-anchor": "middle", class: "sm" }, svg, t2); };
+  M.cranes = [];
+  for (let k = 0; k < 7; k++) { const x = 40 + k * 26; M.cranes.push(el("path", { d: `M${x} 508 V470 h18 M${x - 4} 470 h28`, fill: "none", stroke: "var(--mute)", "stroke-width": 3 }, svg)); }
+  el("text", { x: 100, y: 462, "text-anchor": "middle", class: "sm" }, svg, "STS 1 à 7");
+  M.sts3t = el("text", { x: 100, y: 446, "text-anchor": "middle", class: "mv", style: "fill:var(--fault)" }, svg, "");
+  el("text", { x: PX.P2, y: 440, "text-anchor": "middle", class: "sm" }, svg, "e-RTG sur rail conducteur");
+  M.p3t = el("text", { x: PX.P3, y: 440, "text-anchor": "middle", class: "sm" }, svg, "rangées R1 à R6 · CPI");
+  M.p3g = el("text", { x: PX.P3, y: 456, "text-anchor": "middle", class: "mv" }, svg, "");
+  el("text", { x: PX.P4, y: 440, "text-anchor": "middle", class: "sm" }, svg, "terminal polyvalent");
+  M.p5t = el("text", { x: PX.P5, y: 440, "text-anchor": "middle", class: "sm" }, svg, "VTS · onduleur · groupe");
+  M.p5g = el("text", { x: PX.P5, y: 456, "text-anchor": "middle", class: "mv" }, svg, "");
+  M.opsBox = el("rect", { x: PX.P6 - 60, y: 430, width: 120, height: 36, rx: 6, class: "box live" }, svg);
+  el("text", { x: PX.P6, y: 446, "text-anchor": "middle", class: "sm", style: "font-size:11px" }, svg, "convertisseur");
+  M.opsT = el("text", { x: PX.P6, y: 460, "text-anchor": "middle", class: "mv", style: "font-size:11px" }, svg, "50 → 60 Hz");
+  el("line", { x1: PX.P6, y1: PY + PH, x2: PX.P6, y2: 430, class: "w live" }, svg);
+  M.opsCable = el("line", { x1: PX.P6, y1: 466, x2: PX.P6, y2: 530, class: "w" }, svg);
+  // interactions
+  const act = (e, fn) => { e.addEventListener("click", () => { fn(); afterUser(); }); e.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); fn(); afterUser(); } }); };
+  act(M.DA, () => { if (S.DA && !S.DAtrip) { S.DA = false; logE(S, "i", "Départ A ouvert"); } else { S.DA = true; S.DAtrip = false; logE(S, "i", "Départ A fermé"); } });
+  act(M.DB, () => { if (S.DB && !S.DBtrip) { S.DB = false; logE(S, "i", "Départ B ouvert"); } else { S.DB = true; S.DBtrip = false; logE(S, "i", "Départ B fermé"); } });
+  for (const s in M.seg) act(M.seg[s].sw, () => {
+    S.seg[s] = !S.seg[s];
+    logE(S, "i", `Interrupteur P${s[0]}–P${s[1]} ${S.seg[s] ? "fermé" : "ouvert"}`);
+    const R = ring(S);
+    if (S.seg[s] && s !== S.segFault) { const both = ["P1", "P2", "P3", "P4", "P5", "P6"].every(p => (R.feed[p] || []).length === 2); if (both) logE(S, "w2", "Boucle fermée : elle s'exploite normalement ouverte en un point"); }
+  });
+}
+function afterUser() { checkFault(S); render(); }
+
+function cls(e, c) { if (e && e.getAttribute("class") !== c) e.setAttribute("class", c); }
+function render() {
+  const C = compute(S), R = C.R;
+  // ligne 225
+  cls(M.c1, "w " + (S.c225[0] ? "live" : "fault")); cls(M.c2, "w " + (S.c225[1] ? "live" : "fault"));
+  M.c2t.textContent = S.c225[1] ? "circuit 2 · 225 kV · 42 km" : "circuit 2 · DÉCLENCHÉ";
+  M.tr.forEach((g, k) => {
+    const t = S.tr[k], on = t.on, c = on ? (t.th >= 90 ? "fault" : "live") : "";
+    [g.l1, g.l2].forEach(e => cls(e, "w " + (on ? "live" : ""))); cls(g.c1, "w " + c); cls(g.c2, "w " + c);
+    g.t.textContent = on ? `${Math.round(C.trLoad[k] * 100)} % · ${Math.round(t.th)} °C${t.fans ? "" : " · ventil. arrêtée"}` : "hors service";
+    g.t.style.fill = on && t.th >= 90 ? "var(--fault)" : "";
+  });
+  S.capSteps.forEach((on, k) => cls(M.cap[k], "sw" + (on && S.capFuse[k] ? " closed live" : "") + (!S.capFuse[k] ? " trip" : "")));
+  M.indT.textContent = `${S.ind} MW`;
+  // départs
+  const aLive = S.DA && !S.DAtrip, bLive = S.DB && !S.DBtrip;
+  cls(M.DA, "sw" + (aLive ? " closed live" : "") + (S.DAtrip ? " trip" : "")); cls(M.DB, "sw" + (bLive ? " closed live" : "") + (S.DBtrip ? " trip" : ""));
+  cls(M.DAl1, "w live"); cls(M.DBl1, "w live");
+  cls(M.DAl2, "w " + (aLive ? "live" : "")); cls(M.DBl2, "w " + (bLive ? "live" : ""));
+  for (const s in M.seg) {
+    const g = M.seg[s], a = "P" + s[0], b = "P" + s[1];
+    const isF = S.segFault === s;
+    cls(g.a, "w " + (isF ? "fault" : R.live[a] ? "live" : ""));
+    cls(g.b, "w " + (isF ? "fault" : S.seg[s] && R.live[b] ? "live" : R.live[b] ? "live" : ""));
+    if (!S.seg[s]) { cls(g.a, "w " + (isF ? "fault" : R.live[a] ? "live" : "")); cls(g.b, "w " + (isF ? "fault" : R.live[b] ? "live" : "")); }
+    cls(g.sw, "sw" + (S.seg[s] ? " closed" + (R.live[a] || R.live[b] ? " live" : "") : ""));
+  }
+  POSTES.forEach(p => {
+    const st = C.postes[p.id], g = M.p[p.id];
+    let c = "box " + (st.live ? "live" : st.backup ? "backup" : "dead");
+    if ((p.id === "P3" && (S.isoFault || S.rowR2)) || (p.id === "P1" && S.sts3 !== "ok") || (p.id === "P6" && S.ops.refused)) c = "box alarm";
+    cls(g.box, c);
+    g.v.textContent = `${fr(st.P, 2)} MW`;
+    cls(g.ipd, "ipd" + (S.ipd[p.id] ? " on" : ""));
+    g.extra.textContent = st.backup ? "secours" : !st.live ? "hors tension" : "";
+    g.extra.style.fill = st.backup ? "var(--amber)" : "var(--fault)";
+  });
+  const sh = C.pr.sh;
+  M.shipA.style.display = sh.A ? "" : "none"; M.shipB.style.display = sh.B ? "" : "none";
+  const opsShip = S.ops.connected || S.ops.refused;
+  M.shipC.style.display = opsShip ? "" : "none"; M.shipCt.style.display = opsShip ? "" : "none";
+  const avail = [0, 1, 2, 3, 4, 5, 6].filter(k => !(k === 2 && S.sts3 !== "ok"));
+  M.cranes.forEach((c, k) => { const pos = avail.indexOf(k); const active = pos >= 0 && pos < C.pr.nCranes; c.setAttribute("stroke", k === 2 && S.sts3 !== "ok" ? "var(--fault)" : (C.postes.P1.live && active ? "var(--live)" : "var(--mute)")); });
+  M.sts3t.textContent = S.sts3 === "defaut" ? "STS 3 en défaut" : S.sts3 === "consigne" ? "STS 3 consigné" : "";
+  M.p3g.textContent = S.isoFault ? `CPI ${S.cpi} kΩ · ALARME` : S.rowR2 ? "R2 : 352 V en bout" : C.postes.P3.backup ? "groupe de secours en charge" : "CPI > 1 MΩ";
+  M.p3g.style.fill = S.isoFault || S.rowR2 ? "var(--fault)" : C.postes.P3.backup ? "var(--amber)" : "";
+  M.p5g.textContent = C.postes.P5.live ? "réseau" : S.gen5.run ? "groupe de secours" : `onduleur ${Math.round(S.ups)} %`;
+  M.p5g.style.fill = C.postes.P5.live ? "" : S.gen5.run ? "var(--amber)" : "var(--fault)";
+  M.opsT.textContent = S.ops.converter ? "50 → 60 Hz" : "BY-PASS · 50 Hz";
+  M.opsT.style.fill = S.ops.converter ? "" : "var(--fault)";
+  cls(M.opsBox, "box " + (S.ops.converter ? "live" : "alarm"));
+  cls(M.opsCable, "w " + (S.ops.connected ? "live" : S.ops.refused ? "fault" : ""));
+
+  // KPI
+  setK("k-h", hh(S.t), "", "", `jour ${Math.floor(S.t / 1440) + 1} · ${sh.A && sh.B ? "2 navires" : sh.A || sh.B ? "1 navire" : "aucun navire"} au quai`);
+  setK("k-p", fr(C.P, 1), "MW", "", `port ${fr(C.Pport, 1)} MW · zone ${S.ind} MW`);
+  setK("k-c", fr(C.cos, 2), "", C.cos < 0.93 ? "crit" : "good", `objectif ≥ 0,93 · ${Math.round(C.I30)} A sous 30 kV`);
+  const trAvg = C.trLoad.reduce((a, b) => a + b, 0) / Math.max(1, S.tr.filter(t => t.on).length);
+  const hot = Math.max(...S.tr.map(t => t.th));
+  setK("k-t", Math.round(trAvg * 100), "%", hot >= 90 ? "crit" : S.tr.some(t => !t.on) ? "warn" : "", `${S.tr.filter(t => t.on).length}/3 en service · huile max ${Math.round(hot)} °C`);
+  const n = POSTES.filter(p => C.postes[p.id].live).length;
+  setK("k-n", `${n}/6`, "", n < 6 ? "crit" : "good", n < 6 ? `${6 - n} poste(s) hors réseau` : "boucle ouverte P3–P4");
+  setK("k-f", "50,0", "Hz", S.c225[0] && S.c225[1] ? "" : "warn", S.c225[0] && S.c225[1] ? "réseau national · quai navires 60 Hz" : "un seul circuit 225 kV en service");
+  const st = $("state");
+  const issues = [];
+  if (!S.c225[0] || !S.c225[1]) issues.push("ligne 225 kV incomplète"); if (n < 6) issues.push("postes coupés"); if (hot >= 90) issues.push("surchauffe"); if (C.cos < 0.93) issues.push("cos φ bas");
+  st.textContent = issues.length ? issues.join(" · ") : "Exploitation normale"; st.style.color = issues.length ? "var(--fault)" : "var(--live)";
+
+  drawCurve();
+  renderLog();
+  renderAtelier(false);
+}
+function setK(id, v, u, state, sub) { const e = $(id); e.className = "kpi " + (state || ""); e.querySelector(".v").innerHTML = v + (u ? `<small>${u}</small>` : ""); e.querySelector(".s").textContent = sub; }
+
+/* ---------- courbe ---------- */
+function drawCurve() {
+  const c = $("curve"); const H = S.hist; c.innerHTML = "";
+  const x0 = 44, x1 = 624, y0 = 196, y1 = 16;
+  const tEnd = S.t, tStart = tEnd - 1440;
+  const maxV = Math.max(20, ...H.map(h => h.tot)) * 1.1;
+  const step = maxV > 100 ? 25 : maxV > 50 ? 20 : 10;
+  const X = t => x0 + (t - tStart) / 1440 * (x1 - x0), Y = v => y0 - v / maxV * (y0 - y1);
+  for (let v = 0; v <= maxV; v += step) { el("line", { x1: x0, x2: x1, y1: Y(v), y2: Y(v), stroke: "var(--line)" }, c); el("text", { x: x0 - 6, y: Y(v) + 4, "text-anchor": "end" }, c, v); }
+  for (let k = 0; k <= 4; k++) { const t = tStart + k * 360; el("text", { x: X(t), y: 214, "text-anchor": "middle" }, c, hh(Math.max(0, t))); }
+  if (H.length > 1) {
+    const pts = k => H.map(h => `${X(h.t).toFixed(1)},${Y(h[k]).toFixed(1)}`).join(" ");
+    el("polygon", { points: `${X(H[0].t)},${y0} ${pts("port")} ${X(H[H.length - 1].t)},${y0}`, fill: "var(--sea)", opacity: .14 }, c);
+    el("polyline", { points: pts("tot"), fill: "none", stroke: "var(--ink)", "stroke-width": 2 }, c);
+    el("polyline", { points: pts("port"), fill: "none", stroke: "var(--sea)", "stroke-width": 2 }, c);
+    const L = H[H.length - 1];
+    el("circle", { cx: X(L.t), cy: Y(L.tot), r: 4, fill: "var(--ink)" }, c);
+    el("circle", { cx: X(L.t), cy: Y(L.port), r: 4, fill: "var(--sea)" }, c);
+  }
+  el("text", { x: x0 + 6, y: y1 + 10, style: "fill:var(--ink)" }, c, "— port + zone industrielle");
+  el("text", { x: x0 + 220, y: y1 + 10, style: "fill:var(--sea)" }, c, "— port seul");
+}
+
+/* ---------- journal ---------- */
+let lastLog = -1;
+function renderLog() {
+  if (!S.log.length || S.log[0].n === lastLog) return; lastLog = S.log[0].n;
+  $("log").innerHTML = S.log.map(e => `<li><span class="tm">${hh(e.t)}</span><span class="${e.k}">${e.m}</span></li>`).join("");
+}
+
+/* ---------- atelier ---------- */
+function buildList() {
+  const l = $("sc-list"); l.innerHTML = "";
+  SC.forEach(sc => { const b = document.createElement("button"); b.innerHTML = `<b>${sc.id}</b>${sc.t}`; b.setAttribute("aria-pressed", cur === sc); if (doneSet.has(sc.id)) b.classList.add("done"); b.onclick = () => startSc(sc); l.appendChild(b); });
+}
+function startSc(sc) {
+  const keepT = S.t, keepH = S.hist, ind = S.ind;
+  S = newState(); S.t = keepT; S.hist = keepH; S.ind = ind;
+  cur = sc; W = { shown: [], choice: null, acts: [], t0: S.t, won: false, order: sc.order };
+  logE(S, "i", `Exercice ${sc.id} : ${sc.t}`);
+  sc.setup(S);
+  setSpeed(1);
+  buildList(); renderAtelier(true); render();
+}
+function resetFree() { const keepT = S.t, keepH = S.hist, ind = S.ind; S = newState(); S.t = keepT; S.hist = keepH; S.ind = ind; cur = null; W = null; logE(S, "o", "Réseau remis en exploitation normale"); buildList(); renderAtelier(true); render(); }
+let atKey = "";
+function renderAtelier(force) {
+  const box = $("atelier");
+  if (!cur) {
+    if (force || atKey !== "free") { atKey = "free"; box.innerHTML = `<div class="ticket"><span class="eyebrow" style="color:var(--sea)">Mode libre</span><p>Le port fonctionne normalement. Choisissez une panne F1 à F9 : le jumeau la reproduit et vous guide de la mesure au diagnostic, puis au remède. Chaque fiche correspond à la même fiche du manuel de dépannage.</p></div><p style="margin:0;color:var(--mute);font-size:13.5px">En mode libre, manœuvrez la boucle, faites varier la charge de la zone industrielle et accélérez le temps pour voir la journée du port : escales, éclairage de nuit, parc frigorifique.</p>`; }
+    return;
+  }
+  const sc = cur, solved = sc.solved(S);
+  if (solved && !W.won && W.choice !== null && sc.choices[W.choice][1]) { W.won = true; doneSet.add(sc.id); try { localStorage.setItem("kribi-done", JSON.stringify([...doneSet])); } catch (e) {} logE(S, "o", `Exercice ${sc.id} réussi`); buildList(); }
+  const key = [sc.id, W.shown.join(","), W.choice, W.acts.join(","), W.won, solved].join("|");
+  if (!force && key === atKey) return; atKey = key;
+  const score = Math.max(0, 100 - Math.max(0, W.shown.length - 3) * 5 - (W.wrong || 0) * 20);
+  box.innerHTML = `
+    <div class="ticket"><span class="eyebrow">Signalement · ${sc.id}</span><p>${sc.ticket}</p></div>
+    <div class="stage"><h3><span>1 · Mesures</span><span>${W.shown.length} / ${sc.meas.length}</span></h3><div class="meas">${sc.meas.map((m, i) => {
+      const shown = W.shown.includes(i), r = typeof m[1] === "function" ? m[1](S) : m[1];
+      return `<button data-m="${i}" class="${shown ? "shown" : ""}"><span>${m[0]}</span><span class="r">${shown ? r : "mesurer"}</span>${shown ? `<span class="res">${m[2]}</span>` : ""}</button>`; }).join("")}</div></div>
+    <div class="stage"><h3><span>2 · Diagnostic</span></h3><div class="choices">${W.order.map(i => { const c = sc.choices[i]; const st = W.choice === i ? (c[1] ? "ok" : "ko") : (W.tried || []).includes(i) ? "ko" : ""; return `<button data-c="${i}" class="${st}">${c[0]}</button>`; }).join("")}</div>${W.choice !== null ? `<p class="fb">${sc.choices[W.choice][2]}</p>` : ""}</div>
+    <div class="stage"><h3><span>3 · Remède</span></h3>${sc.hint ? `<p class="fb" style="margin:0 0 6px">${sc.hint}</p>` : ""}<div class="acts">${sc.acts.map((a, i) => `<button data-a="${i}" class="${W.acts.includes(i) ? "done" : ""}" ${W.choice === null || !sc.choices[W.choice][1] ? "disabled" : ""}>${a[0]}</button>`).join("")}</div></div>
+    <div class="score"><span>${W.won ? `<span class="win">Panne résolue en ${Math.round(S.t - W.t0)} min simulées.</span>` : solved && W.choice === null ? "Réseau rétabli : posez maintenant le diagnostic." : "Score en cours"}</span><span class="big">${score}</span></div>
+    <div class="acts"><button id="free">Revenir au mode libre</button></div>`;
+  box.querySelectorAll("[data-m]").forEach(b => b.onclick = () => { const i = +b.dataset.m; if (!W.shown.includes(i)) { W.shown.push(i); S.t += 2; logE(S, "i", `Mesure : ${sc.meas[i][0]}`); } render(); renderAtelier(true); });
+  box.querySelectorAll("[data-c]").forEach(b => b.onclick = () => { const i = +b.dataset.c; if (W.choice !== null && sc.choices[W.choice][1]) return; W.choice = i; if (!sc.choices[i][1]) { W.wrong = (W.wrong || 0) + 1; (W.tried ||= []).push(i); } renderAtelier(true); });
+  box.querySelectorAll("[data-a]").forEach(b => b.onclick = () => { const i = +b.dataset.a; const r = sc.acts[i][1](S); if (r !== false && !W.acts.includes(i)) W.acts.push(i); afterUser(); renderAtelier(true); });
+  $("free").onclick = resetFree;
+}
+
+/* ---------- commandes ---------- */
+function setSpeed(v) { speed = v; $("spv").textContent = v; document.querySelectorAll("[data-sp]").forEach(b => b.setAttribute("aria-pressed", +b.dataset.sp === v)); }
+document.querySelectorAll("[data-sp]").forEach(b => b.onclick = () => setSpeed(+b.dataset.sp));
+$("ind").oninput = e => { S.ind = +e.target.value; $("indv").textContent = S.ind + " MW"; render(); };
+
+/* ---------- démarrage ---------- */
+SC.forEach(sc => { const o = [0, 1, 2]; for (let i = o.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [o[i], o[j]] = [o[j], o[i]]; } sc.order = o; });
+buildMimic(); buildList();
+// pré-remplit 24 h d'historique pour que la courbe soit lisible dès l'ouverture
+(function warm() { const s0 = newState(); s0.t = 6 * 60 - 1440; for (let k = 0; k < 144; k++) step(s0, 10); S.hist = s0.hist; S.t = s0.t; S.log = []; })();
+logE(S, "o", "Exploitation normale : boucle 30 kV ouverte entre P3 et P4, trois transformateurs en service");
+render(); renderAtelier(true);
+let last = performance.now();
+setInterval(() => { const now = performance.now(); const dt = Math.min(0.5, (now - last) / 1000); last = now; step(S, dt * speed); render(); }, 250);
+</script>
+
+</body></html>
