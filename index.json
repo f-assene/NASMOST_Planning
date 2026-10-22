@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T08:08:48Z",
+ "generated": "2026-10-22T08:18:38Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -67,14 +67,14 @@
   {
    "path": "GCO/GCO_N4_19_10_25_10_2026.ics",
    "type": "blob",
-   "sha": "af013999fa8855913cb7c68001ba8b1c52a2e4eb",
-   "size": 5695
+   "sha": "6d88c34d93f98d09794fd85e08f3b46ed56fb740",
+   "size": 6627
   },
   {
    "path": "GCO/GCO_N4_26_10_01_11_2026.ics",
    "type": "blob",
-   "sha": "7bcb00c689be84cab176d22eac20928a5ea905e6",
-   "size": 5695
+   "sha": "3aa807207f0bda11f364a8940e30f108eb7107d3",
+   "size": 6627
   },
   {
    "path": "GCO/README.md",
@@ -639,8 +639,8 @@
   {
    "path": "PEM/PEM_N4_19_10_25_10_2026.ics",
    "type": "blob",
-   "sha": "639c78d6d3b91c95e7b86523f816f4b6638d94d9",
-   "size": 8365
+   "sha": "76a197a0eb3d9dd8d9253f2c11f0e708bc20ed1d",
+   "size": 8308
   },
   {
    "path": "PEM/README.md",
@@ -822,8 +822,8 @@
   {
    "path": "SSIP/SSIP_N4_26_10_01_11_2026.ics",
    "type": "blob",
-   "sha": "9926fa31237e33a606f138399902c17d279cae09",
-   "size": 8319
+   "sha": "5f13f86948d48c0520626f8c0d93b5eb058a6671",
+   "size": 6814
   },
   {
    "path": "SSIP/scan_EDT_SSIP_4_19_10_25_10_2026.pdf",
@@ -1365,8 +1365,8 @@
   {
    "path": "tools/timetable_to_ics.py",
    "type": "blob",
-   "sha": "104561faf928855c595ff8ad2d269bea32987a62",
-   "size": 30584
+   "sha": "eea4024310c006d683e06d84ce238fc9a442cc62",
+   "size": 32428
   },
   {
    "path": "web/admin.js",
