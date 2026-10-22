@@ -81,6 +81,15 @@
   "ics": "NMSI/NMSI_N3_22_06_28_06_2026.ics"
  },
  {
+  "source": "NMSI/EDT_GNM_4_26_10_31_10_2026.pdf",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N4",
+  "start": "2026-10-26",
+  "end": "2026-10-31",
+  "ics": "NMSI/NMSI_N4_26_10_31_10_2026.ics"
+ },
+ {
   "source": "NMSI/EDT_NMSI_4_19_10_24_10_2026.pdf",
   "scan": false,
   "department": "NMSI",
