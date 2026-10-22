@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T08:18:38Z",
+ "generated": "2026-10-22T08:26:33Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -381,10 +381,10 @@
    ]
   },
   {
-   "path": "GOHM/EDT_GHOM_4_26_10_01_11_2026.pdf",
+   "path": "GOHM/EDT_GHOM_4_26_10_01_11_2026.docx",
    "type": "blob",
-   "sha": "10fbfbd6bd09c3084aa00333b74262ba0826a3aa",
-   "size": 205684
+   "sha": "0d0ed7b308cf0794e507fde3d6370e23eac24eb0",
+   "size": 41450
   },
   {
    "path": "GOHM/GOHM_N3_02_02_08_02_2026.ics",
@@ -665,8 +665,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "5ac1bb0c688bc2995aea4e9bade8e5774bf34d42",
-   "size": 3062
+   "sha": "1f1e92441cea8164152ca9c17ccad1f876e62e13",
+   "size": 3064
   },
   {
    "path": "README.md",
