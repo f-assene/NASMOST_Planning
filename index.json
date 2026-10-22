@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T09:17:56Z",
+ "generated": "2026-10-22T16:23:20Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1042,8 +1042,8 @@
   {
    "path": "logos/ANCR.jpeg",
    "type": "blob",
-   "sha": "7b478c55580f8df7241b754fb5169efa2841d626",
-   "size": 25809
+   "sha": "1de43f76ae709739c79598b86e647f5c8ae9692a",
+   "size": 237129
   },
   {
    "path": "logos/GCO.png",
