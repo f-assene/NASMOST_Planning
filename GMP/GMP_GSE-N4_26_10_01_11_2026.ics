@@ -1,0 +1,269 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:GMP/EDT_GSE_4_26_10_01_11_2026.pdf
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261026t0730@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261026T073000
+DTEND;TZID=Africa/Douala:20261026T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine Resources and bleu Economics
+DESCRIPTION:Cours de Marine Resources and bleu Economics\navec Ing. ELIE MB
+ I
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine Resources and bleu Economics dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine Resources and bleu Economics dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261027t0730@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261027T073000
+DTEND;TZID=Africa/Douala:20261027T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Risk Monitoring and Protection
+DESCRIPTION:Cours de Marine and Port Environmental Risk Monitoring and Prot
+ ection\navec Ing. ELIE MBI/Dr ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261028t0730@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261028T073000
+DTEND;TZID=Africa/Douala:20261028T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Risk Monitoring and Protection
+DESCRIPTION:Cours de Marine and Port Environmental Risk Monitoring and Prot
+ ection\navec Ing. ELIE MBI/Dr ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261029t0730@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261029T073000
+DTEND;TZID=Africa/Douala:20261029T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Quality Health Safety and Environment (QHSE)
+DESCRIPTION:Cours de Quality Health Safety and Environment (QHSE)\navec Dr 
+ ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Quality Health Safety and Environment (QHSE) dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Quality Health Safety and Environment (QHSE) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261030t0730@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261030T073000
+DTEND;TZID=Africa/Douala:20261030T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Quality Health Safety and Environment (QHSE)
+DESCRIPTION:Cours de Quality Health Safety and Environment (QHSE)\navec Dr 
+ ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Quality Health Safety and Environment (QHSE) dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Quality Health Safety and Environment (QHSE) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261031t0730@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261031T073000
+DTEND;TZID=Africa/Douala:20261031T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Quality Health Safety and Environment (QHSE)
+DESCRIPTION:Cours de Quality Health Safety and Environment (QHSE)\navec Dr 
+ ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Quality Health Safety and Environment (QHSE) dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Quality Health Safety and Environment (QHSE) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261101t0730@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261101T073000
+DTEND;TZID=Africa/Douala:20261101T123000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:TPE
+DESCRIPTION:Cours de TPE
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:TPE dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:TPE dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261026t1300@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261026T130000
+DTEND;TZID=Africa/Douala:20261026T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine Resources and bleu Economics
+DESCRIPTION:Cours de Marine Resources and bleu Economics\navec Ing. ELIE MB
+ I
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine Resources and bleu Economics dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261027t1300@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261027T130000
+DTEND;TZID=Africa/Douala:20261027T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Risk Monitoring and Protection
+DESCRIPTION:Cours de Marine and Port Environmental Risk Monitoring and Prot
+ ection\navec Ing. ELIE MBI/Dr ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261028t1300@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261028T130000
+DTEND;TZID=Africa/Douala:20261028T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Marine and Port Environmental Risk Monitoring and Protection
+DESCRIPTION:Cours de Marine and Port Environmental Risk Monitoring and Prot
+ ection\navec Ing. ELIE MBI/Dr ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Marine and Port Environmental Risk Monitoring and Protection da
+ ns 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261029t1300@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261029T130000
+DTEND;TZID=Africa/Douala:20261029T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Quality Health Safety and Environment (QHSE)
+DESCRIPTION:Cours de Quality Health Safety and Environment (QHSE)\navec Dr 
+ ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Quality Health Safety and Environment (QHSE) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261030t1300@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261030T130000
+DTEND;TZID=Africa/Douala:20261030T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Quality Health Safety and Environment (QHSE)
+DESCRIPTION:Cours de Quality Health Safety and Environment (QHSE)\navec Dr 
+ ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Quality Health Safety and Environment (QHSE) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261031t1300@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261031T130000
+DTEND;TZID=Africa/Douala:20261031T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:Quality Health Safety and Environment (QHSE)
+DESCRIPTION:Cours de Quality Health Safety and Environment (QHSE)\navec Dr 
+ ZO’OBO E
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Quality Health Safety and Environment (QHSE) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmp-gse-n4-20261101t1300@nasmost-planning
+DTSTAMP:20261022T080151Z
+DTSTART;TZID=Africa/Douala:20261101T130000
+DTEND;TZID=Africa/Douala:20261101T180000
+CATEGORIES:GMP-GSE-N4
+SUMMARY:TPE
+DESCRIPTION:Cours de TPE
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:TPE dans 15 min
+END:VALARM
+END:VEVENT
+END:VCALENDAR
