@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T09:02:21Z",
+ "generated": "2026-10-22T09:02:45Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -128,12 +128,6 @@
     "GEM"
    ],
    "signed": true
-  },
-  {
-   "path": "GMM/EDT.pdf",
-   "type": "blob",
-   "sha": "f6452a63d13ac8042c904df8038d061646c2579f",
-   "size": 3585801
   },
   {
    "path": "GMM/EDT_GMM_4_19_10_25_10_2026.pdf",
@@ -659,8 +653,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "bb67be51d83a35b2b82910ab8f6d4978aff6748d",
-   "size": 2860
+   "sha": "b9fd99c84b3ea7f234738c72c3b630a263688a11",
+   "size": 2673
   },
   {
    "path": "README.md",
