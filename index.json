@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T09:08:35Z",
+ "generated": "2026-10-22T09:10:10Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -927,12 +927,6 @@
    "type": "blob",
    "sha": "ddf426a20ce480934a3186054a37bf4a5761dc1e",
    "size": 7565
-  },
-  {
-   "path": "STMO/WhatsApp Image 2026-10-18 at 13.37.55.jpeg",
-   "type": "blob",
-   "sha": "10cc94dc8da56ace681547fe4b66e38f7dad3b5f",
-   "size": 387779
   },
   {
    "path": "STMO/scan_EDT_STMO_2_19_10_25_10_2026.pdf",
