@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T16:23:20Z",
+ "generated": "2026-10-22T16:25:19Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -8,19 +8,19 @@
    "size": 170
   },
   {
-   "path": "ANCR/ANCR_N4_19_10_24_10_2026.ics",
+   "path": "ANCR/ANCR_N4_19_10_25_10_2026.ics",
    "type": "blob",
-   "sha": "b2d6fd690a8ac0e8213f7b4a5573baf3593ca1a1",
-   "size": 7864
+   "sha": "9b360d143cc0c0632b37749e302e469733cf9897",
+   "size": 7937
   },
   {
    "path": "ANCR/EDT_ANCR_4_19_10_24_10_2026.pdf",
    "type": "blob",
-   "sha": "0b6ce843b65798a6d94666c32845306fdc503da7",
-   "size": 123339,
+   "sha": "7948dd6c809b493c63fde717bd8c76e918f87881",
+   "size": 642570,
    "week": [
     "2026-10-19",
-    "2026-10-24"
+    "2026-10-25"
    ],
    "departments": [
     "ANCR"
@@ -666,8 +666,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "a51eed611aa968b7e21d5d74002518e28dde8036",
-   "size": 2417
+   "sha": "20f664352f1b55720cb4bdcdcdc506300c62b0a6",
+   "size": 2572
   },
   {
    "path": "README.md",
@@ -1318,7 +1318,7 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "83c5be985a38a00a7fa0bb379d2094e26c1053b6",
+   "sha": "38d31d1a674578ca7e19d764872712d893cb29e2",
    "size": 11774
   },
   {
