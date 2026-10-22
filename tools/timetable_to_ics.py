@@ -273,12 +273,35 @@ def pdf_timetables(path: Path):
                 yield number, "", None, False  # page scannée (image)
                 continue
             try:
-                text = page.extract_text(x_tolerance=1) or ""
+                text = pdf_text(page)
                 slots = pdf_slots(page)
             except Exception as error:  # page abîmée : les autres pages sont tout de même lues
                 yield number, "", error, True
                 continue
             yield number, text, slots, True
+
+
+def pdf_text(page, bbox=None) -> str:
+    """
+    Texte d'une page ou d'une zone. Certains PDF déclarent les lettres accentuées (é, è, ë...)
+    deux fois plus étroites qu'elles ne sont : l'écart avec la lettre suivante passait pour une
+    espace ("Mé thodes", "Bibliothè que"). Ces lettres sont prolongées jusqu'à la suivante ; les
+    vraies espaces, plus larges ou écrites comme caractères, sont conservées.
+    """
+    from pdfplumber.utils import extract_text
+
+    area = page.crop(bbox) if bbox else page
+    chars = sorted((dict(c) for c in area.chars), key=lambda c: (round(c["top"]), c["x0"]))
+    for c, nxt in zip(chars, chars[1:]):
+        size = c.get("size") or 10
+        if (
+            c["text"].isalpha() and not c["text"].isascii()
+            and c["x1"] - c["x0"] < 0.35 * size
+            and abs(nxt["top"] - c["top"]) < 1 and nxt["text"].strip()
+            and 0 < nxt["x0"] - c["x1"] < 0.35 * size
+        ):
+            c["x1"] = nxt["x0"]
+    return extract_text(chars, x_tolerance=1) or ""
 
 
 def pdf_slots(page):
@@ -308,17 +331,25 @@ def pdf_slots(page):
             bounds.append((left, right, d, c))
         first_left = bounds[0][0]
 
+        # Créneaux : [début, fin, bas de la cellule d'horaire, {jour: zone}]
         slots = []
         for row in table.rows:
-            cells = [(bbox, page.crop(bbox).extract_text(x_tolerance=1) or "") for bbox in row.cells if bbox]
+            cells = [(bbox, pdf_text(page, bbox)) for bbox in row.cells if bbox]
             if not cells or min(b[1] for b, _ in cells) < header_bottom - 1:
                 continue  # ligne d'en-tête
-            time_text = " ".join(t for b, t in cells if (b[0] + b[2]) / 2 < first_left)
-            times = TIME.findall(time_text) or TIME.findall(" ".join(t for _, t in cells))
-            if len(times) < 2:
+            row_top = min(b[1] for b, _ in cells)
+            time_cells = [(b, t) for b, t in cells if (b[0] + b[2]) / 2 < first_left]
+            times = TIME.findall(" ".join(t for _, t in time_cells)) or TIME.findall(" ".join(t for _, t in cells))
+            last = slots[-1] if slots else None
+            if last and (row_top < last[2] - 1 or (len(times) >= 2 and (times[0], times[1]) == (last[0], last[1]))):
+                slot = last  # suite du créneau précédent (cellule découpée en plusieurs lignes)
+            elif len(times) >= 2:
+                bottom = max((b[3] for b, t in time_cells if TIME.search(t)), default=row_top)
+                slot = [times[0], times[1], bottom, {}]
+                slots.append(slot)
+            else:
                 continue
-            by_day = {}
-            for (cx0, _t, cx1, _b), content in cells:
+            for (cx0, ct, cx1, cb), content in cells:
                 if not content.strip() or (cx0 + cx1) / 2 < first_left:
                     continue
                 covered = [d for left, right, d, c in bounds if cx0 - 1 <= c <= cx1 + 1]
@@ -326,9 +357,12 @@ def pdf_slots(page):
                     center = (cx0 + cx1) / 2
                     covered = [d for left, right, d, c in bounds if left <= center < right]
                 for d in covered:
-                    by_day.setdefault(d, content)
-            slots.append((times[0], times[1], by_day))
-        return slots
+                    if d in slot[3]:
+                        x0, t0, x1, b0 = slot[3][d]
+                        slot[3][d] = (min(x0, cx0), min(t0, ct), max(x1, cx1), max(b0, cb))
+                    else:
+                        slot[3][d] = (cx0, ct, cx1, cb)
+        return [(start, end, {d: pdf_text(page, zone) for d, zone in zones.items()}) for start, end, _b, zones in slots]
     return None
 
 
