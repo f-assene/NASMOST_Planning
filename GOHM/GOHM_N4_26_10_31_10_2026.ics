@@ -1,0 +1,232 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:GOHM/EDT_GOHM_4_26_10_31_10_2026.docx
+X-NASMOST-EC:classe=GOHM-N4;prevus=10;acheves=1;programmes=1;restants=8
+BEGIN:VEVENT
+UID:gohm-n4-20261026t0730@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261026T073000
+DTEND;TZID=Africa/Douala:20261026T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA/ Dr. ZEH\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261027t0730@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261027T073000
+DTEND;TZID=Africa/Douala:20261027T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA/ Dr. ZEH\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261028t0730@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261028T073000
+DTEND;TZID=Africa/Douala:20261028T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA/ Dr. ZEH\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261029t0730@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261029T073000
+DTEND;TZID=Africa/Douala:20261029T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Traitement du signal\, capteurs et métrologie
+DESCRIPTION:Cours de Traitement du signal\, capteurs et métrologie (OHM-41
+ 12)\navec Pr. ABESSOLO Dr NDI\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 
+ h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Traitement du signal\, capteurs et métrologie dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Traitement du signal\, capteurs et métrologie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261030t0730@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261030T073000
+DTEND;TZID=Africa/Douala:20261030T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Traitement du signal\, capteurs et métrologie
+DESCRIPTION:Cours de Traitement du signal\, capteurs et métrologie (OHM-41
+ 12)\navec Pr. ABESSOLO Dr NDI\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 
+ h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Traitement du signal\, capteurs et métrologie dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Traitement du signal\, capteurs et métrologie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261031t0730@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261031T073000
+DTEND;TZID=Africa/Douala:20261031T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Traitement du signal\, capteurs et métrologie
+DESCRIPTION:Cours de Traitement du signal\, capteurs et métrologie (OHM-41
+ 12)\navec Pr. ABESSOLO Dr NDI\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 
+ h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Traitement du signal\, capteurs et métrologie dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Traitement du signal\, capteurs et métrologie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261026t1300@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261026T130000
+DTEND;TZID=Africa/Douala:20261026T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA/ Dr. ZEH\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261027t1300@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261027T130000
+DTEND;TZID=Africa/Douala:20261027T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA/ Dr. ZEH\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261028t1300@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261028T130000
+DTEND;TZID=Africa/Douala:20261028T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA/ Dr. ZEH\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261029t1300@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261029T130000
+DTEND;TZID=Africa/Douala:20261029T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique côtière et transport sédimentaire
+DESCRIPTION:Cours de Dynamique côtière et transport sédimentaire (OHM-41
+ 51)\navec Pr. ABESSOLO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique côtière et transport sédimentaire dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261030t1300@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261030T130000
+DTEND;TZID=Africa/Douala:20261030T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique côtière et transport sédimentaire
+DESCRIPTION:Cours de Dynamique côtière et transport sédimentaire (OHM-41
+ 51)\navec Pr. ABESSOLO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique côtière et transport sédimentaire dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261031t1300@nasmost-planning
+DTSTAMP:20261022T091755Z
+DTSTART;TZID=Africa/Douala:20261031T130000
+DTEND;TZID=Africa/Douala:20261031T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique côtière et transport sédimentaire
+DESCRIPTION:Cours de Dynamique côtière et transport sédimentaire (OHM-41
+ 51)\navec Pr. ABESSOLO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique côtière et transport sédimentaire dans 15 min
+END:VALARM
+END:VEVENT
+END:VCALENDAR

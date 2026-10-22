@@ -117,6 +117,15 @@
   "ics": "GOHM/GOHM_N4_19_10_24_10_2026.ics"
  },
  {
+  "source": "GOHM/EDT_GOHM_4_26_10_31_10_2026.docx",
+  "scan": false,
+  "department": "GOHM",
+  "level": "N4",
+  "start": "2026-10-26",
+  "end": "2026-10-31",
+  "ics": "GOHM/GOHM_N4_26_10_31_10_2026.ics"
+ },
+ {
   "source": "NMSI/EDT_3GNM_22_06_28_06_2026.pdf",
   "scan": false,
   "department": "NMSI",
