@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T09:00:22Z",
+ "generated": "2026-10-22T09:02:21Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -31,12 +31,6 @@
    "type": "blob",
    "sha": "380205194e34712d355e3175a3118ebb9467ffc9",
    "size": 2031
-  },
-  {
-   "path": "GCO/EDT 06-03-2026 10.30.pdf",
-   "type": "blob",
-   "sha": "e3983033cdad05b8370adbf63f001226569ece2a",
-   "size": 1582038
   },
   {
    "path": "GCO/EDT_GCO_4_19_10_25_10_2026.pdf",
@@ -665,8 +659,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "1f1e92441cea8164152ca9c17ccad1f876e62e13",
-   "size": 3064
+   "sha": "bb67be51d83a35b2b82910ab8f6d4978aff6748d",
+   "size": 2860
   },
   {
    "path": "README.md",
