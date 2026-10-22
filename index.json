@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-22T08:26:33Z",
+ "generated": "2026-10-22T08:57:34Z",
  "tree": [
   {
    "path": ".gitignore",
    "type": "blob",
-   "sha": "1da88b08a48dec67e77fa33bfc140e8abb84a298",
-   "size": 116
+   "sha": "6e8e0cb06707d636608e008edf6888ae730092d1",
+   "size": 170
   },
   {
    "path": "ANCR/ANCR_N4_19_10_24_10_2026.ics",
@@ -1377,8 +1377,8 @@
   {
    "path": "web/app.js",
    "type": "blob",
-   "sha": "5d1d31a5447177315e158f6541e799e3ebe9ca1e",
-   "size": 73815
+   "sha": "ebcbf27ffbee883ef61a81d028fcc15aeab5b477",
+   "size": 79764
   },
   {
    "path": "web/apple-touch-icon.png",
@@ -1419,13 +1419,13 @@
   {
    "path": "web/style.css",
    "type": "blob",
-   "sha": "54873cf28fc8a4e5f49704063c84e179f6f44f1e",
-   "size": 15738
+   "sha": "5a34fc5229b1ae331f96881a21210c85cbf1ec89",
+   "size": 16407
   },
   {
    "path": "web/sw.js",
    "type": "blob",
-   "sha": "29b0d7d598e020760107385475ad7235bf4e5da5",
+   "sha": "3272811b9d087d384bc9ef5f7ea642a81c44cf3c",
    "size": 2337
   },
   {
