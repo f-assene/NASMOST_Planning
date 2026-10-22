@@ -10,7 +10,7 @@
 
 const REPO = "f-assene/NASMOST_Planning";
 const BRANCH = "main";
-const VERSION = "1.3";
+const VERSION = "1.3.1";
 const APK_URL = `https://github.com/${REPO}/releases/latest/download/NASMOSTPlanning.apk`;
 // Statistiques de fréquentation (GoatCounter : sans cookies ni données personnelles), comptées
 // uniquement sur le site publié. Le tableau de bord est la page #/admin.
@@ -47,6 +47,9 @@ const matchesClass = (eventLevel, track, level) =>
 const TEXTS = {
   fr: {
     back: "Retour", announcements: "Annonces", news: "Actualités", menu: "Menu", refresh: "Actualiser",
+    search: "Rechercher", searchHint: "Cours, enseignant, salle, classe…",
+    searchIntro: "Recherchez une séance de cours par intitulé, code (SIP-4112), enseignant, salle, classe (GEM N4) ou jour (mercredi), dans les emplois du temps de toutes les classes.",
+    searchNone: (q) => `Aucune séance de cours trouvée pour « ${q} »`,
     weekPrev: "Semaine précédente", weekNext: "Semaine suivante", pdf: "PDF", pdfChoose: "Emploi du temps officiel (PDF)",
     pdfMissing: "Pas de PDF publié pour cette semaine", signed: "(version signée)",
     noSession: "Aucune séance de cours prévue pour ce niveau", pdfOnly: "L'emploi du temps de cette semaine n'existe qu'en PDF : appuie sur « PDF » pour l'ouvrir",
@@ -92,6 +95,7 @@ const TEXTS = {
     version: "Version", versionText: `Version web ${VERSION}`, apk: "Télécharger l'app Android (avec alarmes)", admin: "Administration · statistiques",
     roles: ["Contributeur et coordinateur du développement de SEA-FORWARD", "Formateur en Python et en modélisation aux écoles d'été GGOSSS (Gulf of Guinea Ocean Sciences Summer School)", "Formateur du cours 3 du MOOC « Fundamentals of Ocean Forecasting » (FutureLearn)"],
     changelog: [
+      "Version 1.3.1 — octobre 2026\n• Loupe de recherche : une séance de cours par intitulé, code, enseignant, salle, classe ou jour, dans toutes les classes ; toucher un résultat ouvre l'emploi du temps de la classe sur le bon jour\n• Emplois du temps mieux lus : plus d'espace parasite après é, è, ë ; cours d'une case découpée en plusieurs lignes lus en entier",
       "Version web — 20 octobre 2026\n• NASMOST Planning dans le navigateur : emplois du temps, annonces, actualités, opportunités, espaces étudiants et Mon parcours",
       "Version 1.3 — octobre 2026\n• Compatibilité Android 16 : affichage bord à bord\n• Version préparée pour Google Play",
       "Version 1.2 — octobre 2026\n• Alarmes limitées aux séances de cours de sa classe (Mon parcours, facultatif)\n• Pastille rouge dans le menu ⋮ sur les nouveautés non consultées",
@@ -101,6 +105,9 @@ const TEXTS = {
     locale: "fr-FR", justNow: "à l'instant", minAgo: (n) => `il y a ${n} min`, hAgo: (n) => `il y a ${n} h`,
   },
   en: {
+    search: "Search", searchHint: "Course, lecturer, room, class…",
+    searchIntro: "Search for a class session by title, code (SIP-4112), lecturer, room, class (GEM N4) or day (Wednesday), across the timetables of every class.",
+    searchNone: (q) => `No class sessions found for “${q}”`,
     back: "Back", announcements: "Announcements", news: "News", menu: "Menu", refresh: "Refresh",
     weekPrev: "Previous week", weekNext: "Next week", pdf: "PDF", pdfChoose: "Official timetable (PDF)",
     pdfMissing: "No PDF published for this week", signed: "(signed version)",
@@ -147,6 +154,7 @@ const TEXTS = {
     version: "Version", versionText: `Web version ${VERSION}`, apk: "Download the Android app (with alarms)", admin: "Administration · statistics",
     roles: ["Contributor to and coordinator of the development of SEA-FORWARD", "Instructor in Python and numerical modelling at the GGOSSS summer schools (Gulf of Guinea Ocean Sciences Summer School)", "Instructor for Course 3 of the MOOC “Fundamentals of Ocean Forecasting” (FutureLearn)"],
     changelog: [
+      "Version 1.3.1 — October 2026\n• Search (magnifying glass): find a class session by title, code, lecturer, room, class or day, across every class; tapping a result opens the class timetable on the right day\n• Timetables read more accurately: no more stray space after é, è, ë; sessions in a cell split over several lines read in full",
       "Web version — 20 October 2026\n• NASMOST Planning in the browser: timetables, announcements, news, opportunities, student spaces and My academic path",
       "Version 1.3 — October 2026\n• Android 16 compatibility: edge-to-edge display\n• Version prepared for Google Play",
       "Version 1.2 — October 2026\n• Alarms limited to one's own class sessions (My academic path, optional)\n• Red dot in the ⋮ menu on updates not yet viewed",
@@ -262,6 +270,7 @@ const courseColor = (summary) => COURSE_COLORS[((javaHash(summary.replace(/[^\p{
 const state = {
   tree: [], weeks: [], weekStart: null, dept: store.get("dept", null), level: {}, track: {}, icsCache: new Map(),
   materials: {}, logos: {}, descriptions: new Map(), feeds: null, news: null,
+  focusDate: null, searchQuery: "", allEvents: null,
 };
 async function fetchText(url) { const r = await fetch(url, { cache: "no-cache" }); if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); }
 async function loadIndex() {
@@ -320,6 +329,7 @@ async function loadIcs(file) {
 // ------------------------------------------------------------------ interface : barre, menu, dialogues
 const $ = (id) => document.getElementById(id);
 const ICONS = {
+  search: '<path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>',
   megaphone: '<path d="M18 11v2h4v-2h-4zm-2 6.61c.96.71 2.21 1.65 3.2 2.39.4-.53.8-1.07 1.2-1.6-.99-.74-2.24-1.68-3.2-2.4-.4.54-.8 1.08-1.2 1.61zM20.4 5.6c-.4-.53-.8-1.07-1.2-1.6-.99.74-2.24 1.68-3.2 2.4.4.53.8 1.07 1.2 1.6.96-.72 2.21-1.65 3.2-2.4zM4 9c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v4h2v-4h1l5 3V6L8 9H4zm11.5 3c0-1.33-.58-2.53-1.5-3.35v6.69c.92-.81 1.5-2.01 1.5-3.34z"/>',
   news: '<path d="M22 3l-1.67 1.67L18.67 3 17 4.67 15.33 3l-1.66 1.67L12 3l-1.67 1.67L8.67 3 7 4.67 5.33 3 3.67 4.67 2 3v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V3zM11 19H4v-6h7v6zm9 0h-7v-2h7v2zm0-4h-7v-2h7v2zm0-4H4V8h16v3z"/>',
   more: '<path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>',
@@ -354,6 +364,7 @@ function setTopbar({ title, subtitle, back, actions = true, weekbar = false, tab
   $("backButton").hidden = !back; $("backButton").onclick = () => (history.length > 1 ? history.back() : go("#/"));
   $("weekbar").hidden = !weekbar; $("tabs").hidden = !tabs;
   $("actions").innerHTML = !actions ? "" :
+    `<button class="icon-button" title="${esc(T().search)}" onclick="go('#/recherche')">${svg("search")}</button>` +
     `<button class="icon-button" title="${esc(T().announcements)}" onclick="go('#/annonces')">${svg("megaphone")}</button>` +
     `<button class="icon-button" title="${esc(T().news)}" onclick="go('#/actualites')">${svg("news")}</button>` +
     `<button class="icon-button" id="menuButton" title="${esc(T().menu)}">${svg("more")}${anyUnseen() ? '<span class="badge"></span>' : ""}</button>`;
@@ -517,9 +528,10 @@ async function renderPlanning() {
   body.innerHTML = out;
   body.querySelectorAll("[data-materials]").forEach((card) => card.onclick = () => showMaterials(card.dataset.title, JSON.parse(card.dataset.materials)));
   // Défile jusqu'à aujourd'hui (ou le prochain jour de cours).
-  const todayKey = isoDate(todayDate());
+  const focus = state.focusDate; state.focusDate = null; // jour d'une séance choisie dans la recherche
+  const todayKey = focus || isoDate(todayDate());
   const target = [...body.querySelectorAll(".day")].find((d) => d.dataset.date >= todayKey);
-  if (target && !renderPlanning.scrolled) { renderPlanning.scrolled = true; target.scrollIntoView({ block: "start" }); window.scrollBy(0, -170); }
+  if (target && (focus || !renderPlanning.scrolled)) { renderPlanning.scrolled = true; target.scrollIntoView({ block: "start" }); window.scrollBy(0, -170); }
 }
 function scheduleRows(events, dept) {
   const t = T(), today = todayDate(), now = new Date(), byDay = new Map();
@@ -822,6 +834,66 @@ async function renderAdminPage(periodKey) {
 }
 
 /** Une visite par écran consulté (sauf l'administration), sur le site publié seulement. */
+// ------------------------------------------------------------------ recherche (loupe)
+const searchText = (s) => plain(s).replace(/[^a-z0-9]+/g, " ").trim();
+const DAY_FR = new Intl.DateTimeFormat("fr-FR", { weekday: "long", day: "numeric", month: "long" });
+const DAY_EN = new Intl.DateTimeFormat("en-GB", { weekday: "long", day: "numeric", month: "long" });
+function searchHaystack(e) {
+  const d = courseDetails(e), dept = byCode(e.dept), n = (e.level.match(/N(\d)/i) || [])[1];
+  return " " + searchText([e.summary, d.code, d.teachers, e.location, e.description, e.dept, dept ? dept.fr + " " + dept.en : "",
+    e.level.replace(/-/g, " "), n ? `niveau ${n} level ${n}` : "", DAY_FR.format(e.start), DAY_EN.format(e.start)].filter(Boolean).join(" ")) + " ";
+}
+/** Séances correspondantes : à venir (de la plus proche), puis passées (de la plus récente) ; sans créneaux libres. */
+function searchSessions(events, query) {
+  const words = searchText(query).split(" ").filter(Boolean);
+  if (!words.length) return [];
+  const now = new Date(), seen = new Set();
+  const hits = events.filter((e) => !seen.has(e.uid) && seen.add(e.uid) && !courseDetails(e).free)
+    .filter((e) => { const h = e._haystack || (e._haystack = searchHaystack(e)); return words.every((w) => h.includes(w)); });
+  const upcoming = hits.filter((e) => e.end > now).sort((a, b) => a.start - b.start);
+  const past = hits.filter((e) => e.end <= now).sort((a, b) => b.start - a.start);
+  return [...upcoming, ...past].slice(0, 150);
+}
+async function renderSearch() {
+  const t = T();
+  setTopbar({ title: t.search, back: true, actions: false });
+  const main = $("main");
+  main.innerHTML = `<div class="search-box">${svg("search")}<input id="searchInput" type="search" enterkeyhint="search" autocomplete="off" placeholder="${esc(t.searchHint)}" value="${esc(state.searchQuery)}"></div><div id="searchResults"></div>`;
+  const input = $("searchInput"), results = $("searchResults");
+  input.focus();
+  if (!state.allEvents) {
+    results.innerHTML = `<div class="empty">…</div>`;
+    const files = state.weeks.flatMap((w) => w.ics);
+    state.allEvents = (await Promise.all(files.map(loadIcs))).flatMap((r) => r.events);
+  }
+  const show = () => {
+    const q = (state.searchQuery = input.value), list = searchSessions(state.allEvents, q), now = new Date();
+    if (!list.length) { results.innerHTML = `<div class="empty">${esc(q.trim() ? t.searchNone(q.trim()) : t.searchIntro)}</div>`; return; }
+    results.innerHTML = list.map((e, i) => {
+      const d = courseDetails(e), title = [e.summary, d.code && !e.summary.includes(d.code) ? `(${d.code})` : ""].filter(Boolean).join(" ");
+      const when = [`${e.dept} ${e.level}`, fmt(e.start, { weekday: "short", day: "numeric", month: "short", year: "numeric" }), `${fmtTime(e.start)} – ${fmtTime(e.end)}`].join(" · ");
+      const sub = [d.teachers, e.location].filter(Boolean).join(" · ");
+      return `<div class="card row-card ${e.end <= now ? "past" : ""}" data-i="${i}"><div class="grow"><div class="date">${esc(when)}</div>` +
+        `<div class="heading">${esc(title)}</div>${sub ? `<div class="sub">${esc(sub)}</div>` : ""}</div></div>`;
+    }).join("");
+    results.querySelectorAll("[data-i]").forEach((c) => c.onclick = () => openSession(list[c.dataset.i]));
+  };
+  let timer = null;
+  input.oninput = () => { clearTimeout(timer); timer = setTimeout(show, 150); };
+  show();
+}
+/** Résultat choisi : sa classe (niveau, filière), sa semaine, puis défilement jusqu'à son jour. */
+function openSession(e) {
+  const parts = e.level.split("-"), level = parts.pop(), track = parts.join("-");
+  state.dept = e.dept; store.set("dept", e.dept);
+  state.level[e.dept] = level; if (track) state.track[e.dept] = track;
+  const day = new Date(e.start.getFullYear(), e.start.getMonth(), e.start.getDate());
+  const week = state.weeks.find((w) => day >= w.start && day <= w.end);
+  if (week) state.weekStart = week.start;
+  state.focusDate = isoDate(day);
+  go("#/");
+}
+
 function countVisit(page) {
   if (page === "admin" || !window.goatcounter || !window.goatcounter.count) return;
   window.goatcounter.count({ path: "/" + page, title: document.title });
@@ -843,6 +915,7 @@ async function render() {
   if (page === "actualites") return renderNews(a || null, b || null);
   if (page === "parcours") return a === "cours" ? renderMyCourses() : LIST_KEYS.includes(a) ? renderList(a) : renderParcours();
   if (page === "infos") return renderAbout();
+  if (page === "recherche") return renderSearch();
   if (page === "admin") return renderAdminPage(a);
   go("#/");
 }

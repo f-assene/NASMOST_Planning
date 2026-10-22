@@ -3,3 +3,6 @@
 *Zone.Identifier
 __pycache__/
 web/feeds/
+
+# Fichiers temporaires de Word (document ouvert)
+~$*

@@ -185,3 +185,12 @@ a { color: var(--blue); }
 .banner-buttons button.primary { background: var(--blue); color: #fff; }
 /* Installée sur iPhone : la barre du haut passe sous la barre d'état (black-translucent). */
 @media (display-mode: standalone) { .topbar { padding-top: env(safe-area-inset-top); } }
+
+/* Recherche (loupe) */
+.search-box { display: flex; align-items: center; gap: 10px; background: var(--card); border-radius: 12px; margin: 4px 4px 12px; padding: 0 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+.search-box svg { width: 22px; height: 22px; fill: var(--text-2); flex: 0 0 22px; }
+.search-box input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: inherit; font-size: 16px; padding: 14px 0; color: var(--text); }
+.row-card.past { opacity: .55; }
+/* Petits téléphones : 4 icônes + le titre complet dans la barre du haut */
+@media (max-width: 400px) { #actions .icon-button { width: 40px; } .title { font-size: 19px; } }
