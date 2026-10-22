@@ -2,11 +2,10 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**34 emploi(s) du temps publié(s), 11 version(s) signée(s), 3 erreur(s).**
+**34 emploi(s) du temps publié(s), 11 version(s) signée(s), 2 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
-- `GCO/EDT 06-03-2026 10.30.pdf` : PDF scanné (images) : le texte ne peut pas être lu. Déposer l'original (.docx, ou PDF enregistré depuis Word) et nommer la version scannée « scan_ » + même nom.
 - `GMM/EDT.pdf` : PDF scanné (images) : le texte ne peut pas être lu. Déposer l'original (.docx, ou PDF enregistré depuis Word) et nommer la version scannée « scan_ » + même nom.
 - `GOHM/EDT_GHOM_4_26_10_01_11_2026.docx` : niveau introuvable (ex. « NIVEAU : SGMP 1 » dans l'en-tête)
 
