@@ -288,6 +288,15 @@
   "ics": "SGMP/SGMP_N2_19_10_25_10_2026.ics"
  },
  {
+  "source": "SGMP/EDT_SGMP_2_26_10_01_11_2026.pdf",
+  "scan": false,
+  "department": "SGMP",
+  "level": "N2",
+  "start": "2026-10-26",
+  "end": "2026-11-01",
+  "ics": "SGMP/SGMP_N2_26_10_01_11_2026.ics"
+ },
+ {
   "source": "SSIP/EDT_SSIP_4_19_10_25_10_2026.docx",
   "scan": false,
   "department": "SSIP",
