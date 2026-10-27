@@ -1,14 +1,5 @@
 [
  {
-  "source": "ANCR/EDT_ANCR_4_02_11_15_11_2026.docx",
-  "scan": false,
-  "department": "ANCR",
-  "level": "N4",
-  "start": "2026-11-02",
-  "end": "2026-11-07",
-  "ics": "ANCR/ANCR_N4_02_11_07_11_2026.ics"
- },
- {
   "source": "ANCR/EDT_ANCR_4_02_11_15_11_2026.pdf",
   "scan": false,
   "department": "ANCR",

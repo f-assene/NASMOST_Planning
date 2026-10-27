@@ -12,7 +12,7 @@ Aucun.
 
 - `ANCR/EDT_ANCR_4_19_10_24_10_2026.pdf` : les dates du nom (19/10 au 24/10/2026) diffèrent de l'en-tête (19/10 au 25/10/2026) : l'en-tête est utilisé
 - `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : les dates du nom (26/10 au 01/11/2026) diffèrent de l'en-tête (02/11 au 07/11/2026) : l'en-tête est utilisé
-- `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : ANCR N4 du 02/11/2026 existe aussi dans ANCR/EDT_ANCR_4_02_11_15_11_2026.docx : ce fichier-ci est utilisé
+- `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : ANCR N4 du 02/11/2026 existe aussi dans ANCR/EDT_ANCR_4_02_11_15_11_2026.pdf : ce fichier-ci est utilisé
 - `GOHM/EDT_GHOM_4_19_10_25_10_2026.docx` : les dates du nom (19/10 au 25/10/2026) diffèrent de l'en-tête (19/10 au 24/10/2026) : l'en-tête est utilisé
 - `NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.docx` : NMSI N3 du 22/06/2026 existe aussi dans NMSI/EDT_3GNM_22_06_28_06_2026.pdf : ce fichier-ci est utilisé
 - `STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf` : page 1 : emploi du temps de GMM N3 : le fichier .ics est rangé dans GMM/
