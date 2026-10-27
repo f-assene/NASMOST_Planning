@@ -2,11 +2,11 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**38 emploi(s) du temps publié(s), 12 version(s) signée(s), 0 erreur(s).**
+**40 emploi(s) du temps publié(s), 12 version(s) signée(s), 1 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
-Aucun.
+- `ANCR/EDT_ANCR_4_02_11_15_11_2026.pdf` : page 3 : semaine introuvable (ex. « Semaine du 02 Mars au 08 Mars 2026 »)
 
 ## Avertissements
 
