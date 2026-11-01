@@ -10,7 +10,7 @@
 
 const REPO = "f-assene/NASMOST_Planning";
 const BRANCH = "main";
-const VERSION = "1.3.1";
+const VERSION = "1.3.2";
 const APK_URL = `https://github.com/${REPO}/releases/latest/download/NASMOSTPlanning.apk`;
 // Statistiques de fréquentation (GoatCounter : sans cookies ni données personnelles), comptées
 // uniquement sur le site publié. Le tableau de bord est la page #/admin.
@@ -51,7 +51,7 @@ const TEXTS = {
     searchIntro: "Recherchez une séance de cours par intitulé, code (SIP-4112), enseignant, salle, classe (GEM N4) ou jour (mercredi), dans les emplois du temps de toutes les classes.",
     searchNone: (q) => `Aucune séance de cours trouvée pour « ${q} »`,
     weekPrev: "Semaine précédente", weekNext: "Semaine suivante", pdf: "PDF", pdfChoose: "Emploi du temps officiel (PDF)",
-    pdfMissing: "Pas de PDF publié pour cette semaine", signed: "(version signée)",
+    pdfMissing: "Pas encore de PDF officiel signé pour cette semaine", signed: "(version signée)",
     noSession: "Aucune séance de cours prévue pour ce niveau", pdfOnly: "L'emploi du temps de cette semaine n'existe qu'en PDF : appuie sur « PDF » pour l'ouvrir",
     jump: (d) => `Voir la semaine du ${d}`, today: "Aujourd'hui", tomorrow: "Demain", yesterday: "Hier",
     sessions: (n) => n === 0 ? "Pas de séance de cours" : `${n} séance${n > 1 ? "s" : ""} de cours`,
@@ -95,6 +95,7 @@ const TEXTS = {
     version: "Version", versionText: `Version web ${VERSION}`, apk: "Télécharger l'app Android (avec alarmes)", admin: "Administration · statistiques",
     roles: ["Contributeur et coordinateur du développement de SEA-FORWARD", "Formateur en Python et en modélisation aux écoles d'été GGOSSS (Gulf of Guinea Ocean Sciences Summer School)", "Formateur du cours 3 du MOOC « Fundamentals of Ocean Forecasting » (FutureLearn)"],
     changelog: [
+      "Version 1.3.2 — novembre 2026\n• Seul le PDF officiel scanné et signé de l'emploi du temps est proposé",
       "Version 1.3.1 — octobre 2026\n• Loupe de recherche : une séance de cours par intitulé, code, enseignant, salle, classe ou jour, dans toutes les classes ; toucher un résultat ouvre l'emploi du temps de la classe sur le bon jour\n• Emplois du temps mieux lus : plus d'espace parasite après é, è, ë ; cours d'une case découpée en plusieurs lignes lus en entier",
       "Version web — 20 octobre 2026\n• NASMOST Planning dans le navigateur : emplois du temps, annonces, actualités, opportunités, espaces étudiants et Mon parcours",
       "Version 1.3 — octobre 2026\n• Compatibilité Android 16 : affichage bord à bord\n• Version préparée pour Google Play",
@@ -110,7 +111,7 @@ const TEXTS = {
     searchNone: (q) => `No class sessions found for “${q}”`,
     back: "Back", announcements: "Announcements", news: "News", menu: "Menu", refresh: "Refresh",
     weekPrev: "Previous week", weekNext: "Next week", pdf: "PDF", pdfChoose: "Official timetable (PDF)",
-    pdfMissing: "No PDF published for this week", signed: "(signed version)",
+    pdfMissing: "No signed official PDF has been published for this week yet", signed: "(signed version)",
     noSession: "No class sessions scheduled for this level", pdfOnly: "This week's timetable exists only as a PDF: tap “PDF” to open it",
     jump: (d) => `View the week of ${d}`, today: "Today", tomorrow: "Tomorrow", yesterday: "Yesterday",
     sessions: (n) => n === 0 ? "No class sessions" : `${n} class session${n > 1 ? "s" : ""}`,
@@ -154,6 +155,7 @@ const TEXTS = {
     version: "Version", versionText: `Web version ${VERSION}`, apk: "Download the Android app (with alarms)", admin: "Administration · statistics",
     roles: ["Contributor to and coordinator of the development of SEA-FORWARD", "Instructor in Python and numerical modelling at the GGOSSS summer schools (Gulf of Guinea Ocean Sciences Summer School)", "Instructor for Course 3 of the MOOC “Fundamentals of Ocean Forecasting” (FutureLearn)"],
     changelog: [
+      "Version 1.3.2 — November 2026\n• Only the scanned and signed official timetable PDF is offered",
       "Version 1.3.1 — October 2026\n• Search (magnifying glass): find a class session by title, code, lecturer, room, class or day, across every class; tapping a result opens the class timetable on the right day\n• Timetables read more accurately: no more stray space after é, è, ë; sessions in a cell split over several lines read in full",
       "Web version — 20 October 2026\n• NASMOST Planning in the browser: timetables, announcements, news, opportunities, student spaces and My academic path",
       "Version 1.3 — October 2026\n• Android 16 compatibility: edge-to-edge display\n• Version prepared for Google Play",
@@ -451,15 +453,18 @@ function renderWeekbar() {
     `<button class="icon-button" id="prevWeek" title="${esc(t.weekPrev)}" ${i <= 0 ? "disabled" : ""}>${svg("left")}</button>` +
     `<div class="week">${esc(fmt(week.start, day))} – ${esc(fmt(week.end, { ...day, year: "numeric" }))}</div>` +
     `<button class="icon-button" id="nextWeek" title="${esc(t.weekNext)}" ${i >= weeks.length - 1 ? "disabled" : ""}>${svg("right")}</button>` +
-    `<button class="text-button ${week.pdf.length ? "" : "dim"}" id="pdfButton">${svg("pdf")} PDF</button>`;
+    `<button class="text-button ${signedPdfs(week, state.dept).length ? "" : "dim"}" id="pdfButton">${svg("pdf")} PDF</button>`;
   $("prevWeek").onclick = () => { state.weekStart = weeks[i - 1].start; render(); };
   $("nextWeek").onclick = () => { state.weekStart = weeks[i + 1].start; render(); };
   $("pdfButton").onclick = () => openPdf(week);
 }
+// PDF scannés et signés ("scan_...") de la semaine pour un département : jamais un original non signé,
+// ni le PDF d'un autre département.
+const signedPdfs = (week, dept) => week.pdf.filter((f) => f.signed && (f.folder.toUpperCase() === dept || f.departments.includes(dept)));
 function openPdf(week) {
   const t = T(), dept = state.dept;
-  const relevant = week.pdf.filter((f) => f.folder.toUpperCase() === dept || f.departments.includes(dept));
-  const list = relevant.length ? relevant : week.pdf, signed = list.filter((f) => f.signed), pdfs = signed.length ? signed : list;
+  // Seules les versions scannées et signées ("scan_...") : un original non signé n'est jamais montré.
+  const pdfs = signedPdfs(week, dept);
   if (!pdfs.length) return toast(t.pdfMissing);
   if (pdfs.length === 1) return window.open(raw(pdfs[0].path), "_blank", "noopener");
   openDialog(`<h3>${esc(t.pdfChoose)}</h3><div class="list">` + pdfs.map((f, i) =>
