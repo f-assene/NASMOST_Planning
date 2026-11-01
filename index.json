@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T19:38:34Z",
+ "generated": "2026-11-01T20:22:34Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1726,8 +1726,8 @@
   {
    "path": "web/app.js",
    "type": "blob",
-   "sha": "ebcbf27ffbee883ef61a81d028fcc15aeab5b477",
-   "size": 79764
+   "sha": "fc7747e34a428e93eb3efcf7cf769f65a0988961",
+   "size": 80246
   },
   {
    "path": "web/apple-touch-icon.png",
@@ -1774,7 +1774,7 @@
   {
    "path": "web/sw.js",
    "type": "blob",
-   "sha": "3272811b9d087d384bc9ef5f7ea642a81c44cf3c",
+   "sha": "334712cc92bdc02c78b0fba8df2e41d3be1fbb95",
    "size": 2337
   },
   {
