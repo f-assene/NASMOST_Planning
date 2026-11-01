@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T16:00:53Z",
+ "generated": "2026-11-01T16:10:11Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1301,6 +1301,18 @@
    "type": "blob",
    "sha": "79400c561200c411936c6d2243cbf64f89f9afc5",
    "size": 105
+  },
+  {
+   "path": "assistance/01_Composition_dossier_Inscription_administrative_2026_2027.pdf",
+   "type": "blob",
+   "sha": "86cdbd00ae693f3290042b895d9da2d29e4f98ad",
+   "size": 260550
+  },
+  {
+   "path": "assistance/01_Composition_dossier_Inscription_administrative_2026_2027.txt",
+   "type": "blob",
+   "sha": "9cc93a22b3970d7b5bceead5f5acaa7c935561d6",
+   "size": 191
   },
   {
    "path": "assistance/README.md",
