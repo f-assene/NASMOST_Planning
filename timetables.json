@@ -189,6 +189,15 @@
   "ics": "GOHM/GOHM_N4_19_10_24_10_2026.ics"
  },
  {
+  "source": "GOHM/EDT_GOHM_4_02_11_08_11_2026.docx",
+  "scan": false,
+  "department": "GOHM",
+  "level": "N4",
+  "start": "2026-10-26",
+  "end": "2026-10-31",
+  "ics": "GOHM/GOHM_N4_26_10_31_10_2026.ics"
+ },
+ {
   "source": "GOHM/EDT_GOHM_4_26_10_31_10_2026.docx",
   "scan": false,
   "department": "GOHM",
@@ -349,6 +358,15 @@
   "start": "2026-03-09",
   "end": "2026-03-15",
   "ics": "SGMP/SGMP_N2_09_03_15_03_2026.ics"
+ },
+ {
+  "source": "SGMP/EDT_SGMP_2_02_11_08_11_2026.pdf",
+  "scan": false,
+  "department": "SGMP",
+  "level": "N2",
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "ics": "SGMP/SGMP_N2_02_11_08_11_2026.ics"
  },
  {
   "source": "SGMP/EDT_SGMP_2_19_10_25_10_2026.pdf",
