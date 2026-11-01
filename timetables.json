@@ -540,6 +540,15 @@
   "ics": "STMO/STMO_N2_26_10_31_10_2026.ics"
  },
  {
+  "source": "STMO/EDT_STMO_4_02_11_08_11_2026.pdf",
+  "scan": false,
+  "department": "STMO",
+  "level": "N2",
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "ics": "STMO/STMO_N2_02_11_08_11_2026.ics"
+ },
+ {
   "source": "GCO/scan_EDT_GCO_4_19_10_25_10_2026.pdf",
   "scan": true,
   "department": "GCO",
