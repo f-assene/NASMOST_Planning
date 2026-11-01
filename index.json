@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T14:39:42Z",
+ "generated": "2026-11-01T14:57:47Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -489,12 +489,6 @@
    "signed": true
   },
   {
-   "path": "GOHM/EDT_GHOM_4_02_11_08_11_2026.pdf",
-   "type": "blob",
-   "sha": "3f1d196b23756328fdd6bb9fe6569eb33b416414",
-   "size": 274117
-  },
-  {
    "path": "GOHM/EDT_GHOM_4_19_10_25_10_2026.docx",
    "type": "blob",
    "sha": "89cb6e4d6cdc8f7dc3dbabbbfec8b83ac82fada4",
@@ -502,6 +496,19 @@
    "week": [
     "2026-10-19",
     "2026-10-24"
+   ],
+   "departments": [
+    "GOHM"
+   ]
+  },
+  {
+   "path": "GOHM/EDT_GOHM_4_02_11_08_11_2026.docx",
+   "type": "blob",
+   "sha": "9c1c9cfdadad1f7f0c08c5c9ec70ad2c0aa014af",
+   "size": 44997,
+   "week": [
+    "2026-10-26",
+    "2026-10-31"
    ],
    "departments": [
     "GOHM"
@@ -818,8 +825,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "6eaaecf4a7146bedb2b918cbe9862f9677c5665d",
-   "size": 3278
+   "sha": "032484011164847303bcb195f209265c4abc3de5",
+   "size": 3486
   },
   {
    "path": "README.md",
@@ -880,6 +887,19 @@
    ]
   },
   {
+   "path": "SGMP/EDT_SGMP_2_02_11_08_11_2026.pdf",
+   "type": "blob",
+   "sha": "94bd43e78f7c20e38d83659d6680b5fd79c6f418",
+   "size": 505938,
+   "week": [
+    "2026-11-02",
+    "2026-11-08"
+   ],
+   "departments": [
+    "SGMP"
+   ]
+  },
+  {
    "path": "SGMP/EDT_SGMP_2_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "81987500c95362c755a09b77663d2f4e6b997a52",
@@ -934,6 +954,12 @@
    "type": "blob",
    "sha": "64a2950258b5470666febf0f12520eee124fbd06",
    "size": 4690
+  },
+  {
+   "path": "SGMP/SGMP_N2_02_11_08_11_2026.ics",
+   "type": "blob",
+   "sha": "311dbe8d1372c834ae55932a6e7bc1ac6d538972",
+   "size": 7505
   },
   {
    "path": "SGMP/SGMP_N2_09_03_15_03_2026.ics",
@@ -1541,8 +1567,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "624d8847dac0d757b1bcb7edf68ce6301b1c3c0b",
-   "size": 14507
+   "sha": "2a974844d578c6b41f8257c9392bf94994b3ad61",
+   "size": 14928
   },
   {
    "path": "tools/annonce_version_web.txt",
