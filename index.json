@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T15:34:09Z",
+ "generated": "2026-11-01T16:00:53Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1265,6 +1265,30 @@
    "type": "blob",
    "sha": "1ea12807bfb67292152a9cb58dd10761cc653846",
    "size": 786
+  },
+  {
+   "path": "announcements/Communique_inscription_administrative_2026.pdf",
+   "type": "blob",
+   "sha": "7b5ff9d121cfae77b9852ae02994a50096db443e",
+   "size": 618955
+  },
+  {
+   "path": "announcements/Communique_inscription_administrative_2026.txt",
+   "type": "blob",
+   "sha": "1f34a7bd967a095a9ecfa3dc902b5aacb54bc091",
+   "size": 173
+  },
+  {
+   "path": "announcements/Composition_dossier_Inscription_administrative_2026_2027.pdf",
+   "type": "blob",
+   "sha": "86cdbd00ae693f3290042b895d9da2d29e4f98ad",
+   "size": 260550
+  },
+  {
+   "path": "announcements/Composition_dossier_Inscription_administrative_2026_2027.txt",
+   "type": "blob",
+   "sha": "46d08cf6282b914da16a04d626538d0c92e5fe82",
+   "size": 148
   },
   {
    "path": "announcements/Nouvelles_moladites_inscription_etudiants_Univ-Ebolowa.pdf",
