@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T15:11:30Z",
+ "generated": "2026-11-01T15:19:08Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -540,19 +540,6 @@
    ]
   },
   {
-   "path": "GOHM/EDT_GOHM_4_02_11_08_11_2026.docx",
-   "type": "blob",
-   "sha": "9c1c9cfdadad1f7f0c08c5c9ec70ad2c0aa014af",
-   "size": 44997,
-   "week": [
-    "2026-10-26",
-    "2026-10-31"
-   ],
-   "departments": [
-    "GOHM"
-   ]
-  },
-  {
    "path": "GOHM/EDT_GOHM_4_26_10_31_10_2026.docx",
    "type": "blob",
    "sha": "58205fa02a6c6400dd166d4b55d52ef5332582f2",
@@ -623,13 +610,13 @@
    ]
   },
   {
-   "path": "NMSI/EDT_GNM_4_02_11_08_11_2026.pdf",
+   "path": "NMSI/EDT_GNM_4_02_11_08_11_2026.docx",
    "type": "blob",
-   "sha": "c736ab40c91a6e51fcabe189b7a38a9b809e78fa",
-   "size": 124018,
+   "sha": "4fb4d1fe1041fcbe7959288cf6f918d0ff1e9cb5",
+   "size": 44905,
    "week": [
-    "2026-10-26",
-    "2026-10-31"
+    "2026-11-02",
+    "2026-11-08"
    ],
    "departments": [
     "NMSI"
@@ -684,6 +671,12 @@
    "type": "blob",
    "sha": "664c8112d6c859f6b7db8bd8eed00dbdc6684f17",
    "size": 5449
+  },
+  {
+   "path": "NMSI/NMSI_N4_02_11_08_11_2026.ics",
+   "type": "blob",
+   "sha": "24b2fed968c5b79912b77ea43f1e96916db9be65",
+   "size": 8251
   },
   {
    "path": "NMSI/NMSI_N4_19_10_24_10_2026.ics",
@@ -863,8 +856,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "2ca72c87a17080e0114c1c5ce9b18eb0ca183830",
-   "size": 3486
+   "sha": "b3c2251698eb8a5a06ad13bd8532a78c6d400f51",
+   "size": 2878
   },
   {
    "path": "README.md",
@@ -1605,8 +1598,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "763ceed7fa877880eb82274a4f01d7013adf2ebb",
-   "size": 15338
+   "sha": "52e86b9235481734c56b0e5066a3834df5b29464",
+   "size": 15128
   },
   {
    "path": "tools/annonce_version_web.txt",

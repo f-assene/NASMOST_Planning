@@ -1,0 +1,247 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:NMSI/EDT_GNM_4_02_11_08_11_2026.docx
+X-NASMOST-EC:classe=NMSI-N4;prevus=10;acheves=1;programmes=2;restants=7
+BEGIN:VEVENT
+UID:nmsi-n4-20261102t0730@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261102T073000
+DTEND;TZID=Africa/Douala:20261102T120000
+CATEGORIES:NMSI-N4
+SUMMARY:TP RDB - Signalisation 1
+DESCRIPTION:Cours de TP RDB - Signalisation 1 (NSI-4142)\navec Cdt. S. YACO
+ UBA\nCM:10\, TD:05\, TP:25\, TPE:05
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:TP RDB - Signalisation 1 dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:TP RDB - Signalisation 1 dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261103t0730@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261103T073000
+DTEND;TZID=Africa/Douala:20261103T120000
+CATEGORIES:NMSI-N4
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261104t0730@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261104T073000
+DTEND;TZID=Africa/Douala:20261104T120000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261105t0730@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261105T073000
+DTEND;TZID=Africa/Douala:20261105T120000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261106t0730@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261106T073000
+DTEND;TZID=Africa/Douala:20261106T120000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261107t0730@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261107T073000
+DTEND;TZID=Africa/Douala:20261107T120000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261108t0730@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261108T073000
+DTEND;TZID=Africa/Douala:20261108T120000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261102t1230@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261102T123000
+DTEND;TZID=Africa/Douala:20261102T170000
+CATEGORIES:NMSI-N4
+SUMMARY:TP RDB - Signalisation 1
+DESCRIPTION:Cours de TP RDB - Signalisation 1 (NSI-4142)\navec Cdt. S. YACO
+ UBA\nCM:10\, TD:05\, TP:25\, TPE:05
+LOCATION:Campus Ebouyè\, Salle 6
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:TP RDB - Signalisation 1 dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261103t1230@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261103T123000
+DTEND;TZID=Africa/Douala:20261103T170000
+CATEGORIES:NMSI-N4
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261104t1230@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261104T123000
+DTEND;TZID=Africa/Douala:20261104T170000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261105t1230@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261105T123000
+DTEND;TZID=Africa/Douala:20261105T170000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261106t1230@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261106T123000
+DTEND;TZID=Africa/Douala:20261106T170000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261107t1230@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261107T123000
+DTEND;TZID=Africa/Douala:20261107T170000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nmsi-n4-20261108t1230@nasmost-planning
+DTSTAMP:20261101T151908Z
+DTSTART;TZID=Africa/Douala:20261108T123000
+DTEND;TZID=Africa/Douala:20261108T170000
+CATEGORIES:NMSI-N4
+SUMMARY:Météo et Climat: Dynamique Océan-Atmosphère
+DESCRIPTION:Cours de Météo et Climat: Dynamique Océan-Atmosphère (OHM-4
+ 111)\navec Dr. Ing. ASSENE\nCM:15\, TD:12\, TP:09\, TPE:09
+LOCATION:Campus Ebouyè\, Hall Départements
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Météo et Climat: Dynamique Océan-Atmosphère dans 15 min
+END:VALARM
+END:VEVENT
+END:VCALENDAR
