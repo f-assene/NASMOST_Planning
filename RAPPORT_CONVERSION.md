@@ -2,11 +2,11 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**40 emploi(s) du temps publié(s), 12 version(s) signée(s), 0 erreur(s).**
+**45 emploi(s) du temps publié(s), 12 version(s) signée(s), 1 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
-Aucun.
+- `GOHM/EDT_GHOM_4_02_11_08_11_2026.pdf` : niveau introuvable (ex. « NIVEAU : SGMP 1 » dans l'en-tête)
 
 ## Avertissements
 
@@ -14,6 +14,8 @@ Aucun.
 - `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : les dates du nom (26/10 au 01/11/2026) diffèrent de l'en-tête (02/11 au 07/11/2026) : l'en-tête est utilisé
 - `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : ANCR N4 du 02/11/2026 existe aussi dans ANCR/EDT_ANCR_4_02_11_15_11_2026.pdf : ce fichier-ci est utilisé
 - `GOHM/EDT_GHOM_4_19_10_25_10_2026.docx` : les dates du nom (19/10 au 25/10/2026) diffèrent de l'en-tête (19/10 au 24/10/2026) : l'en-tête est utilisé
+- `NMSI/EDT_GNM_4_02_11_08_11_2026.pdf` : les dates du nom (02/11 au 08/11/2026) diffèrent de l'en-tête (26/10 au 31/10/2026) : l'en-tête est utilisé
+- `NMSI/EDT_GNM_4_26_10_31_10_2026.pdf` : NMSI N4 du 26/10/2026 existe aussi dans NMSI/EDT_GNM_4_02_11_08_11_2026.pdf : ce fichier-ci est utilisé
 - `NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.docx` : NMSI N3 du 22/06/2026 existe aussi dans NMSI/EDT_3GNM_22_06_28_06_2026.pdf : ce fichier-ci est utilisé
 - `STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf` : page 1 : emploi du temps de GMM N3 : le fichier .ics est rangé dans GMM/
 - `STMO/EDT ENSTMO du 02  _08 FEV_021652.pdf` : page 3 : emploi du temps de SGMP N1 : le fichier .ics est rangé dans SGMP/
