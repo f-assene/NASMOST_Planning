@@ -333,6 +333,15 @@
   "ics": "NMSI/NMSI_N3_29_06_05_07_2026.ics"
  },
  {
+  "source": "PEM/EDT_PEM_4_02_11_08_11_2026.pdf",
+  "scan": false,
+  "department": "PEM",
+  "level": "N4",
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "ics": "PEM/PEM_N4_02_11_08_11_2026.ics"
+ },
+ {
   "source": "PEM/EDT_PEM_4_19_10_25_10_2026.pdf",
   "scan": false,
   "department": "PEM",
@@ -520,6 +529,15 @@
   "start": "2026-03-02",
   "end": "2026-03-07",
   "ics": "STMO/STMO_N2_02_03_07_03_2026.ics"
+ },
+ {
+  "source": "STMO/EDT_STMO_2_02_11_08_11_2026.pdf",
+  "scan": false,
+  "department": "STMO",
+  "level": "N2",
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "ics": "STMO/STMO_N2_02_11_08_11_2026.ics"
  },
  {
   "source": "STMO/EDT_STMO_2_19_10_25_10_2026.docx",
