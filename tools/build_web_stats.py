@@ -12,6 +12,7 @@ import datetime as dt
 import json
 import os
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -23,8 +24,13 @@ def api(code, token, path, **params):
     url = f"https://{code}.goatcounter.com/api/v0/{path}?" + urllib.parse.urlencode(params)
     request = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
                                                    "User-Agent": "NASMOSTPlanning-web/1.0"})
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read())
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            return json.loads(response.read())
+    except urllib.error.HTTPError as error:
+        # Message de GoatCounter (jamais la clé) : aide à corriger le code du site ou les droits de la clé.
+        detail = error.read().decode("utf-8", "replace")[:300].replace("\n", " ")
+        raise SystemExit(f"GoatCounter {path} : HTTP {error.code} — {detail}")
 
 
 def rows(data):
