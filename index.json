@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T13:05:32Z",
+ "generated": "2026-11-10T13:55:15Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -795,6 +795,19 @@
    ]
   },
   {
+   "path": "NMSI/EDT_GNM_3_16_11_22_11_2026.docx",
+   "type": "blob",
+   "sha": "0b409739cc55779d1d2735239cc23a8e6a444d4b",
+   "size": 44362,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "NMSI"
+   ]
+  },
+  {
    "path": "NMSI/EDT_GNM_4_02_11_08_11_2026.docx",
    "type": "blob",
    "sha": "4fb4d1fe1041fcbe7959288cf6f918d0ff1e9cb5",
@@ -815,6 +828,19 @@
    "week": [
     "2026-11-09",
     "2026-11-15"
+   ],
+   "departments": [
+    "NMSI"
+   ]
+  },
+  {
+   "path": "NMSI/EDT_GNM_4_16_11_22_11_2026.docx",
+   "type": "blob",
+   "sha": "889d6cdf61cf96e00fa9fa8b018560e1467dd005",
+   "size": 44104,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
    ],
    "departments": [
     "NMSI"
@@ -859,6 +885,12 @@
    "size": 7556
   },
   {
+   "path": "NMSI/NMSI_N3_16_11_22_11_2026.ics",
+   "type": "blob",
+   "sha": "2d576f8850c6a4ff200de0d90315d7f9de74f11e",
+   "size": 6832
+  },
+  {
    "path": "NMSI/NMSI_N3_22_06_28_06_2026.ics",
    "type": "blob",
    "sha": "fe995680b1ae1d5297c9172f2b0b5e36b0759747",
@@ -881,6 +913,12 @@
    "type": "blob",
    "sha": "bf75ad1652d321ad1fa29dee1805410517874974",
    "size": 7987
+  },
+  {
+   "path": "NMSI/NMSI_N4_16_11_22_11_2026.ics",
+   "type": "blob",
+   "sha": "9cc08562f49313f81cdc966b8dec6388b9146e40",
+   "size": 7404
   },
   {
    "path": "NMSI/NMSI_N4_19_10_24_10_2026.ics",
@@ -1079,7 +1117,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "0588ff7a5a466e078df593a6d88ae18aaa70f7bb",
+   "sha": "566081257e5ec8d35debc96e9b3ac2bc92140d1e",
    "size": 3171
   },
   {
@@ -1955,8 +1993,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "387babb631b6e5ca7d8c20008620fbf95a309774",
-   "size": 19110
+   "sha": "870de9e2165be0c6be20d6bfb90423f855b87cf8",
+   "size": 19530
   },
   {
    "path": "tools/annonce_version_web.txt",
