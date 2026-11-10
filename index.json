@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T13:55:15Z",
+ "generated": "2026-11-10T14:48:07Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -405,6 +405,19 @@
    ]
   },
   {
+   "path": "GMP/EDT_GLP_4_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "bdcbccf342286bdab88c1b5edd562526967eb333",
+   "size": 227599,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "GMP"
+   ]
+  },
+  {
    "path": "GMP/EDT_GLP_4_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "768b522548fff654b8a6915dbe3a5157780d1bb8",
@@ -451,6 +464,19 @@
    "week": [
     "2026-11-09",
     "2026-11-15"
+   ],
+   "departments": [
+    "GMP"
+   ]
+  },
+  {
+   "path": "GMP/EDT_GOP_4_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "0cb488bee152346f55eaf516f610714254a64561",
+   "size": 228888,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
    ],
    "departments": [
     "GMP"
@@ -509,6 +535,19 @@
    ]
   },
   {
+   "path": "GMP/EDT_GSE_4_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "4e5c84d845794d1337ff5ca2f9617afe3b8f4c5a",
+   "size": 225412,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "GMP"
+   ]
+  },
+  {
    "path": "GMP/EDT_GSE_4_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "7ad050595ace06c755e40f3d3eeb62294b877816",
@@ -547,6 +586,12 @@
    "size": 6706
   },
   {
+   "path": "GMP/GMP_GLP-N4_16_11_22_11_2026.ics",
+   "type": "blob",
+   "sha": "ca47367a22e071b4b7bf69c5d23245ce2785f1ca",
+   "size": 6477
+  },
+  {
    "path": "GMP/GMP_GLP-N4_19_10_25_10_2026.ics",
    "type": "blob",
    "sha": "b35910dccf83e6a51e9304a50d2debcbf63f208e",
@@ -571,6 +616,12 @@
    "size": 6351
   },
   {
+   "path": "GMP/GMP_GOP-N4_16_11_22_11_2026.ics",
+   "type": "blob",
+   "sha": "75cdb0df8b740e770885d29a2f04b43e4f8569c8",
+   "size": 6725
+  },
+  {
    "path": "GMP/GMP_GOP-N4_19_10_25_10_2026.ics",
    "type": "blob",
    "sha": "3137524bec13ddd35fba170e7449d7eb803a42de",
@@ -593,6 +644,12 @@
    "type": "blob",
    "sha": "7c89e3a6b45a6f70ab3b64b3e6feea3327db84a8",
    "size": 7043
+  },
+  {
+   "path": "GMP/GMP_GSE-N4_16_11_22_11_2026.ics",
+   "type": "blob",
+   "sha": "b7a008c954763d93b7ad0eeb5e78ed4a3e6e78b5",
+   "size": 6728
   },
   {
    "path": "GMP/GMP_GSE-N4_19_10_25_10_2026.ics",
@@ -1117,7 +1174,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "566081257e5ec8d35debc96e9b3ac2bc92140d1e",
+   "sha": "a26b4134852ef21c356fca3e3306b7c9ad47d5c9",
    "size": 3171
   },
   {
@@ -1993,8 +2050,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "870de9e2165be0c6be20d6bfb90423f855b87cf8",
-   "size": 19530
+   "sha": "6dcab31103cface1a03f80e536a7e1d7e71408ff",
+   "size": 20169
   },
   {
    "path": "tools/annonce_version_web.txt",
