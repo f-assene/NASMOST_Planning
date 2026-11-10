@@ -1,0 +1,248 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:GOHM/EDT_GOHM_4_16_11_21_11_2026.pdf
+BEGIN:VEVENT
+UID:gohm-n4-20261116t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261116T073000
+DTEND;TZID=Africa/Douala:20261116T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Transferts thermiques
+DESCRIPTION:Cours de Transferts thermiques (GEM-4133)\navec Pr NSOUANDELE /
+  Dr EKANI\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261117t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261117T073000
+DTEND;TZID=Africa/Douala:20261117T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Transferts thermiques
+DESCRIPTION:Cours de Transferts thermiques (GEM-4133)\navec Pr NSOUANDELE /
+  Dr EKANI\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261118t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261118T073000
+DTEND;TZID=Africa/Douala:20261118T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Entrepreneuriat\, économie industrielle et analyse financière
+DESCRIPTION:Cours de Entrepreneuriat\, économie industrielle et analyse fi
+ nancière (OHM-4152)\navec Dr. FOGO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE
+  : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261119t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261119T073000
+DTEND;TZID=Africa/Douala:20261119T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Entrepreneuriat\, économie industrielle et analyse financière
+DESCRIPTION:Cours de Entrepreneuriat\, économie industrielle et analyse fi
+ nancière (OHM-4152)\navec Dr. FOGO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE
+  : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261120t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261120T073000
+DTEND;TZID=Africa/Douala:20261120T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Entrepreneuriat\, économie industrielle et analyse financière
+DESCRIPTION:Cours de Entrepreneuriat\, économie industrielle et analyse fi
+ nancière (OHM-4152)\navec Dr. FOGO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE
+  : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261121t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261121T073000
+DTEND;TZID=Africa/Douala:20261121T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Entrepreneuriat\, économie industrielle et analyse financière
+DESCRIPTION:Cours de Entrepreneuriat\, économie industrielle et analyse fi
+ nancière (OHM-4152)\navec Dr. FOGO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE
+  : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261116t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261116T130000
+DTEND;TZID=Africa/Douala:20261116T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Transferts thermiques
+DESCRIPTION:Cours de Transferts thermiques (GEM-4133)\navec Pr NSOUANDELE /
+  Dr EKANI\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261117t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261117T130000
+DTEND;TZID=Africa/Douala:20261117T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Transferts thermiques
+DESCRIPTION:Cours de Transferts thermiques (GEM-4133)\navec Pr NSOUANDELE /
+  Dr EKANI\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261118t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261118T130000
+DTEND;TZID=Africa/Douala:20261118T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Entrepreneuriat\, économie industrielle et analyse financière
+DESCRIPTION:Cours de Entrepreneuriat\, économie industrielle et analyse fi
+ nancière (OHM-4152)\navec Dr. FOGO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE
+  : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261119t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261119T130000
+DTEND;TZID=Africa/Douala:20261119T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Entrepreneuriat\, économie industrielle et analyse financière
+DESCRIPTION:Cours de Entrepreneuriat\, économie industrielle et analyse fi
+ nancière (OHM-4152)\navec Dr. FOGO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE
+  : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261120t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261120T130000
+DTEND;TZID=Africa/Douala:20261120T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Entrepreneuriat\, économie industrielle et analyse financière
+DESCRIPTION:Cours de Entrepreneuriat\, économie industrielle et analyse fi
+ nancière (OHM-4152)\navec Dr. FOGO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE
+  : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261121t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261121T130000
+DTEND;TZID=Africa/Douala:20261121T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Entrepreneuriat\, économie industrielle et analyse financière
+DESCRIPTION:Cours de Entrepreneuriat\, économie industrielle et analyse fi
+ nancière (OHM-4152)\navec Dr. FOGO\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE
+  : 6 h
+LOCATION:Campus Ebouyè\, Salle : A350
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Entrepreneuriat\, économie industrielle et analyse financière
+  dans 15 min
+END:VALARM
+END:VEVENT
+END:VCALENDAR

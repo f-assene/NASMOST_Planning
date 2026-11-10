@@ -216,6 +216,24 @@
   "ics": "GOHM/GOHM_N4_02_11_08_11_2026.ics"
  },
  {
+  "source": "GOHM/EDT_GOHM_4_09_11_14_11_2026.pdf",
+  "scan": false,
+  "department": "GOHM",
+  "level": "N4",
+  "start": "2026-11-09",
+  "end": "2026-11-14",
+  "ics": "GOHM/GOHM_N4_09_11_14_11_2026.ics"
+ },
+ {
+  "source": "GOHM/EDT_GOHM_4_16_11_21_11_2026.pdf",
+  "scan": false,
+  "department": "GOHM",
+  "level": "N4",
+  "start": "2026-11-16",
+  "end": "2026-11-21",
+  "ics": "GOHM/GOHM_N4_16_11_21_11_2026.ics"
+ },
+ {
   "source": "GOHM/EDT_GOHM_4_26_10_31_10_2026.docx",
   "scan": false,
   "department": "GOHM",
@@ -241,6 +259,15 @@
   "start": "2026-11-02",
   "end": "2026-11-08",
   "ics": "NMSI/NMSI_N4_02_11_08_11_2026.ics"
+ },
+ {
+  "source": "NMSI/EDT_GNM_4_09_11_08_15_2026.docx",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N4",
+  "start": "2026-11-09",
+  "end": "2026-11-15",
+  "ics": "NMSI/NMSI_N4_09_11_15_11_2026.ics"
  },
  {
   "source": "NMSI/EDT_GNM_4_26_10_31_10_2026.pdf",

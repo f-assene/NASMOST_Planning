@@ -1,0 +1,233 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:GOHM/EDT_GOHM_4_09_11_14_11_2026.pdf
+BEGIN:VEVENT
+UID:gohm-n4-20261109t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261109T073000
+DTEND;TZID=Africa/Douala:20261109T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Hydraulique fluviale et limnologie départements
+DESCRIPTION:Cours de Hydraulique fluviale et limnologie départements (OHM-
+ 4152)\navec Dr. ZEH\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Hydraulique fluviale et limnologie départements dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Hydraulique fluviale et limnologie départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261110t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261110T073000
+DTEND;TZID=Africa/Douala:20261110T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Hydraulique fluviale et limnologie départements
+DESCRIPTION:Cours de Hydraulique fluviale et limnologie départements (OHM-
+ 4152)\navec Dr. ZEH\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Hydraulique fluviale et limnologie départements dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Hydraulique fluviale et limnologie départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261111t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261111T073000
+DTEND;TZID=Africa/Douala:20261111T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Hydraulique fluviale et limnologie départements
+DESCRIPTION:Cours de Hydraulique fluviale et limnologie départements (OHM-
+ 4152)\navec Dr. ZEH\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Hydraulique fluviale et limnologie départements dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Hydraulique fluviale et limnologie départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261112t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261112T073000
+DTEND;TZID=Africa/Douala:20261112T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Transferts thermiques départements
+DESCRIPTION:Cours de Transferts thermiques départements (GEM-4133)\navec P
+ r NSOUANDELE / Dr EKANI\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques départements dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261113t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261113T073000
+DTEND;TZID=Africa/Douala:20261113T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Transferts thermiques départements
+DESCRIPTION:Cours de Transferts thermiques départements (GEM-4133)\navec P
+ r NSOUANDELE / Dr EKANI\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques départements dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261114t0730@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261114T073000
+DTEND;TZID=Africa/Douala:20261114T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Pollution\, écotoxicologie et gestion des zones côtières
+DESCRIPTION:Cours de Pollution\, écotoxicologie et gestion des zones côti
+ ères (OHM-4112)\navec Dr. MOUSTAPHA\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TP
+ E : 6 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Pollution\, écotoxicologie et gestion des zones côtières dan
+ s 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Pollution\, écotoxicologie et gestion des zones côtières dan
+ s 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261109t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261109T130000
+DTEND;TZID=Africa/Douala:20261109T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Hydraulique fluviale et limnologie départements
+DESCRIPTION:Cours de Hydraulique fluviale et limnologie départements (OHM-
+ 4152)\navec Dr. ZEH\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Hydraulique fluviale et limnologie départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261110t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261110T130000
+DTEND;TZID=Africa/Douala:20261110T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Hydraulique fluviale et limnologie départements
+DESCRIPTION:Cours de Hydraulique fluviale et limnologie départements (OHM-
+ 4152)\navec Dr. ZEH\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Hydraulique fluviale et limnologie départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261111t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261111T130000
+DTEND;TZID=Africa/Douala:20261111T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Hydraulique fluviale et limnologie départements
+DESCRIPTION:Cours de Hydraulique fluviale et limnologie départements (OHM-
+ 4152)\navec Dr. ZEH\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Hydraulique fluviale et limnologie départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261112t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261112T130000
+DTEND;TZID=Africa/Douala:20261112T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Transferts thermiques départements
+DESCRIPTION:Cours de Transferts thermiques départements (GEM-4133)\navec P
+ r NSOUANDELE / Dr EKANI\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261113t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261113T130000
+DTEND;TZID=Africa/Douala:20261113T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Transferts thermiques départements
+DESCRIPTION:Cours de Transferts thermiques départements (GEM-4133)\navec P
+ r NSOUANDELE / Dr EKANI\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TPE : 6 h
+LOCATION:Campus Ebouyè\, Hall des
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Transferts thermiques départements dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261114t1300@nasmost-planning
+DTSTAMP:20261110T075505Z
+DTSTART;TZID=Africa/Douala:20261114T130000
+DTEND;TZID=Africa/Douala:20261114T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Pollution\, écotoxicologie et gestion des zones côtières
+DESCRIPTION:Cours de Pollution\, écotoxicologie et gestion des zones côti
+ ères (OHM-4112)\navec Dr. MOUSTAPHA\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TP
+ E : 6 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Pollution\, écotoxicologie et gestion des zones côtières dan
+ s 15 min
+END:VALARM
+END:VEVENT
+END:VCALENDAR
