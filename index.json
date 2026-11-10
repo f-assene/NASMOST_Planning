@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T07:43:01Z",
+ "generated": "2026-11-10T07:55:05Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -553,6 +553,32 @@
    ]
   },
   {
+   "path": "GOHM/EDT_GOHM_4_09_11_14_11_2026.pdf",
+   "type": "blob",
+   "sha": "ee8651f6e77f4d8b6e736348996ced64edf64a36",
+   "size": 208148,
+   "week": [
+    "2026-11-09",
+    "2026-11-14"
+   ],
+   "departments": [
+    "GOHM"
+   ]
+  },
+  {
+   "path": "GOHM/EDT_GOHM_4_16_11_21_11_2026.pdf",
+   "type": "blob",
+   "sha": "73a7ca7761013b0f56aaeb29f22c7a1eb369dccf",
+   "size": 205488,
+   "week": [
+    "2026-11-16",
+    "2026-11-21"
+   ],
+   "departments": [
+    "GOHM"
+   ]
+  },
+  {
    "path": "GOHM/EDT_GOHM_4_26_10_31_10_2026.docx",
    "type": "blob",
    "sha": "58205fa02a6c6400dd166d4b55d52ef5332582f2",
@@ -576,6 +602,18 @@
    "type": "blob",
    "sha": "135488ba198b14dd71e1b3ebddfec386a5b3e825",
    "size": 8359
+  },
+  {
+   "path": "GOHM/GOHM_N4_09_11_14_11_2026.ics",
+   "type": "blob",
+   "sha": "80b68e0c4528df633cb1fe2478df0716cf3429bc",
+   "size": 7843
+  },
+  {
+   "path": "GOHM/GOHM_N4_16_11_21_11_2026.ics",
+   "type": "blob",
+   "sha": "f38ce431874285855e5201c95426aa4d0b7d95cf",
+   "size": 8077
   },
   {
    "path": "GOHM/GOHM_N4_19_10_24_10_2026.ics",
@@ -642,6 +680,19 @@
    ]
   },
   {
+   "path": "NMSI/EDT_GNM_4_09_11_08_15_2026.docx",
+   "type": "blob",
+   "sha": "dcbb1053cd17f6a52ba0a433f86baf4f128c4b0a",
+   "size": 45110,
+   "week": [
+    "2026-11-09",
+    "2026-11-15"
+   ],
+   "departments": [
+    "NMSI"
+   ]
+  },
+  {
    "path": "NMSI/EDT_GNM_4_26_10_31_10_2026.pdf",
    "type": "blob",
    "sha": "431210e0d6ec8a1e9b1a2179c4784c3e9fe8fade",
@@ -696,6 +747,12 @@
    "type": "blob",
    "sha": "24b2fed968c5b79912b77ea43f1e96916db9be65",
    "size": 8251
+  },
+  {
+   "path": "NMSI/NMSI_N4_09_11_15_11_2026.ics",
+   "type": "blob",
+   "sha": "bf75ad1652d321ad1fa29dee1805410517874974",
+   "size": 7987
   },
   {
    "path": "NMSI/NMSI_N4_19_10_24_10_2026.ics",
@@ -894,7 +951,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "4422979fe175c4311acf3d41d9b9ba9441ec835b",
+   "sha": "7994da07358ebadb07fc7d5e5f465e8381c05298",
    "size": 3027
   },
   {
@@ -1704,8 +1761,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "6adff05b399868ee7da79ada7cdff520a3848e70",
-   "size": 15964
+   "sha": "edfb8b52fce193cc22633ffe7d795c21bd353a00",
+   "size": 16594
   },
   {
    "path": "tools/annonce_version_web.txt",
