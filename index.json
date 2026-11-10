@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T07:55:05Z",
+ "generated": "2026-11-10T08:31:54Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -951,7 +951,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "7994da07358ebadb07fc7d5e5f465e8381c05298",
+   "sha": "1e09c16d9136448cb28617d6dcbd0f6390e1ed75",
    "size": 3027
   },
   {
@@ -1254,6 +1254,19 @@
    ]
   },
   {
+   "path": "STMO/EDT_STMO_2_09_11_15_11_2026.pdf",
+   "type": "blob",
+   "sha": "1ef03613539cdcc7862655282ae33513f2ba686f",
+   "size": 171025,
+   "week": [
+    "2026-11-09",
+    "2026-11-15"
+   ],
+   "departments": [
+    "STMO"
+   ]
+  },
+  {
    "path": "STMO/EDT_STMO_2_19_10_25_10_2026.docx",
    "type": "blob",
    "sha": "c61ea78160312a5e00282e62717c58bce967231b",
@@ -1321,6 +1334,12 @@
    "type": "blob",
    "sha": "7c813ca28675ecac24e0b4d6d8405de132ed0848",
    "size": 7351
+  },
+  {
+   "path": "STMO/STMO_N2_09_11_15_11_2026.ics",
+   "type": "blob",
+   "sha": "34fc16ea56f1a96853f4776300577493a9fb5626",
+   "size": 6912
   },
   {
    "path": "STMO/STMO_N2_19_10_24_10_2026.ics",
@@ -1761,8 +1780,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "edfb8b52fce193cc22633ffe7d795c21bd353a00",
-   "size": 16594
+   "sha": "e1195f7fca6c3cb1a42147fc2379b8ec85fa5f90",
+   "size": 16804
   },
   {
    "path": "tools/annonce_version_web.txt",
