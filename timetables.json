@@ -99,6 +99,33 @@
   "ics": "GMM/GMM_N4_02_11_08_11_2026.ics"
  },
  {
+  "source": "GMM/EDT_GMM_4_02_11_15_11_2026.pdf",
+  "scan": false,
+  "department": "GMM",
+  "level": "N4",
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "ics": "GMM/GMM_N4_02_11_08_11_2026.ics"
+ },
+ {
+  "source": "GMM/EDT_GMM_4_02_11_15_11_2026.pdf",
+  "scan": false,
+  "department": "GMM",
+  "level": "N4",
+  "start": "2026-11-09",
+  "end": "2026-11-15",
+  "ics": "GMM/GMM_N4_09_11_15_11_2026.ics"
+ },
+ {
+  "source": "GMM/EDT_GMM_4_16_11_22_11_2026.pdf",
+  "scan": false,
+  "department": "GMM",
+  "level": "N4",
+  "start": "2026-11-16",
+  "end": "2026-11-22",
+  "ics": "GMM/GMM_N4_16_11_22_11_2026.ics"
+ },
+ {
   "source": "GMM/EDT_GMM_4_19_10_25_10_2026.pdf",
   "scan": false,
   "department": "GMM",
