@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T08:11:32Z",
+ "generated": "2026-11-14T08:15:54Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1307,8 +1307,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "ddd985ad19538b453fd10016fe355970a215dd78",
-   "size": 3730
+   "sha": "ed61d0a77586a1ba80d3756546d46b2fcc77f406",
+   "size": 3885
   },
   {
    "path": "README.md",
@@ -1701,6 +1701,19 @@
    ]
   },
   {
+   "path": "STMO/EDT_STMO_1_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "4acd5aaf4914fb608cab215688dfe1cf7f4e3e83",
+   "size": 165312,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "STMO"
+   ]
+  },
+  {
    "path": "STMO/EDT_STMO_2_02_11_08_11_2026.pdf",
    "type": "blob",
    "sha": "c79822e100c452ee60a23a2c5efe60a0ea5b4fd4",
@@ -1721,6 +1734,19 @@
    "week": [
     "2026-11-09",
     "2026-11-15"
+   ],
+   "departments": [
+    "STMO"
+   ]
+  },
+  {
+   "path": "STMO/EDT_STMO_2_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "9948da0747c29843afbaf500b7322dd5aa38480b",
+   "size": 167544,
+   "week": [
+    "2026-11-16",
+    "2026-11-21"
    ],
    "departments": [
     "STMO"
@@ -1784,6 +1810,12 @@
    "size": 6332
   },
   {
+   "path": "STMO/STMO_N1_16_11_22_11_2026.ics",
+   "type": "blob",
+   "sha": "4d01bee725b10f0cbfc6407e7f2fdeebeee72e49",
+   "size": 5413
+  },
+  {
    "path": "STMO/STMO_N2_02_03_07_03_2026.ics",
    "type": "blob",
    "sha": "baba27b3f066583d601dfe4dfc72d39624cb3c7b",
@@ -1800,6 +1832,12 @@
    "type": "blob",
    "sha": "34fc16ea56f1a96853f4776300577493a9fb5626",
    "size": 6912
+  },
+  {
+   "path": "STMO/STMO_N2_16_11_21_11_2026.ics",
+   "type": "blob",
+   "sha": "3bb833f613e7d046d95da079adef8566c52b852e",
+   "size": 6214
   },
   {
    "path": "STMO/STMO_N2_19_10_24_10_2026.ics",
@@ -2240,8 +2278,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "26e1f1335b7a6ef2b0ca2cbc5138c06781071af0",
-   "size": 22264
+   "sha": "fbf75d148565a590beeede2e14519587c6e607b9",
+   "size": 22684
   },
   {
    "path": "tools/annonce_version_web.txt",
