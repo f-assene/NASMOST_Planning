@@ -2,7 +2,7 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**79 emploi(s) du temps publié(s), 15 version(s) signée(s), 1 erreur(s).**
+**80 emploi(s) du temps publié(s), 15 version(s) signée(s), 1 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
@@ -10,11 +10,9 @@ Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pa
 
 ## Avertissements
 
-- `ANCR/EDT_ANCR_4_16_11_22_11_2026.docx` : les dates du nom (16/11 au 22/11/2026) diffèrent de l'en-tête (02/11 au 07/11/2026) : l'en-tête est utilisé
-- `ANCR/EDT_ANCR_4_16_11_22_11_2026.docx` : ANCR N4 du 02/11/2026 existe aussi dans ANCR/EDT_ANCR_4_02_11_15_11_2026.pdf : ce fichier-ci est utilisé
 - `ANCR/EDT_ANCR_4_19_10_24_10_2026.pdf` : les dates du nom (19/10 au 24/10/2026) diffèrent de l'en-tête (19/10 au 25/10/2026) : l'en-tête est utilisé
 - `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : les dates du nom (26/10 au 01/11/2026) diffèrent de l'en-tête (02/11 au 07/11/2026) : l'en-tête est utilisé
-- `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : ANCR N4 du 02/11/2026 existe aussi dans ANCR/EDT_ANCR_4_16_11_22_11_2026.docx : ce fichier-ci est utilisé
+- `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : ANCR N4 du 02/11/2026 existe aussi dans ANCR/EDT_ANCR_4_02_11_15_11_2026.pdf : ce fichier-ci est utilisé
 - `GCO/EDT_GCO_4_16_11_22_11_2026.pdf` : les dates du nom (16/11 au 22/11/2026) diffèrent de l'en-tête (16/11 au 21/11/2026) : l'en-tête est utilisé
 - `GOHM/EDT_GHOM_4_19_10_25_10_2026.docx` : les dates du nom (19/10 au 25/10/2026) diffèrent de l'en-tête (19/10 au 24/10/2026) : l'en-tête est utilisé
 - `NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.docx` : NMSI N3 du 22/06/2026 existe aussi dans NMSI/EDT_3GNM_22_06_28_06_2026.pdf : ce fichier-ci est utilisé
