@@ -1,0 +1,255 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:GMM/EDT_GMM_3_16_11_22_11_2026.pdf
+BEGIN:VEVENT
+UID:gmm-n3-20261116t0730@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261116T073000
+DTEND;TZID=Africa/Douala:20261116T123000
+CATEGORIES:GMM-N3
+SUMMARY:Matériaux d’électronique et d’électrotechnique
+DESCRIPTION:Cours de Matériaux d’électronique et d’électrotechnique 
+ (GMM-3312)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Matériaux d’électronique et d’électrotechnique dans 30 m
+ in
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Matériaux d’électronique et d’électrotechnique dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261117t0730@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261117T073000
+DTEND;TZID=Africa/Douala:20261117T123000
+CATEGORIES:GMM-N3
+SUMMARY:Mécanique des milieux continus
+DESCRIPTION:Cours de Mécanique des milieux continus (GCO-3111)\navec Dr DJ
+ OPKOP
+LOCATION:Campus Ebouyè\, Hall des Départements
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Mécanique des milieux continus dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Mécanique des milieux continus dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261118t0730@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261118T073000
+DTEND;TZID=Africa/Douala:20261118T123000
+CATEGORIES:GMM-N3
+SUMMARY:Mécanique des milieux continus
+DESCRIPTION:Cours de Mécanique des milieux continus (GCO-3111)\navec Dr DJ
+ OPKOP
+LOCATION:Campus Ebouyè\, Hall des Départements
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Mécanique des milieux continus dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Mécanique des milieux continus dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261119t0730@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261119T073000
+DTEND;TZID=Africa/Douala:20261119T123000
+CATEGORIES:GMM-N3
+SUMMARY:Mécanique des milieux continus
+DESCRIPTION:Cours de Mécanique des milieux continus (GCO-3111)\navec Dr DJ
+ OPKOP
+LOCATION:Campus Ebouyè\, Hall des Départements
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Mécanique des milieux continus dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Mécanique des milieux continus dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261120t0730@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261120T073000
+DTEND;TZID=Africa/Douala:20261120T123000
+CATEGORIES:GMM-N3
+SUMMARY:Matériaux d’électronique et d’électrotechnique
+DESCRIPTION:Cours de Matériaux d’électronique et d’électrotechnique 
+ (GMM-3312)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Matériaux d’électronique et d’électrotechnique dans 30 m
+ in
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Matériaux d’électronique et d’électrotechnique dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261121t0730@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261121T073000
+DTEND;TZID=Africa/Douala:20261121T123000
+CATEGORIES:GMM-N3
+SUMMARY:Matériaux d’électronique et d’électrotechnique
+DESCRIPTION:Cours de Matériaux d’électronique et d’électrotechnique 
+ (GMM-3312)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Matériaux d’électronique et d’électrotechnique dans 30 m
+ in
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Matériaux d’électronique et d’électrotechnique dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261122t0730@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261122T073000
+DTEND;TZID=Africa/Douala:20261122T123000
+CATEGORIES:GMM-N3
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261116t1300@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261116T130000
+DTEND;TZID=Africa/Douala:20261116T170000
+CATEGORIES:GMM-N3
+SUMMARY:Matériaux d’électronique et d’électrotechnique
+DESCRIPTION:Cours de Matériaux d’électronique et d’électrotechnique 
+ (GMM-3312)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Matériaux d’électronique et d’électrotechnique dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261117t1300@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261117T130000
+DTEND;TZID=Africa/Douala:20261117T170000
+CATEGORIES:GMM-N3
+SUMMARY:Mécanique des milieux continus
+DESCRIPTION:Cours de Mécanique des milieux continus (GCO-3111)\navec Dr DJ
+ OPKOP
+LOCATION:Campus Ebouyè\, Hall des Départements
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Mécanique des milieux continus dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261118t1300@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261118T130000
+DTEND;TZID=Africa/Douala:20261118T170000
+CATEGORIES:GMM-N3
+SUMMARY:Mécanique des milieux continus
+DESCRIPTION:Cours de Mécanique des milieux continus (GCO-3111)\navec Dr DJ
+ OPKOP
+LOCATION:Campus Ebouyè\, Hall des Départements
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Mécanique des milieux continus dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261119t1300@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261119T130000
+DTEND;TZID=Africa/Douala:20261119T170000
+CATEGORIES:GMM-N3
+SUMMARY:Mécanique des milieux continus
+DESCRIPTION:Cours de Mécanique des milieux continus (GCO-3111)\navec Dr DJ
+ OPKOP
+LOCATION:Campus Ebouyè\, Hall des Départements
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Mécanique des milieux continus dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261120t1300@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261120T130000
+DTEND;TZID=Africa/Douala:20261120T170000
+CATEGORIES:GMM-N3
+SUMMARY:Matériaux d’électronique et d’électrotechnique
+DESCRIPTION:Cours de Matériaux d’électronique et d’électrotechnique 
+ (GMM-3312)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Matériaux d’électronique et d’électrotechnique dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261121t1300@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261121T130000
+DTEND;TZID=Africa/Douala:20261121T170000
+CATEGORIES:GMM-N3
+SUMMARY:Matériaux d’électronique et d’électrotechnique
+DESCRIPTION:Cours de Matériaux d’électronique et d’électrotechnique 
+ (GMM-3312)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Matériaux d’électronique et d’électrotechnique dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261122t1300@nasmost-planning
+DTSTAMP:20261114T081132Z
+DTSTART;TZID=Africa/Douala:20261122T130000
+DTEND;TZID=Africa/Douala:20261122T170000
+CATEGORIES:GMM-N3
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+END:VCALENDAR
