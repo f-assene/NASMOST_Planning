@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T08:15:54Z",
+ "generated": "2026-11-14T08:27:14Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -18,6 +18,12 @@
    "type": "blob",
    "sha": "138fe168b1dc0e7ff347de0a3667bc2b72f80bb3",
    "size": 6951
+  },
+  {
+   "path": "ANCR/ANCR_N4_16_11_22_11_2026.ics",
+   "type": "blob",
+   "sha": "c00ad0fe50b51ecd22ed470ec5b683328fcab513",
+   "size": 7463
   },
   {
    "path": "ANCR/ANCR_N4_19_10_25_10_2026.ics",
@@ -41,11 +47,11 @@
   {
    "path": "ANCR/EDT_ANCR_4_16_11_22_11_2026.docx",
    "type": "blob",
-   "sha": "f075ac03beae7ac87c1127cff6761995b09d8006",
-   "size": 67930,
+   "sha": "d55df3ef6e6067507fbccd0cc57d08a6b44cda87",
+   "size": 48519,
    "week": [
-    "2026-11-02",
-    "2026-11-07"
+    "2026-11-16",
+    "2026-11-22"
    ],
    "departments": [
     "ANCR"
@@ -1307,8 +1313,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "ed61d0a77586a1ba80d3756546d46b2fcc77f406",
-   "size": 3885
+   "sha": "ffe77e94b846741f371ed0210d703e0977451be1",
+   "size": 3578
   },
   {
    "path": "README.md",
@@ -2278,7 +2284,7 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "fbf75d148565a590beeede2e14519587c6e607b9",
+   "sha": "0df95af4f2681c62d6cdd041003cabe9010031b7",
    "size": 22684
   },
   {
