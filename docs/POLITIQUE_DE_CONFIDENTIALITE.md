@@ -19,7 +19,10 @@ Fernand ASSENE pour les étudiants de l'ENSTMO (Université d'Ebolowa, Kribi).
   les logos des sites d'actualité depuis un service public de Google. Comme pour toute connexion à
   Internet, ces serveurs voient l'adresse IP du téléphone ; l'application ne leur envoie aucune
   information vous concernant.
-- **Aucun outil de mesure d'audience, aucune publicité, aucun suivi.**
+- **Aucune publicité, aucun profilage.** L'application compte seulement, de façon **anonyme et
+  agrégée**, le nombre d'ouvertures (au plus une fois par jour), avec **GoatCounter**, sans cookies,
+  sans identifiant et sans aucune donnée personnelle : ni votre nom, ni vos classes, ni vos contenus.
+  Seuls des totaux apparaissent dans la page d'administration du site.
 - **Autorisations** : Internet (télécharger les contenus), notifications (annonces, mises à jour),
   alarmes et rappels (sonner avant les séances de cours), démarrage du téléphone (reprogrammer les
   alarmes), affichage plein écran et service de premier plan (faire sonner l'alarme, même
@@ -49,7 +52,10 @@ Fernand ASSENE for students of NASMOST (University of Ebolowa, Kribi).
   opportunities from public feeds (Google News and news or opportunity websites); news-site logos
   from a public Google service. As with any Internet connection, these servers see the phone's IP
   address; the application sends them no information about you.
-- **No analytics, no advertising, no tracking.**
+- **No advertising, no profiling.** The application only counts, **anonymously and in aggregate**,
+  how many times it is opened (at most once a day), with **GoatCounter**, without cookies, without
+  any identifier and without any personal data: not your name, your classes or your content. Only
+  totals appear on the website's administration page.
 - **Permissions**: Internet (download content), notifications (announcements, updates), alarms and
   reminders (ring before class sessions), device start-up (reschedule alarms), full-screen display
   and foreground service (sound the alarm, even when the phone is locked).

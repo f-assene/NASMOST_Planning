@@ -17,7 +17,7 @@ const NO_DATA = "#E9E4DB";
 const ADMIN_TEXTS = {
   fr: {
     title: "Statistiques", note: "Visites de la version web, comptées sans cookies ni données personnelles (GoatCounter). Mises à jour toutes les 3 heures.",
-    last30: "30 derniers jours", all: "Depuis le lancement", visits: "Visites", countries: "Pays", topCountry: "Premier pays",
+    last30: "30 derniers jours", all: "Depuis le lancement", visits: "Visites (site)", appOpens: "Ouvertures de l'appli", countries: "Pays", topCountry: "Premier pays",
     map: "Visites par pays", daily: "Visites par jour", byCountry: "Pays", pages: "Pages les plus vues", browsers: "Navigateurs",
     systems: "Systèmes", sizes: "Tailles d'écran", share: "Part", none: "Aucune visite sur cette période.",
     missing: "Les statistiques ne sont pas encore disponibles : le comptage commence à la mise en ligne du site (compte GoatCounter et clé d'API à configurer, voir le guide).",
@@ -26,7 +26,7 @@ const ADMIN_TEXTS = {
   },
   en: {
     title: "Statistics", note: "Visits to the web version, counted without cookies or personal data (GoatCounter). Updated every 3 hours.",
-    last30: "Last 30 days", all: "Since launch", visits: "Visits", countries: "Countries", topCountry: "Top country",
+    last30: "Last 30 days", all: "Since launch", visits: "Web visits", appOpens: "App opens", countries: "Countries", topCountry: "Top country",
     map: "Visits by country", daily: "Visits per day", byCountry: "Country", pages: "Most viewed pages", browsers: "Browsers",
     systems: "Operating systems", sizes: "Screen sizes", share: "Share", none: "No visits in this period.",
     missing: "Statistics are not available yet: counting starts when the site goes live (GoatCounter account and API key to be configured, see the guide).",
@@ -63,6 +63,7 @@ window.renderAdmin = async function renderAdmin(main, lang, periodKey) {
   main.innerHTML =
     `<div class="chips">` + [["last30", t.last30], ["all", t.all]].map(([k, l]) => `<button class="chip ${k === (stats[periodKey] ? periodKey : "last30") ? "selected" : ""}" data-period="${k}">${esc(l)}</button>`).join("") + `</div>` +
     `<div class="kpis"><div class="kpi"><div class="value">${total.toLocaleString()}</div><div class="label">${esc(t.visits)}</div></div>` +
+    `<div class="kpi"><div class="value">${(period.app || 0).toLocaleString()}</div><div class="label">${esc(t.appOpens)}</div></div>` +
     `<div class="kpi"><div class="value">${countries.length}</div><div class="label">${esc(t.countries)}</div></div>` +
     `<div class="kpi"><div class="value small-value">${esc(countries[0] ? countries[0].name : "–")}</div><div class="label">${esc(t.topCountry)}</div></div></div>` +
     `<div class="card"><h2>${esc(t.map)}</h2><div id="worldMap" class="world-map"></div><div class="map-legend">` +

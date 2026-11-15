@@ -47,7 +47,15 @@ def period(code, token, start, end):
     out = {"start": start.isoformat(), "end": end.isoformat(), "total": total.get("total", sum(d["count"] for d in days)), "days": days}
     for name in ("locations", "browsers", "systems", "sizes"):
         out[name] = rows(api(code, token, f"stats/{name}", limit=100, **p))
-    out["pages"] = rows(api(code, token, "stats/hits", limit=20, **p))
+    # Toutes les pages, pour distinguer les ouvertures de l'application (chemins /app*) du site.
+    hits = api(code, token, "stats/hits", limit=100, **p).get("hits") or []
+    def path_of(h):
+        return str(h.get("path") or h.get("id") or "")
+    app = sum((h.get("count") or 0) for h in hits if path_of(h).startswith("/app"))
+    site = [h for h in hits if not path_of(h).startswith("/app")]
+    out["app"] = app                       # ouvertures de l'application (comptage anonyme)
+    out["total"] = max(0, out["total"] - app)  # visites du site web seulement
+    out["pages"] = rows({"hits": site})[:20]
     return out
 
 
