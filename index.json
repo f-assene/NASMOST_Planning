@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T08:27:14Z",
+ "generated": "2026-11-15T11:44:16Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -88,6 +88,20 @@
    "type": "blob",
    "sha": "380205194e34712d355e3175a3118ebb9467ffc9",
    "size": 2031
+  },
+  {
+   "path": "ANCR/scan_EDT_ANCR_4_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "eea12174299f124a91ea294a7737489bea576ed4",
+   "size": 428776,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "ANCR"
+   ],
+   "signed": true
   },
   {
    "path": "GCO/EDT_GCO_2_02_11_08_11_2026.pdf",
@@ -301,6 +315,34 @@
    "size": 1999
   },
   {
+   "path": "GEM/scan_EDT_GEM_3_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "c8c25c850bff3bfd761f308b08f2a9c3cc2ff097",
+   "size": 401719,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "GEM"
+   ],
+   "signed": true
+  },
+  {
+   "path": "GEM/scan_EDT_GEM_4_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "406894f520c8136620e76bb40b78c7bd3675300f",
+   "size": 523623,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "GEM"
+   ],
+   "signed": true
+  },
+  {
    "path": "GEM/scan_EDT_GEM_4_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "8fd74fcc753040a513942748597228ddf3fc7732",
@@ -439,6 +481,20 @@
    "type": "blob",
    "sha": "c59395605dde6c597b53c056b452d74417bc87ad",
    "size": 1996
+  },
+  {
+   "path": "GMM/scan_EDT_GMM_3_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "f416ac87f64c55a0df02de19fb87b16a02ae20a5",
+   "size": 351752,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "GMM"
+   ],
+   "signed": true
   },
   {
    "path": "GMM/scan_EDT_GMM_4_19_10_25_10_2026.pdf",
@@ -803,6 +859,20 @@
    "size": 2498
   },
   {
+   "path": "GMP/scan_EDT_GLP_3_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "24caa0ca043447cb100618a03df5c95b924fb5ec",
+   "size": 299480,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "GMP"
+   ],
+   "signed": true
+  },
+  {
    "path": "GMP/scan_EDT_GLP_4_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "949964824ffc98162dba175b7375655bcf5ff8a9",
@@ -817,6 +887,20 @@
    "signed": true
   },
   {
+   "path": "GMP/scan_EDT_GOP_3_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "24caa0ca043447cb100618a03df5c95b924fb5ec",
+   "size": 299480,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "GMP"
+   ],
+   "signed": true
+  },
+  {
    "path": "GMP/scan_EDT_GOP_4_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "894956889b4f70c8660a9428db8019bf8d6af6e6",
@@ -824,6 +908,20 @@
    "week": [
     "2026-10-19",
     "2026-10-25"
+   ],
+   "departments": [
+    "GMP"
+   ],
+   "signed": true
+  },
+  {
+   "path": "GMP/scan_EDT_GSE_3_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "24caa0ca043447cb100618a03df5c95b924fb5ec",
+   "size": 299480,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
    ],
    "departments": [
     "GMP"
@@ -1239,6 +1337,20 @@
    "size": 2029
   },
   {
+   "path": "NMSI/scan_EDT_NMSI_3_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "08cffaa571bd3443f03f82c213e6986551a9e725",
+   "size": 390797,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "NMSI"
+   ],
+   "signed": true
+  },
+  {
    "path": "NMSI/scan_EDT_NMSI_4_19_10_24_10_2026.pdf",
    "type": "blob",
    "sha": "983ca9cd3b33bf1f1a3134e6d639cb328f9e153e",
@@ -1313,8 +1425,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "ffe77e94b846741f371ed0210d703e0977451be1",
-   "size": 3578
+   "sha": "7a52f6ccc39fec2e2a5fb4acb204a213231dd307",
+   "size": 3863
   },
   {
    "path": "README.md",
@@ -1520,6 +1632,20 @@
    "signed": true
   },
   {
+   "path": "SGMP/scan_EDT_SGMP_2_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "0c91c20475bb6780a8d4f30c9351a7485a8e3f33",
+   "size": 300681,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "SGMP"
+   ],
+   "signed": true
+  },
+  {
    "path": "SSIP/EDT_SSIP_4_02_11_08_11_2026.pdf",
    "type": "blob",
    "sha": "33ed5262734bf42c2bd20c39d3737f382dc337eb",
@@ -1633,6 +1759,20 @@
    "type": "blob",
    "sha": "5f13f86948d48c0520626f8c0d93b5eb058a6671",
    "size": 6814
+  },
+  {
+   "path": "SSIP/scan_EDT_SSIP_4_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "bcefb53d7dcc1554676d80914e5058a2967d1a07",
+   "size": 355706,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "SSIP"
+   ],
+   "signed": true
   },
   {
    "path": "SSIP/scan_EDT_SSIP_4_19_10_25_10_2026.pdf",
@@ -2284,8 +2424,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "0df95af4f2681c62d6cdd041003cabe9010031b7",
-   "size": 22684
+   "sha": "fdf3d21c4b320296aa8585db0178718162a7896d",
+   "size": 24818
   },
   {
    "path": "tools/annonce_version_web.txt",
