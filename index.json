@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T11:44:16Z",
+ "generated": "2026-11-15T11:50:57Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1378,6 +1378,19 @@
    ]
   },
   {
+   "path": "PEM/EDT_PEM_4_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "1b33659621d228fb7ec480963e8929faaf6f7cdd",
+   "size": 544776,
+   "week": [
+    "2026-11-16",
+    "2026-11-22"
+   ],
+   "departments": [
+    "PEM"
+   ]
+  },
+  {
    "path": "PEM/EDT_PEM_4_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "57c5476ad6b1c465fcab0d0a56bf0204a9485b89",
@@ -1395,6 +1408,12 @@
    "type": "blob",
    "sha": "9dadefe008bc278fc003b8fbd81b0b07d50de9be",
    "size": 7724
+  },
+  {
+   "path": "PEM/PEM_N4_16_11_22_11_2026.ics",
+   "type": "blob",
+   "sha": "9c148eb0bc87f16141b50eaa37b04cbd89260fb9",
+   "size": 14652
   },
   {
    "path": "PEM/PEM_N4_19_10_25_10_2026.ics",
@@ -1425,7 +1444,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "7a52f6ccc39fec2e2a5fb4acb204a213231dd307",
+   "sha": "9fdd56da27f0b29e2a546a44a2584d8860b4ec4c",
    "size": 3863
   },
   {
@@ -2424,8 +2443,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "fdf3d21c4b320296aa8585db0178718162a7896d",
-   "size": 24818
+   "sha": "84cd61a53b25c069852c85ffe0515b63cb672522",
+   "size": 25023
   },
   {
    "path": "tools/annonce_version_web.txt",
