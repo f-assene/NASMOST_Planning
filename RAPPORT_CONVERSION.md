@@ -2,7 +2,7 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**81 emploi(s) du temps publié(s), 25 version(s) signée(s), 1 erreur(s).**
+**82 emploi(s) du temps publié(s), 25 version(s) signée(s), 1 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
@@ -31,6 +31,5 @@ Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pa
 - `STMO/EDT_STMO_2_16_11_22_11_2026.pdf` : les dates du nom (16/11 au 22/11/2026) diffèrent de l'en-tête (16/11 au 21/11/2026) : l'en-tête est utilisé
 - `STMO/EDT_STMO_2_19_10_25_10_2026.docx` : les dates du nom (19/10 au 25/10/2026) diffèrent de l'en-tête (19/10 au 24/10/2026) : l'en-tête est utilisé
 - `STMO/EDT_STMO_4_02_11_08_11_2026.pdf` : STMO N2 du 02/11/2026 existe aussi dans STMO/EDT_STMO_2_02_11_08_11_2026.pdf : ce fichier-ci est utilisé
-- `GEM/scan_EDT_GEM_3_16_11_22_11_2026.pdf` : original « EDT_GEM_3_16_11_22_11_2026.pdf » introuvable : semaine lue dans le nom du fichier
 - `NMSI/scan_EDT_NMSI_3_16_11_22_11_2026.pdf` : original « EDT_NMSI_3_16_11_22_11_2026.pdf » introuvable : semaine lue dans le nom du fichier
 - `SGMP/scan_EDT_SGMP_2_09_11_15_11_2026.pdf` : original « EDT_SGMP_2_09_11_15_11_2026.pdf » introuvable : semaine lue dans le nom du fichier
