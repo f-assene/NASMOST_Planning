@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T11:50:57Z",
+ "generated": "2026-11-15T17:58:37Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -2131,8 +2131,8 @@
   {
    "path": "docs/POLITIQUE_DE_CONFIDENTIALITE.md",
    "type": "blob",
-   "sha": "757986ed1f74b771d909c8c3de7ea51ac3be55ee",
-   "size": 3990
+   "sha": "c9d3f25b03e0c037f7fbdbb514b12da5c1890aa4",
+   "size": 4593
   },
   {
    "path": "docs/images/menu.png",
@@ -2467,8 +2467,8 @@
   {
    "path": "tools/build_web_stats.py",
    "type": "blob",
-   "sha": "8f9907dff6f56c7dd31e055b8e5c41cb819af0eb",
-   "size": 3376
+   "sha": "b378ca9137f70dd963b23a72d3911e17ca33eb97",
+   "size": 3919
   },
   {
    "path": "tools/check_announcements.py",
@@ -2491,8 +2491,8 @@
   {
    "path": "web/admin.js",
    "type": "blob",
-   "sha": "579472f9521ff7fdb13b30bf7f9232752e7c9666",
-   "size": 11940
+   "sha": "0064aead6d473bcacc5aeebd43a93b88605bfb17",
+   "size": 12146
   },
   {
    "path": "web/app.js",
@@ -2545,7 +2545,7 @@
   {
    "path": "web/sw.js",
    "type": "blob",
-   "sha": "334712cc92bdc02c78b0fba8df2e41d3be1fbb95",
+   "sha": "29b0d7d598e020760107385475ad7235bf4e5da5",
    "size": 2337
   },
   {
