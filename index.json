@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T06:56:58Z",
+ "generated": "2026-11-16T07:09:57Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -212,6 +212,20 @@
    "week": [
     "2026-11-09",
     "2026-11-15"
+   ],
+   "departments": [
+    "GCO"
+   ],
+   "signed": true
+  },
+  {
+   "path": "GCO/scan_EDT_GCO_4_16_11_22_11_2026.pdf",
+   "type": "blob",
+   "sha": "0bf59929de697b4536fa79f12be96e39aed0abae",
+   "size": 742354,
+   "week": [
+    "2026-11-16",
+    "2026-11-21"
    ],
    "departments": [
     "GCO"
@@ -1463,7 +1477,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "32cc489cbf82bab1e0399846024b8f0b5cc028ef",
+   "sha": "bb8c7ad44b0a5ba53637c7c9ecf1e3b59790b680",
    "size": 3722
   },
   {
@@ -2462,8 +2476,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "6ae6ac09337707cef2dbddf3be72641894ebb88c",
-   "size": 25228
+   "sha": "9138f8fc0f550247adbd7b7a564a7567db4304a1",
+   "size": 25437
   },
   {
    "path": "tools/annonce_version_web.txt",
