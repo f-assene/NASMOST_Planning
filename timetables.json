@@ -90,6 +90,15 @@
   "ics": "GCO/GCO_N4_26_10_01_11_2026.ics"
  },
  {
+  "source": "GEM/EDT_GEM_3_16_11_22_11_2026.pdf",
+  "scan": false,
+  "department": "GEM",
+  "level": "N3",
+  "start": "2026-11-16",
+  "end": "2026-11-22",
+  "ics": "GEM/GEM_N3_16_11_22_11_2026.ics"
+ },
+ {
   "source": "GEM/EDT_GEM_4_02_11_08_11_2026.pdf",
   "scan": false,
   "department": "GEM",
