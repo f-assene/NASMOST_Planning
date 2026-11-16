@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T07:09:57Z",
+ "generated": "2026-11-16T19:40:48Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1477,7 +1477,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "bb8c7ad44b0a5ba53637c7c9ecf1e3b59790b680",
+   "sha": "d5903f806b89f2cdb5f8e9e32f778597250cb946",
    "size": 3722
   },
   {
@@ -1546,6 +1546,19 @@
    "week": [
     "2026-11-16",
     "2026-11-22"
+   ],
+   "departments": [
+    "SGMP"
+   ]
+  },
+  {
+   "path": "SGMP/EDT_SGMP_1_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "a4862cc5c1f9d23d5fd25e8e143ea4766f634140",
+   "size": 516380,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
    ],
    "departments": [
     "SGMP"
@@ -1632,6 +1645,12 @@
    "type": "blob",
    "sha": "5c6532e1c808186767ca51cbd614d3808ed24286",
    "size": 4935
+  },
+  {
+   "path": "SGMP/SGMP_N1_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "daa5e1c4603893b3e2fecbd5ba5bb5a13a26d054",
+   "size": 7322
   },
   {
    "path": "SGMP/SGMP_N2_02_03_08_03_2026.ics",
@@ -2476,8 +2495,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "9138f8fc0f550247adbd7b7a564a7567db4304a1",
-   "size": 25437
+   "sha": "e7639067365609ead3fd6c1fdc804ce282ecd79c",
+   "size": 25647
   },
   {
    "path": "tools/annonce_version_web.txt",
