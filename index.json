@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T15:42:31Z",
+ "generated": "2026-11-17T15:52:16Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1137,8 +1137,8 @@
   {
    "path": "NMSI/EDT_GNM_3_23_11_29_11_2026.pdf",
    "type": "blob",
-   "sha": "924bb6a3a77759bbdc0ad1b45334be8e16cdb651",
-   "size": 152156,
+   "sha": "f12300a5564a53620427fd1c284956b2b8375082",
+   "size": 152448,
    "week": [
     "2026-11-23",
     "2026-11-29"
@@ -1252,8 +1252,8 @@
   {
    "path": "NMSI/NMSI_N3_23_11_29_11_2026.ics",
    "type": "blob",
-   "sha": "ed5625f9fb92256103f6b8347cc2a61996c54770",
-   "size": 5793
+   "sha": "cecafe1e0b5f519123758215c8b27092685f8f83",
+   "size": 6325
   },
   {
    "path": "NMSI/NMSI_N3_29_06_05_07_2026.ics",
