@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T19:40:48Z",
+ "generated": "2026-11-17T15:42:31Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1135,6 +1135,19 @@
    ]
   },
   {
+   "path": "NMSI/EDT_GNM_3_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "924bb6a3a77759bbdc0ad1b45334be8e16cdb651",
+   "size": 152156,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "NMSI"
+   ]
+  },
+  {
    "path": "NMSI/EDT_GNM_4_02_11_08_11_2026.docx",
    "type": "blob",
    "sha": "4fb4d1fe1041fcbe7959288cf6f918d0ff1e9cb5",
@@ -1168,6 +1181,19 @@
    "week": [
     "2026-11-16",
     "2026-11-22"
+   ],
+   "departments": [
+    "NMSI"
+   ]
+  },
+  {
+   "path": "NMSI/EDT_GNM_4_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "85b1969c4d3bb3a30832ec22216d137cfed24ab2",
+   "size": 151200,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
    ],
    "departments": [
     "NMSI"
@@ -1224,6 +1250,12 @@
    "size": 6156
   },
   {
+   "path": "NMSI/NMSI_N3_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "ed5625f9fb92256103f6b8347cc2a61996c54770",
+   "size": 5793
+  },
+  {
    "path": "NMSI/NMSI_N3_29_06_05_07_2026.ics",
    "type": "blob",
    "sha": "664c8112d6c859f6b7db8bd8eed00dbdc6684f17",
@@ -1252,6 +1284,12 @@
    "type": "blob",
    "sha": "ea8a4e515f45cd210df67473178cbc9a9490e3f4",
    "size": 7864
+  },
+  {
+   "path": "NMSI/NMSI_N4_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "f1ea2af65d30282d576e8d69cf4dce6316a226e2",
+   "size": 6731
   },
   {
    "path": "NMSI/NMSI_N4_26_10_31_10_2026.ics",
@@ -1477,7 +1515,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "d5903f806b89f2cdb5f8e9e32f778597250cb946",
+   "sha": "2a5ce131d50c95d40dc2aeeaa55c3c0c49af5518",
    "size": 3722
   },
   {
@@ -1769,6 +1807,19 @@
    ]
   },
   {
+   "path": "SSIP/EDT_SSIP_4_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "490e3de95ecb40d87f2714ad2aa7427afef3557c",
+   "size": 180061,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "SSIP"
+   ]
+  },
+  {
    "path": "SSIP/EDT_SSIP_4_26_10_01_11_2026.pdf",
    "type": "blob",
    "sha": "eff1eb2ed9849ea71fed3ef6d5a50b6dc9de893f",
@@ -1824,6 +1875,12 @@
    "type": "blob",
    "sha": "754ce0ded2940b76c819a70b25a68c72981816e6",
    "size": 7237
+  },
+  {
+   "path": "SSIP/SSIP_N4_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "0686238e3e9b12e7767c4bc998388718b9938de5",
+   "size": 7159
   },
   {
    "path": "SSIP/SSIP_N4_26_10_01_11_2026.ics",
@@ -1931,6 +1988,19 @@
    ]
   },
   {
+   "path": "STMO/EDT_STMO_1_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "486d86f79b728b67c8e7824f42689fa0ecfb7914",
+   "size": 166081,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "STMO"
+   ]
+  },
+  {
    "path": "STMO/EDT_STMO_2_02_11_08_11_2026.pdf",
    "type": "blob",
    "sha": "c79822e100c452ee60a23a2c5efe60a0ea5b4fd4",
@@ -1977,6 +2047,19 @@
    "week": [
     "2026-10-19",
     "2026-10-24"
+   ],
+   "departments": [
+    "STMO"
+   ]
+  },
+  {
+   "path": "STMO/EDT_STMO_2_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "fdb5a6d32e9e85eba7ea228ff319c9222d6c8b4d",
+   "size": 168498,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
    ],
    "departments": [
     "STMO"
@@ -2033,6 +2116,12 @@
    "size": 5413
   },
   {
+   "path": "STMO/STMO_N1_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "9a8350d09ee2c6a964c7d510b41245d9745d67eb",
+   "size": 6070
+  },
+  {
    "path": "STMO/STMO_N2_02_03_07_03_2026.ics",
    "type": "blob",
    "sha": "baba27b3f066583d601dfe4dfc72d39624cb3c7b",
@@ -2061,6 +2150,12 @@
    "type": "blob",
    "sha": "ddf426a20ce480934a3186054a37bf4a5761dc1e",
    "size": 7565
+  },
+  {
+   "path": "STMO/STMO_N2_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "7d945b8302e50caf4c942eda22797b5513a611e4",
+   "size": 5929
   },
   {
    "path": "STMO/STMO_N2_26_10_31_10_2026.ics",
@@ -2495,8 +2590,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "e7639067365609ead3fd6c1fdc804ce282ecd79c",
-   "size": 25647
+   "sha": "17b068833c66aaa0e86439fed4188d092b47d285",
+   "size": 26695
   },
   {
    "path": "tools/annonce_version_web.txt",
