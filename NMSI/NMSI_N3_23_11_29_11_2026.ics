@@ -6,16 +6,28 @@ X-NASMOST-SOURCE:NMSI/EDT_GNM_3_23_11_29_11_2026.pdf
 X-NASMOST-EC:classe=NMSI-N3;prevus=10;acheves=1;programmes=1;restants=8
 BEGIN:VEVENT
 UID:nmsi-n3-20261123t0730@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261123T073000
 DTEND;TZID=Africa/Douala:20261123T120000
 CATEGORIES:NMSI-N3
-SUMMARY:ETUDES
-DESCRIPTION:Heures creuses
+SUMMARY:Électronique et Systèmes Embarqués
+DESCRIPTION:Cours de Électronique et Systèmes Embarqués (NSI-3131)\navec
+  Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
+LOCATION:Campus Ebouyè\, Amphi 200
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Électronique et Systèmes Embarqués dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Électronique et Systèmes Embarqués dans 15 min
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261124t0730@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261124T073000
 DTEND;TZID=Africa/Douala:20261124T120000
 CATEGORIES:NMSI-N3
@@ -24,7 +36,7 @@ DESCRIPTION:Heures creuses
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261125t0730@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261125T073000
 DTEND;TZID=Africa/Douala:20261125T120000
 CATEGORIES:NMSI-N3
@@ -33,7 +45,7 @@ DESCRIPTION:Heures creuses
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261126t0730@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261126T073000
 DTEND;TZID=Africa/Douala:20261126T120000
 CATEGORIES:NMSI-N3
@@ -42,7 +54,7 @@ DESCRIPTION:Heures creuses
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261127t0730@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261127T073000
 DTEND;TZID=Africa/Douala:20261127T120000
 CATEGORIES:NMSI-N3
@@ -51,16 +63,28 @@ DESCRIPTION:Heures creuses
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261128t0730@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261128T073000
 DTEND;TZID=Africa/Douala:20261128T120000
 CATEGORIES:NMSI-N3
-SUMMARY:ETUDES
-DESCRIPTION:Heures creuses
+SUMMARY:Électronique et Systèmes Embarqués
+DESCRIPTION:Cours de Électronique et Systèmes Embarqués (NSI-3131)\navec
+  Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
+LOCATION:Campus Ebouyè\, Hall Dép. / Bloc A.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Électronique et Systèmes Embarqués dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Électronique et Systèmes Embarqués dans 15 min
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261129t0730@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261129T073000
 DTEND;TZID=Africa/Douala:20261129T120000
 CATEGORIES:NMSI-N3
@@ -69,109 +93,103 @@ DESCRIPTION:Heures creuses
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261123t1230@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261123T123000
 DTEND;TZID=Africa/Douala:20261123T170000
 CATEGORIES:NMSI-N3
-SUMMARY:Électronique et Systèmes Embarqués Admininstratif
-DESCRIPTION:Cours de Électronique et Systèmes Embarqués Admininstratif (
- NSI-3131)\navec Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
-LOCATION:Campus Ebouyè\, Hall Dép. / Bloc
+SUMMARY:Électronique et Systèmes Embarqués
+DESCRIPTION:Cours de Électronique et Systèmes Embarqués (NSI-3131)\navec
+  Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
+LOCATION:Campus Ebouyè\, Amphi 200
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Électronique et Systèmes Embarqués Admininstratif dans 15 mi
- n
+DESCRIPTION:Électronique et Systèmes Embarqués dans 15 min
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261124t1230@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261124T123000
 DTEND;TZID=Africa/Douala:20261124T170000
 CATEGORIES:NMSI-N3
-SUMMARY:Électronique et Systèmes Embarqués Admininstratif
-DESCRIPTION:Cours de Électronique et Systèmes Embarqués Admininstratif (
- NSI-3131)\navec Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
-LOCATION:Campus Ebouyè\, Hall Dép. / Bloc
+SUMMARY:Électronique et Systèmes Embarqués
+DESCRIPTION:Cours de Électronique et Systèmes Embarqués (NSI-3131)\navec
+  Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
+LOCATION:Campus Ebouyè\, Amphi 200
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Électronique et Systèmes Embarqués Admininstratif dans 15 mi
- n
+DESCRIPTION:Électronique et Systèmes Embarqués dans 15 min
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261125t1230@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261125T123000
 DTEND;TZID=Africa/Douala:20261125T170000
 CATEGORIES:NMSI-N3
-SUMMARY:Électronique et Systèmes Embarqués Admininstratif
-DESCRIPTION:Cours de Électronique et Systèmes Embarqués Admininstratif (
- NSI-3131)\navec Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
-LOCATION:Campus Ebouyè\, Hall Dép. / Bloc
+SUMMARY:Électronique et Systèmes Embarqués
+DESCRIPTION:Cours de Électronique et Systèmes Embarqués (NSI-3131)\navec
+  Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
+LOCATION:Campus Ebouyè\, Amphi 200
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Électronique et Systèmes Embarqués Admininstratif dans 15 mi
- n
+DESCRIPTION:Électronique et Systèmes Embarqués dans 15 min
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261126t1230@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261126T123000
 DTEND;TZID=Africa/Douala:20261126T170000
 CATEGORIES:NMSI-N3
-SUMMARY:Électronique et Systèmes Embarqués Admininstratif
-DESCRIPTION:Cours de Électronique et Systèmes Embarqués Admininstratif (
- NSI-3131)\navec Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
-LOCATION:Campus Ebouyè\, Hall Dép. / Bloc
+SUMMARY:Électronique et Systèmes Embarqués
+DESCRIPTION:Cours de Électronique et Systèmes Embarqués (NSI-3131)\navec
+  Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
+LOCATION:Campus Ebouyè\, Hall Dép. / Bloc A.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Électronique et Systèmes Embarqués Admininstratif dans 15 mi
- n
+DESCRIPTION:Électronique et Systèmes Embarqués dans 15 min
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261127t1230@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261127T123000
 DTEND;TZID=Africa/Douala:20261127T170000
 CATEGORIES:NMSI-N3
-SUMMARY:Électronique et Systèmes Embarqués Admininstratif
-DESCRIPTION:Cours de Électronique et Systèmes Embarqués Admininstratif (
- NSI-3131)\navec Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
-LOCATION:Campus Ebouyè\, Hall Dép. / Bloc
+SUMMARY:Électronique et Systèmes Embarqués
+DESCRIPTION:Cours de Électronique et Systèmes Embarqués (NSI-3131)\navec
+  Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
+LOCATION:Campus Ebouyè\, Hall Dép. / Bloc A.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Électronique et Systèmes Embarqués Admininstratif dans 15 mi
- n
+DESCRIPTION:Électronique et Systèmes Embarqués dans 15 min
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261128t1230@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261128T123000
 DTEND;TZID=Africa/Douala:20261128T170000
 CATEGORIES:NMSI-N3
-SUMMARY:Électronique et Systèmes Embarqués Admininstratif
-DESCRIPTION:Cours de Électronique et Systèmes Embarqués Admininstratif (
- NSI-3131)\navec Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
-LOCATION:Campus Ebouyè\, Hall Dép. / Bloc
+SUMMARY:Électronique et Systèmes Embarqués
+DESCRIPTION:Cours de Électronique et Systèmes Embarqués (NSI-3131)\navec
+  Dr.-Ing. EKOBO A.\nCM:25\, TD:05\, TP:20\, TPE:10
+LOCATION:Campus Ebouyè\, Hall Dép. / Bloc A.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Électronique et Systèmes Embarqués Admininstratif dans 15 mi
- n
+DESCRIPTION:Électronique et Systèmes Embarqués dans 15 min
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmsi-n3-20261129t1230@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261117T155215Z
 DTSTART;TZID=Africa/Douala:20261129T123000
 DTEND;TZID=Africa/Douala:20261129T170000
 CATEGORIES:NMSI-N3
