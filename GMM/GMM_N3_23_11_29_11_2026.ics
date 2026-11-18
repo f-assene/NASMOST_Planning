@@ -1,0 +1,255 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:GMM/EDT_GMM_3_23_11_29_11_2026.pdf
+BEGIN:VEVENT
+UID:gmm-n3-20261123t0730@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261123T073000
+DTEND;TZID=Africa/Douala:20261123T123000
+CATEGORIES:GMM-N3
+SUMMARY:Exploitation du navire et les opérations de la conduite
+DESCRIPTION:Cours de Exploitation du navire et les opérations de la condui
+ te (GMM-3142)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Exploitation du navire et les opérations de la conduite dans 3
+ 0 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Exploitation du navire et les opérations de la conduite dans 1
+ 5 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261124t0730@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261124T073000
+DTEND;TZID=Africa/Douala:20261124T123000
+CATEGORIES:GMM-N3
+SUMMARY:Exploitation du navire et les opérations de la conduite
+DESCRIPTION:Cours de Exploitation du navire et les opérations de la condui
+ te (GMM-3142)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Exploitation du navire et les opérations de la conduite dans 3
+ 0 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Exploitation du navire et les opérations de la conduite dans 1
+ 5 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261125t0730@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261125T073000
+DTEND;TZID=Africa/Douala:20261125T123000
+CATEGORIES:GMM-N3
+SUMMARY:Exploitation du navire et les opérations de la conduite
+DESCRIPTION:Cours de Exploitation du navire et les opérations de la condui
+ te (GMM-3142)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Exploitation du navire et les opérations de la conduite dans 3
+ 0 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Exploitation du navire et les opérations de la conduite dans 1
+ 5 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261126t0730@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261126T073000
+DTEND;TZID=Africa/Douala:20261126T123000
+CATEGORIES:GMM-N3
+SUMMARY:DAO/CAO de Génie Mécanique de marine
+DESCRIPTION:Cours de DAO/CAO de Génie Mécanique de marine (GMM-3121)\nave
+ c Dr NGWA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:DAO/CAO de Génie Mécanique de marine dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:DAO/CAO de Génie Mécanique de marine dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261127t0730@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261127T073000
+DTEND;TZID=Africa/Douala:20261127T123000
+CATEGORIES:GMM-N3
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261128t0730@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261128T073000
+DTEND;TZID=Africa/Douala:20261128T123000
+CATEGORIES:GMM-N3
+SUMMARY:Systèmes de contrôle automatique pour la marine
+DESCRIPTION:Cours de Systèmes de contrôle automatique pour la marine (GMM
+ -3141)\navec Dr ESSOMBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Systèmes de contrôle automatique pour la marine dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Systèmes de contrôle automatique pour la marine dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261129t0730@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261129T073000
+DTEND;TZID=Africa/Douala:20261129T123000
+CATEGORIES:GMM-N3
+SUMMARY:Systèmes de contrôle automatique pour la marine
+DESCRIPTION:Cours de Systèmes de contrôle automatique pour la marine (GMM
+ -3141)\navec Dr ESSOMBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Systèmes de contrôle automatique pour la marine dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Systèmes de contrôle automatique pour la marine dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261123t1300@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261123T130000
+DTEND;TZID=Africa/Douala:20261123T170000
+CATEGORIES:GMM-N3
+SUMMARY:Exploitation du navire et les opérations de la conduite
+DESCRIPTION:Cours de Exploitation du navire et les opérations de la condui
+ te (GMM-3142)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Exploitation du navire et les opérations de la conduite dans 1
+ 5 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261124t1300@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261124T130000
+DTEND;TZID=Africa/Douala:20261124T170000
+CATEGORIES:GMM-N3
+SUMMARY:Exploitation du navire et les opérations de la conduite
+DESCRIPTION:Cours de Exploitation du navire et les opérations de la condui
+ te (GMM-3142)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Exploitation du navire et les opérations de la conduite dans 1
+ 5 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261125t1300@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261125T130000
+DTEND;TZID=Africa/Douala:20261125T170000
+CATEGORIES:GMM-N3
+SUMMARY:Exploitation du navire et les opérations de la conduite
+DESCRIPTION:Cours de Exploitation du navire et les opérations de la condui
+ te (GMM-3142)\navec Dr KAMTA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Exploitation du navire et les opérations de la conduite dans 1
+ 5 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261126t1300@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261126T130000
+DTEND;TZID=Africa/Douala:20261126T170000
+CATEGORIES:GMM-N3
+SUMMARY:DAO/CAO de Génie Mécanique de marine
+DESCRIPTION:Cours de DAO/CAO de Génie Mécanique de marine (GMM-3121)\nave
+ c Dr NGWA
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:DAO/CAO de Génie Mécanique de marine dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261127t1300@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261127T130000
+DTEND;TZID=Africa/Douala:20261127T170000
+CATEGORIES:GMM-N3
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261128t1300@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261128T130000
+DTEND;TZID=Africa/Douala:20261128T170000
+CATEGORIES:GMM-N3
+SUMMARY:Systèmes de contrôle automatique pour la marine
+DESCRIPTION:Cours de Systèmes de contrôle automatique pour la marine (GMM
+ -3141)\navec Dr ESSOMBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Systèmes de contrôle automatique pour la marine dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n3-20261129t1300@nasmost-planning
+DTSTAMP:20261118T065940Z
+DTSTART;TZID=Africa/Douala:20261129T130000
+DTEND;TZID=Africa/Douala:20261129T170000
+CATEGORIES:GMM-N3
+SUMMARY:Systèmes de contrôle automatique pour la marine
+DESCRIPTION:Cours de Systèmes de contrôle automatique pour la marine (GMM
+ -3141)\navec Dr ESSOMBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Systèmes de contrôle automatique pour la marine dans 15 min
+END:VALARM
+END:VEVENT
+END:VCALENDAR
