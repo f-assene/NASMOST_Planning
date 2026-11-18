@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T06:59:40Z",
+ "generated": "2026-11-18T11:10:34Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -117,6 +117,19 @@
    ]
   },
   {
+   "path": "GCO/EDT_GCO_3_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "b5bb6c7462844b282b168bc811184eaf52583090",
+   "size": 527372,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "GCO"
+   ]
+  },
+  {
    "path": "GCO/EDT_GCO_4_09_11_15_11_2026.pdf",
    "type": "blob",
    "sha": "15fd566e620d473e800d7f4874cbf341e3ba8bb0",
@@ -156,6 +169,19 @@
    ]
   },
   {
+   "path": "GCO/EDT_GCO_4_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "fa229f32824f72ba01c5305fb75df36f686bc321",
+   "size": 341692,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "GCO"
+   ]
+  },
+  {
    "path": "GCO/EDT_GCO_4_26_10_01_11_2026.pdf",
    "type": "blob",
    "sha": "45a0d264a35d68ef488716f3e83056bb6b20f196",
@@ -167,6 +193,12 @@
    "departments": [
     "GCO"
    ]
+  },
+  {
+   "path": "GCO/GCO_N3_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "46e1141de26fddd142ae6956ffa0b1e96fba33cb",
+   "size": 5436
   },
   {
    "path": "GCO/GCO_N4_02_11_08_11_2026.ics",
@@ -191,6 +223,12 @@
    "type": "blob",
    "sha": "6d88c34d93f98d09794fd85e08f3b46ed56fb740",
    "size": 6627
+  },
+  {
+   "path": "GCO/GCO_N4_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "33871a7d31f000a3f12852a67e7bdbfa2c1f3dbf",
+   "size": 5370
   },
   {
    "path": "GCO/GCO_N4_26_10_01_11_2026.ics",
@@ -1553,7 +1591,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "87bb51a8614e8cb7303912055fa90fde6be580a0",
+   "sha": "9716827149f575140b9f87b8d56e7ee4ede4e2b3",
    "size": 3722
   },
   {
@@ -2136,6 +2174,20 @@
    "size": 2028
   },
   {
+   "path": "STMO/SCAN_EDT_STMO_1_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "8e4170876d71d2030553f8714b4c4d9d1b1e2468",
+   "size": 511478,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "STMO"
+   ],
+   "signed": true
+  },
+  {
    "path": "STMO/STMO_N1_02_02_08_02_2026.ics",
    "type": "blob",
    "sha": "dfda6db59698b3c5907791ca18975117bfe47c8a",
@@ -2209,6 +2261,20 @@
    "week": [
     "2026-10-19",
     "2026-10-24"
+   ],
+   "departments": [
+    "STMO"
+   ],
+   "signed": true
+  },
+  {
+   "path": "STMO/scan_EDT_STMO_2_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "a35a300b7de400b7058baf34b8eb08c87537a39b",
+   "size": 542831,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
    ],
    "departments": [
     "STMO"
@@ -2628,8 +2694,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "44854bf894026196a1909ec11d6d904389bb36c2",
-   "size": 27105
+   "sha": "a5c3a198f54c5872aac6d154974dd027c980dfe5",
+   "size": 27943
   },
   {
    "path": "tools/annonce_version_web.txt",
