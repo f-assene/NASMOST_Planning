@@ -1,11 +1,17 @@
 {
- "generated": "2026-11-18T11:10:34Z",
+ "generated": "2026-11-20T10:54:36Z",
  "tree": [
   {
    "path": ".gitignore",
    "type": "blob",
    "sha": "6e8e0cb06707d636608e008edf6888ae730092d1",
    "size": 170
+  },
+  {
+   "path": "ANCR/ANCR_N3_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "a74f43fa5ef9bcfa922aa0264122be2bad680e04",
+   "size": 6277
   },
   {
    "path": "ANCR/ANCR_N4_02_11_07_11_2026.ics",
@@ -30,6 +36,25 @@
    "type": "blob",
    "sha": "9b360d143cc0c0632b37749e302e469733cf9897",
    "size": 7937
+  },
+  {
+   "path": "ANCR/ANCR_N4_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "10f5f3a1b81e670a84a47f7ba9fb73c03a2f06e1",
+   "size": 6895
+  },
+  {
+   "path": "ANCR/EDT_ANCR_3_23_11_29_11_2026.docx",
+   "type": "blob",
+   "sha": "d09d30ed4fc04882bb382a2697553662e8979e42",
+   "size": 67248,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "ANCR"
+   ]
   },
   {
    "path": "ANCR/EDT_ANCR_4_02_11_15_11_2026.pdf",
@@ -65,6 +90,19 @@
    "week": [
     "2026-10-19",
     "2026-10-25"
+   ],
+   "departments": [
+    "ANCR"
+   ]
+  },
+  {
+   "path": "ANCR/EDT_ANCR_4_23_11_29_11_2026.docx",
+   "type": "blob",
+   "sha": "c5522d138553a43c60e5d5a9ad89cdfcd0e91778",
+   "size": 67402,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
    ],
    "departments": [
     "ANCR"
@@ -298,6 +336,19 @@
    ]
   },
   {
+   "path": "GEM/EDT_GEM_3_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "88f2a5f763aa8b984759d43c5efaf984b2a2bf00",
+   "size": 522249,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "GEM"
+   ]
+  },
+  {
    "path": "GEM/EDT_GEM_4_02_11_08_11_2026.pdf",
    "type": "blob",
    "sha": "17e56f1d78d2a16f736be6f5d2d6cd76a1ade222",
@@ -337,6 +388,19 @@
    ]
   },
   {
+   "path": "GEM/EDT_GEM_4_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "610b2713ecfb24c9cebff989ab5307f3c399d086",
+   "size": 522710,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "GEM"
+   ]
+  },
+  {
    "path": "GEM/EDT_GEM_4_26_10_31_10_2026.pdf",
    "type": "blob",
    "sha": "17e56f1d78d2a16f736be6f5d2d6cd76a1ade222",
@@ -356,6 +420,12 @@
    "size": 10375
   },
   {
+   "path": "GEM/GEM_N3_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "7a9e6ca4bf74cbe40a778e64cfb298d0c126edb3",
+   "size": 10481
+  },
+  {
    "path": "GEM/GEM_N4_02_11_08_11_2026.ics",
    "type": "blob",
    "sha": "082ad6dedd9c04c833e9dfe816176167509cf5be",
@@ -372,6 +442,12 @@
    "type": "blob",
    "sha": "2fa80318bb7b0c11a05bc81af2240e19d0a3850e",
    "size": 13758
+  },
+  {
+   "path": "GEM/GEM_N4_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "993bfb17cfcaeacd467c958ef01d30db9b06035a",
+   "size": 9617
   },
   {
    "path": "GEM/GEM_N4_26_10_31_10_2026.ics",
@@ -606,6 +682,20 @@
    "signed": true
   },
   {
+   "path": "GMM/scan_EDT_GMM_3_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "33923336ecb00600e5ef8c4a40f241beb7fec13a",
+   "size": 1386245,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "GMM"
+   ],
+   "signed": true
+  },
+  {
    "path": "GMM/scan_EDT_GMM_4_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "141c800128e7e1a2ca103a13db6234ec75e438fe",
@@ -620,6 +710,20 @@
    "signed": true
   },
   {
+   "path": "GMM/scan_EDT_GMM_4_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "e0b878d56b97b3274e7ca2bd9073c180c167f73c",
+   "size": 1150397,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "GMM"
+   ],
+   "signed": true
+  },
+  {
    "path": "GMP/EDT_GLP_3_16_11_22_11_2026.pdf",
    "type": "blob",
    "sha": "1c7905ec15720fa6560a0caac989ff6c5c1e52ae",
@@ -627,6 +731,19 @@
    "week": [
     "2026-11-16",
     "2026-11-22"
+   ],
+   "departments": [
+    "GMP"
+   ]
+  },
+  {
+   "path": "GMP/EDT_GLP_3_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "5a9ddb17ecfe63bbfdb9d09b92a7a87b37e9d42d",
+   "size": 224373,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
    ],
    "departments": [
     "GMP"
@@ -685,6 +802,19 @@
    ]
   },
   {
+   "path": "GMP/EDT_GLP_4_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "f080dea1e68f425c2d7b19571ef491c3cc47e485",
+   "size": 227359,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "GMP"
+   ]
+  },
+  {
    "path": "GMP/EDT_GLP_4_26_10_01_11_2026.pdf",
    "type": "blob",
    "sha": "907353f8cc1f992b8305cbd2717fdf643a4bc12d",
@@ -705,6 +835,19 @@
    "week": [
     "2026-11-16",
     "2026-11-22"
+   ],
+   "departments": [
+    "GMP"
+   ]
+  },
+  {
+   "path": "GMP/EDT_GOP_3_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "5a9ddb17ecfe63bbfdb9d09b92a7a87b37e9d42d",
+   "size": 224373,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
    ],
    "departments": [
     "GMP"
@@ -763,6 +906,19 @@
    ]
   },
   {
+   "path": "GMP/EDT_GOP_4_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "6a9e1c1e11eeba57081e8580673c47bd474065d0",
+   "size": 226127,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "GMP"
+   ]
+  },
+  {
    "path": "GMP/EDT_GOP_4_26_10_01_11_2026.pdf",
    "type": "blob",
    "sha": "0d6cc295199f940b7a263f3f48d5c08b5cb5c36d",
@@ -783,6 +939,19 @@
    "week": [
     "2026-11-16",
     "2026-11-22"
+   ],
+   "departments": [
+    "GMP"
+   ]
+  },
+  {
+   "path": "GMP/EDT_GSE_3_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "5a9ddb17ecfe63bbfdb9d09b92a7a87b37e9d42d",
+   "size": 224373,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
    ],
    "departments": [
     "GMP"
@@ -841,6 +1010,19 @@
    ]
   },
   {
+   "path": "GMP/EDT_GSE_4_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "cf622cf2102254b3bb928712bdc9ff2a6caaefaf",
+   "size": 225645,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "GMP"
+   ]
+  },
+  {
    "path": "GMP/EDT_GSE_4_26_10_01_11_2026.pdf",
    "type": "blob",
    "sha": "17d6b9b8b9a82bee8f395670562a7d7209d155a3",
@@ -858,6 +1040,12 @@
    "type": "blob",
    "sha": "40c6c8955385c5de2728f120f3ed1aec5597b5cf",
    "size": 6073
+  },
+  {
+   "path": "GMP/GMP_GLP-N3_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "02fb84a6bbfcacda79b752da9edf01cec703ff24",
+   "size": 6247
   },
   {
    "path": "GMP/GMP_GLP-N4_02_11_08_11_2026.ics",
@@ -884,6 +1072,12 @@
    "size": 7598
   },
   {
+   "path": "GMP/GMP_GLP-N4_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "294f0f90bb5bce20cbff83940561857d7b7eba17",
+   "size": 6280
+  },
+  {
    "path": "GMP/GMP_GLP-N4_26_10_01_11_2026.ics",
    "type": "blob",
    "sha": "4e04218e50fb22659e1098c13556563f5990452f",
@@ -894,6 +1088,12 @@
    "type": "blob",
    "sha": "11321629883294000beb4170b5ee6bb0e6939b33",
    "size": 6073
+  },
+  {
+   "path": "GMP/GMP_GOP-N3_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "47ce22101835f1cd5e311939a259bdb1c587a4e9",
+   "size": 6247
   },
   {
    "path": "GMP/GMP_GOP-N4_02_11_08_11_2026.ics",
@@ -920,6 +1120,12 @@
    "size": 6326
   },
   {
+   "path": "GMP/GMP_GOP-N4_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "45ad16e07c245fae8cb228da8a6dcbec7a7c1bf1",
+   "size": 6507
+  },
+  {
    "path": "GMP/GMP_GOP-N4_26_10_01_11_2026.ics",
    "type": "blob",
    "sha": "e82b61fad26a188bad5bd48e56376aaa5e3c27db",
@@ -930,6 +1136,12 @@
    "type": "blob",
    "sha": "2991f2cb2f2e84fce87750df5a75430e48ea401a",
    "size": 6073
+  },
+  {
+   "path": "GMP/GMP_GSE-N3_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "7c6ac840917830dc7521e8a91fd33a7045eb30c1",
+   "size": 6247
   },
   {
    "path": "GMP/GMP_GSE-N4_02_11_08_11_2026.ics",
@@ -954,6 +1166,12 @@
    "type": "blob",
    "sha": "e8a9af3725e279a4218224ab1b10a938008a61d3",
    "size": 8379
+  },
+  {
+   "path": "GMP/GMP_GSE-N4_23_11_29_11_2026.ics",
+   "type": "blob",
+   "sha": "711cb0952e3bce447314e402586ec220907d917e",
+   "size": 6604
   },
   {
    "path": "GMP/GMP_GSE-N4_26_10_01_11_2026.ics",
@@ -1069,6 +1287,12 @@
    "departments": [
     "GOHM"
    ]
+  },
+  {
+   "path": "GOHM/EDT_GHOM_4_23_11_28_11_2026.pdf",
+   "type": "blob",
+   "sha": "aa1df9e536c3c7f3b72c20c1aaa1669e1a626dbc",
+   "size": 222032
   },
   {
    "path": "GOHM/EDT_GOHM_4_02_11_08_11_2026.docx",
@@ -1484,6 +1708,20 @@
    "size": 2029
   },
   {
+   "path": "NMSI/scan_EDT_GNM_4_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "df7e2f7f83788f4c491959c240bc27aeb611f89b",
+   "size": 347048,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "NMSI"
+   ],
+   "signed": true
+  },
+  {
    "path": "NMSI/scan_EDT_NMSI_3_16_11_22_11_2026.pdf",
    "type": "blob",
    "sha": "08cffaa571bd3443f03f82c213e6986551a9e725",
@@ -1591,8 +1829,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "9716827149f575140b9f87b8d56e7ee4ede4e2b3",
-   "size": 3722
+   "sha": "b7724abaa04322fab8c19a8129271f38072fcd8d",
+   "size": 3829
   },
   {
    "path": "README.md",
@@ -1885,8 +2123,8 @@
   {
    "path": "SSIP/EDT_SSIP_4_23_11_29_11_2026.pdf",
    "type": "blob",
-   "sha": "490e3de95ecb40d87f2714ad2aa7427afef3557c",
-   "size": 180061,
+   "sha": "d546488b9ab248ae64d4a0426eeab626752f8323",
+   "size": 71240,
    "week": [
     "2026-11-23",
     "2026-11-29"
@@ -1955,8 +2193,8 @@
   {
    "path": "SSIP/SSIP_N4_23_11_29_11_2026.ics",
    "type": "blob",
-   "sha": "0686238e3e9b12e7767c4bc998388718b9938de5",
-   "size": 7159
+   "sha": "ad0ab56b8014f7da26c25685f2c982e290e144b9",
+   "size": 6541
   },
   {
    "path": "SSIP/SSIP_N4_26_10_01_11_2026.ics",
@@ -2254,6 +2492,20 @@
    "size": 7280
   },
   {
+   "path": "STMO/scan_EDT_STMO_1_23_11_29_11_2026.pdf",
+   "type": "blob",
+   "sha": "40086350c3b3da902b16c497a1f9968a02721e9c",
+   "size": 1529724,
+   "week": [
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "departments": [
+    "STMO"
+   ],
+   "signed": true
+  },
+  {
    "path": "STMO/scan_EDT_STMO_2_19_10_25_10_2026.pdf",
    "type": "blob",
    "sha": "501088ad5ec2795e2ccc3bc5d97a13200f34e100",
@@ -2270,8 +2522,8 @@
   {
    "path": "STMO/scan_EDT_STMO_2_23_11_29_11_2026.pdf",
    "type": "blob",
-   "sha": "a35a300b7de400b7058baf34b8eb08c87537a39b",
-   "size": 542831,
+   "sha": "5bf0ee6e67dca854d12b5cc228de280b7da6b256",
+   "size": 317761,
    "week": [
     "2026-11-23",
     "2026-11-29"
@@ -2694,8 +2946,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "a5c3a198f54c5872aac6d154974dd027c980dfe5",
-   "size": 27943
+   "sha": "4d704334f822484fa3a9f65b9659ab6291adb269",
+   "size": 30898
   },
   {
    "path": "tools/annonce_version_web.txt",
