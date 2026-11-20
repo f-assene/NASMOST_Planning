@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T10:59:30Z",
+ "generated": "2026-11-20T11:02:42Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1291,8 +1291,8 @@
   {
    "path": "GOHM/EDT_GHOM_4_23_11_28_11_2026.pdf",
    "type": "blob",
-   "sha": "038685702d47c62ca444b0a01e871acd081ac5e9",
-   "size": 234130
+   "sha": "1842c4d090e7de16c3b5e30a4e6c7f66aa9bc31e",
+   "size": 233816
   },
   {
    "path": "GOHM/EDT_GOHM_4_02_11_08_11_2026.docx",
