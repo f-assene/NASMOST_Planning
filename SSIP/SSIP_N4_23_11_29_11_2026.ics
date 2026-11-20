@@ -6,70 +6,64 @@ X-NASMOST-SOURCE:SSIP/EDT_SSIP_4_23_11_29_11_2026.pdf
 X-NASMOST-EC:classe=SSIP-N4;prevus=10;acheves=3;programmes=5;restants=7
 BEGIN:VEVENT
 UID:ssip-n4-20261123t0700@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261123T070000
 DTEND;TZID=Africa/Douala:20261123T120000
 CATEGORIES:SSIP-N4
-SUMMARY:Machines tournantes et maintenance
-DESCRIPTION:Cours de Machines tournantes et maintenance (SIP-4121)\navec Pr
-  NSOUANDELE Dr ESSOMBO Dr NGWA
-LOCATION:Campus Ebouyè\, Salle 3
-BEGIN:VALARM
-TRIGGER:-PT30M
-ACTION:DISPLAY
-DESCRIPTION:Machines tournantes et maintenance dans 30 min
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Machines tournantes et maintenance dans 15 min
-END:VALARM
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261124t0700@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261124T070000
 DTEND;TZID=Africa/Douala:20261124T120000
 CATEGORIES:SSIP-N4
-SUMMARY:Machines tournantes et maintenance
-DESCRIPTION:Cours de Machines tournantes et maintenance (SIP-4121)\navec Pr
-  NSOUANDELE Dr ESSOMBO Dr NGWA
+SUMMARY:industriels\, gestion de la production et maintenance
+DESCRIPTION:Cours de industriels\, gestion de la production et maintenance 
+ (SIP-4121)\navec Ingénierie des systèmes Dr ATANGANA \; Dr ESSOMBO \; M.
+  EDIE
 LOCATION:Campus Ebouyè\, Salle 3
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:Machines tournantes et maintenance dans 30 min
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 30 m
+ in
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Machines tournantes et maintenance dans 15 min
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 15 m
+ in
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261125t0700@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261125T070000
 DTEND;TZID=Africa/Douala:20261125T120000
 CATEGORIES:SSIP-N4
-SUMMARY:Machines tournantes et maintenance
-DESCRIPTION:Cours de Machines tournantes et maintenance (SIP-4121)\navec Pr
-  NSOUANDELE Dr ESSOMBO Dr NGWA
+SUMMARY:industriels\, gestion de la production et maintenance
+DESCRIPTION:Cours de industriels\, gestion de la production et maintenance 
+ (SIP-4121)\navec Ingénierie des systèmes Dr ATANGANA \; Dr ESSOMBO \; M.
+  EDIE
 LOCATION:Campus Ebouyè\, Salle 3
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:Machines tournantes et maintenance dans 30 min
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 30 m
+ in
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Machines tournantes et maintenance dans 15 min
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 15 m
+ in
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261126t0700@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261126T070000
 DTEND;TZID=Africa/Douala:20261126T120000
 CATEGORIES:SSIP-N4
@@ -78,156 +72,126 @@ DESCRIPTION:Heures creuses
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261127t0700@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261127T070000
 DTEND;TZID=Africa/Douala:20261127T120000
 CATEGORIES:SSIP-N4
-SUMMARY:Systèmes de management HSE et Audit
-DESCRIPTION:Cours de Systèmes de management HSE et Audit (SIP-4152)\navec 
- Ing ONDIGUI MENGUE
+SUMMARY:Évaluation de la sûreté des installations portuaires et des plat
+ eformes pétrolières (EIES & PGES)
+DESCRIPTION:Cours de Évaluation de la sûreté des installations portuaire
+ s et des plateformes pétrolières (EIES & PGES) (SIP-4151)\navec Pr MBOG 
+ MBOG Ing. ONDIGUI MENGUE
 LOCATION:Campus Ebouyè\, Salle 3
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:Systèmes de management HSE et Audit dans 30 min
+DESCRIPTION:Évaluation de la sûreté des installations portuaires et des 
+ plateformes pétrolières (EIES & PGES) dans 30 min
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Systèmes de management HSE et Audit dans 15 min
+DESCRIPTION:Évaluation de la sûreté des installations portuaires et des 
+ plateformes pétrolières (EIES & PGES) dans 15 min
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261128t0700@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261128T070000
 DTEND;TZID=Africa/Douala:20261128T120000
-CATEGORIES:SSIP-N4
-SUMMARY:Systèmes de management HSE et Audit
-DESCRIPTION:Cours de Systèmes de management HSE et Audit (SIP-4152)\navec 
- Ing ONDIGUI MENGUE
-LOCATION:Campus Ebouyè\, Salle 3
-BEGIN:VALARM
-TRIGGER:-PT30M
-ACTION:DISPLAY
-DESCRIPTION:Systèmes de management HSE et Audit dans 30 min
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Systèmes de management HSE et Audit dans 15 min
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ssip-n4-20261129t0700@nasmost-planning
-DTSTAMP:20261117T154231Z
-DTSTART;TZID=Africa/Douala:20261129T070000
-DTEND;TZID=Africa/Douala:20261129T120000
 CATEGORIES:SSIP-N4
 SUMMARY:ETUDES
 DESCRIPTION:Heures creuses
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261123t1300@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261123T130000
 DTEND;TZID=Africa/Douala:20261123T170000
 CATEGORIES:SSIP-N4
-SUMMARY:Machines tournantes et maintenance
-DESCRIPTION:Cours de Machines tournantes et maintenance (SIP-4121)\navec Pr
-  NSOUANDELE Dr ESSOMBO Dr NGWA
-LOCATION:Campus Ebouyè\, Salle 3
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Machines tournantes et maintenance dans 15 min
-END:VALARM
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261124t1300@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261124T130000
 DTEND;TZID=Africa/Douala:20261124T170000
 CATEGORIES:SSIP-N4
-SUMMARY:Machines tournantes et maintenance
-DESCRIPTION:Cours de Machines tournantes et maintenance (SIP-4121)\navec Pr
-  NSOUANDELE Dr ESSOMBO Dr NGWA
+SUMMARY:industriels\, gestion de la production et maintenance
+DESCRIPTION:Cours de industriels\, gestion de la production et maintenance 
+ (SIP-4121)\navec Ingénierie des systèmes Dr ATANGANA \; Dr ESSOMBO \; M.
+  EDIE
 LOCATION:Campus Ebouyè\, Salle 3
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Machines tournantes et maintenance dans 15 min
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 15 m
+ in
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261125t1300@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261125T130000
 DTEND;TZID=Africa/Douala:20261125T170000
 CATEGORIES:SSIP-N4
-SUMMARY:Machines tournantes et maintenance
-DESCRIPTION:Cours de Machines tournantes et maintenance (SIP-4121)\navec Pr
-  NSOUANDELE Dr ESSOMBO Dr NGWA
+SUMMARY:industriels\, gestion de la production et maintenance
+DESCRIPTION:Cours de industriels\, gestion de la production et maintenance 
+ (SIP-4121)\navec Ingénierie des systèmes Dr ATANGANA \; Dr ESSOMBO \; M.
+  EDIE
 LOCATION:Campus Ebouyè\, Salle 3
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Machines tournantes et maintenance dans 15 min
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 15 m
+ in
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261126t1300@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261126T130000
 DTEND;TZID=Africa/Douala:20261126T170000
 CATEGORIES:SSIP-N4
-SUMMARY:Systèmes de management HSE et Audit
-DESCRIPTION:Cours de Systèmes de management HSE et Audit (SIP-4152)\navec 
- Ing ONDIGUI MENGUE
+SUMMARY:Évaluation de la sûreté des installations portuaires et des plat
+ eformes pétrolières (EIES & PGES)
+DESCRIPTION:Cours de Évaluation de la sûreté des installations portuaire
+ s et des plateformes pétrolières (EIES & PGES) (SIP-4151)\navec Pr MBOG 
+ MBOG Ing. ONDIGUI MENGUE
 LOCATION:Campus Ebouyè\, Salle 3
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Systèmes de management HSE et Audit dans 15 min
+DESCRIPTION:Évaluation de la sûreté des installations portuaires et des 
+ plateformes pétrolières (EIES & PGES) dans 15 min
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261127t1300@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261127T130000
 DTEND;TZID=Africa/Douala:20261127T170000
 CATEGORIES:SSIP-N4
-SUMMARY:Systèmes de management HSE et Audit
-DESCRIPTION:Cours de Systèmes de management HSE et Audit (SIP-4152)\navec 
- Ing ONDIGUI MENGUE
+SUMMARY:Évaluation de la sûreté des installations portuaires et des plat
+ eformes pétrolières (EIES & PGES)
+DESCRIPTION:Cours de Évaluation de la sûreté des installations portuaire
+ s et des plateformes pétrolières (EIES & PGES) (SIP-4151)\navec Pr MBOG 
+ MBOG Ing. ONDIGUI MENGUE
 LOCATION:Campus Ebouyè\, Salle 3
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Systèmes de management HSE et Audit dans 15 min
+DESCRIPTION:Évaluation de la sûreté des installations portuaires et des 
+ plateformes pétrolières (EIES & PGES) dans 15 min
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ssip-n4-20261128t1300@nasmost-planning
-DTSTAMP:20261117T154231Z
+DTSTAMP:20261120T105435Z
 DTSTART;TZID=Africa/Douala:20261128T130000
 DTEND;TZID=Africa/Douala:20261128T170000
-CATEGORIES:SSIP-N4
-SUMMARY:Systèmes de management HSE et Audit
-DESCRIPTION:Cours de Systèmes de management HSE et Audit (SIP-4152)\navec 
- Ing ONDIGUI MENGUE
-LOCATION:Campus Ebouyè\, Salle 3
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Systèmes de management HSE et Audit dans 15 min
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ssip-n4-20261129t1300@nasmost-planning
-DTSTAMP:20261117T154231Z
-DTSTART;TZID=Africa/Douala:20261129T130000
-DTEND;TZID=Africa/Douala:20261129T170000
 CATEGORIES:SSIP-N4
 SUMMARY:ETUDES
 DESCRIPTION:Heures creuses
