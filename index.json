@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T11:45:54Z",
+ "generated": "2026-11-20T11:52:45Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1272,8 +1272,15 @@
   {
    "path": "GOHM/EDT_GHOM_4_16_11_21_11_2026.pdf",
    "type": "blob",
-   "sha": "5bae9e5c9f90f22d916dec68e3fc2260cbc18cfc",
-   "size": 216293
+   "sha": "af3f53eb0a49c9f2dd91b6b7b29583889dd14df5",
+   "size": 216408,
+   "week": [
+    "2026-11-16",
+    "2026-11-21"
+   ],
+   "departments": [
+    "GOHM"
+   ]
   },
   {
    "path": "GOHM/EDT_GHOM_4_19_10_25_10_2026.docx",
@@ -1842,8 +1849,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "6f1e7f306379defa17a490df019d058593b35f01",
-   "size": 3723
+   "sha": "98228bc6fea036d58f49c089fecfeed9d4c10b15",
+   "size": 3773
   },
   {
    "path": "README.md",
@@ -2978,8 +2985,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "2135b475cae33c84f169d36d4400cbec6af8c076",
-   "size": 31318
+   "sha": "a0e6d2d2bc4bd96b8558b45ee669fe21383c49c3",
+   "size": 31528
   },
   {
    "path": "tools/annonce_version_web.txt",
