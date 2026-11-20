@@ -792,6 +792,15 @@
   "ics": "SGMP/SGMP_N2_19_10_25_10_2026.ics"
  },
  {
+  "source": "SGMP/EDT_SGMP_2_23_11_29_11_2026.pdf",
+  "scan": false,
+  "department": "SGMP",
+  "level": "N2",
+  "start": "2026-11-23",
+  "end": "2026-11-29",
+  "ics": "SGMP/SGMP_N2_23_11_29_11_2026.ics"
+ },
+ {
   "source": "SGMP/EDT_SGMP_2_26_10_01_11_2026.pdf",
   "scan": false,
   "department": "SGMP",
