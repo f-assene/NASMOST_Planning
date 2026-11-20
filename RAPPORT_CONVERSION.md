@@ -2,12 +2,11 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**103 emploi(s) du temps publié(s), 32 version(s) signée(s), 2 erreur(s).**
+**104 emploi(s) du temps publié(s), 32 version(s) signée(s), 1 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
 - `GOHM/EDT_GHOM_4_16_11_21_11_2026.pdf` : niveau introuvable (ex. « NIVEAU : SGMP 1 » dans l'en-tête)
-- `GOHM/EDT_GHOM_4_23_11_28_11_2026.pdf` : niveau introuvable (ex. « NIVEAU : SGMP 1 » dans l'en-tête)
 
 ## Avertissements
 

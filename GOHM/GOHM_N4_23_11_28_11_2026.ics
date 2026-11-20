@@ -1,0 +1,236 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:GOHM/EDT_GHOM_4_23_11_28_11_2026.pdf
+BEGIN:VEVENT
+UID:gohm-n4-20261123t0730@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261123T073000
+DTEND;TZID=Africa/Douala:20261123T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Pollution\, écotoxicologie et gestion des zones côtières
+DESCRIPTION:Cours de Pollution\, écotoxicologie et gestion des zones côti
+ ères (OHM-4112)\navec Dr. MOUSTAPHA\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TP
+ E : 6 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Pollution\, écotoxicologie et gestion des zones côtières dan
+ s 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Pollution\, écotoxicologie et gestion des zones côtières dan
+ s 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261124t0730@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261124T073000
+DTEND;TZID=Africa/Douala:20261124T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Pollution\, écotoxicologie et gestion des zones côtières
+DESCRIPTION:Cours de Pollution\, écotoxicologie et gestion des zones côti
+ ères (OHM-4112)\navec Dr. MOUSTAPHA\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TP
+ E : 6 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Pollution\, écotoxicologie et gestion des zones côtières dan
+ s 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Pollution\, écotoxicologie et gestion des zones côtières dan
+ s 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261125t0730@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261125T073000
+DTEND;TZID=Africa/Douala:20261125T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Présentations des rapports de stage
+DESCRIPTION:Cours de Présentations des rapports de stage
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Présentations des rapports de stage dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Présentations des rapports de stage dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261126t0730@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261126T073000
+DTEND;TZID=Africa/Douala:20261126T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261127t0730@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261127T073000
+DTEND;TZID=Africa/Douala:20261127T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261128t0730@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261128T073000
+DTEND;TZID=Africa/Douala:20261128T123000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261123t1300@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261123T130000
+DTEND;TZID=Africa/Douala:20261123T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Pollution\, écotoxicologie et gestion des zones côtières
+DESCRIPTION:Cours de Pollution\, écotoxicologie et gestion des zones côti
+ ères (OHM-4112)\navec Dr. MOUSTAPHA\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TP
+ E : 6 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Pollution\, écotoxicologie et gestion des zones côtières dan
+ s 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261124t1300@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261124T130000
+DTEND;TZID=Africa/Douala:20261124T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Pollution\, écotoxicologie et gestion des zones côtières
+DESCRIPTION:Cours de Pollution\, écotoxicologie et gestion des zones côti
+ ères (OHM-4112)\navec Dr. MOUSTAPHA\nCM : 12 h\, TD : 6 h\, TP : 6 h\, TP
+ E : 6 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Pollution\, écotoxicologie et gestion des zones côtières dan
+ s 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261125t1300@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261125T130000
+DTEND;TZID=Africa/Douala:20261125T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Présentations des rapports de stage
+DESCRIPTION:Cours de Présentations des rapports de stage
+LOCATION:Campus Ebouyè\, Salle 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Présentations des rapports de stage dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261126t1300@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261126T130000
+DTEND;TZID=Africa/Douala:20261126T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261127t1300@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261127T130000
+DTEND;TZID=Africa/Douala:20261127T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gohm-n4-20261128t1300@nasmost-planning
+DTSTAMP:20261120T113844Z
+DTSTART;TZID=Africa/Douala:20261128T130000
+DTEND;TZID=Africa/Douala:20261128T170000
+CATEGORIES:GOHM-N4
+SUMMARY:Dynamique des estuaires et biogéochimie
+DESCRIPTION:Cours de Dynamique des estuaires et biogéochimie (OHM-4153)\na
+ vec Pr. MAMA\nCM : 15 h\, TD : 15 h\, TP : 6 h\, TPE : 9 h
+LOCATION:Campus Ebouyè\, Salle : 4
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Dynamique des estuaires et biogéochimie dans 15 min
+END:VALARM
+END:VEVENT
+END:VCALENDAR
