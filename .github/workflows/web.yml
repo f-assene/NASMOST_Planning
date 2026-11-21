@@ -1,5 +1,7 @@
-# Version web de NASMOST Planning (dossier web/), publiée par GitHub Pages :
-#   https://f-assene.github.io/NASMOST_Planning/
+# Version web de NASMOST Planning (dossier web/), publiée sur deux hébergeurs :
+#   - GitHub Pages  : https://f-assene.github.io/NASMOST_Planning/
+#   - Cloudflare Pages : https://nasmost-planning.pages.dev/  (hébergeur non bloqué dans la région)
+# Le même dossier web/ (avec les flux et les statistiques déjà générés) est envoyé aux deux.
 # Mise en ligne le 20 octobre 2026 à 12:00, heure de Kribi (11:00 UTC). Avant cette heure, le site
 # est seulement construit et vérifié, jamais publié. À la mise en ligne, une annonce est ajoutée
 # dans announcements/ (une seule fois) pour prévenir les utilisateurs de l'application.
@@ -85,6 +87,17 @@ jobs:
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
         run: |
           python tools/build_web_stats.py web/feeds || echo "::warning::Statistiques indisponibles ; la page d'administration l'indique."
+
+      # Miroir Cloudflare Pages : même dossier web/, sur un hébergeur non bloqué dans la région.
+      # Tant que les secrets CLOUDFLARE_* ne sont pas définis, l'étape échoue sans bloquer GitHub Pages.
+      - name: Miroir Cloudflare Pages
+        if: steps.gate.outputs.live == 'true'
+        continue-on-error: true
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy web --project-name=nasmost-planning --branch=main --commit-dirty=true
 
       - uses: actions/configure-pages@v5
         if: steps.gate.outputs.live == 'true'
