@@ -1,0 +1,15 @@
+NASMOST Planning : nouvelle adresse du site web
+
+Le site web a une nouvelle adresse, qui s'ouvre partout — y compris là où l'ancienne ne se chargeait pas :
+https://nasmost-planning.pages.dev/
+
+Vous y retrouvez tout : emplois du temps, annonces, actualités, opportunités et « Mon parcours ».
+
+Astuce : ajoutez-le à votre écran d'accueil (menu ⋮ du site → « Ajouter à l'écran d'accueil » ; sur iPhone : Partager → « Sur l'écran d'accueil ») — il s'ouvre alors comme une application.
+
+L'application Android continue de fonctionner normalement ; les alarmes avant les séances de cours restent dans l'application.
+
+NASMOST Planning's website has a new address that opens everywhere: https://nasmost-planning.pages.dev/
+
+Départements: TOUS
+Expire: 2026-12-31
