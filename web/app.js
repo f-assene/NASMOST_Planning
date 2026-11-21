@@ -930,7 +930,7 @@ async function start() {
   applyBarColor();
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => { /* site utilisable sans */ });
   setTimeout(showInstallBanner, 4000); // après l'écran d'accueil
-  if (GOATCOUNTER_CODE && location.hostname.endsWith("github.io")) {
+  if (GOATCOUNTER_CODE && ["github.io", "pages.dev"].some((h) => location.hostname.endsWith(h))) {
     const s = document.createElement("script");
     s.async = true; s.src = "https://gc.zgo.at/count.js";
     s.dataset.goatcounter = `https://${GOATCOUNTER_CODE}.goatcounter.com/count`;
