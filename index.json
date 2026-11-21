@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T18:12:38Z",
+ "generated": "2026-11-21T18:16:15Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -2679,8 +2679,8 @@
   {
    "path": "docs/POLITIQUE_DE_CONFIDENTIALITE.md",
    "type": "blob",
-   "sha": "c9d3f25b03e0c037f7fbdbb514b12da5c1890aa4",
-   "size": 4593
+   "sha": "9129c8a7a8c30181b64e1a5c6eb802d20ff48646",
+   "size": 4686
   },
   {
    "path": "docs/images/menu.png",
