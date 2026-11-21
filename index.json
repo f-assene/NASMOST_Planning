@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T11:52:45Z",
+ "generated": "2026-11-21T18:12:38Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -2597,6 +2597,12 @@
    "type": "blob",
    "sha": "1ea12807bfb67292152a9cb58dd10761cc653846",
    "size": 786
+  },
+  {
+   "path": "announcements/2026-11-21_NASMOST_Planning_nouvelle_adresse_web.txt",
+   "type": "blob",
+   "sha": "0b05dd5518bf0af2a48cb1005bf503c6338c6857",
+   "size": 780
   },
   {
    "path": "announcements/Communique_inscription_administrative_2026.pdf",
