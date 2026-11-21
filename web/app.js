@@ -10,7 +10,7 @@
 
 const REPO = "f-assene/NASMOST_Planning";
 const BRANCH = "main";
-const VERSION = "1.3.2";
+const VERSION = "1.3.3.1";
 const APK_URL = `https://github.com/${REPO}/releases/latest/download/NASMOSTPlanning.apk`;
 // Statistiques de fréquentation (GoatCounter : sans cookies ni données personnelles), comptées
 // uniquement sur le site publié. Le tableau de bord est la page #/admin.
