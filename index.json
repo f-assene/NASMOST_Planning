@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T18:25:11Z",
+ "generated": "2026-11-25T18:29:35Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -387,6 +387,19 @@
    ]
   },
   {
+   "path": "GEM/EDT_GEM_3_30_11_05_12_2026.pdf",
+   "type": "blob",
+   "sha": "09ed3ecf04588f79322b4a75a0e021ffb2e40a96",
+   "size": 521988,
+   "week": [
+    "2026-11-30",
+    "2026-12-05"
+   ],
+   "departments": [
+    "GEM"
+   ]
+  },
+  {
    "path": "GEM/EDT_GEM_4_02_11_08_11_2026.pdf",
    "type": "blob",
    "sha": "17e56f1d78d2a16f736be6f5d2d6cd76a1ade222",
@@ -452,6 +465,19 @@
    ]
   },
   {
+   "path": "GEM/EDT_GEM_4_30_11_05_12_2026.pdf",
+   "type": "blob",
+   "sha": "f8271513cb33446984a713ad06a99640a8618704",
+   "size": 521556,
+   "week": [
+    "2026-11-30",
+    "2026-12-05"
+   ],
+   "departments": [
+    "GEM"
+   ]
+  },
+  {
    "path": "GEM/GEM_N3_16_11_22_11_2026.ics",
    "type": "blob",
    "sha": "6c6e73bf3e1881e6cf3ae1262c4e3b1ca5bf1236",
@@ -461,6 +487,12 @@
    "path": "GEM/GEM_N3_23_11_29_11_2026.ics",
    "type": "blob",
    "sha": "7a9e6ca4bf74cbe40a778e64cfb298d0c126edb3",
+   "size": 10481
+  },
+  {
+   "path": "GEM/GEM_N3_30_11_05_12_2026.ics",
+   "type": "blob",
+   "sha": "18a86d76624809ddb682109596935955301c115f",
    "size": 10481
   },
   {
@@ -492,6 +524,12 @@
    "type": "blob",
    "sha": "fa80aaca8ddf9ccab00ca9c1f5e00d3248a6b160",
    "size": 11396
+  },
+  {
+   "path": "GEM/GEM_N4_30_11_05_12_2026.ics",
+   "type": "blob",
+   "sha": "1a8af9349aa4fe701474a852244c77078df2a9c8",
+   "size": 9361
   },
   {
    "path": "GEM/README.md",
@@ -1738,8 +1776,8 @@
   {
    "path": "NMSI/EDT_GNM_4_30_11_06_12_2026.pdf",
    "type": "blob",
-   "sha": "0f625c6055f29eac7ad798844cca7398042859e4",
-   "size": 123138,
+   "sha": "97404a2843ea7f5d4f1e9730616d5ef29a3d0df1",
+   "size": 133096,
    "week": [
     "2026-11-30",
     "2026-12-06"
@@ -2089,7 +2127,7 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "2d9f8cc7e26d16b1ac145ebde9714143af0fc874",
+   "sha": "6a774c81b1cf43ddf8ccaf308d4d216fe32f9269",
    "size": 3773
   },
   {
@@ -3326,8 +3364,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "c267258aeba098dc1a9a8e267161691fa5387710",
-   "size": 35095
+   "sha": "c3012439de07a59c0bb491c9fb14ab7013f06075",
+   "size": 35505
   },
   {
    "path": "tools/annonce_version_web.txt",
