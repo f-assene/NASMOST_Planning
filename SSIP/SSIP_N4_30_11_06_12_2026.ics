@@ -1,0 +1,255 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:SSIP/EDT_SSIP_4_30_11_06_12_2026.pdf
+X-NASMOST-EC:classe=SSIP-N4;prevus=10;acheves=3;programmes=5;restants=8
+BEGIN:VEVENT
+UID:ssip-n4-20261130t0700@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261130T070000
+DTEND;TZID=Africa/Douala:20261130T120000
+CATEGORIES:SSIP-N4
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261201t0700@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261201T070000
+DTEND;TZID=Africa/Douala:20261201T120000
+CATEGORIES:SSIP-N4
+SUMMARY:industriels\, gestion de la production et maintenance
+DESCRIPTION:Cours de industriels\, gestion de la production et maintenance 
+ (SIP-4121)\navec Ingénierie des systèmes Dr ATANGANA/ Dr ESSOMBO/ M. EDI
+ E
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 30 m
+ in
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261202t0700@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261202T070000
+DTEND;TZID=Africa/Douala:20261202T120000
+CATEGORIES:SSIP-N4
+SUMMARY:industriels\, gestion de la production et maintenance
+DESCRIPTION:Cours de industriels\, gestion de la production et maintenance 
+ (SIP-4121)\navec Ingénierie des systèmes Dr ATANGANA/ Dr ESSOMBO/ M. EDI
+ E
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 30 m
+ in
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261203t0700@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261203T070000
+DTEND;TZID=Africa/Douala:20261203T120000
+CATEGORIES:SSIP-N4
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261204t0700@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261204T070000
+DTEND;TZID=Africa/Douala:20261204T120000
+CATEGORIES:SSIP-N4
+SUMMARY:Évaluation de la sûreté des installations portuaires et des plat
+ eformes pétrolières (EIES & PGES)
+DESCRIPTION:Cours de Évaluation de la sûreté des installations portuaire
+ s et des plateformes pétrolières (EIES & PGES) (SIP-4151)\navec Pr MBOG 
+ MBOG Ing. ONDIGUI MENGUE
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Évaluation de la sûreté des installations portuaires et des 
+ plateformes pétrolières (EIES & PGES) dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Évaluation de la sûreté des installations portuaires et des 
+ plateformes pétrolières (EIES & PGES) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261205t0700@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261205T070000
+DTEND;TZID=Africa/Douala:20261205T120000
+CATEGORIES:SSIP-N4
+SUMMARY:Contrôles Non Destructifs (CND)
+DESCRIPTION:Cours de Contrôles Non Destructifs (CND) (SIP-4142)\navec Ing 
+ MENDOUGA
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Contrôles Non Destructifs (CND) dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Contrôles Non Destructifs (CND) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261206t0700@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261206T070000
+DTEND;TZID=Africa/Douala:20261206T120000
+CATEGORIES:SSIP-N4
+SUMMARY:Contrôles Non Destructifs (CND)
+DESCRIPTION:Cours de Contrôles Non Destructifs (CND) (SIP-4142)\navec Ing 
+ MENDOUGA
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Contrôles Non Destructifs (CND) dans 30 min
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Contrôles Non Destructifs (CND) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261130t1300@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261130T130000
+DTEND;TZID=Africa/Douala:20261130T170000
+CATEGORIES:SSIP-N4
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261201t1300@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261201T130000
+DTEND;TZID=Africa/Douala:20261201T170000
+CATEGORIES:SSIP-N4
+SUMMARY:industriels\, gestion de la production et maintenance
+DESCRIPTION:Cours de industriels\, gestion de la production et maintenance 
+ (SIP-4121)\navec Ingénierie des systèmes Dr ATANGANA/ Dr ESSOMBO/ M. EDI
+ E
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261202t1300@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261202T130000
+DTEND;TZID=Africa/Douala:20261202T170000
+CATEGORIES:SSIP-N4
+SUMMARY:industriels\, gestion de la production et maintenance
+DESCRIPTION:Cours de industriels\, gestion de la production et maintenance 
+ (SIP-4121)\navec Ingénierie des systèmes Dr ATANGANA/ Dr ESSOMBO/ M. EDI
+ E
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:industriels\, gestion de la production et maintenance dans 15 m
+ in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261203t1300@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261203T130000
+DTEND;TZID=Africa/Douala:20261203T170000
+CATEGORIES:SSIP-N4
+SUMMARY:Évaluation de la sûreté des installations portuaires et des plat
+ eformes pétrolières (EIES & PGES)
+DESCRIPTION:Cours de Évaluation de la sûreté des installations portuaire
+ s et des plateformes pétrolières (EIES & PGES) (SIP-4151)\navec Pr MBOG 
+ MBOG Ing. ONDIGUI MENGUE
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Évaluation de la sûreté des installations portuaires et des 
+ plateformes pétrolières (EIES & PGES) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261204t1300@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261204T130000
+DTEND;TZID=Africa/Douala:20261204T170000
+CATEGORIES:SSIP-N4
+SUMMARY:Évaluation de la sûreté des installations portuaires et des plat
+ eformes pétrolières (EIES & PGES)
+DESCRIPTION:Cours de Évaluation de la sûreté des installations portuaire
+ s et des plateformes pétrolières (EIES & PGES) (SIP-4151)\navec Pr MBOG 
+ MBOG Ing. ONDIGUI MENGUE
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Évaluation de la sûreté des installations portuaires et des 
+ plateformes pétrolières (EIES & PGES) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261205t1300@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261205T130000
+DTEND;TZID=Africa/Douala:20261205T170000
+CATEGORIES:SSIP-N4
+SUMMARY:Contrôles Non Destructifs (CND)
+DESCRIPTION:Cours de Contrôles Non Destructifs (CND) (SIP-4142)\navec Ing 
+ MENDOUGA
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Contrôles Non Destructifs (CND) dans 15 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ssip-n4-20261206t1300@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261206T130000
+DTEND;TZID=Africa/Douala:20261206T170000
+CATEGORIES:SSIP-N4
+SUMMARY:Contrôles Non Destructifs (CND)
+DESCRIPTION:Cours de Contrôles Non Destructifs (CND) (SIP-4142)\navec Ing 
+ MENDOUGA
+LOCATION:Campus Ebouyè\, Salle 3
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Contrôles Non Destructifs (CND) dans 15 min
+END:VALARM
+END:VEVENT
+END:VCALENDAR
