@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T18:22:32Z",
+ "generated": "2026-11-25T18:25:11Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -1736,19 +1736,6 @@
    ]
   },
   {
-   "path": "NMSI/EDT_GNM_4_30_11_06_12_2026.docx",
-   "type": "blob",
-   "sha": "86d7f1fcf3e950d3f52edc38df6d7fa834efba34",
-   "size": 43159,
-   "week": [
-    "2026-11-30",
-    "2026-12-06"
-   ],
-   "departments": [
-    "NMSI"
-   ]
-  },
-  {
    "path": "NMSI/EDT_GNM_4_30_11_06_12_2026.pdf",
    "type": "blob",
    "sha": "0f625c6055f29eac7ad798844cca7398042859e4",
@@ -1855,8 +1842,8 @@
   {
    "path": "NMSI/NMSI_N4_30_11_06_12_2026.ics",
    "type": "blob",
-   "sha": "ad6efa355f8ac5e658288c5ceafad5babe3f91ed",
-   "size": 5472
+   "sha": "108422ff6aa20f6505eb881e4e810061c139fcf7",
+   "size": 5753
   },
   {
    "path": "NMSI/Projet d'Emp. du Temps 3GNM - 08-13_Juin. 26-6.docx",
@@ -3339,8 +3326,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "bd952d0c3dd699bef3a70af801fd77bf4f19b069",
-   "size": 35305
+   "sha": "c267258aeba098dc1a9a8e267161691fa5387710",
+   "size": 35095
   },
   {
    "path": "tools/annonce_version_web.txt",
