@@ -324,6 +324,15 @@
   "ics": "GMP/GMP_GLP-N3_23_11_29_11_2026.ics"
  },
  {
+  "source": "GMP/EDT_GLP_3_30_11_06_12_2026.pdf",
+  "scan": false,
+  "department": "GMP",
+  "level": "GLP-N3",
+  "start": "2026-11-30",
+  "end": "2026-12-06",
+  "ics": "GMP/GMP_GLP-N3_30_11_06_12_2026.ics"
+ },
+ {
   "source": "GMP/EDT_GLP_4_02_11_08_11_2026.pdf",
   "scan": false,
   "department": "GMP",
@@ -378,6 +387,15 @@
   "ics": "GMP/GMP_GLP-N4_26_10_01_11_2026.ics"
  },
  {
+  "source": "GMP/EDT_GLP_4_30_11_06_12_2026.pdf",
+  "scan": false,
+  "department": "GMP",
+  "level": "GLP-N4",
+  "start": "2026-11-30",
+  "end": "2026-12-06",
+  "ics": "GMP/GMP_GLP-N4_30_11_06_12_2026.ics"
+ },
+ {
   "source": "GMP/EDT_GOP_3_16_11_22_11_2026.pdf",
   "scan": false,
   "department": "GMP",
@@ -394,6 +412,15 @@
   "start": "2026-11-23",
   "end": "2026-11-29",
   "ics": "GMP/GMP_GOP-N3_23_11_29_11_2026.ics"
+ },
+ {
+  "source": "GMP/EDT_GOP_3_30_11_06_12_2026.pdf",
+  "scan": false,
+  "department": "GMP",
+  "level": "GOP-N3",
+  "start": "2026-11-30",
+  "end": "2026-12-06",
+  "ics": "GMP/GMP_GOP-N3_30_11_06_12_2026.ics"
  },
  {
   "source": "GMP/EDT_GOP_4_02_11_08_11_2026.pdf",
@@ -450,6 +477,15 @@
   "ics": "GMP/GMP_GOP-N4_26_10_01_11_2026.ics"
  },
  {
+  "source": "GMP/EDT_GOP_4_30_11_06_12_2026.pdf",
+  "scan": false,
+  "department": "GMP",
+  "level": "GOP-N4",
+  "start": "2026-11-30",
+  "end": "2026-12-06",
+  "ics": "GMP/GMP_GOP-N4_30_11_06_12_2026.ics"
+ },
+ {
   "source": "GMP/EDT_GSE_3_16_11_22_11_2026.pdf",
   "scan": false,
   "department": "GMP",
@@ -466,6 +502,15 @@
   "start": "2026-11-23",
   "end": "2026-11-29",
   "ics": "GMP/GMP_GSE-N3_23_11_29_11_2026.ics"
+ },
+ {
+  "source": "GMP/EDT_GSE_3_30_11_06_12_2026.pdf",
+  "scan": false,
+  "department": "GMP",
+  "level": "GSE-N3",
+  "start": "2026-11-30",
+  "end": "2026-12-06",
+  "ics": "GMP/GMP_GSE-N3_30_11_06_12_2026.ics"
  },
  {
   "source": "GMP/EDT_GSE_4_02_11_08_11_2026.pdf",
@@ -520,6 +565,15 @@
   "start": "2026-10-26",
   "end": "2026-11-01",
   "ics": "GMP/GMP_GSE-N4_26_10_01_11_2026.ics"
+ },
+ {
+  "source": "GMP/EDT_GSE_4_30_11_06_12_2026.pdf",
+  "scan": false,
+  "department": "GMP",
+  "level": "GSE-N4",
+  "start": "2026-11-30",
+  "end": "2026-12-06",
+  "ics": "GMP/GMP_GSE-N4_30_11_06_12_2026.ics"
  },
  {
   "source": "GOHM/EDT_GHOM_4_16_11_21_11_2026.pdf",
@@ -667,6 +721,15 @@
  },
  {
   "source": "NMSI/EDT_GNM_4_30_11_06_12_2026.docx",
+  "scan": false,
+  "department": "NMSI",
+  "level": "N4",
+  "start": "2026-11-30",
+  "end": "2026-12-06",
+  "ics": "NMSI/NMSI_N4_30_11_06_12_2026.ics"
+ },
+ {
+  "source": "NMSI/EDT_GNM_4_30_11_06_12_2026.pdf",
   "scan": false,
   "department": "NMSI",
   "level": "N4",
