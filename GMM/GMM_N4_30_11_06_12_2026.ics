@@ -1,0 +1,242 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ENSTMO NASMOST Planning//timetable_to_ics//FR
+X-NASMOST-GENERATED:timetable_to_ics
+X-NASMOST-SOURCE:GMM/EDT_GNM_4_30_11_06_12_2026.pdf
+BEGIN:VEVENT
+UID:gmm-n4-20261130t0730@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261130T073000
+DTEND;TZID=Africa/Douala:20261130T123000
+CATEGORIES:GMM-N4
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261201t0730@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261201T073000
+DTEND;TZID=Africa/Douala:20261201T123000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 30 mi
+ n
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261202t0730@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261202T073000
+DTEND;TZID=Africa/Douala:20261202T123000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 30 mi
+ n
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261203t0730@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261203T073000
+DTEND;TZID=Africa/Douala:20261203T123000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 30 mi
+ n
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261204t0730@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261204T073000
+DTEND;TZID=Africa/Douala:20261204T123000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 30 mi
+ n
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261205t0730@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261205T073000
+DTEND;TZID=Africa/Douala:20261205T123000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 30 mi
+ n
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261206t0730@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261206T073000
+DTEND;TZID=Africa/Douala:20261206T123000
+CATEGORIES:GMM-N4
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261130t1330@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261130T133000
+DTEND;TZID=Africa/Douala:20261130T173000
+CATEGORIES:GMM-N4
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261201t1330@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261201T133000
+DTEND;TZID=Africa/Douala:20261201T173000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261202t1330@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261202T133000
+DTEND;TZID=Africa/Douala:20261202T173000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261203t1330@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261203T133000
+DTEND;TZID=Africa/Douala:20261203T173000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261204t1330@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261204T133000
+DTEND;TZID=Africa/Douala:20261204T173000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261205t1330@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261205T133000
+DTEND;TZID=Africa/Douala:20261205T173000
+CATEGORIES:GMM-N4
+SUMMARY:Sécurité des navires et lutte contre les incendies
+DESCRIPTION:Cours de Sécurité des navires et lutte contre les incendies (
+ GMM-4141)\navec Dr NGWA / Dr ZOBO
+LOCATION:Campus Ebouyè\, Salle 8
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Sécurité des navires et lutte contre les incendies dans 15 mi
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gmm-n4-20261206t1330@nasmost-planning
+DTSTAMP:20261125T144714Z
+DTSTART;TZID=Africa/Douala:20261206T133000
+DTEND;TZID=Africa/Douala:20261206T173000
+CATEGORIES:GMM-N4
+SUMMARY:ETUDES
+DESCRIPTION:Heures creuses
+END:VEVENT
+END:VCALENDAR
