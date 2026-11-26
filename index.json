@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T18:29:35Z",
+ "generated": "2026-11-26T06:10:10Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -2042,6 +2042,19 @@
    "signed": true
   },
   {
+   "path": "PEM/EDT_PEM_3_30_11_05_12_2026.pdf",
+   "type": "blob",
+   "sha": "53243264d75e72179ee6d65ccdd9555d924dab97",
+   "size": 284068,
+   "week": [
+    "2026-11-30",
+    "2026-12-06"
+   ],
+   "departments": [
+    "PEM"
+   ]
+  },
+  {
    "path": "PEM/EDT_PEM_4_02_11_08_11_2026.pdf",
    "type": "blob",
    "sha": "eff51c9e3927d6fa4580f858f8acff664a33c356",
@@ -2081,6 +2094,25 @@
    ]
   },
   {
+   "path": "PEM/EDT_PEM_4_30_11_05_12_2026.pdf",
+   "type": "blob",
+   "sha": "c9d5f29119344e17889eea9a8d7e1f5198e481b4",
+   "size": 284631,
+   "week": [
+    "2026-11-30",
+    "2026-12-06"
+   ],
+   "departments": [
+    "PEM"
+   ]
+  },
+  {
+   "path": "PEM/PEM_N3_30_11_06_12_2026.ics",
+   "type": "blob",
+   "sha": "f871b0c6dac274137d551496b3312c9f26ac826a",
+   "size": 7502
+  },
+  {
    "path": "PEM/PEM_N4_02_11_08_11_2026.ics",
    "type": "blob",
    "sha": "9dadefe008bc278fc003b8fbd81b0b07d50de9be",
@@ -2097,6 +2129,12 @@
    "type": "blob",
    "sha": "76a197a0eb3d9dd8d9253f2c11f0e708bc20ed1d",
    "size": 8308
+  },
+  {
+   "path": "PEM/PEM_N4_30_11_06_12_2026.ics",
+   "type": "blob",
+   "sha": "f6d73b544c01076b76500a1b67b5da82095cc276",
+   "size": 7470
   },
   {
    "path": "PEM/README.md",
@@ -2127,8 +2165,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "6a774c81b1cf43ddf8ccaf308d4d216fe32f9269",
-   "size": 3773
+   "sha": "dbdbcb07e2540e11712e5fdd65a70e40bf5eddf8",
+   "size": 4079
   },
   {
    "path": "README.md",
@@ -3364,8 +3402,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "c3012439de07a59c0bb491c9fb14ab7013f06075",
-   "size": 35505
+   "sha": "372f7a0a0b1b06984f91765e90fccb82640e2365",
+   "size": 35915
   },
   {
    "path": "tools/annonce_version_web.txt",
