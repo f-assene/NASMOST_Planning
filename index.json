@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T08:15:12Z",
+ "generated": "2026-11-27T16:16:31Z",
  "tree": [
   {
    "path": ".gitignore",
@@ -12,6 +12,12 @@
    "type": "blob",
    "sha": "a74f43fa5ef9bcfa922aa0264122be2bad680e04",
    "size": 6277
+  },
+  {
+   "path": "ANCR/ANCR_N3_30_11_05_12_2026.ics",
+   "type": "blob",
+   "sha": "bbef5e8c17cb8073a0630a95e9771ab1b5261ddc",
+   "size": 7977
   },
   {
    "path": "ANCR/ANCR_N4_02_11_07_11_2026.ics",
@@ -44,6 +50,12 @@
    "size": 6895
   },
   {
+   "path": "ANCR/ANCR_N4_30_11_05_12_2026.ics",
+   "type": "blob",
+   "sha": "328600d8b664f539003e4133c6cf2fe732d0d042",
+   "size": 5485
+  },
+  {
    "path": "ANCR/EDT_ANCR_3_23_11_29_11_2026.docx",
    "type": "blob",
    "sha": "d09d30ed4fc04882bb382a2697553662e8979e42",
@@ -51,6 +63,19 @@
    "week": [
     "2026-11-23",
     "2026-11-29"
+   ],
+   "departments": [
+    "ANCR"
+   ]
+  },
+  {
+   "path": "ANCR/EDT_ANCR_3_30_11_06_12_2026.docx",
+   "type": "blob",
+   "sha": "4603026e2300139f4f94ce76b0e77e9cd91a7833",
+   "size": 68405,
+   "week": [
+    "2026-11-30",
+    "2026-12-05"
    ],
    "departments": [
     "ANCR"
@@ -116,6 +141,19 @@
    "week": [
     "2026-11-02",
     "2026-11-07"
+   ],
+   "departments": [
+    "ANCR"
+   ]
+  },
+  {
+   "path": "ANCR/EDT_ANCR_4_30_11_06_12_2026.docx",
+   "type": "blob",
+   "sha": "0965523c1ce6966193cc1aa4daf451f0b6557bb2",
+   "size": 67442,
+   "week": [
+    "2026-11-30",
+    "2026-12-05"
    ],
    "departments": [
     "ANCR"
@@ -2203,8 +2241,8 @@
   {
    "path": "RAPPORT_CONVERSION.md",
    "type": "blob",
-   "sha": "e9b460c1ad2e5b44f24859804f60891ae7fd91c6",
-   "size": 4389
+   "sha": "4790cbfc4a5c7a176d242afd66fcc3af19eb6b0d",
+   "size": 4701
   },
   {
    "path": "README.md",
@@ -3440,8 +3478,8 @@
   {
    "path": "timetables.json",
    "type": "blob",
-   "sha": "6aac99704ad70f4e15cd992feecc927c08202845",
-   "size": 36335
+   "sha": "09a5bddca0e9d332ecd01fe76442d2f021fd4ab8",
+   "size": 36757
   },
   {
    "path": "tools/annonce_version_web.txt",
