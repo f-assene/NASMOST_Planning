@@ -621,6 +621,15 @@
   "ics": "GOHM/GOHM_N4_23_11_28_11_2026.ics"
  },
  {
+  "source": "GOHM/EDT_GOHM_3_30_11_05_12_2026.pdf",
+  "scan": false,
+  "department": "GOHM",
+  "level": "N3",
+  "start": "2026-11-30",
+  "end": "2026-12-06",
+  "ics": "GOHM/GOHM_N3_30_11_06_12_2026.ics"
+ },
+ {
   "source": "GOHM/EDT_GOHM_4_02_11_08_11_2026.docx",
   "scan": false,
   "department": "GOHM",
