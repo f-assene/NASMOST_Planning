@@ -9,6 +9,15 @@
   "ics": "ANCR/ANCR_N3_23_11_29_11_2026.ics"
  },
  {
+  "source": "ANCR/EDT_ANCR_3_30_11_06_12_2026.docx",
+  "scan": false,
+  "department": "ANCR",
+  "level": "N3",
+  "start": "2026-11-30",
+  "end": "2026-12-05",
+  "ics": "ANCR/ANCR_N3_30_11_05_12_2026.ics"
+ },
+ {
   "source": "ANCR/EDT_ANCR_4_02_11_15_11_2026.pdf",
   "scan": false,
   "department": "ANCR",
@@ -61,6 +70,15 @@
   "start": "2026-11-02",
   "end": "2026-11-07",
   "ics": "ANCR/ANCR_N4_02_11_07_11_2026.ics"
+ },
+ {
+  "source": "ANCR/EDT_ANCR_4_30_11_06_12_2026.docx",
+  "scan": false,
+  "department": "ANCR",
+  "level": "N4",
+  "start": "2026-11-30",
+  "end": "2026-12-05",
+  "ics": "ANCR/ANCR_N4_30_11_05_12_2026.ics"
  },
  {
   "source": "GCO/EDT_GCO_2_02_11_08_11_2026.pdf",

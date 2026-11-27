@@ -2,7 +2,7 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**127 emploi(s) du temps publié(s), 32 version(s) signée(s), 0 erreur(s).**
+**129 emploi(s) du temps publié(s), 32 version(s) signée(s), 0 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
@@ -10,9 +10,11 @@ Aucun.
 
 ## Avertissements
 
+- `ANCR/EDT_ANCR_3_30_11_06_12_2026.docx` : les dates du nom (30/11 au 06/12/2026) diffèrent de l'en-tête (30/11 au 05/12/2026) : l'en-tête est utilisé
 - `ANCR/EDT_ANCR_4_19_10_24_10_2026.pdf` : les dates du nom (19/10 au 24/10/2026) diffèrent de l'en-tête (19/10 au 25/10/2026) : l'en-tête est utilisé
 - `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : les dates du nom (26/10 au 01/11/2026) diffèrent de l'en-tête (02/11 au 07/11/2026) : l'en-tête est utilisé
 - `ANCR/EDT_ANCR_4_26_10_01_11_2026.docx` : ANCR N4 du 02/11/2026 existe aussi dans ANCR/EDT_ANCR_4_02_11_15_11_2026.pdf : ce fichier-ci est utilisé
+- `ANCR/EDT_ANCR_4_30_11_06_12_2026.docx` : les dates du nom (30/11 au 06/12/2026) diffèrent de l'en-tête (30/11 au 05/12/2026) : l'en-tête est utilisé
 - `GCO/EDT_GCO_4_16_11_22_11_2026.pdf` : les dates du nom (16/11 au 22/11/2026) diffèrent de l'en-tête (16/11 au 21/11/2026) : l'en-tête est utilisé
 - `GOHM/EDT_GHOM_4_19_10_25_10_2026.docx` : les dates du nom (19/10 au 25/10/2026) diffèrent de l'en-tête (19/10 au 24/10/2026) : l'en-tête est utilisé
 - `GOHM/EDT_GOHM_3_30_11_05_12_2026.pdf` : les dates du nom (30/11 au 05/12/2026) diffèrent de l'en-tête (30/11 au 06/12/2026) : l'en-tête est utilisé
