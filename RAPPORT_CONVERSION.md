@@ -2,7 +2,7 @@
 
 Mis à jour automatiquement à chaque dépôt. Les fichiers en erreur ne sont pas publiés ; tous les autres le sont.
 
-**126 emploi(s) du temps publié(s), 32 version(s) signée(s), 0 erreur(s).**
+**127 emploi(s) du temps publié(s), 32 version(s) signée(s), 0 erreur(s).**
 
 ## Erreurs (fichier non publié)
 
@@ -17,6 +17,7 @@ Aucun.
 - `GOHM/EDT_GHOM_4_19_10_25_10_2026.docx` : les dates du nom (19/10 au 25/10/2026) diffèrent de l'en-tête (19/10 au 24/10/2026) : l'en-tête est utilisé
 - `GOHM/EDT_GOHM_3_30_11_05_12_2026.pdf` : les dates du nom (30/11 au 05/12/2026) diffèrent de l'en-tête (30/11 au 06/12/2026) : l'en-tête est utilisé
 - `GOHM/EDT_GOHM_4_16_11_21_11_2026.pdf` : GOHM N4 du 16/11/2026 existe aussi dans GOHM/EDT_GHOM_4_16_11_21_11_2026.pdf : ce fichier-ci est utilisé
+- `GOHM/EDT_GOHM_4_30_11_05_12_2026.pdf` : les dates du nom (30/11 au 05/12/2026) diffèrent de l'en-tête (30/11 au 06/12/2026) : l'en-tête est utilisé
 - `NMSI/Projet d'Emp. du Temps 3GNM_22_28_Juin. 26-6.docx` : NMSI N3 du 22/06/2026 existe aussi dans NMSI/EDT_3GNM_22_06_28_06_2026.pdf : ce fichier-ci est utilisé
 - `PEM/EDT_PEM_3_30_11_05_12_2026.pdf` : les dates du nom (30/11 au 05/12/2026) diffèrent de l'en-tête (30/11 au 06/12/2026) : l'en-tête est utilisé
 - `PEM/EDT_PEM_4_30_11_05_12_2026.pdf` : les dates du nom (30/11 au 05/12/2026) diffèrent de l'en-tête (30/11 au 06/12/2026) : l'en-tête est utilisé
